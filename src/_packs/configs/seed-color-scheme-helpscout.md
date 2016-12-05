@@ -22,7 +22,7 @@ npm install seed-color-scheme-helpscout --save
 
 ### Dependencies
 
-* [seed-color-scheme](/seed/packs/seed-color-scheme)
+* [seed-color-scheme](/packs/seed-color-scheme)
 
 
 ---
@@ -32,7 +32,7 @@ npm install seed-color-scheme-helpscout --save
 
 The Help Scout color scheme pack consists of all the colors and shades in our [color palette](/brand/color).
 
-Use the **_color()** mixin (provided by [seed-color-scheme](/seed/packs/seed-color-scheme)) to reference a color from this pack.
+Use the **_color()** mixin (provided by [seed-color-scheme](/packs/seed-color-scheme)) to reference a color from this pack.
 
 ```example.scss
 .element {
@@ -171,5 +171,5 @@ $seed-color-scheme-helpscout: (
 
 ## Related
 
-* [seed-color-scheme](/seed/packs/seed-color-scheme)
-* [seed-helpcout-theme](/seed/packs/seed-helpscout-theme)
+* [seed-color-scheme](/packs/seed-color-scheme)
+* [seed-helpcout-theme](/packs/seed-helpscout-theme)

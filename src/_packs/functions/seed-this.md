@@ -179,4 +179,4 @@ Returns: A selector (e.g. `.menu`)
 
 ## Related
 
-* [seed-family](/seed/packs/seed-family)
+* [seed-family](/packs/seed-family)

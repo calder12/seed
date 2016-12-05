@@ -23,8 +23,8 @@ npm install seed-inline --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
-* [seed-spacing](/seed/packs/seed-spacing)
+* [seed-publish](/packs/seed-publish)
+* [seed-spacing](/packs/seed-spacing)
 
 
 
@@ -85,7 +85,7 @@ To inline items next to each other, wrap everything in a parent selector of `.o-
 
 ### Working with dynamic content
 
-`.o-inline` is great at inlining smaller pieces of UI elements next to each other — such as icons, buttons, and inputs. However, if you have textual content (especially longer content), it is better to use [seed-flexy](/seed/packs/seed-flexy) instead.
+`.o-inline` is great at inlining smaller pieces of UI elements next to each other — such as icons, buttons, and inputs. However, if you have textual content (especially longer content), it is better to use [seed-flexy](/packs/seed-flexy) instead.
 
 
 **Desired UI**
@@ -127,7 +127,7 @@ If there is a lot of text, the UI will no longer look like what we had before. T
 
 **Using `.o-flexy` (👍)**
 
-On the other hand, `.o-flexy` from the [seed-flexy](/seed/packs/seed-flexy) object pack **does** respect layout!
+On the other hand, `.o-flexy` from the [seed-flexy](/packs/seed-flexy) object pack **does** respect layout!
 
 {% example html %}
 <div class="o-flexy o-flexy--top">
@@ -219,4 +219,4 @@ The various sizes will adjust the spacing to the right and below each `.o-inline
 
 ## Related
 
-* [seed-flexy](/seed/packs/seed-flexy)
+* [seed-flexy](/packs/seed-flexy)

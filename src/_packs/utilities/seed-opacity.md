@@ -22,8 +22,8 @@ npm install seed-opacity --save
 
 ### Dependencies
 
-* [seed-props](/seed/packs/seed-props)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-props](/packs/seed-props)
+* [seed-publish](/packs/seed-publish)
 
 
 

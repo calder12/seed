@@ -105,13 +105,13 @@ title: "Airbnb - City guide collage"
 ## Packs utilized
 
 * Components
-  * [seed-thumbnail](/seed/packs/seed-thumbnail)
+  * [seed-thumbnail](/packs/seed-thumbnail)
 * Objects
-  * [seed-grid](/seed/packs/seed-grid)
+  * [seed-grid](/packs/seed-grid)
 * Text
-  * [seed-typography](/seed/packs/seed-typography)
+  * [seed-typography](/packs/seed-typography)
 * Themes
-  * [seed-helpscout-theme](/seed/packs/seed-helpscout-theme)
+  * [seed-helpscout-theme](/packs/seed-helpscout-theme)
 * Utilities
-  * [seed-display](/seed/packs/seed-display)
-  * [seed-spacing](/seed/packs/seed-spacing)
+  * [seed-display](/packs/seed-display)
+  * [seed-spacing](/packs/seed-spacing)

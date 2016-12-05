@@ -4,7 +4,6 @@ section: Themes
 layout: docs
 source: https://github.com/helpscout/seed-helpscout-theme
 seed-pack: seed-helpscout-theme
-file-size: 1.12 KB
 ---
 
 Help Scout theme pack for Seed
@@ -23,9 +22,9 @@ npm install seed-helpscout-theme --save
 
 ### Dependencies
 
-* [seed-dash](/seed/packs/seed-dash)
-* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-dash](/packs/seed-dash)
+* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -80,5 +79,5 @@ Font color theme classes for `seed-helpscout-theme` can be used together with th
 
 ## Related
 
-* [seed-color-scheme](/seed/packs/seed-color-scheme)
-* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
+* [seed-color-scheme](/packs/seed-color-scheme)
+* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)

@@ -154,5 +154,5 @@ Note: Colors are only accessibile to the `_color` function after it's been added
 
 ## Related
 
-* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
-* [seed-dash](/seed/packs/seed-dash)
+* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)
+* [seed-dash](/packs/seed-dash)

@@ -22,8 +22,8 @@ npm install seed-overflow --save
 
 ### Dependencies
 
-* [seed-breakpoints](/seed/packs/seed-breakpoints)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-breakpoints](/packs/seed-breakpoints)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -35,7 +35,7 @@ npm install seed-overflow --save
 
 ### Horizontal and vertical
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-overflow.overflow %}
 
@@ -43,7 +43,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ### Horizontal only
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-overflow.overflow-x %}
 
@@ -51,7 +51,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ### Vertical only
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-overflow.overflow-y %}
 
@@ -63,5 +63,5 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ## Related
 
-* [seed-position](/seed/packs/seed-position)
-* [seed-zi](/seed/packs/seed-zi)
+* [seed-position](/packs/seed-position)
+* [seed-zi](/packs/seed-zi)

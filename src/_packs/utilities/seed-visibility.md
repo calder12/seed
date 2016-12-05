@@ -22,8 +22,8 @@ npm install seed-visibility --save
 
 ### Dependencies
 
-* [seed-breakpoints](/seed/packs/seed-breakpoints)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-breakpoints](/packs/seed-breakpoints)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -33,7 +33,7 @@ npm install seed-visibility --save
 
 ## Usage
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-visibility.visibility %}
 
@@ -72,5 +72,5 @@ This technique is borrowed from [Bootstrap's screen reader](http://getbootstrap.
 
 ## Related
 
-* [seed-display](/seed/packs/seed-display)
-* [seed-opacity](/seed/packs/seed-opacity)
+* [seed-display](/packs/seed-display)
+* [seed-opacity](/packs/seed-opacity)

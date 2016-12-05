@@ -21,8 +21,8 @@ npm install seed-card --save
 
 ### Dependencies
 
-* [seed-border](/seed/packs/seed-border)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-border](/packs/seed-border)
+* [seed-publish](/packs/seed-publish)
 
 
 ---
@@ -69,7 +69,7 @@ Sibling card blocks will automatically be separated with a border.
 
 Card blocks have size modifiers, ranging from `xs-md`. These adjust the vertical padding of the blocks.
 
-These size modifier classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+These size modifier classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-card.sizes %}
 
@@ -113,4 +113,4 @@ These size modifier classes support **[responsive modifiers](/seed/packs/seed-br
 
 ## Related
 
-* [seed-dropdown](/seed/packs/seed-dropdown)
+* [seed-dropdown](/packs/seed-dropdown)

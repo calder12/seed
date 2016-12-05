@@ -21,7 +21,7 @@ npm install seed-reset --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -93,4 +93,4 @@ $seed-reset-enable-reboot: false;
 
 ## Related
 
-* [seed-base](/seed/packs/seed-base)
+* [seed-base](/packs/seed-base)

@@ -22,8 +22,8 @@ npm install seed-typography --save
 
 ### Dependencies
 
-* [seed-breakpoints](/seed/packs/seed-breakpoints)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-breakpoints](/packs/seed-breakpoints)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -40,7 +40,7 @@ Seed CSS introduces a new prefix to compliment those defined [ITCSS](http://itcs
 
 ## Alignment
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-typography.alignment %}
 
@@ -82,7 +82,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ## Headings
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-typography.headings %}
 
@@ -96,7 +96,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ## Headlines
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-typography.headlines %}
 
@@ -110,7 +110,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ## Line heights
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-typography.line-height %}
 
@@ -129,7 +129,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 ## Sizes
 
-All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-typography.sizes %}
 
@@ -179,7 +179,7 @@ film produced by Pixar.
 </div>
 {% endexample %}
 
-The CSS method of truncating requires the selector to be `display: block`. For selectors like `<a>` or `<span>`, we recommend you use the utility class of `.u-d-block` from [seed-display](/seed/packs/seed-display) to update the `display` property to `block`.
+The CSS method of truncating requires the selector to be `display: block`. For selectors like `<a>` or `<span>`, we recommend you use the utility class of `.u-d-block` from [seed-display](/packs/seed-display) to update the `display` property to `block`.
 
 {% example html %}
 <a class="tx-truncate u-d-block" href="#">

@@ -40,14 +40,14 @@ title: "YouTube - Search result"
 ## Packs utilized
 
 * Components
-  * [seed-thumbnail](/seed/packs/seed-thumbnail)
+  * [seed-thumbnail](/packs/seed-thumbnail)
 * Objects
-  * [seed-flexy](/seed/packs/seed-flexy)
+  * [seed-flexy](/packs/seed-flexy)
 * Type
-  * [seed-typography](/seed/packs/seed-typography)
+  * [seed-typography](/packs/seed-typography)
 * Themes
-  * [seed-helpscout-theme](/seed/packs/seed-helpscout-theme)
+  * [seed-helpscout-theme](/packs/seed-helpscout-theme)
 * Utilities
-  * [seed-display](/seed/packs/seed-display)
-  * [seed-spacing](/seed/packs/seed-spacing)
-  * [seed-width-fx](/seed/packs/seed-width-fx)
+  * [seed-display](/packs/seed-display)
+  * [seed-spacing](/packs/seed-spacing)
+  * [seed-width-fx](/packs/seed-width-fx)

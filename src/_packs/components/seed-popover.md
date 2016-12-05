@@ -21,8 +21,8 @@ npm install seed-popover --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
-* [seed-this](/seed/packs/seed-this)
+* [seed-publish](/packs/seed-publish)
+* [seed-this](/packs/seed-this)
 
 
 
@@ -79,5 +79,5 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
 ## Related
 
-* [seed-dropdown](/seed/packs/seed-dropdown)
-* [seed-tooltip](/seed/packs/seed-tooltip)
+* [seed-dropdown](/packs/seed-dropdown)
+* [seed-tooltip](/packs/seed-tooltip)

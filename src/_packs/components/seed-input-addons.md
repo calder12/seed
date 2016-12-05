@@ -21,9 +21,9 @@ npm install seed-input-addons --save
 
 ### Dependencies
 
-* [seed-control](/seed/packs/seed-control)
-* [seed-input](/seed/packs/seed-input)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-control](/packs/seed-control)
+* [seed-input](/packs/seed-input)
+* [seed-publish](/packs/seed-publish)
 
 
 ---
@@ -31,7 +31,7 @@ npm install seed-input-addons --save
 
 ## Input Addon
 
-Input addons can be used with [input components](/seed/packs/seed-input) within [control groups](/seed/packs/control-group).
+Input addons can be used with [input components](/packs/seed-input) within [control groups](/packs/control-group).
 
 
 ### Example
@@ -83,7 +83,7 @@ Input addons can be used with [input components](/seed/packs/seed-input) within 
 
 ## Input Static
 
-Static inputs are plain-text elements that are paired with [input components](/seed/packs/seed-input). They share the same heights as inputs, which allows their text to be vertically aligned.
+Static inputs are plain-text elements that are paired with [input components](/packs/seed-input). They share the same heights as inputs, which allows their text to be vertically aligned.
 
 
 ### Example
@@ -151,6 +151,6 @@ Static inputs are plain-text elements that are paired with [input components](/s
 
 ## Related
 
-* [seed-control-group](/seed/packs/seed-control-group)
-* [seed-inline](/seed/packs/seed-inline)
-* [seed-input](/seed/packs/seed-input)
+* [seed-control-group](/packs/seed-control-group)
+* [seed-inline](/packs/seed-inline)
+* [seed-input](/packs/seed-input)

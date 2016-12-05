@@ -217,5 +217,5 @@ The final generated buttons will have the appropriate `background` and `border-c
 
 ## Related
 
-* [seed-breakpoints](/seed/packs/seed-breakpoints)
-* [seed-dash](/seed/packs/seed-dash)
+* [seed-breakpoints](/packs/seed-breakpoints)
+* [seed-dash](/packs/seed-dash)

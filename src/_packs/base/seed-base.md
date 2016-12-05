@@ -21,7 +21,7 @@ npm install seed-base --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -31,7 +31,7 @@ npm install seed-base --save
 
 ## Usage
 
-It is recommended that `seed-base` be imported as near to the top of your SCSS as possible, but placed **after** [reset styles](/seed/packs/seed-reset).
+It is recommended that `seed-base` be imported as near to the top of your SCSS as possible, but placed **after** [reset styles](/packs/seed-reset).
 
 ```main.scss
 // Reset
@@ -53,4 +53,4 @@ It is recommended that `seed-base` be imported as near to the top of your SCSS a
 
 ## Related
 
-* [seed-reset](/seed/packs/seed-reset)
+* [seed-reset](/packs/seed-reset)

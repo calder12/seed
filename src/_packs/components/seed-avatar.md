@@ -21,8 +21,8 @@ npm install seed-avatar --save
 
 ### Dependencies
 
-* [seed-breakpoints](/seed/packs/seed-breakpoints)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-breakpoints](/packs/seed-breakpoints)
+* [seed-publish](/packs/seed-publish)
 
 
 ---
@@ -56,7 +56,7 @@ npm install seed-avatar --save
 
 ## Sizes
 
-All of the following sizes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following sizes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
 
 ### Extra small
 
@@ -101,4 +101,4 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 ## Related
 
-* [seed-thumbnail](/seed/packs/seed-thumbnail)
+* [seed-thumbnail](/packs/seed-thumbnail)

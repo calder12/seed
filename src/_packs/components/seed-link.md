@@ -21,7 +21,7 @@ npm install seed-link --save
 
 ## Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-publish](/packs/seed-publish)
 
 
 

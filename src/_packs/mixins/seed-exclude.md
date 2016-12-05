@@ -6,7 +6,7 @@ source: https://github.com/helpscout/seed-exclude
 seed-pack: seed-exclude
 ---
 
-Mixin that excludes modules published with [seed-publish](/seed/packs/seed-publish)
+Mixin that excludes modules published with [seed-publish](/packs/seed-publish)
 
 ## Contents
 
@@ -22,7 +22,7 @@ npm install seed-exclude --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -31,7 +31,7 @@ npm install seed-exclude --save
 
 ## About
 
-`seed-exclude` is a mixin that enhances packs using [seed-publish](/seed/packs/seed-publish). As the name of the pack suggests, the `exclude()` mixin allows the user to exclude [published packs](/seed/packs/seed-publish/#publish).
+`seed-exclude` is a mixin that enhances packs using [seed-publish](/packs/seed-publish). As the name of the pack suggests, the `exclude()` mixin allows the user to exclude [published packs](/packs/seed-publish/#publish).
 
 
 ## Use case
@@ -118,4 +118,4 @@ The `exclude` mixin accepts lists as well as nested lists:
 
 ## Related
 
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-publish](/packs/seed-publish)

@@ -21,10 +21,10 @@ npm install seed-table --save
 
 ### Dependencies
 
-* [seed-dash](/seed/packs/seed-dash)
-* [seed-publish](/seed/packs/seed-publish)
-* [seed-states](/seed/packs/seed-states)
-* [seed-this](/seed/packs/seed-this)
+* [seed-dash](/packs/seed-dash)
+* [seed-publish](/packs/seed-publish)
+* [seed-states](/packs/seed-states)
+* [seed-this](/packs/seed-this)
 
 
 
@@ -359,7 +359,7 @@ Below are all the modifier styles that can be applied to `.c-table`. These modif
 
 ## States
 
-The following are [states](/seed/packs/seed-states/) that can be applied to table rows (`tr`) and/or individual table cells (`th`/`td`):
+The following are [states](/packs/seed-states/) that can be applied to table rows (`tr`) and/or individual table cells (`th`/`td`):
 
 * `.is-error`
 * `.is-info`
@@ -466,5 +466,5 @@ The following are [states](/seed/packs/seed-states/) that can be applied to tabl
 
 ## Related
 
-* [seed-list](/seed/packs/seed-list)
-* [seed-responsive-wrapper](/seed/packs/seed-responsive-wrapper)
+* [seed-list](/packs/seed-list)
+* [seed-responsive-wrapper](/packs/seed-responsive-wrapper)

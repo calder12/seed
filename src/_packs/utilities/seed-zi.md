@@ -22,7 +22,7 @@ npm install seed-zi --save
 
 ### Dependencies
 
- [seed-publish](/seed/packs/seed-publish)
+ [seed-publish](/packs/seed-publish)
 
 
 
@@ -54,4 +54,4 @@ npm install seed-zi --save
 
 ## Related
 
-* [seed-position](/seed/packs/seed-position)
+* [seed-position](/packs/seed-position)

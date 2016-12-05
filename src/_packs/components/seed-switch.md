@@ -21,8 +21,8 @@ npm install seed-switch --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
-* [seed-shadow](/seed/packs/seed-shadow)
+* [seed-publish](/packs/seed-publish)
+* [seed-shadow](/packs/seed-shadow)
 
 
 ---

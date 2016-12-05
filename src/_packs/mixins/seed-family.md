@@ -200,4 +200,4 @@ In CSS, we can target the sibling selector that comes **after**, but **not befor
 
 ## Related
 
-* [seed-this](/seed/packs/seed-this)
+* [seed-this](/packs/seed-this)

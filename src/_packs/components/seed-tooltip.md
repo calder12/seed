@@ -22,8 +22,8 @@ npm install seed-tooltip --save
 ### Dependencies
 
 * [seed-bootstrap-fade](https://github.com/helpscout/seed-bootstrap-fade)
-* [seed-publish](/seed/packs/seed-publish)
-* [seed-this](/seed/packs/seed-this)
+* [seed-publish](/packs/seed-publish)
+* [seed-this](/packs/seed-this)
 
 
 
@@ -71,4 +71,4 @@ Four options are available: top, right, bottom, and left aligned.
 
 ## Related
 
-* [seed-popover](/seed/packs/seed-popover)
+* [seed-popover](/packs/seed-popover)

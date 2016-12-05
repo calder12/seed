@@ -21,10 +21,10 @@ npm install seed-input --save
 
 ### Dependencies
 
-* [seed-border](/seed/packs/seed-border)
-* [seed-control](/seed/packs/seed-control)
-* [seed-publish](/seed/packs/seed-publish)
-* [seed-states](/seed/packs/seed-states)
+* [seed-border](/packs/seed-border)
+* [seed-control](/packs/seed-control)
+* [seed-publish](/packs/seed-publish)
+* [seed-states](/packs/seed-states)
 
 
 
@@ -73,5 +73,5 @@ npm install seed-input --save
 
 ## Related
 
-* [seed-control-group](/seed/packs/seed-control-group)
-* [seed-input-addons](/seed/packs/seed-input-addons)
+* [seed-control-group](/packs/seed-control-group)
+* [seed-input-addons](/packs/seed-input-addons)

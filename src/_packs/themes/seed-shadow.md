@@ -22,9 +22,9 @@ npm install seed-shadow --save
 
 ### Dependencies
 
-* [seed-dash](/seed/packs/seed-dash)
-* [seed-props](/seed/packs/seed-props)
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-dash](/packs/seed-dash)
+* [seed-props](/packs/seed-props)
+* [seed-publish](/packs/seed-publish)
 
 
 

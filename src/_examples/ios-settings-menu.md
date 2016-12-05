@@ -41,11 +41,11 @@ title: "iOS inspired settings menu"
 ## Packs utilized
 
 * Components
-  * [seed-list](/seed/packs/seed-list)
-  * [seed-switch](/seed/packs/seed-switch)
+  * [seed-list](/packs/seed-list)
+  * [seed-switch](/packs/seed-switch)
 * Objects
-  * [seed-flexy](/seed/packs/seed-flexy)
+  * [seed-flexy](/packs/seed-flexy)
 * Utilities
-  * [seed-display](/seed/packs/seed-display)
-  * [seed-spacing](/seed/packs/seed-spacing)
-  * [seed-width](/seed/packs/seed-width)
+  * [seed-display](/packs/seed-display)
+  * [seed-spacing](/packs/seed-spacing)
+  * [seed-width](/packs/seed-width)

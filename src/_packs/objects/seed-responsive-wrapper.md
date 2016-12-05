@@ -23,7 +23,7 @@ npm install seed-responsive-wrapper --save
 
 ### Dependencies
 
-* [seed-publish](/seed/packs/seed-publish)
+* [seed-publish](/packs/seed-publish)
 
 
 
@@ -99,4 +99,4 @@ A horizontal scrollbar will automatically appear if content within a `.o-respons
 
 ## Related
 
-* [seed-table](/seed/packs/seed-table)
+* [seed-table](/packs/seed-table)
