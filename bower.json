@@ -1,0 +1,22 @@
+{
+  "name": "styleguide",
+  "description": "Seed CSS Documentation",
+  "main": "index.js",
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/helpscout/seed",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "hs-icons": "https://github.com/helpscout/hs-icons.git#v0.0.7"
+  },
+  "version": "1.2.2"
+}

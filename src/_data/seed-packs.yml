@@ -1,0 +1,26 @@
+- title: Configs
+  description: SCSS objects and variables that contain settings utilized by a project
+
+- title: Functions
+  description: SCSS methods that calculate and return values
+
+- title: Mixins
+  description: Reusable SCSS helpers that make it easier to write CSS
+
+- title: Base
+  description: CSS classes that reset/stylizes basic HTML components
+
+- title: Text
+  description: CSS classes that stylize typography
+
+- title: Objects
+  description: CSS classes responsible for non-cosmetic/structural UI
+
+- title: Components
+  description: CSS classes that create reusable elements of UI
+
+- title: Themes
+  description: CSS classes that modify the aesthetics of elements
+
+- title: Utilities
+  description: CSS classes that adjust and override the styling of elements

@@ -1,0 +1,70 @@
+{% if template.section %}
+{% for color_section in site.data.color-palette %}
+  {% if color_section.title == template.section %}
+    <section class="u-mrg-b-5">
+      <header class="u-pad-b-4">
+        <h3 class="tx-h4 tx-400">
+          {{ color_section.title }} Colors
+        </h3>
+      </header>
+
+      <div class="s-hs-docs">
+        {{ template.content }}
+      </div>
+
+      <div class="o-row tx-xs">
+        {% for color in color_section.colors %}
+          {% if forloop.index == 4 %}
+            </div>
+            <div class="o-row tx-xs">
+          {% endif %}
+          <div class="o-col-12 o-col-6@sm o-col-4@lg">
+            <div class="c-color-swatch">
+              {% assign swatch = color.swatches[4] %}
+              {% assign hue_class = '' %}
+              {% for _swatch in color.swatches %}
+                {% if _swatch.title == 500 %}
+                  {% assign swatch = _swatch %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if swatch.hue == 'dark' %}
+                {% assign hue_class = 'c-color-swatch__item--dark' %}
+              {% endif %}
+              <div class="c-color-swatch__item c-color-swatch__item--lg {{ hue_class }}" style="background: #{{ swatch.code }};" data-clipboard-value="#{{ swatch.code }}">
+                <div class="u-mrg-b-10 tx-uppercase">
+                  <strong>{{ color.title }}</strong>
+                </div>
+                <div class="c-color-swatch__content o-flexy">
+                  <div class="o-flexy__item">
+                    {{ swatch.title }}
+                  </div>
+                  <div class="o-flexy__item">
+                    <strong>#{{ swatch.code }}</strong>
+                  </div>
+                </div>
+              </div>
+              {% for swatch in color.swatches %}
+                {% assign hue_class = '' %}
+                {% if swatch.hue == 'dark' %}
+                  {% assign hue_class = 'c-color-swatch__item--dark' %}
+                {% endif %}
+                <div class="c-color-swatch__item {{ hue_class }}" style="background: #{{ swatch.code }};" data-clipboard-value="#{{ swatch.code }}">
+                  <div class="c-color-swatch__content o-flexy">
+                    <div class="o-flexy__item">
+                      {{ swatch.title }}
+                    </div>
+                    <div class="o-flexy__item">
+                      <strong>#{{ swatch.code }}</strong>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+{% endif %}

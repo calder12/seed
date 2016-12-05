@@ -1,0 +1,32 @@
+<h2 id="contents">Contents</h2>
+<ul>
+{% for section in site.data.seed-packs %}
+  <li>
+    <a href="#{{ section.title | slugify }}">{{ section.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+<hr>
+
+{% for section in site.data.seed-packs %}
+  <h3 class="u-mrg-b-1 tx-500">
+    {{ section.title }}
+  </h3>
+  {% if section.description %}
+  <p class="tx-lg u-op-6 u-mrg-b-3">
+    {{ section.description }}
+  </p>
+  {% endif %}
+  <ul>
+  {% for pack in site.seed-packs %}
+    {% if section.title == pack.section %}
+    <li>
+      <a href="/seed/packs/{{ pack.slug }}">
+        {{ pack.title }}
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}

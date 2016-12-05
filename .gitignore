@@ -1,11 +1,17 @@
 .DS_Store
-*.orig
 
-.grunt
-.grunt-tmp
-.publish
+node_modules
+bower_components
 
-node_modules/
-bower_components/
+.tmp
+.sass-cache
 
-npm-debug.log
+_gh_pages
+_site
+.jekyll-metadata
+docs
+
+src/_assets/vendors
+.asset-cache
+
+.publish/

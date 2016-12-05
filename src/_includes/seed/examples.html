@@ -1,0 +1,14 @@
+<h2>Examples</h2>
+<p class="tx-lg u-op-6">
+  A list of UI examples you can create with Seed
+</p>
+
+<ul>
+  {% for post in site.seed-examples %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
+  <link rel="stylesheet" href="{{ "/css/aktiv-webfont.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
+  {% if page.title == 'Blog' %}
+  <link rel="stylesheet" href="http://www.helpscout.net/css/blog.css">
+  {% endif %}
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>

@@ -1,0 +1,23 @@
+<div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="{{ '/images/styleguide/nav-toggle.svg' | prepend: site.baseurl | prepend: site.url }}" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">
+      <div class="tx-center">
+        {% include svgs/logo.html %}
+        <div class="tx-12 tx-uppercase">
+          <strong>Brand Style Guide</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      {% include nav/docs-nav.html %}
+    </ul>
+  </div>
+</div>
+

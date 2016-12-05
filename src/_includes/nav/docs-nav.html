@@ -1,0 +1,7 @@
+{% for nav in site.data.seed-packs %}
+  <li class="nav__item">
+    <a href="{{ nav_link | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url }}" data-section="{{ nav_id }}" class="nav__link">
+      {{ nav.title }}
+    </a>
+  </li>
+{% endfor %}
