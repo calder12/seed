@@ -1,6 +1,7 @@
 ---
 title: Dash
-section: Functions
+description: "Functions that get, set, and extend Sass maps."
+section: Function
 layout: docs
 source: https://github.com/helpscout/seed-dash
 seed-pack: seed-dash

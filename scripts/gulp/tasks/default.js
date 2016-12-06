@@ -17,6 +17,7 @@ gulp.task('default', function(callback) {
       'scripts-base',
     ],
     'browsersync',
+    'open-development',
     'watch'
   );
 });

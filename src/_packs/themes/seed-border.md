@@ -1,6 +1,6 @@
 ---
 title: Border
-section: Themes
+section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-border
 seed-pack: seed-border
@@ -21,8 +21,8 @@ npm install seed-border --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -31,7 +31,7 @@ npm install seed-border --save
 
 ## Usage
 
-`.t-bdr` supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+`.t-bdr` supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-border.border %}
 

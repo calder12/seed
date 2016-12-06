@@ -1,6 +1,6 @@
 ---
 title: Thumbnail
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-thumbnail
 seed-pack: seed-thumbnail
 ---
@@ -21,10 +21,10 @@ npm install seed-thumbnail --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-dash](/packs/seed-dash)
-* [seed-props](/packs/seed-props)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-props](/seed/packs/seed-props)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -63,7 +63,7 @@ Use the `<a>` selector for the `.c-thumbnail` class to create clickable thumbnai
 ### Wide
 
 This adjusts the thumbnail to have a 16:9 ratio (which is the default thumbnail ratio).
-This class supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--wide">
@@ -76,7 +76,7 @@ This class supports **[responsive modifiers](/packs/seed-breakpoints/#responsive
 ### SD
 
 This adjusts the thumbnail to have a 4:3 ratio.
-This class supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--sd">
@@ -89,7 +89,7 @@ This class supports **[responsive modifiers](/packs/seed-breakpoints/#responsive
 ### Square
 
 This adjusts the thumbnail to have a 1:1 ratio.
-This class supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--square">
@@ -139,4 +139,4 @@ This class supports **[responsive modifiers](/packs/seed-breakpoints/#responsive
 
 ## Related
 
-* [seed-avatar](/packs/seed-avatar)
+* [seed-avatar](/seed/packs/seed-avatar)

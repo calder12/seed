@@ -1,6 +1,6 @@
 ---
 title: Z-index
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-zi
 seed-pack: seed-zi
@@ -22,7 +22,7 @@ npm install seed-zi --save
 
 ### Dependencies
 
- [seed-publish](/packs/seed-publish)
+ [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -54,4 +54,4 @@ npm install seed-zi --save
 
 ## Related
 
-* [seed-position](/packs/seed-position)
+* [seed-position](/seed/packs/seed-position)

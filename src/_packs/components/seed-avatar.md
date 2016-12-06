@@ -1,6 +1,6 @@
 ---
 title: Avatar
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-avatar
 seed-pack: seed-avatar
 ---
@@ -21,8 +21,8 @@ npm install seed-avatar --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 ---
@@ -56,7 +56,7 @@ npm install seed-avatar --save
 
 ## Sizes
 
-All of the following sizes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following sizes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 ### Extra small
 
@@ -101,4 +101,4 @@ All of the following sizes support **[responsive modifiers](/packs/seed-breakpoi
 
 ## Related
 
-* [seed-thumbnail](/packs/seed-thumbnail)
+* [seed-thumbnail](/seed/packs/seed-thumbnail)

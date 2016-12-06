@@ -1,6 +1,6 @@
 ---
 title: Display
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-display
 seed-pack: seed-display
@@ -22,8 +22,8 @@ npm install seed-display --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -34,7 +34,7 @@ npm install seed-display --save
 
 `seed-display` provides a handful of utility classes that change the `display` CSS property of a selector. Below are all the utility classes and their affects.
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-display.display %}
 
@@ -72,4 +72,4 @@ The second `<div>` is initially hidden, as specified by `u-d-none`. It only beco
 
 ## Related
 
-* [seed-visibility](/packs/seed-visibility)
+* [seed-visibility](/seed/packs/seed-visibility)

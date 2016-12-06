@@ -1,6 +1,6 @@
 ---
 title: Centralize
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-centralize
 seed-pack: seed-centralize
@@ -24,8 +24,8 @@ npm install seed-centralize --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -36,7 +36,7 @@ npm install seed-centralize --save
 
 Add the class `.u-centralize` to the selector you want its inner content to the vertically/horizontally aligned.
 
-This utility pack supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+This utility pack supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 ### Example
 
@@ -78,7 +78,7 @@ Instead, keep all of the child elements **within a container**:
 
 Notice how the text elements aren't perfectly center aligned. That is because `.u-centralize` only takes care of aligning it's own child element (the container `div` in the above example). If various elements are contained in a containing `div`, the responsibility of alignment shifts to the container.
 
-Depending on the types of elements, they can be horizontally aligned using `.tx-center` (from [seed-typography](/packs/seed-typography)) for text/inline elements or `.u-mrg-auto` (from [seed-spacing](/packs/seed-spacing)) for block elements.
+Depending on the types of elements, they can be horizontally aligned using `.tx-center` (from [seed-typography](/seed/packs/seed-typography)) for text/inline elements or `.u-mrg-auto` (from [seed-spacing](/seed/packs/seed-spacing)) for block elements.
 
 {% example html %}
 <div class="u-centralize t-bg-blue-200" style="height: 200px;">

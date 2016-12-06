@@ -1,6 +1,7 @@
 ---
 title: States
-section: Configs
+description: "A configuration of styles for states, such as error or success."
+section: Config
 layout: docs
 source: https://github.com/helpscout/seed-states
 seed-pack: seed-states
@@ -22,8 +23,8 @@ npm install seed-states --save
 
 ### Dependencies
 
-* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)
-* [seed-dash](/packs/seed-dash)
+* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
+* [seed-dash](/seed/packs/seed-dash)
 
 
 
@@ -99,7 +100,7 @@ $seed-states-error-namespace: "danger" !default;
 @import "pack/seed-states/_index";
 ```
 
-Just be aware that other Sass code that use any of the `seed-states` variables will be affected (e.g. the [`seed-alert` pack](/packs/seed-alert)).
+Just be aware that other Sass code that use any of the `seed-states` variables will be affected (e.g. the [`seed-alert` pack](/seed/packs/seed-alert)).
 
 
 
@@ -108,7 +109,7 @@ Just be aware that other Sass code that use any of the `seed-states` variables w
 
 ## Usage
 
-It is recommended you use the `_get()` function from [seed-dash](/packs/seed-dash) to retrieve variables from the `seed-states` config.
+It is recommended you use the `_get()` function from [seed-dash](/seed/packs/seed-dash) to retrieve variables from the `seed-states` config.
 
 ```_alert.scss
 // Dependencies
@@ -138,7 +139,7 @@ It is recommended you use the `_get()` function from [seed-dash](/packs/seed-das
 
 ## Related
 
-* [seed-badge](/packs/seed-badge)
-* [seed-button](/packs/seed-button)
-* [seed-dash](/packs/seed-dash)
-* [seed-input](/packs/seed-input)
+* [seed-badge](/seed/packs/seed-badge)
+* [seed-button](/seed/packs/seed-button)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-input](/seed/packs/seed-input)

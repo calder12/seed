@@ -3,7 +3,7 @@
 var config = {
   name: 'seed',
   src: 'src',
-  dest: '_site',
+  dest: 'seed',
   port: 5200
 };
 

@@ -1,6 +1,6 @@
 ---
 title: Switch
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-switch
 seed-pack: seed-switch
 ---
@@ -21,8 +21,8 @@ npm install seed-switch --save
 
 ### Dependencies
 
-* [seed-publish](/packs/seed-publish)
-* [seed-shadow](/packs/seed-shadow)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-shadow](/seed/packs/seed-shadow)
 
 
 ---

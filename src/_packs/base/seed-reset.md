@@ -1,5 +1,6 @@
 ---
 title: Reset
+description: "Normalizes HTML element styles to ensure better consistency and adherence to modern standards."
 section: Base
 source: https://github.com/helpscout/seed-reset
 seed-pack: seed-reset
@@ -21,7 +22,7 @@ npm install seed-reset --save
 
 ### Dependencies
 
-* [seed-publish](/packs/seed-publish)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -93,4 +94,4 @@ $seed-reset-enable-reboot: false;
 
 ## Related
 
-* [seed-base](/packs/seed-base)
+* [seed-base](/seed/packs/seed-base)

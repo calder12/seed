@@ -1,6 +1,6 @@
 ---
 title: Opacity
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-opacity
 seed-pack: seed-opacity
@@ -22,8 +22,8 @@ npm install seed-opacity --save
 
 ### Dependencies
 
-* [seed-props](/packs/seed-props)
-* [seed-publish](/packs/seed-publish)
+* [seed-props](/seed/packs/seed-props)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 

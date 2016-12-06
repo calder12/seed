@@ -1,6 +1,6 @@
 ---
 title: Responsive Wrapper
-section: Objects
+section: Object
 layout: docs
 source: https://github.com/helpscout/seed-responsive-wrapper
 seed-pack: seed-responsive-wrapper
@@ -23,7 +23,7 @@ npm install seed-responsive-wrapper --save
 
 ### Dependencies
 
-* [seed-publish](/packs/seed-publish)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -99,4 +99,4 @@ A horizontal scrollbar will automatically appear if content within a `.o-respons
 
 ## Related
 
-* [seed-table](/packs/seed-table)
+* [seed-table](/seed/packs/seed-table)

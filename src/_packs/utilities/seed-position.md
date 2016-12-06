@@ -1,6 +1,6 @@
 ---
 title: Position
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-position
 seed-pack: seed-position
@@ -22,8 +22,8 @@ npm install seed-position --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -32,7 +32,7 @@ npm install seed-position --save
 
 ## Usage
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-position.position %}
 
@@ -44,5 +44,5 @@ All of the following classes support **[responsive modifiers](/packs/seed-breakp
 
 ## Related
 
-* [seed-overflow](/packs/seed-overflow)
-* [seed-zi](/packs/seed-zi)
+* [seed-overflow](/seed/packs/seed-overflow)
+* [seed-zi](/seed/packs/seed-zi)

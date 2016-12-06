@@ -1,6 +1,6 @@
 ---
 title: Floats
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-floats
 seed-pack: seed-floats
@@ -22,8 +22,8 @@ npm install seed-floats --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -62,7 +62,7 @@ For most use cases, applying a "clearfix" class to the parent selector containin
 
 ### Pull (Float)
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-floats.pull %}
 
@@ -85,7 +85,7 @@ All of the following classes support **[responsive modifiers](/packs/seed-breakp
 
 For most use-cases, the [clearfix](#clearfix) utility class is able to handle float clearing. However, the following clear classes are available to provide finer grain control.
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 
 {% include docs/variables-table.html data=site.data.seed.seed-floats.clear %}
@@ -98,4 +98,4 @@ All of the following classes support **[responsive modifiers](/packs/seed-breakp
 
 ## Related
 
-* [seed-flexy](/packs/seed-flexy)
+* [seed-flexy](/seed/packs/seed-flexy)

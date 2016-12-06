@@ -7,6 +7,7 @@ var runSequence = require('run-sequence');
 gulp.task('scripts-base', function(callback) {
   runSequence(
     'copy-scripts',
+    'scripts-browserify',
     callback
   );
 });

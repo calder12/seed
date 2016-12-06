@@ -1,6 +1,6 @@
 ---
 title: Dropdown
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-dropdown
 seed-pack: seed-dropdown
 ---
@@ -21,16 +21,16 @@ npm install seed-dropdown --save
 
 ### Dependencies
 
-* [seed-border](/packs/seed-border)
+* [seed-border](/seed/packs/seed-border)
 * [seed-bootstrap-fade](https://github.com/helpscout/seed-bootstrap-fade)
-* [seed-button](/packs/seed-button)
-* [seed-control-group](/packs/seed-control-group)
-* [seed-card](/packs/seed-card)
-* [seed-dash](/packs/seed-dash)
-* [seed-family](/packs/seed-family)
-* [seed-list](/packs/seed-list)
-* [seed-publish](/packs/seed-publish)
-* [seed-this](/packs/seed-this)
+* [seed-button](/seed/packs/seed-button)
+* [seed-control-group](/seed/packs/seed-control-group)
+* [seed-card](/seed/packs/seed-card)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-family](/seed/packs/seed-family)
+* [seed-list](/seed/packs/seed-list)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-this](/seed/packs/seed-this)
 
 
 
@@ -112,7 +112,7 @@ In the markup examples (below), you will notice that for certain components ther
 
 The dropdown menu's direction can be modified by adding directional based modifications to `.c-dropdown`.
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-dropdown.directions %}
 
@@ -139,9 +139,9 @@ The following dropdown menu drops up and is positioned to the right.
 
 ## Sizes
 
-`seed-dropdown` uses [`seed-button`](/packs/seed-button) as its dropdown toggle.
+`seed-dropdown` uses [`seed-button`](/seed/packs/seed-button) as its dropdown toggle.
 
-See `seed-button`'s [size documentation](/packs/seed-button/#sizes) for more details on sizes.
+See `seed-button`'s [size documentation](/seed/packs/seed-button/#sizes) for more details on sizes.
 
 {% example html %}
 <div class="c-dropdown dropdown">
@@ -164,9 +164,9 @@ See `seed-button`'s [size documentation](/packs/seed-button/#sizes) for more det
 
 ## States
 
-`seed-dropdown` uses [`seed-button`](/packs/seed-button) as its dropdown toggle.
+`seed-dropdown` uses [`seed-button`](/seed/packs/seed-button) as its dropdown toggle.
 
-See `seed-button`'s [state documentation](/packs/seed-button/#states) for more details on states.
+See `seed-button`'s [state documentation](/seed/packs/seed-button/#states) for more details on states.
 
 {% example html %}
 <div class="c-dropdown dropdown">
@@ -189,7 +189,7 @@ See `seed-button`'s [state documentation](/packs/seed-button/#states) for more d
 
 ## Control groups
 
-The borders of the `seed-dropdown` toggles will automatically adjust when placed inside of a [`seed-control-group`](/packs/seed-control-group).
+The borders of the `seed-dropdown` toggles will automatically adjust when placed inside of a [`seed-control-group`](/seed/packs/seed-control-group).
 
 {% example html %}
 <div class="o-control-group">
@@ -217,8 +217,8 @@ The borders of the `seed-dropdown` toggles will automatically adjust when placed
 
 ## Related
 
-* [seed-button](/packs/seed-button)
-* [seed-card](/packs/seed-card)
-* [seed-control-group](/packs/seed-control-group)
-* [seed-list](/packs/seed-button)
-* [seed-popover](/packs/seed-popover)
+* [seed-button](/seed/packs/seed-button)
+* [seed-card](/seed/packs/seed-card)
+* [seed-control-group](/seed/packs/seed-control-group)
+* [seed-list](/seed/packs/seed-button)
+* [seed-popover](/seed/packs/seed-popover)

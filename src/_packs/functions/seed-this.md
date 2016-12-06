@@ -1,6 +1,7 @@
 ---
 title: This
-section: Functions
+description: "A function that reliably gets the current working selector."
+section: Function
 layout: docs
 source: https://github.com/helpscout/seed-this
 seed-pack: seed-this
@@ -179,4 +180,4 @@ Returns: A selector (e.g. `.menu`)
 
 ## Related
 
-* [seed-family](/packs/seed-family)
+* [seed-family](/seed/packs/seed-family)

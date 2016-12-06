@@ -1,6 +1,7 @@
 ---
 title: Color scheme system
-section: Mixins
+description: "A mixin that defines and manages a Sass color scheme configuration."
+section: Mixin
 layout: docs
 source: https://github.com/helpscout/seed-color-scheme
 seed-pack: seed-color-scheme
@@ -154,5 +155,5 @@ Note: Colors are only accessibile to the `_color` function after it's been added
 
 ## Related
 
-* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)
-* [seed-dash](/packs/seed-dash)
+* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
+* [seed-dash](/seed/packs/seed-dash)

@@ -1,6 +1,6 @@
 ---
 title: Modal
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-modal
 seed-pack: seed-modal
 ---
@@ -22,11 +22,11 @@ npm install seed-modal --save
 ### Dependencies
 
 * [seed-bootstrap-fade](https://github.com/helpscout/seed-bootstrap-fade)
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-card](/packs/seed-card)
-* [seed-dash](/packs/seed-dash)
-* [seed-publish](/packs/seed-publish)
-* [seed-this](/packs/seed-this)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-card](/seed/packs/seed-card)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-this](/seed/packs/seed-this)
 
 
 
@@ -58,7 +58,7 @@ In the markup examples (below), you will notice that for certain components ther
 
 ## Example
 
-The modal's inner content (`.modal-content`) uses the [seed-card](/packs/seed-card) component pack for styling.
+The modal's inner content (`.modal-content`) uses the [seed-card](/seed/packs/seed-card) component pack for styling.
 
 {% example html %}
 <!-- Button trigger modal -->
@@ -98,7 +98,7 @@ The modal's inner content (`.modal-content`) uses the [seed-card](/packs/seed-ca
 
 The modal size can be adjusted by applying a size modifier class to `.modal-dialog`.
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% include docs/variables-table.html data=site.data.seed.seed-modal.sizes %}
 
@@ -153,6 +153,6 @@ Below is an example of a large modal:
 
 ## Related
 
-* [seed-button](/packs/seed-button)
-* [seed-card](/packs/seed-card)
-* [seed-flexy](/packs/seed-flexy)
+* [seed-button](/seed/packs/seed-button)
+* [seed-card](/seed/packs/seed-card)
+* [seed-flexy](/seed/packs/seed-flexy)

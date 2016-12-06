@@ -1,6 +1,6 @@
 ---
 title: Popover
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-popover
 seed-pack: seed-popover
 ---
@@ -21,8 +21,8 @@ npm install seed-popover --save
 
 ### Dependencies
 
-* [seed-publish](/packs/seed-publish)
-* [seed-this](/packs/seed-this)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-this](/seed/packs/seed-this)
 
 
 
@@ -79,5 +79,5 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
 ## Related
 
-* [seed-dropdown](/packs/seed-dropdown)
-* [seed-tooltip](/packs/seed-tooltip)
+* [seed-dropdown](/seed/packs/seed-dropdown)
+* [seed-tooltip](/seed/packs/seed-tooltip)

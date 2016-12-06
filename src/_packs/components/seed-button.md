@@ -1,6 +1,6 @@
 ---
 title: Button
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-button
 seed-pack: seed-button
 ---
@@ -23,11 +23,11 @@ npm install seed-button --save
 
 ### Dependencies
 
-* [seed-border](/packs/seed-border)
-* [seed-control](/packs/seed-control)
-* [seed-dash](/packs/seed-dash)
-* [seed-publish](/packs/seed-publish)
-* [seed-states](/packs/seed-states)
+* [seed-border](/seed/packs/seed-border)
+* [seed-control](/seed/packs/seed-control)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-states](/seed/packs/seed-states)
 
 
 ---
@@ -150,5 +150,5 @@ Below are state styles that can be applied to ``.c-button`` elements.
 
 ## Related
 
-* [seed-control-group](/packs/seed-control-group)
-* [seed-dropdown](/packs/seed-dropdown)
+* [seed-control-group](/seed/packs/seed-control-group)
+* [seed-dropdown](/seed/packs/seed-dropdown)

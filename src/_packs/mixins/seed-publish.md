@@ -1,6 +1,7 @@
 ---
 title: Publish
-section: Mixins
+description: "Mixin that acts as an include guard, preventing undesired duplication of compiled CSS styles."
+section: Mixin
 layout: docs
 source: https://github.com/helpscout/seed-publish
 seed-pack: seed-publish
@@ -153,7 +154,7 @@ There is **no limit** on the number of times the `export` mixin can be used on a
 }
 ```
 
-**Note**: You **cannot** use an `@import` inside the `export` mixin. That is because `export` uses a series of `@if` statements behind the scenes, and Sass does not allow for `@import` to be used within conditional statements. ([See above](/packs/seed-publish/conditional-imports))
+**Note**: You **cannot** use an `@import` inside the `export` mixin. That is because `export` uses a series of `@if` statements behind the scenes, and Sass does not allow for `@import` to be used within conditional statements. ([See above](/seed/packs/seed-publish/conditional-imports))
 
 
 
@@ -223,4 +224,4 @@ Regardless of how many times the files are imported (regardless of where they co
 
 ## Related
 
-* [seed-exclude](/packs/seed-exclude)
+* [seed-exclude](/seed/packs/seed-exclude)

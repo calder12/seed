@@ -1,6 +1,6 @@
 ---
 title: Link
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-link
 seed-pack: seed-link
 ---
@@ -21,7 +21,7 @@ npm install seed-link --save
 
 ## Dependencies
 
-* [seed-publish](/packs/seed-publish)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Width (Fixed)
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-fx
 seed-pack: seed-width-fx
@@ -22,8 +22,8 @@ npm install seed-width-fx --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -33,9 +33,9 @@ npm install seed-width-fx --save
 
 ## Usage
 
-All of the following classes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-These classes can also be combined with the utility classes from [seed-width-min](/packs/seed-width-min) and [seed-width-max](/packs/seed-width-max).
+These classes can also be combined with the utility classes from [seed-width-min](/seed/packs/seed-width-min) and [seed-width-max](/seed/packs/seed-width-max).
 
 {% include docs/variables-table.html data=site.data.seed.seed-width-fx.width %}
 
@@ -58,7 +58,7 @@ These classes can also be combined with the utility classes from [seed-width-min
 
 ## Related
 
-* [seed-grid](/packs/seed-grid)
-* [seed-width](/packs/seed-width)
-* [seed-width-max](/packs/seed-width-max)
-* [seed-width-min](/packs/seed-width-min)
+* [seed-grid](/seed/packs/seed-grid)
+* [seed-width](/seed/packs/seed-width)
+* [seed-width-max](/seed/packs/seed-width-max)
+* [seed-width-min](/seed/packs/seed-width-min)

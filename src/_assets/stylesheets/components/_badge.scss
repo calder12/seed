@@ -1,0 +1,38 @@
+// Components :: Badge
+
+.c-badge {
+  // Modifiers
+  &--circle {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+  }
+  // Colors
+  &--base {
+    background-color: _color(charcoal, 300);
+  }
+  &--component {
+    background-color: _color(yellow, 500);
+  }
+  &--config {
+    background-color: _color(green, 700);
+  }
+  &--function {
+    background-color: _color(purple, 300);
+  }
+  &--object {
+    background-color: _color(orange, 600);
+  }
+  &--mixin {
+    background-color: _color(red, 700);
+  }
+  &--text {
+    background-color: _color(charcoal, 700);
+  }
+  &--theme {
+    background-color: _color(blue, 600);
+  }
+  &--utility {
+    background-color: _color(purple, 700);
+  }
+}

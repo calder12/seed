@@ -1,6 +1,7 @@
 ---
 title: Family
-section: Mixins
+description: "Mixins that enable manipulation of parent or sibling selectors."
+section: Mixin
 layout: docs
 source: https://github.com/helpscout/seed-family
 seed-pack: seed-family
@@ -200,4 +201,4 @@ In CSS, we can target the sibling selector that comes **after**, but **not befor
 
 ## Related
 
-* [seed-this](/packs/seed-this)
+* [seed-this](/seed/packs/seed-this)

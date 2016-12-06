@@ -1,6 +1,6 @@
 ---
 title: Grid system
-section: Objects
+section: Object
 layout: docs
 source: https://github.com/helpscout/seed-grid
 seed-pack: seed-grid
@@ -23,8 +23,8 @@ npm install seed-grid --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -318,5 +318,5 @@ The grid system uses a base of 12 (columns).
 
 ## Related
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-width](/packs/seed-width)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-width](/seed/packs/seed-width)

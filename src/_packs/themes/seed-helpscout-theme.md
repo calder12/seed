@@ -1,6 +1,6 @@
 ---
 title: Background and font colors (Help Scout)
-section: Themes
+section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-helpscout-theme
 seed-pack: seed-helpscout-theme
@@ -22,9 +22,9 @@ npm install seed-helpscout-theme --save
 
 ### Dependencies
 
-* [seed-dash](/packs/seed-dash)
-* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)
-* [seed-publish](/packs/seed-publish)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -79,5 +79,5 @@ Font color theme classes for `seed-helpscout-theme` can be used together with th
 
 ## Related
 
-* [seed-color-scheme](/packs/seed-color-scheme)
-* [seed-color-scheme-helpscout](/packs/seed-color-scheme-helpscout)
+* [seed-color-scheme](/seed/packs/seed-color-scheme)
+* [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)

@@ -1,6 +1,7 @@
 ---
 title: Breakpoints
-section: Mixins
+description: "A collection of mixins that work with CSS media queries."
+section: Mixin
 layout: docs
 source: https://github.com/helpscout/seed-breakpoints
 seed-pack: seed-breakpoints
@@ -23,7 +24,7 @@ npm install seed-breakpoints --save
 
 ### Dependencies
 
-* [seed-props](/packs/seed-props)
+* [seed-props](/seed/packs/seed-props)
 
 
 ---
@@ -306,4 +307,4 @@ The `<h1>` starts off with a default (mobile) size of `tx-h5` (specified by a he
 
 ## Related
 
-* [seed-grid](/packs/seed-grid)
+* [seed-grid](/seed/packs/seed-grid)

@@ -1,6 +1,7 @@
 ---
 title: Props
-section: Mixins
+description: "A function/mixin combo that provides callback-like functionality with Sass maps."
+section: Mixin
 layout: docs
 source: https://github.com/helpscout/seed-props
 seed-pack: seed-props
@@ -217,5 +218,5 @@ The final generated buttons will have the appropriate `background` and `border-c
 
 ## Related
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-dash](/packs/seed-dash)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-dash](/seed/packs/seed-dash)

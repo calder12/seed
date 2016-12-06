@@ -1,6 +1,6 @@
 ---
 title: Control Group
-section: Objects
+section: Object
 layout: docs
 source: https://github.com/helpscout/seed-control-group
 seed-pack: seed-control-group
@@ -23,8 +23,8 @@ npm install seed-control-group --save
 
 ### Dependencies
 
-* [seed-border](/packs/seed-border)
-* [seed-publish](/packs/seed-publish)
+* [seed-border](/seed/packs/seed-border)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -47,7 +47,7 @@ npm install seed-control-group --save
 
 ### Button groups
 
-Using the button component from [seed-button](/packs/seed-button).
+Using the button component from [seed-button](/seed/packs/seed-button).
 
 {% example html %}
 <div class="o-control-group" role="group">
@@ -60,7 +60,7 @@ Using the button component from [seed-button](/packs/seed-button).
 
 ### Input addons
 
-Combining components from [seed-input-addons](/packs/seed-input-addons) and [seed-input](/packs/seed-input).
+Combining components from [seed-input-addons](/seed/packs/seed-input-addons) and [seed-input](/seed/packs/seed-input).
 
 {% example html %}
 <div class="o-control-group" role="group">
@@ -78,6 +78,6 @@ Combining components from [seed-input-addons](/packs/seed-input-addons) and [see
 
 ## Related
 
-* [seed-button](/packs/seed-button)
-* [seed-input](/packs/seed-input)
-* [seed-input-addons](/packs/seed-input-addons)
+* [seed-button](/seed/packs/seed-button)
+* [seed-input](/seed/packs/seed-input)
+* [seed-input-addons](/seed/packs/seed-input-addons)

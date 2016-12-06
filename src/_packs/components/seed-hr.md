@@ -1,6 +1,6 @@
 ---
 title: Horizontal rule
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-hr
 seed-pack: seed-hr
 ---
@@ -21,7 +21,7 @@ npm install seed-hr --save
 
 ## Dependencies
 
-* [seed-publish](/packs/seed-publish)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 

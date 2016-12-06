@@ -1,6 +1,6 @@
 ---
 title: Flexy
-section: Objects
+section: Object
 layout: docs
 source: https://github.com/helpscout/seed-flexy
 seed-pack: seed-flexy
@@ -23,8 +23,8 @@ npm install seed-flexy --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -44,7 +44,7 @@ Note: Items within will align to the outer edges of Flex.
 
 ## Example
 
-`.o-flexy` supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+`.o-flexy` supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="o-flexy">
@@ -117,7 +117,7 @@ Use the margin utility class of `u-mrg-*-auto` to help control the alignment of 
 
 ``.o-flexy__block`` is a utility component used to fill up space between or around ``.o-flexy__item`` elements.
 
-Supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="o-flexy">
@@ -146,7 +146,7 @@ Supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)
 
 You can apply the vertical alignment utility classes to vertically align the children elements within a ``.o-flexy``.
 
-All of the vertical alignment modifiers support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the vertical alignment modifiers support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="o-flexy o-flexy--top">
@@ -200,4 +200,4 @@ At the moment, Flexbox doesn't play nicely with CSS truncation (specifically the
 
 ## Related
 
-* [seed-inline](/packs/seed-inline)
+* [seed-inline](/seed/packs/seed-inline)

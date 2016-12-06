@@ -53,14 +53,14 @@ title: "Twitter - Tweet"
 ## Packs utilized
 
 * Components
-  * [seed-avatar](/packs/seed-avatar)
-  * [seed-thumbnail](/packs/seed-thumbnail)
+  * [seed-avatar](/seed/packs/seed-avatar)
+  * [seed-thumbnail](/seed/packs/seed-thumbnail)
 * Objects
-  * [seed-inline](/packs/seed-inline)
+  * [seed-inline](/seed/packs/seed-inline)
 * Text
-  * [seed-typography](/packs/seed-typography)
+  * [seed-typography](/seed/packs/seed-typography)
 * Themes
-  * [seed-helpscout-theme](/packs/seed-helpscout-theme)
+  * [seed-helpscout-theme](/seed/packs/seed-helpscout-theme)
 * Utilities
-  * [seed-display](/packs/seed-display)
-  * [seed-spacing](/packs/seed-spacing)
+  * [seed-display](/seed/packs/seed-display)
+  * [seed-spacing](/seed/packs/seed-spacing)

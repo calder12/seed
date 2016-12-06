@@ -1,6 +1,6 @@
 ---
 title: Shadow
-section: Themes
+section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-shadow
 seed-pack: seed-shadow
@@ -22,9 +22,9 @@ npm install seed-shadow --save
 
 ### Dependencies
 
-* [seed-dash](/packs/seed-dash)
-* [seed-props](/packs/seed-props)
-* [seed-publish](/packs/seed-publish)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-props](/seed/packs/seed-props)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 

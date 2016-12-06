@@ -1,5 +1,6 @@
 ---
 title: Base
+description: "Low-level styles that target base elements and selectors."
 section: Base
 source: https://github.com/helpscout/seed-base
 seed-pack: seed-base
@@ -21,7 +22,7 @@ npm install seed-base --save
 
 ### Dependencies
 
-* [seed-publish](/packs/seed-publish)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -31,7 +32,7 @@ npm install seed-base --save
 
 ## Usage
 
-It is recommended that `seed-base` be imported as near to the top of your SCSS as possible, but placed **after** [reset styles](/packs/seed-reset).
+It is recommended that `seed-base` be imported as near to the top of your SCSS as possible, but placed **after** [reset styles](/seed/packs/seed-reset).
 
 ```main.scss
 // Reset
@@ -53,4 +54,4 @@ It is recommended that `seed-base` be imported as near to the top of your SCSS a
 
 ## Related
 
-* [seed-reset](/packs/seed-reset)
+* [seed-reset](/seed/packs/seed-reset)

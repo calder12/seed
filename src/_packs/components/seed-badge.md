@@ -1,6 +1,6 @@
 ---
 title: Badge
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-badge
 seed-pack: seed-badge
 ---
@@ -21,9 +21,9 @@ npm install seed-badge --save
 
 ### Dependencies
 
-* [seed-dash](/packs/seed-dash)
-* [seed-publish](/packs/seed-publish)
-* [seed-states](/packs/seed-states)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-states](/seed/packs/seed-states)
 
 
 ---

@@ -9,7 +9,7 @@ bower_components
 _gh_pages
 _site
 .jekyll-metadata
-docs
+/seed
 
 src/_assets/vendors
 .asset-cache

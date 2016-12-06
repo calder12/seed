@@ -1,6 +1,7 @@
 ---
 title: Control
-section: Configs
+description: "A configuration of sizes for controls, such as inputs and buttons."
+section: Config
 layout: docs
 source: https://github.com/helpscout/seed-control
 seed-pack: seed-control
@@ -22,7 +23,7 @@ npm install seed-control --save
 
 ### Dependencies
 
-* [seed-dash](/packs/seed-dash)
+* [seed-dash](/seed/packs/seed-dash)
 
 
 ---
@@ -77,7 +78,7 @@ $seed-control-sizes: (
 @import "pack/seed-control/_index";
 ```
 
-Just be aware that other Sass code that use any of the `seed-control` variables will be affected (e.g. the [`seed-input` pack](/packs/seed-input)).
+Just be aware that other Sass code that use any of the `seed-control` variables will be affected (e.g. the [`seed-input` pack](/seed/packs/seed-input)).
 
 
 
@@ -86,7 +87,7 @@ Just be aware that other Sass code that use any of the `seed-control` variables 
 
 ## Usage
 
-It is recommended you use the `_get()` function from [seed-dash](/packs/seed-dash) to retrieve variables from the `seed-control` config.
+It is recommended you use the `_get()` function from [seed-dash](/seed/packs/seed-dash) to retrieve variables from the `seed-control` config.
 
 ```_button.scss
 // Dependencies
@@ -112,7 +113,7 @@ It is recommended you use the `_get()` function from [seed-dash](/packs/seed-das
 
 ## Related
 
-* [seed-button](/packs/seed-button)
-* [seed-dash](/packs/seed-dash)
-* [seed-input](/packs/seed-input)
-* [seed-input-addons](/packs/seed-input-addons)
+* [seed-button](/seed/packs/seed-button)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-input](/seed/packs/seed-input)
+* [seed-input-addons](/seed/packs/seed-input-addons)

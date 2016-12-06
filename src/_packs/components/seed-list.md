@@ -1,6 +1,6 @@
 ---
 title: List
-section: Components
+section: Component
 source: https://github.com/helpscout/seed-list
 seed-pack: seed-list
 ---
@@ -21,10 +21,10 @@ npm install seed-list --save
 
 ### Dependencies
 
-* [seed-border](/packs/seed-border)
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
-* [seed-spacing](/packs/seed-spacing)
+* [seed-border](/seed/packs/seed-border)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
+* [seed-spacing](/seed/packs/seed-spacing)
 
 
 
@@ -65,7 +65,7 @@ npm install seed-list --save
 
 ### Block
 
-Supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <ul class="c-list c-list--block">
@@ -106,7 +106,7 @@ Supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)
 
 ### Inline
 
-Supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <ul class="c-list c-list--inline">
@@ -124,7 +124,7 @@ Supports **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)
 
 ## Sizes
 
-All of the following sizes support **[responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers)**.
+All of the following sizes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 
 ### Extra small
@@ -199,5 +199,5 @@ All of the following sizes support **[responsive modifiers](/packs/seed-breakpoi
 
 ## Related
 
-* [seed-dropdown](/packs/seed-dropdown)
-* [seed-table](/packs/seed-dropdown)
+* [seed-dropdown](/seed/packs/seed-dropdown)
+* [seed-table](/seed/packs/seed-dropdown)

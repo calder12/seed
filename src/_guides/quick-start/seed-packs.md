@@ -34,7 +34,7 @@ Getting setup with Seed packs can be thought of in 3 steps (the **"three I's"** 
 
 Seed's CSS modules live on and are managed by [npm](https://www.npmjs.com/) (Node's package manager). If you're workflow already has a `package.json` file, then you're ready to start adding some [Seed packs](/packs)!
 
-For this guide, we're going to be installing [`seed-button`](/packs/seed-button), [`seed-input`](/packs/seed-input), and [`seed-reset`](/packs/seed-reset).
+For this guide, we're going to be installing [`seed-button`](/seed/packs/seed-button), [`seed-input`](/seed/packs/seed-input), and [`seed-reset`](/seed/packs/seed-reset).
 
 Run the following command in your command line:
 

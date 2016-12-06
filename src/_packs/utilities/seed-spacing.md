@@ -1,6 +1,6 @@
 ---
 title: Spacing
-section: Utilities
+section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-spacing
 seed-pack: seed-spacing
@@ -22,8 +22,8 @@ npm install seed-spacing --save
 
 ### Dependencies
 
-* [seed-breakpoints](/packs/seed-breakpoints)
-* [seed-publish](/packs/seed-publish)
+* [seed-breakpoints](/seed/packs/seed-breakpoints)
+* [seed-publish](/seed/packs/seed-publish)
 
 
 
@@ -124,7 +124,7 @@ See the list of [directional modifiers](/#directional-modifiers).
 
 The following example is applicable to both padding and margin utility classes.
 
-See the list of [responsive modifiers](/packs/seed-breakpoints/#responsive-modifiers).
+See the list of [responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers).
 
 ```
 .u-mrg-t-5@md
