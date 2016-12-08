@@ -1,5 +1,6 @@
 ---
 title: Centralize
+description: "Vertically and horizontally alignment elements."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-centralize

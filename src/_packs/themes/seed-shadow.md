@@ -1,5 +1,6 @@
 ---
 title: Shadow
+description: "Thematic classes to adjust box-shadow styles."
 section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-shadow

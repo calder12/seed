@@ -1,5 +1,6 @@
 ---
 title: Z-index
+description: "Utility classes that provide a range of z-index values."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-zi

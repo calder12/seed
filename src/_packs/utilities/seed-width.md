@@ -1,5 +1,6 @@
 ---
 title: Width
+description: "Utility classes that provide a range of width (%) sizes."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width

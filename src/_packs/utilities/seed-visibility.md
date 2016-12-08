@@ -1,5 +1,6 @@
 ---
 title: Visibility
+description: "Utility classes that adjust the visibility styles of elements."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-visibility

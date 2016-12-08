@@ -20,6 +20,7 @@ gulp.task('scripts-browserify', function(callback) {
     .bundle()
     .on('error', function (e) {
       gutil.log(e);
+      this.emit('end');
     })
     .pipe(source('main.js'))
     .pipe(gulp.dest(global.config.dest + '/js/'))

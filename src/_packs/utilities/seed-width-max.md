@@ -1,5 +1,6 @@
 ---
 title: Width (Max)
+description: "Utility classes that provide a range of max width (%) sizes."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-max

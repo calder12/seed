@@ -2,7 +2,7 @@
 title: Input Addons
 section: Component
 source: https://github.com/helpscout/seed-input
-seed-pack: seed-input
+seed-pack: seed-input-addons
 ---
 
 Input addons component pack for Seed

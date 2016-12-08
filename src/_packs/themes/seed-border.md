@@ -1,5 +1,6 @@
 ---
 title: Border
+description: "Thematic classes to adjust border styles."
 section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-border

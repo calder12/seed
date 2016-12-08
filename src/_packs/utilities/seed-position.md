@@ -1,5 +1,6 @@
 ---
 title: Position
+description: "Utility classes that adjust the position styles of elements."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-position

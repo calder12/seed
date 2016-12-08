@@ -1,5 +1,6 @@
 ---
 title: Spacing
+description: "Utility classes that provide a range of margin and padding adjustment styles."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-spacing

@@ -1,5 +1,6 @@
 ---
 title: Floats
+description: "Utility classes that provide floating and clearfixing styles to elements."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-floats

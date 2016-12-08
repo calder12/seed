@@ -1,5 +1,6 @@
 ---
 title: Width (Min)
+description: "Utility classes that provide a range of min width (%) sizes."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-min

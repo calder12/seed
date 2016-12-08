@@ -1,0 +1,72 @@
+<div id="js-seed-packs">
+  <div class="u-mrg-b-2">
+    <div class="u-mrg-b-2">
+      <input class="c-input search" id="js-seed-pack-search" placeholder="Example: button" />
+    </div>
+    <div class="o-flexy">
+      <div class="o-flexy__item">
+        We've found <span id="js-seed-pack-count">0 packs</span>
+      </div>
+      <div class="o-flexy__item">
+        <div class="o-inline tx-sm">
+          <div class="o-inline__item">
+            <span class="c-input-static c-input-static--sm t-tx-charcoal-300">Pack type:</span>
+          </div>
+          <div class="o-inline__item u-mrg-r-5">
+            <select class="c-input c-input--sm" id="js-seed-pack-filter">
+              <option value="all" selected>All Types</option>
+              <option value="base">Base</option>
+              <option value="component">Component</option>
+              <option value="config">Config</option>
+              <option value="function">Function</option>
+              <option value="mixin">Mixin</option>
+              <option value="text">Text</option>
+              <option value="theme">Theme</option>
+              <option value="utility">Utility</option>
+            </select>
+          </div>
+          <div class="o-inline__item">
+            <span class="c-input-static c-input-static--sm t-tx-charcoal-300">Sort by:</span>
+          </div>
+          <div class="o-inline__item">
+            <select class="c-input c-input--sm" id="js-seed-pack-sort">
+              <option value="name">Name</option>
+              <option value="section">Type</option>
+              <option value="pack">Repo name</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="c-list c-list--bordered list" style="display: none;" id="js-seed-pack-list">
+    {% for pack in site.packs %}
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/{{ pack.slug }}">
+            <span class="name">
+              {{ pack.title }}
+            </span>
+          </a>
+        </h3>
+        {% if pack.description %}
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            {{ pack.description }}
+          </p>
+        {% endif %}
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--{{ pack.section | slugify }}"></span>
+              <span class="t-tx-charcoal-200 section">{{ pack.section }}</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">{{ pack.seed-pack }}</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </div>
+</div>

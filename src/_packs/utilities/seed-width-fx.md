@@ -1,5 +1,6 @@
 ---
 title: Width (Fixed)
+description: "Utility classes that provide a range of fixed width (px) sizes."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-fx

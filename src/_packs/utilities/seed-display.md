@@ -1,5 +1,6 @@
 ---
 title: Display
+description: "Utility classes that adjust the display styles of elements."
 section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-display

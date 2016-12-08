@@ -1,5 +1,6 @@
 ---
 title: Background and font colors (Help Scout)
+description: "Thematic classes to adjust background and text colors – based on the Help Scout color scheme."
 section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-helpscout-theme
