@@ -19,6 +19,10 @@ gulp.task('copy-styleguide', function() {
     ]).pipe(gulp.dest('src/_templates', options));
 
   gulp.src([
+    'node_modules/styleguide/src/fonts/**/*'
+  ]).pipe(gulp.dest('src/fonts', options));
+
+  gulp.src([
     'node_modules/styleguide/src/images/**/*'
   ]).pipe(gulp.dest('src/images', options));
 
