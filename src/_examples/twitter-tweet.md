@@ -9,7 +9,7 @@ title: "Twitter - Tweet"
   <div class="o-flexy o-flexy--top">
     <div class="o-flexy__item u-mrg-r-3">
       <a href="#" class="c-avatar">
-        <img src="/images/examples/cupcake.jpg" class="c-avatar__image">
+        <img src="/seed/images/examples/cupcake.jpg" class="c-avatar__image">
       </a>
     </div>
     <div class="o-flexy__block">
@@ -24,7 +24,7 @@ title: "Twitter - Tweet"
       <div class="u-mrg-b-1">
         Macaroon gingerbread danish toffee gummies lemon drops chocolate donut danish.
         <div class="c-card u-mrg-v-2">
-          <img src="/images/examples/boston-001.jpg">
+          <img src="/seed/images/examples/boston-001.jpg">
         </div>
       </div>
       <div class="o-inline t-tx-charcoal-200">

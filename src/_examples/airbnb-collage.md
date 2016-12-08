@@ -11,15 +11,15 @@ title: "Airbnb - City guide collage"
       <div class="o-row o-row--xs u-mrg-b-1">
         <div class="o-col-8">
           <div class="c-thumbnail c-thumbnail--square">
-            <img src="/images/examples/boston-001.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-001.jpg" class="c-thumbnail__image">
           </div>
         </div>
         <div class="o-col-4">
           <div class="c-thumbnail c-thumbnail--square u-mrg-b-1">
-            <img src="/images/examples/boston-002.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-002.jpg" class="c-thumbnail__image">
           </div>
           <div class="c-thumbnail c-thumbnail--square">
-            <img src="/images/examples/boston-003.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-003.jpg" class="c-thumbnail__image">
           </div>
         </div>
       </div>
@@ -34,15 +34,15 @@ title: "Airbnb - City guide collage"
       <div class="o-row o-row--xs u-mrg-b-1">
         <div class="o-col-8">
           <div class="c-thumbnail c-thumbnail--square">
-            <img src="/images/examples/boston-002.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-002.jpg" class="c-thumbnail__image">
           </div>
         </div>
         <div class="o-col-4">
           <div class="c-thumbnail c-thumbnail--square u-mrg-b-1">
-            <img src="/images/examples/boston-001.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-001.jpg" class="c-thumbnail__image">
           </div>
           <div class="c-thumbnail c-thumbnail--square">
-            <img src="/images/examples/boston-003.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-003.jpg" class="c-thumbnail__image">
           </div>
         </div>
       </div>
@@ -57,15 +57,15 @@ title: "Airbnb - City guide collage"
       <div class="o-row o-row--xs u-mrg-b-1">
         <div class="o-col-8">
           <div class="c-thumbnail c-thumbnail--square">
-            <img src="/images/examples/boston-003.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-003.jpg" class="c-thumbnail__image">
           </div>
         </div>
         <div class="o-col-4">
           <div class="c-thumbnail c-thumbnail--square u-mrg-b-1">
-            <img src="/images/examples/boston-002.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-002.jpg" class="c-thumbnail__image">
           </div>
           <div class="c-thumbnail c-thumbnail--square">
-            <img src="/images/examples/boston-001.jpg" class="c-thumbnail__image">
+            <img src="/seed/images/examples/boston-001.jpg" class="c-thumbnail__image">
           </div>
         </div>
       </div>
@@ -82,15 +82,15 @@ title: "Airbnb - City guide collage"
   <div class="o-row o-row--xs u-mrg-b-1">
     <div class="o-col-8">
       <div class="c-thumbnail c-thumbnail--square">
-        <img src="/images/examples/boston-001.jpg" class="c-thumbnail__image">
+        <img src="/seed/images/examples/boston-001.jpg" class="c-thumbnail__image">
       </div>
     </div>
     <div class="o-col-4">
       <div class="c-thumbnail c-thumbnail--square u-mrg-b-1">
-        <img src="/images/examples/boston-002.jpg" class="c-thumbnail__image">
+        <img src="/seed/images/examples/boston-002.jpg" class="c-thumbnail__image">
       </div>
       <div class="c-thumbnail c-thumbnail--square">
-        <img src="/images/examples/boston-003.jpg" class="c-thumbnail__image">
+        <img src="/seed/images/examples/boston-003.jpg" class="c-thumbnail__image">
       </div>
     </div>
   </div>

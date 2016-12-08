@@ -36,7 +36,7 @@ npm install seed-thumbnail --save
 
 {% example html %}
 <div class="c-thumbnail">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 
@@ -48,7 +48,7 @@ Use the `<a>` selector for the `.c-thumbnail` class to create clickable thumbnai
 
 {% example html %}
 <a class="c-thumbnail" href="#">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </a>
 {% endexample %}
 
@@ -67,7 +67,7 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--wide">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 
@@ -80,7 +80,7 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--sd">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 
@@ -93,7 +93,7 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--square">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 
@@ -109,7 +109,7 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--top">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 
@@ -118,7 +118,7 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--middle">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 
@@ -127,7 +127,7 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--bottom">
-  <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
 

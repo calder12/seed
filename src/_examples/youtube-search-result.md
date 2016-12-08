@@ -9,7 +9,7 @@ title: "YouTube - Search result"
   <div class="o-flexy__item u-mrg-r-4">
     <div class="u-width-fx-3 u-width-fx-4@lg">
       <a href="#" class="c-thumbnail">
-        <img src="/images/examples/cupcake.jpg" class="c-thumbnail__image">
+        <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
       </a>
     </div>
   </div>
