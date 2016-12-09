@@ -4,6 +4,7 @@ description: "Normalizes HTML element styles to ensure better consistency and ad
 section: Base
 source: https://github.com/helpscout/seed-reset
 seed-pack: seed-reset
+keywords: base, reboot, reset, normalize
 ---
 
 Reset pack for Seed

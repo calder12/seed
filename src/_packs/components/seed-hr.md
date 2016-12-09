@@ -1,8 +1,10 @@
 ---
 title: Horizontal rule
+description: "Component that provides styling for a horizontal line."
 section: Component
 source: https://github.com/helpscout/seed-hr
 seed-pack: seed-hr
+keywords: horizontal, hr, border
 ---
 
 Horizontal rule component pack for Seed

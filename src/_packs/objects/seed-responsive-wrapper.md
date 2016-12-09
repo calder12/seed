@@ -4,6 +4,7 @@ section: Object
 layout: docs
 source: https://github.com/helpscout/seed-responsive-wrapper
 seed-pack: seed-responsive-wrapper
+keywords: responsive, overflow, scrollbar
 ---
 
 Responsive wrapper object pack for Seed

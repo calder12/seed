@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-overflow
 seed-pack: seed-overflow
+keywords: overflow, hidden, scroll
 ---
 
 Overflow utility pack for Seed

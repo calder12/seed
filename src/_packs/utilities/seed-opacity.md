@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-opacity
 seed-pack: seed-opacity
+keywords: transparent, opacity, transparency
 ---
 
 Opacity utility pack for Seed

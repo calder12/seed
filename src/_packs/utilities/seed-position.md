@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-position
 seed-pack: seed-position
+keywords: position, relative, absolute, fixed
 ---
 
 Position utility pack for Seed

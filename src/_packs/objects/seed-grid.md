@@ -4,6 +4,7 @@ section: Object
 layout: docs
 source: https://github.com/helpscout/seed-grid
 seed-pack: seed-grid
+keywords: grid, container, row, col, column, responsive
 ---
 
 Grid system pack for Seed

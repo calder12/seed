@@ -3,6 +3,7 @@ title: Popover
 section: Component
 source: https://github.com/helpscout/seed-popover
 seed-pack: seed-popover
+keywords: popover, bootstrap
 ---
 
 Popover component pack for Seed

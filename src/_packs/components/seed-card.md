@@ -1,8 +1,10 @@
 ---
 title: Card
+description: "Component that provides a flexible UI container. Includes support for a variation of sizes."
 section: Component
 source: https://github.com/helpscout/seed-card
 seed-pack: seed-card
+keywords: card, panel, container, wrapper
 ---
 
 Card component pack for Seed

@@ -5,6 +5,7 @@ section: Text
 layout: docs
 source: https://github.com/helpscout/seed-typography
 seed-pack: seed-typography
+keywords: typography, text, tx, font, weight, size
 ---
 
 Typography pack for Seed

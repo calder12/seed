@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-spacing
 seed-pack: seed-spacing
+keywords: margin, padding, mrg, pad, spacing
 ---
 
 Spacing utility pack for Seed

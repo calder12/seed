@@ -4,6 +4,7 @@ description: "Low-level styles that target base elements and selectors."
 section: Base
 source: https://github.com/helpscout/seed-base
 seed-pack: seed-base
+keywords: base
 ---
 
 Base styles pack for Seed

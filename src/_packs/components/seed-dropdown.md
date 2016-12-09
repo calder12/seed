@@ -1,8 +1,10 @@
 ---
 title: Dropdown
+description: "Component to encapsulate multiple user-actions . Includes support for a variation of sizes, styles, and states."
 section: Component
 source: https://github.com/helpscout/seed-dropdown
 seed-pack: seed-dropdown
+keywords: dropdown, select, bootstrap
 ---
 
 Dropdown component pack for Seed

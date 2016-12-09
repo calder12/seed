@@ -4,6 +4,7 @@ section: Object
 layout: docs
 source: https://github.com/helpscout/seed-inline
 seed-pack: seed-inline
+keywords: inline, list
 ---
 
 Inline object pack for Seed

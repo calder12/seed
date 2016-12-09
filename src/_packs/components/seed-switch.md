@@ -3,6 +3,7 @@ title: Switch
 section: Component
 source: https://github.com/helpscout/seed-switch
 seed-pack: seed-switch
+keywords: switch, checkbox
 ---
 
 Switch component pack for Seed

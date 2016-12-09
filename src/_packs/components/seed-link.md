@@ -3,6 +3,7 @@ title: Link
 section: Component
 source: https://github.com/helpscout/seed-link
 seed-pack: seed-link
+keywords: link, a
 ---
 
 Link component pack for Seed

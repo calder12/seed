@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-visibility
 seed-pack: seed-visibility
+keywords: visibility
 ---
 
 Visibility utility pack for Seed

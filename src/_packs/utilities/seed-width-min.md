@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-min
 seed-pack: seed-width-min
+keywords: min-width, min, width
 ---
 
 Width (min) utility pack for Seed

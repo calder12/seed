@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-max
 seed-pack: seed-width-max
+keywords: max-width, max, width
 ---
 
 Width (max) utility pack for Seed

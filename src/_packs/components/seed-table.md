@@ -3,6 +3,7 @@ title: Table
 section: Component
 source: https://github.com/helpscout/seed-table
 seed-pack: seed-table
+keywords: table
 ---
 
 Table component pack for Seed

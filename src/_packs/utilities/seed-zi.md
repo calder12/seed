@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-zi
 seed-pack: seed-zi
+keywords: z-index, z index, z, layer
 ---
 
 Z-index utility pack for Seed

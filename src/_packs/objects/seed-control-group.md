@@ -4,6 +4,7 @@ section: Object
 layout: docs
 source: https://github.com/helpscout/seed-control-group
 seed-pack: seed-control-group
+keywords: btn-group, control, group, btn
 ---
 
 Control group object pack for Seed

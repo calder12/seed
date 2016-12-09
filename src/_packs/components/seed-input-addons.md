@@ -1,8 +1,10 @@
 ---
 title: Input Addons
+description: "Components to provide additional context for form inputs. Includes support for a variation of sizes."
 section: Component
 source: https://github.com/helpscout/seed-input
 seed-pack: seed-input-addons
+keywords: form, input, form control, control, addons, add-ons
 ---
 
 Input addons component pack for Seed

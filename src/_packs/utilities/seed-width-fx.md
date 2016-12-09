@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width-fx
 seed-pack: seed-width-fx
+keywords: width, fixed, px
 ---
 
 Width (fixed) utility pack for Seed

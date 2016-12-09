@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-floats
 seed-pack: seed-floats
+keywords: float, pull, left, right, clearfix, clear
 ---
 
 Floats utility pack for Seed

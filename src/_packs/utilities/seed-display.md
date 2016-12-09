@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-display
 seed-pack: seed-display
+keywords: display, block, hide, responsive
 ---
 
 Display utility pack for Seed

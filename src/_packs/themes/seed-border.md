@@ -5,6 +5,7 @@ section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-border
 seed-pack: seed-border
+keywords: border
 ---
 
 Border theme pack for Seed

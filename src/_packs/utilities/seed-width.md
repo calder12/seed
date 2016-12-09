@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-width
 seed-pack: seed-width
+keywords: width
 ---
 
 Width utility pack for Seed

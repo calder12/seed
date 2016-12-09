@@ -5,6 +5,7 @@ section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-shadow
 seed-pack: seed-shadow
+keywords: box-shadow, box, shadow, animate, hover, drop
 ---
 
 Shadow theme pack for Seed

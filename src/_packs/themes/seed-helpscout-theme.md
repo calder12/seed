@@ -5,6 +5,7 @@ section: Theme
 layout: docs
 source: https://github.com/helpscout/seed-helpscout-theme
 seed-pack: seed-helpscout-theme
+keywords: helpscout, color, theme, bg, text, tx, font, color
 ---
 
 Help Scout theme pack for Seed

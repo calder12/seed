@@ -4,6 +4,7 @@ section: Object
 layout: docs
 source: https://github.com/helpscout/seed-flexy
 seed-pack: seed-flexy
+keywords: flexy, flexbox, align, float, pull
 ---
 
 Flex object pack for Seed

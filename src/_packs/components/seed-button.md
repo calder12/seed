@@ -1,8 +1,10 @@
 ---
 title: Button
+description: "Component for user-actions. Includes support for a variation of sizes, styles, and states."
 section: Component
 source: https://github.com/helpscout/seed-button
 seed-pack: seed-button
+keywords: button, btn, form
 ---
 
 Button component pack for Seed

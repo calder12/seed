@@ -3,6 +3,7 @@ title: Tooltip
 section: Component
 source: https://github.com/helpscout/seed-tooltip
 seed-pack: seed-tooltip
+keywords: tooltip, bootstrap
 ---
 
 Tooltip component pack for Seed

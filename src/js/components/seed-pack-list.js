@@ -1,5 +1,7 @@
 // Components :: Seed Pack List
 
+var List = require('list.js');
+
 var Component = function() {
   this.events = $({});
   this.options = {
@@ -8,6 +10,7 @@ var Component = function() {
       'section',
       'description',
       'pack',
+      'keywords',
     ]
   };
 

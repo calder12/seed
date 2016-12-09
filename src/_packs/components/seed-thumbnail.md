@@ -3,6 +3,7 @@ title: Thumbnail
 section: Component
 source: https://github.com/helpscout/seed-thumbnail
 seed-pack: seed-thumbnail
+keywords: thumbnail, image, "16:9"
 ---
 
 Thumbnail component pack for Seed

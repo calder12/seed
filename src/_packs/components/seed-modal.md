@@ -3,6 +3,7 @@ title: Modal
 section: Component
 source: https://github.com/helpscout/seed-modal
 seed-pack: seed-modal
+keywords: modal, bootstrap
 ---
 
 Modal component pack for Seed

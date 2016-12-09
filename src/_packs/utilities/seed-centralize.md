@@ -5,6 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-centralize
 seed-pack: seed-centralize
+keywords: align, center, vertical
 ---
 
 Centralize utility pack for Seed

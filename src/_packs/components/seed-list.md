@@ -3,6 +3,7 @@ title: List
 section: Component
 source: https://github.com/helpscout/seed-list
 seed-pack: seed-list
+keywords: list, unstyled, unstyle
 ---
 
 List component pack for Seed
