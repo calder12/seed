@@ -4,13 +4,8 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
 var gutil = require('gulp-util');
+var options = require('./_options');
 var path = require('path');
-
-var options = {
-  interval: 500, // default 100
-  debounceDelay: 1000, // default 500
-  mode: 'poll'
-};
 
 gulp.task('watch-jekyll-data', function () {
   gulp.watch([

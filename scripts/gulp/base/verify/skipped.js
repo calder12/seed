@@ -5,5 +5,5 @@ var gulp = require('gulp');
 
 gulp.task('verify-skipped', function(callback) {
   var task = 'echo "\nIt appears that you may be offline.\nDependency checks skipped!"';
-  return global.exec(task, callback);
+  return global.spawn(task, callback);
 });

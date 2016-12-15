@@ -5,5 +5,5 @@ var gulp = require('gulp');
 
 gulp.task('clean-jekyll', function(callback) {
   var task = 'bundle exec jekyll clean';
-  return global.exec(task, callback);
+  return global.spawn(task, callback);
 });

@@ -6,5 +6,5 @@ var gulp = require('gulp');
 // Default: Initial jekyll build
 gulp.task('jekyll', function(callback) {
   var task = 'bundle exec jekyll build';
-  return global.exec(task, callback);
+  return global.spawn(task, callback);
 });

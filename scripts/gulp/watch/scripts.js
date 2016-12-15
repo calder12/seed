@@ -2,12 +2,7 @@
 'use strict';
 
 var gulp = require('gulp');
-
-var options = {
-  interval: 500, // default 100
-  debounceDelay: 1000, // default 500
-  mode: 'poll'
-};
+var options = require('./_options');
 
 gulp.task('watch-scripts', function (callback) {
   gulp.watch([

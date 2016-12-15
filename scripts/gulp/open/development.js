@@ -5,5 +5,5 @@ var gulp = require('gulp');
 
 gulp.task('open-development', function(callback) {
   var task = 'open http://localhost:'+global.config.port+'/'+global.config.name;
-  return global.exec(task, callback);
+  return global.spawn(task, callback);
 });

@@ -4,13 +4,8 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var gutil = require('gulp-util');
+var options = require('./_options');
 var path = require('path');
-
-var options = {
-  interval: 500, // default 100
-  debounceDelay: 1000, // default 500
-  mode: 'poll'
-};
 
 gulp.task('watch-styles', function (callback) {
   gulp.watch([

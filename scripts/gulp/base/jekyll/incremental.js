@@ -6,5 +6,5 @@ var gulp = require('gulp');
 // Development: Incremental Jekyll rebuild
 gulp.task('jekyll-incremental', function(callback) {
   var task = 'bundle exec jekyll build --incremental';
-  return global.exec(task, callback);
+  return global.spawn(task, callback);
 });
