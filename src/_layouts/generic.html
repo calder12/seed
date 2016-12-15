@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    {% include docs-nav.html %}
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content" class="{{ page.class }}">
+
+            {{ content }}
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  {% include footer-data.html %}
+  {% include footer-scripts.html %}
+
+</body>
+
+</html>
+
