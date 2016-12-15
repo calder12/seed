@@ -73,7 +73,6 @@
 
   // Add anchors
   anchors.add('.s-hs-docs h2, .s-hs-docs h3, .s-hs-docs h4');
-  anchors.add('.s-hs-index h1');
 
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
