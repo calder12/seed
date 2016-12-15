@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Packs | Seed CSS Documentation</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/seed/css/main.css?v=28f36bae21a295fe90d4c7cdb9263efc">
+  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=d3f5fafeefc696d1ec10f2bfe3085ca5">
+  
+  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    <div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+      <div class="tx-center">
+        <h1>Seed CSS</h1>
+        <div class="tx-12 tx-uppercase">
+          <strong>Made By Help Scout</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      <ul class="c-list">
+  <li class="nav__item">
+    <a href="/seed/#get-started">Getting Started</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/guides/quick-start/seed-packs/">Quick Guide for Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/packs/">Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/examples/">Code Examples</a>
+  </li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                Packs
+              </h1>
+
+              
+
+              
+
+            </header>
+            
+
+            
+
+
+<div id="hs-doc-packs" class="s-hs-docs s-hs-docs--packs s-hs-docs--">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  <p class="tx-300 tx-lead u-mrg-b-2">
+  Browse our collection of Seed Packs!
+</p>
+<div id="js-seed-packs">
+  <div class="u-mrg-b-2">
+    <div class="u-mrg-b-2">
+      <input class="c-input search" id="js-seed-pack-search" placeholder="Example: button" />
+    </div>
+    <div class="o-flexy">
+      <div class="o-flexy__item">
+        We've found <span id="js-seed-pack-count">0 packs</span>
+      </div>
+      <div class="o-flexy__item">
+        <div class="o-inline tx-sm">
+          <div class="o-inline__item">
+            <span class="c-input-static c-input-static--sm t-tx-charcoal-300">Pack type:</span>
+          </div>
+          <div class="o-inline__item u-mrg-r-5">
+            <select class="c-input c-input--sm" id="js-seed-pack-filter">
+              <option value="all" selected="">All Types</option>
+              <option value="base">Base</option>
+              <option value="component">Component</option>
+              <option value="config">Config</option>
+              <option value="function">Function</option>
+              <option value="mixin">Mixin</option>
+              <option value="text">Text</option>
+              <option value="theme">Theme</option>
+              <option value="utility">Utility</option>
+            </select>
+          </div>
+          <div class="o-inline__item">
+            <span class="c-input-static c-input-static--sm t-tx-charcoal-300">Sort by:</span>
+          </div>
+          <div class="o-inline__item">
+            <select class="c-input c-input--sm" id="js-seed-pack-sort">
+              <option value="name">Name</option>
+              <option value="section">Type</option>
+              <option value="pack">Repo name</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="c-list c-list--bordered list" style="display: none;" id="js-seed-pack-list">
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-base">
+            <span class="name">
+              Base
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Low-level styles that target base elements and selectors.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--base"></span>
+              <span class="t-tx-charcoal-200 section">Base</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-base</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          base
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-reset">
+            <span class="name">
+              Reset
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Normalizes HTML element styles to ensure better consistency and adherence to modern standards.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--base"></span>
+              <span class="t-tx-charcoal-200 section">Base</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-reset</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          base, reboot, reset, normalize
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-alert">
+            <span class="name">
+              Alert
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component that provides contextual feedback for actions. Includes support for a variation of states.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-alert</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          alert, status
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-avatar">
+            <span class="name">
+              Avatar
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component that stylizes images for use as avatars. Includes support for a variation of sizes and styles.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-avatar</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          avatar, image
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-badge">
+            <span class="name">
+              Badge
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component that helps indicate status. Includes support for a variation of states.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-badge</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          badge, label, count
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-button">
+            <span class="name">
+              Button
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component for user-actions. Includes support for a variation of sizes, styles, and states.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-button</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          button, btn, form
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-card">
+            <span class="name">
+              Card
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component that provides a flexible UI container. Includes support for a variation of sizes.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-card</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          card, panel, container, wrapper
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-dropdown">
+            <span class="name">
+              Dropdown
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component to encapsulate multiple user-actions . Includes support for a variation of sizes, styles, and states.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-dropdown</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          dropdown, select, bootstrap
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-hr">
+            <span class="name">
+              Horizontal rule
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component that provides styling for a horizontal line.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-hr</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          horizontal, hr, border
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-input-addons">
+            <span class="name">
+              Input Addons
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Components to provide additional context for form inputs. Includes support for a variation of sizes.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-input-addons</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          form, input, form control, control, addons, add-ons
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-input">
+            <span class="name">
+              Input
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Component for user-input. Includes support for a variation of sizes and states.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-input</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          form, input, form control, control
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-link">
+            <span class="name">
+              Link
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-link</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          link, a
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-list">
+            <span class="name">
+              List
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-list</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          list, unstyled, unstyle
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-modal">
+            <span class="name">
+              Modal
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-modal</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          modal, bootstrap
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-popover">
+            <span class="name">
+              Popover
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-popover</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          popover, bootstrap
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-switch">
+            <span class="name">
+              Switch
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-switch</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          switch, checkbox
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-table">
+            <span class="name">
+              Table
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-table</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          table
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-thumbnail">
+            <span class="name">
+              Thumbnail
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-thumbnail</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          thumbnail, image, "16:9"
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-tooltip">
+            <span class="name">
+              Tooltip
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--component"></span>
+              <span class="t-tx-charcoal-200 section">Component</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-tooltip</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          tooltip, bootstrap
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-color-scheme-helpscout">
+            <span class="name">
+              Color scheme (Help Scout)
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A color scheme configuration based on Help Scout's color palette.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--config"></span>
+              <span class="t-tx-charcoal-200 section">Config</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-color-scheme-helpscout</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-control">
+            <span class="name">
+              Control
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A configuration of sizes for controls, such as inputs and buttons.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--config"></span>
+              <span class="t-tx-charcoal-200 section">Config</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-control</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-states">
+            <span class="name">
+              States
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A configuration of styles for states, such as error or success.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--config"></span>
+              <span class="t-tx-charcoal-200 section">Config</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-states</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-dash">
+            <span class="name">
+              Dash
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Functions that get, set, and extend Sass maps.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--function"></span>
+              <span class="t-tx-charcoal-200 section">Function</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-dash</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-this">
+            <span class="name">
+              This
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A function that reliably gets the current working selector.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--function"></span>
+              <span class="t-tx-charcoal-200 section">Function</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-this</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-breakpoints">
+            <span class="name">
+              Breakpoints
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A collection of mixins that work with CSS media queries.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--mixin"></span>
+              <span class="t-tx-charcoal-200 section">Mixin</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-breakpoints</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-color-scheme">
+            <span class="name">
+              Color scheme system
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A mixin that defines and manages a Sass color scheme configuration.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--mixin"></span>
+              <span class="t-tx-charcoal-200 section">Mixin</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-color-scheme</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-exclude">
+            <span class="name">
+              Exclude
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A mixin that prevents published Seed packs from compiling.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--mixin"></span>
+              <span class="t-tx-charcoal-200 section">Mixin</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-exclude</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-family">
+            <span class="name">
+              Family
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Mixins that enable manipulation of parent or sibling selectors.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--mixin"></span>
+              <span class="t-tx-charcoal-200 section">Mixin</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-family</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-props">
+            <span class="name">
+              Props
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A function/mixin combo that provides callback-like functionality with Sass maps.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--mixin"></span>
+              <span class="t-tx-charcoal-200 section">Mixin</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-props</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-publish">
+            <span class="name">
+              Publish
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Mixin that acts as an include guard, preventing undesired duplication of compiled CSS styles.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--mixin"></span>
+              <span class="t-tx-charcoal-200 section">Mixin</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-publish</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-control-group">
+            <span class="name">
+              Control Group
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--object"></span>
+              <span class="t-tx-charcoal-200 section">Object</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-control-group</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          btn-group, control, group, btn, btn group, button group
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-flexy">
+            <span class="name">
+              Flexy
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--object"></span>
+              <span class="t-tx-charcoal-200 section">Object</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-flexy</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          flexy, flexbox, align, float, pull
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-grid">
+            <span class="name">
+              Grid system
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--object"></span>
+              <span class="t-tx-charcoal-200 section">Object</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-grid</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          grid, container, row, col, column, responsive
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-inline">
+            <span class="name">
+              Inline
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--object"></span>
+              <span class="t-tx-charcoal-200 section">Object</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-inline</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          inline, list
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-responsive-wrapper">
+            <span class="name">
+              Responsive Wrapper
+            </span>
+          </a>
+        </h3>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--object"></span>
+              <span class="t-tx-charcoal-200 section">Object</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-responsive-wrapper</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          responsive, overflow, scrollbar
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-border">
+            <span class="name">
+              Border
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Thematic classes to adjust border styles.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--theme"></span>
+              <span class="t-tx-charcoal-200 section">Theme</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-border</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          border
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-helpscout-theme">
+            <span class="name">
+              Background and font colors (Help Scout)
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Thematic classes to adjust background and text colors – based on the Help Scout color scheme.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--theme"></span>
+              <span class="t-tx-charcoal-200 section">Theme</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-helpscout-theme</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          helpscout, color, theme, bg, text, tx, font, color
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-shadow">
+            <span class="name">
+              Shadow
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Thematic classes to adjust box-shadow styles.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--theme"></span>
+              <span class="t-tx-charcoal-200 section">Theme</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-shadow</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          box-shadow, box, shadow, animate, hover, drop
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-typography">
+            <span class="name">
+              Typography
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            A collection of typography based styles.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--text"></span>
+              <span class="t-tx-charcoal-200 section">Text</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-typography</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          typography, text, tx, font, weight, size
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-centralize">
+            <span class="name">
+              Centralize
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Vertically and horizontally alignment elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-centralize</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          align, center, vertical
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-display">
+            <span class="name">
+              Display
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that adjust the display styles of elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-display</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          display, block, hide, responsive
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-floats">
+            <span class="name">
+              Floats
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide floating and clearfixing styles to elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-floats</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          float, pull, left, right, clearfix, clear
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-opacity">
+            <span class="name">
+              Opacity
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that adjust the opacity value of elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-opacity</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          transparent, opacity, transparency
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-overflow">
+            <span class="name">
+              Overflow
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that adjust the overflow styles of elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-overflow</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          overflow, hidden, scroll
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-position">
+            <span class="name">
+              Position
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that adjust the position styles of elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-position</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          position, relative, absolute, fixed
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-spacing">
+            <span class="name">
+              Spacing
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide a range of margin and padding adjustment styles.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-spacing</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          margin, padding, mrg, pad, spacing
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-visibility">
+            <span class="name">
+              Visibility
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that adjust the visibility styles of elements.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-visibility</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          visibility
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-width-fx">
+            <span class="name">
+              Width (Fixed)
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide a range of fixed width (px) sizes.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-width-fx</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          width, fixed, px
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-width-max">
+            <span class="name">
+              Width (Max)
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide a range of max width (%) sizes.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-width-max</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          max-width, max, width
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-width-min">
+            <span class="name">
+              Width (Min)
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide a range of min width (%) sizes.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-width-min</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          min-width, min, width
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-width">
+            <span class="name">
+              Width
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide a range of width (%) sizes.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-width</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          width
+        </div>
+      </li>
+    
+      <li class="u-pad-v-6">
+        <h3 class="tx-h4">
+          <a href="/seed/packs/seed-zi">
+            <span class="name">
+              Z-index
+            </span>
+          </a>
+        </h3>
+        
+          <p class="u-mrg-b-0 t-tx-charcoal-300 description">
+            Utility classes that provide a range of z-index values.
+          </p>
+        
+        <div class="u-pad-v-1">
+          <div class="o-inline">
+            <div class="o-inline__item tx-sm u-mrg-r-5">
+              <span class="c-badge c-badge--circle c-badge--utility"></span>
+              <span class="t-tx-charcoal-200 section">Utility</span>
+            </div>
+            <div class="o-inline__item tx-sm">
+              <span class="t-tx-charcoal-200 pack">seed-zi</span>
+            </div>
+          </div>
+        </div>
+        <div class="u-d-none keywords">
+          z-index, z index, z, layer
+        </div>
+      </li>
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</ul></div>
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="u-pad-t-xl u-mrg-b-xl">
+
+  <script src="/seed/js/jquery.min.js"></script>
+  <script src="/seed/js/bootstrap.min.js"></script>
+  <script src="/seed/js/anchor.min.js?v=073156f280a7f5fbe30cc13487cf2149"></script>
+  <script src="/seed/js/clipboard.min.js"></script>
+
+  <script src="/seed/js/snippets.js"></script>
+  <script src="/seed/js/styleguide.js?v=42b4ca7e0350fdeb44b63e26c2dd8b3a"></script>
+
+</footer>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+  
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+  <script src="/seed/js/main.js?v=e49644be16a2680504abee5b9ac16b13"></script>
+
+
+</body>
+
+</html>

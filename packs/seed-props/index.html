@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Props | Seed CSS Documentation</title>
+  <meta name="description" content="A function/mixin combo that provides callback-like functionality with Sass maps.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/seed/css/main.css?v=f4359b8af542117294030f8c245b9592">
+  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=13f5bc5302b4ddcb7a35938f0ab76c8d">
+  
+  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    <div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+      <div class="tx-center">
+        <h1>Seed CSS</h1>
+        <div class="tx-12 tx-uppercase">
+          <strong>Made By Help Scout</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      <ul class="c-list">
+  <li class="nav__item">
+    <a href="/seed/#get-started">Getting Started</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/guides/quick-start/seed-packs/">Quick Guide for Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/packs/">Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/examples/">Code Examples</a>
+  </li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              
+                <div class="o-flexy">
+                  <div class="o-flexy__item">
+                    <div class="tx-h5 tx-600 t-tx-charcoal-300">
+                      <ul class="c-list c-list--inline u-mrg-b-0">
+                        
+                          <li>
+                            <a href="/seed/packs/">Seed Packs</a>
+                          </li>
+                          <li>
+                            <span class="tx-400 u-op-4">/</span>
+                          </li>
+                        
+                        
+                        <li>
+                          Mixin
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="o-flexy__item u-d-none u-d-block@sm">
+                    <a href="https://travis-ci.org/helpscout/seed-props" target="_blank" class="tx-no-underline">
+                      <img src="https://travis-ci.org/helpscout/seed-props.svg?branch=master">
+                    </a>
+                    <a href="https://www.npmjs.com/package/seed-props" target="_blank" class="tx-no-underline">
+                      <img src="https://badge.fury.io/js/seed-props.svg">
+                    </a>
+                  </div>
+                  
+                </div>
+              
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                Props
+              </h1>
+
+              
+                <div class="u-mrg-v-1 tx-sm">
+                  <span class="u-op-4">Pack name:</span>
+                  <span class="u-op-7">seed-props</span>
+                </div>
+              
+
+              
+                <div class="u-mrg-t-3">
+                  <p><i class="icon icon-popup"></i> <a href="https://github.com/helpscout/seed-props" target="_blank" class="tx-xs tx-uppercase tx-700">View Source</a></p>
+                </div>
+              
+
+            </header>
+            
+
+            
+
+
+<div id="hs-doc-props" class="s-hs-docs s-hs-docs--props s-hs-docs--mixin">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  <p>Props mixin pack for Seed</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#install" id="markdown-toc-install">Install</a></li>
+  <li><a href="#about" id="markdown-toc-about">About</a></li>
+  <li><a href="#usage" id="markdown-toc-usage">Usage</a>    <ul>
+      <li><a href="#prop-map-mixin" id="markdown-toc-prop-map-mixin">prop-map (Mixin)</a></li>
+      <li><a href="#prop-function" id="markdown-toc-prop-function">prop (Function)</a></li>
+    </ul>
+  </li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#basic" id="markdown-toc-basic">Basic</a></li>
+      <li><a href="#advanced" id="markdown-toc-advanced">Advanced</a></li>
+    </ul>
+  </li>
+  <li><a href="#related" id="markdown-toc-related">Related</a></li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-props --save
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="about">About</h2>
+
+<p><code class="highlighter-rouge">seed-props</code> is a function/mixin combo that provides callback-like functionality in Sass for maps. It is especially handy for iterating over large or complex maps.
+Its design pattern is similar to <a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)">callback functions</a> found in other programming languages like Javascript.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight-header"><pre>example.js</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">stuffs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
+
+<span class="c1">// Iterating over the array and referencing it using a callback variable</span>
+<span class="nx">stuffs</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Doing something with the callback variable</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">number</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre>
+</div></div></div>
+
+<p>This design pattern is extremely useful. Unfortunately, the ability to natively iterate and reference variables is not available in Sass. <code class="highlighter-rouge">seed-props</code> was designed to be a work around.</p>
+
+<hr />
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="prop-map-mixin">prop-map (Mixin)</h3>
+
+<p><strong>prop-map($map, (arguments…))</strong></p>
+
+<p>The prop-map mixin allows you to loop through a map and use arguments as variables in your styles (@content).
+You have to use the <a href="#prop-function">prop() function</a> for your @content to utilize the arguments defined in your prop-map.</p>
+
+<p><strong>$map</strong><br />
+A sass <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps">map</a>.</p>
+
+<p><strong>arguments…</strong><br />
+Argument names to reference the <code class="highlighter-rouge">value</code> of the <code class="highlighter-rouge">key:value</code> pair in your <code class="highlighter-rouge">$map</code>.</p>
+
+<p><code class="highlighter-rouge">prop-map</code> uses the <code class="highlighter-rouge">key</code> of your <code class="highlighter-rouge">$map</code> as the newly generated class name (separated by a <strong>single</strong> hypen).</p>
+
+<p><strong>Example</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Our map of greetings
+</span><span class="nv">$greetings</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">hello</span><span class="o">:</span> <span class="no">green</span>
+<span class="p">);</span>
+
+<span class="c1">// Autogenerating classes based on our greetings map
+</span><span class="nc">.greeting</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">prop-map</span><span class="p">(</span><span class="nv">$map</span><span class="o">,</span> <span class="p">(</span><span class="n">color</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">prop</span><span class="p">(</span><span class="n">color</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.greeting-hello</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="prop-function">prop (Function)</h3>
+
+<p><strong>prop($property)</strong></p>
+
+<p><strong>$property</strong><br />
+A sass <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists">list</a>.</p>
+
+<p>The <code class="highlighter-rouge">prop()</code> function works together within the <a href="#prop-map-mixin"><code class="highlighter-rouge">prop-map</code> mixin</a>. It cannot work on it’s own.</p>
+
+<p>The <code class="highlighter-rouge">prop()</code> function retrieves the property that is provided by the <code class="highlighter-rouge">(arguments…)</code> list by the <code class="highlighter-rouge">prop-map</code> mixin.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Our map of greetings
+</span><span class="nv">$greetings</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">hello</span><span class="o">:</span> <span class="no">green</span>
+<span class="p">);</span>
+
+<span class="c1">// Autogenerating classes based on our greetings map
+</span><span class="nc">.greeting</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">prop-map</span><span class="p">(</span><span class="nv">$map</span><span class="o">,</span> <span class="p">(</span><span class="n">color</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// Define color as the "callback" variable
+</span>    <span class="nl">color</span><span class="p">:</span> <span class="nf">prop</span><span class="p">(</span><span class="n">color</span><span class="p">);</span> <span class="c1">// Retrieiving color
+</span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.greeting-hello</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="basic">Basic</h3>
+
+<p>In this example, we’ll be iterating over the <code class="highlighter-rouge">$grid-columns</code> map to generate various grid column sizes.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nv">$grid-columns</span><span class="p">:</span> <span class="p">(</span>
+  <span class="m">1</span><span class="o">:</span> <span class="m">10%</span><span class="o">,</span>
+  <span class="m">2</span><span class="o">:</span> <span class="m">20%</span>
+  <span class="m">3</span><span class="o">:</span> <span class="m">30%</span>
+<span class="p">);</span>
+
+<span class="nc">.col</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">prop-map</span><span class="p">(</span><span class="nv">$grid-columns</span><span class="o">,</span> <span class="p">(</span><span class="n">width</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nf">prop</span><span class="p">(</span><span class="n">width</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>The generated grid classes use the <code class="highlighter-rouge">key</code> as the suffix for the <code class="highlighter-rouge">.col</code> class. The <code class="highlighter-rouge">prop()</code> function referenced the percentages in the map’s values to be used as the width for each generated class.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.col-1</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">10%</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.col-2</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.col-3</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span> <span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="advanced">Advanced</h3>
+
+<p>In this example, we want to generate a couple of buttons by iterating over the <code class="highlighter-rouge">$button-states</code> map, which contains styles for <code class="highlighter-rouge">background</code> and <code class="highlighter-rouge">border-color</code>.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nv">$button-states</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">success</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="no">green</span><span class="o">,</span>
+    <span class="n">border-color</span><span class="o">:</span> <span class="no">green</span><span class="p">)</span><span class="o">,</span>
+  <span class="n">danger</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="no">red</span><span class="o">,</span>
+    <span class="n">border-color</span><span class="o">:</span> <span class="no">red</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre>
+</div></div></div>
+
+<p>We can do this by using the <code class="highlighter-rouge">prop-map</code> mixin and passing the arguments we want to reference from <code class="highlighter-rouge">$button-states</code>.</p>
+
+<p>Because the mixin accepts <code class="highlighter-rouge">@content</code>, you can write additional styles. In this case, we’ll be adding <code class="highlighter-rouge">color: white</code> to our buttons.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nv">$button-states</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">success</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="no">green</span><span class="o">,</span>
+    <span class="n">border-color</span><span class="o">:</span> <span class="no">green</span><span class="p">)</span><span class="o">,</span>
+  <span class="n">danger</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="no">red</span><span class="o">,</span>
+    <span class="n">border-color</span><span class="o">:</span> <span class="no">red</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">prop-map</span><span class="p">(</span><span class="nv">$button-states</span><span class="o">,</span> <span class="p">(</span><span class="n">background</span><span class="o">,</span> <span class="n">border-color</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="nf">prop</span><span class="p">(</span><span class="n">background</span><span class="p">);</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">prop</span><span class="p">(</span><span class="n">border-color</span><span class="p">);</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>The final generated buttons will have the appropriate <code class="highlighter-rouge">background</code> and <code class="highlighter-rouge">border-color</code> specified for each state.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.button-success</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.button-danger</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span> <span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-breakpoints">seed-breakpoints</a></li>
+  <li><a href="/seed/packs/seed-dash">seed-dash</a></li>
+</ul>
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="u-pad-t-xl u-mrg-b-xl">
+
+  <script src="/seed/js/jquery.min.js"></script>
+  <script src="/seed/js/bootstrap.min.js"></script>
+  <script src="/seed/js/anchor.min.js?v=e247ff97877d45e2d224d578019128cd"></script>
+  <script src="/seed/js/clipboard.min.js"></script>
+
+  <script src="/seed/js/snippets.js"></script>
+  <script src="/seed/js/styleguide.js?v=c9befd744187e1b089fc2174b6c6828f"></script>
+
+</footer>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+  
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+  <script src="/seed/js/main.js?v=7c64f6d755c81bc7d3ece2f8fea9cb5a"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Exclude | Seed CSS Documentation</title>
+  <meta name="description" content="A mixin that prevents published Seed packs from compiling.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/seed/css/main.css?v=f4359b8af542117294030f8c245b9592">
+  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=13f5bc5302b4ddcb7a35938f0ab76c8d">
+  
+  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    <div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+      <div class="tx-center">
+        <h1>Seed CSS</h1>
+        <div class="tx-12 tx-uppercase">
+          <strong>Made By Help Scout</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      <ul class="c-list">
+  <li class="nav__item">
+    <a href="/seed/#get-started">Getting Started</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/guides/quick-start/seed-packs/">Quick Guide for Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/packs/">Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/examples/">Code Examples</a>
+  </li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              
+                <div class="o-flexy">
+                  <div class="o-flexy__item">
+                    <div class="tx-h5 tx-600 t-tx-charcoal-300">
+                      <ul class="c-list c-list--inline u-mrg-b-0">
+                        
+                          <li>
+                            <a href="/seed/packs/">Seed Packs</a>
+                          </li>
+                          <li>
+                            <span class="tx-400 u-op-4">/</span>
+                          </li>
+                        
+                        
+                        <li>
+                          Mixin
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="o-flexy__item u-d-none u-d-block@sm">
+                    <a href="https://travis-ci.org/helpscout/seed-exclude" target="_blank" class="tx-no-underline">
+                      <img src="https://travis-ci.org/helpscout/seed-exclude.svg?branch=master">
+                    </a>
+                    <a href="https://www.npmjs.com/package/seed-exclude" target="_blank" class="tx-no-underline">
+                      <img src="https://badge.fury.io/js/seed-exclude.svg">
+                    </a>
+                  </div>
+                  
+                </div>
+              
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                Exclude
+              </h1>
+
+              
+                <div class="u-mrg-v-1 tx-sm">
+                  <span class="u-op-4">Pack name:</span>
+                  <span class="u-op-7">seed-exclude</span>
+                </div>
+              
+
+              
+                <div class="u-mrg-t-3">
+                  <p><i class="icon icon-popup"></i> <a href="https://github.com/helpscout/seed-exclude" target="_blank" class="tx-xs tx-uppercase tx-700">View Source</a></p>
+                </div>
+              
+
+            </header>
+            
+
+            
+
+
+<div id="hs-doc-exclude" class="s-hs-docs s-hs-docs--exclude s-hs-docs--mixin">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  <p>Mixin that excludes modules published with <a href="/seed/packs/seed-publish">seed-publish</a></p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#install" id="markdown-toc-install">Install</a>    <ul>
+      <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+    </ul>
+  </li>
+  <li><a href="#about" id="markdown-toc-about">About</a></li>
+  <li><a href="#use-case" id="markdown-toc-use-case">Use case</a></li>
+  <li><a href="#mixins" id="markdown-toc-mixins">Mixins</a>    <ul>
+      <li><a href="#exclude" id="markdown-toc-exclude">exclude</a></li>
+    </ul>
+  </li>
+  <li><a href="#related" id="markdown-toc-related">Related</a></li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-exclude --save
+</code></pre></div></div>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<ul>
+  <li><a href="/seed/packs/seed-publish">seed-publish</a></li>
+</ul>
+
+<hr />
+
+<h2 id="about">About</h2>
+
+<p><code class="highlighter-rouge">seed-exclude</code> is a mixin that enhances packs using <a href="/seed/packs/seed-publish">seed-publish</a>. As the name of the pack suggests, the <code class="highlighter-rouge">exclude()</code> mixin allows the user to exclude <a href="/seed/packs/seed-publish/#publish">published packs</a>.</p>
+
+<h2 id="use-case">Use case</h2>
+
+<p>You want to use this brand new <code class="highlighter-rouge">meal-pack</code> in your Sass project (<code class="highlighter-rouge">meal-pack</code> doesn’t really exist, but it would be cool if it did). <code class="highlighter-rouge">meal-pack</code> requires a handful of dependencies:</p>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>meal-pack
+├── sandwich-pack
+│   ├── bun-pack
+│   ├── tomato-pack
+│   ├── deli-pack
+│   └── sauce-pack
+├── snack-pack
+├── sides-pack
+└── drink-pack
+</code></pre></div></div>
+
+<p>For your setup, you want to use <code class="highlighter-rouge">meal-pack</code> <strong>except</strong> for <code class="highlighter-rouge">sides-pack</code>. At this point, you have two options:</p>
+
+<ol>
+  <li>Manually include all the individual packs that make up <code class="highlighter-rouge">meal-pack</code>.</li>
+  <li>Include <code class="highlighter-rouge">meal-pack</code>, and simply exclude <code class="highlighter-rouge">side-pack</code>.</li>
+</ol>
+
+<p>The #2 solution is what the <code class="highlighter-rouge">exclude()</code> mixin was designed to accomplish!</p>
+
+<hr />
+
+<h2 id="mixins">Mixins</h2>
+
+<h3 id="exclude">exclude</h3>
+
+<p><strong>exclude($names…)</strong></p>
+
+<p><strong>$names</strong><br />
+Type: <code class="highlighter-rouge">string</code>|<code class="highlighter-rouge">list</code><br />
+Description: The name(s) of the packs you wish to exclude.</p>
+
+<p>Modules matching the name of the arguments passed into <code class="highlighter-rouge">exclude()</code> will <strong>not</strong> render when CSS is compiled.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+</span><span class="k">@import</span> <span class="s2">"pack/seed-exclude/_index"</span><span class="p">;</span>
+
+<span class="c1">// Step 1: Exclude packs
+</span><span class="k">@include</span> <span class="nd">exclude</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+
+<span class="c1">// Step 2: @import the pack containing the excluded packs
+</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+
+<span class="c1">// styles within sides-pack will not be generated
+</span></code></pre>
+</div></div></div>
+
+<p>The <code class="highlighter-rouge">exclude</code> mixin accepts lists as well as nested lists:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+</span><span class="k">@import</span> <span class="s2">"pack/seed-exclude/_index"</span><span class="p">;</span>
+
+<span class="c1">// Step 1: Exclude packs
+</span><span class="k">@include</span> <span class="nd">exclude</span><span class="p">(</span>
+  <span class="n">sides</span><span class="o">,</span>
+  <span class="n">snack</span><span class="o">,</span>
+  <span class="p">(</span>
+    <span class="no">tomato</span><span class="o">,</span>
+    <span class="n">sauce</span>
+  <span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">// Step 2: @import the pack containing the excluded packs
+</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+
+<span class="c1">// styles within sides, snack, tomato, and sauce packs will not be generated
+</span></code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-publish">seed-publish</a></li>
+</ul>
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="u-pad-t-xl u-mrg-b-xl">
+
+  <script src="/seed/js/jquery.min.js"></script>
+  <script src="/seed/js/bootstrap.min.js"></script>
+  <script src="/seed/js/anchor.min.js?v=e247ff97877d45e2d224d578019128cd"></script>
+  <script src="/seed/js/clipboard.min.js"></script>
+
+  <script src="/seed/js/snippets.js"></script>
+  <script src="/seed/js/styleguide.js?v=c9befd744187e1b089fc2174b6c6828f"></script>
+
+</footer>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+  
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+  <script src="/seed/js/main.js?v=7c64f6d755c81bc7d3ece2f8fea9cb5a"></script>
+
+
+</body>
+
+</html>

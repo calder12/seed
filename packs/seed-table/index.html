@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Table | Seed CSS Documentation</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/seed/css/main.css?v=7893f0302ae22c4660195ea793cb00bf">
+  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=7f6d00a33f0c4b2f598dc93a49d38b4a">
+  
+  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    <div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+      <div class="tx-center">
+        <h1>Seed CSS</h1>
+        <div class="tx-12 tx-uppercase">
+          <strong>Made By Help Scout</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      <ul class="c-list">
+  <li class="nav__item">
+    <a href="/seed/#get-started">Getting Started</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/guides/quick-start/seed-packs/">Quick Guide for Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/packs/">Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/examples/">Code Examples</a>
+  </li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              
+                <div class="o-flexy">
+                  <div class="o-flexy__item">
+                    <div class="tx-h5 tx-600 t-tx-charcoal-300">
+                      <ul class="c-list c-list--inline u-mrg-b-0">
+                        
+                          <li>
+                            <a href="/seed/packs/">Seed Packs</a>
+                          </li>
+                          <li>
+                            <span class="tx-400 u-op-4">/</span>
+                          </li>
+                        
+                        
+                        <li>
+                          Component
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="o-flexy__item u-d-none u-d-block@sm">
+                    <a href="https://travis-ci.org/helpscout/seed-table" target="_blank" class="tx-no-underline">
+                      <img src="https://travis-ci.org/helpscout/seed-table.svg?branch=master">
+                    </a>
+                    <a href="https://www.npmjs.com/package/seed-table" target="_blank" class="tx-no-underline">
+                      <img src="https://badge.fury.io/js/seed-table.svg">
+                    </a>
+                  </div>
+                  
+                </div>
+              
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                Table
+              </h1>
+
+              
+                <div class="u-mrg-v-1 tx-sm">
+                  <span class="u-op-4">Pack name:</span>
+                  <span class="u-op-7">seed-table</span>
+                </div>
+              
+
+              
+                <div class="u-mrg-t-3">
+                  <p><i class="icon icon-popup"></i> <a href="https://github.com/helpscout/seed-table" target="_blank" class="tx-xs tx-uppercase tx-700">View Source</a></p>
+                </div>
+              
+
+            </header>
+            
+
+            
+
+
+<div id="hs-doc-table" class="s-hs-docs s-hs-docs--table s-hs-docs--component">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  <p>Table component pack for Seed</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#install" id="markdown-toc-install">Install</a>    <ul>
+      <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+    </ul>
+  </li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+  <li><a href="#alignment" id="markdown-toc-alignment">Alignment</a>    <ul>
+      <li><a href="#top" id="markdown-toc-top">Top</a></li>
+      <li><a href="#middle" id="markdown-toc-middle">Middle</a></li>
+      <li><a href="#bottom" id="markdown-toc-bottom">Bottom</a></li>
+    </ul>
+  </li>
+  <li><a href="#sizes" id="markdown-toc-sizes">Sizes</a>    <ul>
+      <li><a href="#small" id="markdown-toc-small">Small</a></li>
+      <li><a href="#extra-small" id="markdown-toc-extra-small">Extra Small</a></li>
+    </ul>
+  </li>
+  <li><a href="#styles" id="markdown-toc-styles">Styles</a>    <ul>
+      <li><a href="#bordered" id="markdown-toc-bordered">Bordered</a></li>
+      <li><a href="#hoverable" id="markdown-toc-hoverable">Hoverable</a></li>
+      <li><a href="#striped" id="markdown-toc-striped">Striped</a></li>
+    </ul>
+  </li>
+  <li><a href="#states" id="markdown-toc-states">States</a></li>
+  <li><a href="#responsive-tables" id="markdown-toc-responsive-tables">Responsive tables</a></li>
+  <li><a href="#related" id="markdown-toc-related">Related</a></li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-table --save
+</code></pre></div></div>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<ul>
+  <li><a href="/seed/packs/seed-dash">seed-dash</a></li>
+  <li><a href="/seed/packs/seed-publish">seed-publish</a></li>
+  <li><a href="/seed/packs/seed-states">seed-states</a></li>
+  <li><a href="/seed/packs/seed-this">seed-this</a></li>
+</ul>
+
+<hr />
+
+<h2 id="example">Example</h2>
+
+<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Buzz Lightyear</td>
+      <td>Space Ranger</td>
+      <td>@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Occupation<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Username<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Woody<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cowboy<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>@therealSheriffWoody<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Buzz Lightyear<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Space Ranger<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>@Buzz14079395277<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div></div></div>
+
+<hr />
+
+<h2 id="alignment">Alignment</h2>
+
+<h3 id="top">Top</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--top">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td class="o-col-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum ipsum diam, et consequat urna placerat nec. Duis nulla orci, semper eget dolor sit amet, mollis volutpat velit. Nunc ante velit, ultricies at cursus et, gravida vel tellus. Nam vel ligula dolor. Cras et erat vitae ex ornare laoreet sed vel mi.</td>
+      <td class="o-col-5">I'm aligned to the top!</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--top"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="middle">Middle</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--middle">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td class="o-col-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum ipsum diam, et consequat urna placerat nec. Duis nulla orci, semper eget dolor sit amet, mollis volutpat velit. Nunc ante velit, ultricies at cursus et, gravida vel tellus. Nam vel ligula dolor. Cras et erat vitae ex ornare laoreet sed vel mi.</td>
+      <td class="o-col-5">I'm aligned to the middle!</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--middle"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="bottom">Bottom</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--bottom">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td class="o-col-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum ipsum diam, et consequat urna placerat nec. Duis nulla orci, semper eget dolor sit amet, mollis volutpat velit. Nunc ante velit, ultricies at cursus et, gravida vel tellus. Nam vel ligula dolor. Cras et erat vitae ex ornare laoreet sed vel mi.</td>
+      <td class="o-col-5">I'm aligned to the bottom!</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--bottom"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="sizes">Sizes</h2>
+
+<h3 id="small">Small</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--sm">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Buzz Lightyear</td>
+      <td>Space Ranger</td>
+      <td>@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--sm"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="extra-small">Extra Small</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--xs">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Buzz Lightyear</td>
+      <td>Space Ranger</td>
+      <td>@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--xs"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="styles">Styles</h2>
+
+<p>Below are all the modifier styles that can be applied to <code class="highlighter-rouge">.c-table</code>. These modifiers can be combined or used on their own.</p>
+
+<h3 id="bordered">Bordered</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Buzz Lightyear</td>
+      <td>Space Ranger</td>
+      <td>@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--bordered"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="hoverable">Hoverable</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Buzz Lightyear</td>
+      <td>Space Ranger</td>
+      <td>@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--hover"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="striped">Striped</h3>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table c-table--striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Buzz Lightyear</td>
+      <td>Space Ranger</td>
+      <td>@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table c-table--striped"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="states">States</h2>
+
+<p>The following are <a href="/seed/packs/seed-states/">states</a> that can be applied to table rows (<code class="highlighter-rouge">tr</code>) and/or individual table cells (<code class="highlighter-rouge">th</code>/<code class="highlighter-rouge">td</code>):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.is-error</code></li>
+  <li><code class="highlighter-rouge">.is-info</code></li>
+  <li><code class="highlighter-rouge">.is-success</code></li>
+  <li><code class="highlighter-rouge">.is-warning</code></li>
+</ul>
+
+<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<table class="c-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="is-success">
+      <th scope="row">1</th>
+      <td>Woody</td>
+      <td>Cowboy</td>
+      <td>@therealSheriffWoody</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td class="is-error">Buzz Lightyear</td>
+      <td class="is-info">Space Ranger</td>
+      <td class="is-warning">@Buzz14079395277</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Occupation<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Username<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"is-success"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Woody<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Cowboy<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>@therealSheriffWoody<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"is-error"</span><span class="nt">&gt;</span>Buzz Lightyear<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"is-info"</span><span class="nt">&gt;</span>Space Ranger<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"is-warning"</span><span class="nt">&gt;</span>@Buzz14079395277<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div></div></div>
+
+<hr />
+
+<h2 id="responsive-tables">Responsive tables</h2>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="o-responsive-wrapper">
+  <table class="c-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"o-responsive-wrapper"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"c-table"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-list">seed-list</a></li>
+  <li><a href="/seed/packs/seed-responsive-wrapper">seed-responsive-wrapper</a></li>
+</ul>
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="u-pad-t-xl u-mrg-b-xl">
+
+  <script src="/seed/js/jquery.min.js"></script>
+  <script src="/seed/js/bootstrap.min.js"></script>
+  <script src="/seed/js/anchor.min.js?v=1f4e3548191979a04378c4e92f4f47ea"></script>
+  <script src="/seed/js/clipboard.min.js"></script>
+
+  <script src="/seed/js/snippets.js"></script>
+  <script src="/seed/js/styleguide.js?v=c236822f975efbf78eb523de29a5744d"></script>
+
+</footer>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+  
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+  <script src="/seed/js/main.js?v=916a6a4b5d89fc3e5dd687de347618b5"></script>
+
+
+</body>
+
+</html>

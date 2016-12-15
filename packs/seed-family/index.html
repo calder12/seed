@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Family | Seed CSS Documentation</title>
+  <meta name="description" content="Mixins that enable manipulation of parent or sibling selectors.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/seed/css/main.css?v=f4359b8af542117294030f8c245b9592">
+  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=13f5bc5302b4ddcb7a35938f0ab76c8d">
+  
+  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    <div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+      <div class="tx-center">
+        <h1>Seed CSS</h1>
+        <div class="tx-12 tx-uppercase">
+          <strong>Made By Help Scout</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      <ul class="c-list">
+  <li class="nav__item">
+    <a href="/seed/#get-started">Getting Started</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/guides/quick-start/seed-packs/">Quick Guide for Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/packs/">Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/examples/">Code Examples</a>
+  </li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              
+                <div class="o-flexy">
+                  <div class="o-flexy__item">
+                    <div class="tx-h5 tx-600 t-tx-charcoal-300">
+                      <ul class="c-list c-list--inline u-mrg-b-0">
+                        
+                          <li>
+                            <a href="/seed/packs/">Seed Packs</a>
+                          </li>
+                          <li>
+                            <span class="tx-400 u-op-4">/</span>
+                          </li>
+                        
+                        
+                        <li>
+                          Mixin
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="o-flexy__item u-d-none u-d-block@sm">
+                    <a href="https://travis-ci.org/helpscout/seed-family" target="_blank" class="tx-no-underline">
+                      <img src="https://travis-ci.org/helpscout/seed-family.svg?branch=master">
+                    </a>
+                    <a href="https://www.npmjs.com/package/seed-family" target="_blank" class="tx-no-underline">
+                      <img src="https://badge.fury.io/js/seed-family.svg">
+                    </a>
+                  </div>
+                  
+                </div>
+              
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                Family
+              </h1>
+
+              
+                <div class="u-mrg-v-1 tx-sm">
+                  <span class="u-op-4">Pack name:</span>
+                  <span class="u-op-7">seed-family</span>
+                </div>
+              
+
+              
+                <div class="u-mrg-t-3">
+                  <p><i class="icon icon-popup"></i> <a href="https://github.com/helpscout/seed-family" target="_blank" class="tx-xs tx-uppercase tx-700">View Source</a></p>
+                </div>
+              
+
+            </header>
+            
+
+            
+
+
+<div id="hs-doc-family" class="s-hs-docs s-hs-docs--family s-hs-docs--mixin">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  <p>Selector-based mixin pack for Seed</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#install" id="markdown-toc-install">Install</a></li>
+  <li><a href="#about" id="markdown-toc-about">About</a>    <ul>
+      <li><a href="#the-problem" id="markdown-toc-the-problem">The problem</a></li>
+      <li><a href="#the-workaround" id="markdown-toc-the-workaround">The workaround</a></li>
+      <li><a href="#the-ideal" id="markdown-toc-the-ideal">The ideal</a></li>
+    </ul>
+  </li>
+  <li><a href="#mixins" id="markdown-toc-mixins">Mixins</a>    <ul>
+      <li><a href="#parent" id="markdown-toc-parent">parent</a></li>
+      <li><a href="#sibling" id="markdown-toc-sibling">sibling</a></li>
+    </ul>
+  </li>
+  <li><a href="#related" id="markdown-toc-related">Related</a></li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-family --save
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="about">About</h2>
+
+<p><code class="highlighter-rouge">seed-family</code> is a pack that offers mixins that manipulate parent or sibling selectors. Because of how CSS works, it’s (currently) not possible to target parent selectors or classes in any way.</p>
+
+<p>This use-case doesn’t occur very often, but it’s not too uncommon either.</p>
+
+<h3 id="the-problem">The problem</h3>
+
+<p>Take the following CSS for a menu component (structured with the BEM convention).</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="c1">// styles
+</span>
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="the-workaround">The workaround</h3>
+
+<p>The <code class="highlighter-rouge">.menu__item</code> is hidden with <code class="highlighter-rouge">display: none</code> by default. We want it to be <code class="highlighter-rouge">display: block</code> when the <code class="highlighter-rouge">.menu.is-active</code>.</p>
+
+<p>We currently have to write it like this:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="c1">// styles
+</span>
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nc">.is-active</span> <span class="p">{</span>
+    <span class="nc">.menu__item</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>The class of <code class="highlighter-rouge">.menu__item</code> is repeated. Not to mention that <code class="highlighter-rouge">.menu__item</code> no longer manages its own styles, but instead, they are abstracted and dicated by <code class="highlighter-rouge">.menu</code>. What’s worse is that <code class="highlighter-rouge">&amp;</code> no longer references <code class="highlighter-rouge">.menu</code> in the context of <code class="highlighter-rouge">&amp;.is-active</code> (but that’s a separate issue).</p>
+
+<h3 id="the-ideal">The ideal</h3>
+
+<p>Wouldn’t it be nice if we could write something like this?</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="c1">// styles
+</span>
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+
+    <span class="nd">:parent</span><span class="nc">.is-active</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>When the parent, in this case <code class="highlighter-rouge">.menu</code>, has the <code class="highlighter-rouge">.is-active</code> class, change the display of <code class="highlighter-rouge">.menu__item</code>.</p>
+
+<hr />
+
+<h2 id="mixins">Mixins</h2>
+
+<h3 id="parent">parent</h3>
+
+<p><strong>parent($selector)</strong></p>
+
+<p><strong>$selector</strong><br />
+Type: <code class="highlighter-rouge">string</code><br />
+Description: The desired parent class/selector.</p>
+
+<p>We can write our menu styles similarly to our <a href="#the-ideal">“ideal”</a> example.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="c1">// styles
+</span>
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+
+    <span class="k">@include</span> <span class="nd">parent</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="o">&amp;</span><span class="si">}</span><span class="s2">.is-active"</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>menu.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu__item</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.menu.is-active</span> <span class="nc">.menu__item</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>The <code class="highlighter-rouge">parent</code> mixin intelligently injects the provided <code class="highlighter-rouge">$selector</code> directly before the current selector.</p>
+
+<p>The magic happens with this line:</p>
+
+<div class="language-scss highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="k">@include</span> <span class="nd">parent</span><span class="p">(</span><span class="s2">"{&amp;}.is-active"</span><span class="p">)</span> <span class="p">{</span>
+</code></pre>
+</div></div></div>
+
+<p>Let’s break it down:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">@include parent</code> - Activating the <code class="highlighter-rouge">parent</code> mixin.</li>
+  <li><code class="highlighter-rouge">"{&amp;}.is-active"</code> - The parent selector + the <code class="highlighter-rouge">.is-active</code> class.</li>
+</ul>
+
+<p>In this example, <code class="highlighter-rouge">&amp;</code> still references <code class="highlighter-rouge">.menu</code>. That is because it’s direct parent selector is <code class="highlighter-rouge">.menu</code>, unlike our <a href="/#the-workaround">workaround</a> example.</p>
+
+<div class="language-scss highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="c1">// &amp; = .menu
+</span><span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-scss highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nc">.is-active</span> <span class="p">{</span>
+    <span class="c1">// &amp; = .menu.is-active
+</span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<h3 id="sibling">sibling</h3>
+
+<p><strong>$selector</strong><br />
+Type: <code class="highlighter-rouge">string</code><br />
+Description: The desired parent class/selector.</p>
+
+<p>In CSS, we can target the sibling selector that comes <strong>after</strong>, but <strong>not before</strong>. The <code class="highlighter-rouge">sibling</code> mixin allows you to reference the sibling selector the comes before your current selector.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
+  <span class="c1">// styles
+</span>
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+
+    <span class="k">@include</span> <span class="nd">sibling</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="o">&amp;</span><span class="si">}</span><span class="s2">__sub-menu"</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>menu.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu__item</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.menu__sub-menu</span> <span class="o">+</span> <span class="nc">.menu__item</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-this">seed-this</a></li>
+</ul>
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="u-pad-t-xl u-mrg-b-xl">
+
+  <script src="/seed/js/jquery.min.js"></script>
+  <script src="/seed/js/bootstrap.min.js"></script>
+  <script src="/seed/js/anchor.min.js?v=e247ff97877d45e2d224d578019128cd"></script>
+  <script src="/seed/js/clipboard.min.js"></script>
+
+  <script src="/seed/js/snippets.js"></script>
+  <script src="/seed/js/styleguide.js?v=c9befd744187e1b089fc2174b6c6828f"></script>
+
+</footer>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+  
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+  <script src="/seed/js/main.js?v=7c64f6d755c81bc7d3ece2f8fea9cb5a"></script>
+
+
+</body>
+
+</html>

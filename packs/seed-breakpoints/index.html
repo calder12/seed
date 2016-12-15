@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Breakpoints | Seed CSS Documentation</title>
+  <meta name="description" content="A collection of mixins that work with CSS media queries.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/seed/css/main.css?v=7893f0302ae22c4660195ea793cb00bf">
+  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=7f6d00a33f0c4b2f598dc93a49d38b4a">
+  
+  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    <div class="hs-nav-side__header">
+  <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
+    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+  </a>
+  <div class="c-card u-mrg-b-none t-bdr-none">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+      <div class="tx-center">
+        <h1>Seed CSS</h1>
+        <div class="tx-12 tx-uppercase">
+          <strong>Made By Help Scout</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="hs-nav-side__body" id="js-hs-nav-body">
+  <div id="nav-sidebar" class="hs-nav-side__content u-pad-5">
+    <ul class="c-list">
+      <ul class="c-list">
+  <li class="nav__item">
+    <a href="/seed/#get-started">Getting Started</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/guides/quick-start/seed-packs/">Quick Guide for Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/packs/">Seed Packs</a>
+  </li>
+  <li class="nav__item">
+    <a href="/seed/examples/">Code Examples</a>
+  </li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              
+                <div class="o-flexy">
+                  <div class="o-flexy__item">
+                    <div class="tx-h5 tx-600 t-tx-charcoal-300">
+                      <ul class="c-list c-list--inline u-mrg-b-0">
+                        
+                          <li>
+                            <a href="/seed/packs/">Seed Packs</a>
+                          </li>
+                          <li>
+                            <span class="tx-400 u-op-4">/</span>
+                          </li>
+                        
+                        
+                        <li>
+                          Mixin
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="o-flexy__item u-d-none u-d-block@sm">
+                    <a href="https://travis-ci.org/helpscout/seed-breakpoints" target="_blank" class="tx-no-underline">
+                      <img src="https://travis-ci.org/helpscout/seed-breakpoints.svg?branch=master">
+                    </a>
+                    <a href="https://www.npmjs.com/package/seed-breakpoints" target="_blank" class="tx-no-underline">
+                      <img src="https://badge.fury.io/js/seed-breakpoints.svg">
+                    </a>
+                  </div>
+                  
+                </div>
+              
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                Breakpoints
+              </h1>
+
+              
+                <div class="u-mrg-v-1 tx-sm">
+                  <span class="u-op-4">Pack name:</span>
+                  <span class="u-op-7">seed-breakpoints</span>
+                </div>
+              
+
+              
+                <div class="u-mrg-t-3">
+                  <p><i class="icon icon-popup"></i> <a href="https://github.com/helpscout/seed-breakpoints" target="_blank" class="tx-xs tx-uppercase tx-700">View Source</a></p>
+                </div>
+              
+
+            </header>
+            
+
+            
+
+
+<div id="hs-doc-breakpoints" class="s-hs-docs s-hs-docs--breakpoints s-hs-docs--mixin">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  <p>Breakpoints (media query) mixin pack for Seed</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#install" id="markdown-toc-install">Install</a>    <ul>
+      <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+    </ul>
+  </li>
+  <li><a href="#basic-mixins" id="markdown-toc-basic-mixins">Basic mixins</a>    <ul>
+      <li><a href="#breakpoint" id="markdown-toc-breakpoint">breakpoint</a></li>
+      <li><a href="#breakpoint-between" id="markdown-toc-breakpoint-between">breakpoint-between</a></li>
+      <li><a href="#breakpoint-max" id="markdown-toc-breakpoint-max">breakpoint-max</a></li>
+      <li><a href="#breakpoint-min" id="markdown-toc-breakpoint-min">breakpoint-min</a></li>
+    </ul>
+  </li>
+  <li><a href="#advanced-mixins" id="markdown-toc-advanced-mixins">Advanced mixins</a>    <ul>
+      <li><a href="#breakpoint-all" id="markdown-toc-breakpoint-all">breakpoint-all</a></li>
+      <li><a href="#breakpoint-prop-map" id="markdown-toc-breakpoint-prop-map">breakpoint-prop-map</a></li>
+    </ul>
+  </li>
+  <li><a href="#breakpoint-sizes" id="markdown-toc-breakpoint-sizes">Breakpoint sizes</a></li>
+  <li><a href="#responsive-modifiers" id="markdown-toc-responsive-modifiers">Responsive modifiers</a></li>
+  <li><a href="#related" id="markdown-toc-related">Related</a></li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-breakpoints --save
+</code></pre></div></div>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<ul>
+  <li><a href="/seed/packs/seed-props">seed-props</a></li>
+</ul>
+
+<hr />
+
+<h2 id="basic-mixins">Basic mixins</h2>
+
+<p>The basic mixins of <code class="highlighter-rouge">seed-breakpoints</code> are typically used to customize the responsive behavior for CSS classes.</p>
+
+<h3 id="breakpoint">breakpoint</h3>
+
+<p><strong>breakpoint($size)</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">breakpoint</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">544px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p><strong>$size</strong>
+<br /></p>
+
+<p>Type: <code class="highlighter-rouge">size</code> / <code class="highlighter-rouge">number</code></p>
+
+<p>See a list of the default <a href="#breakpoint-sizes">breakpoint sizes</a>.</p>
+
+<p>Alternatively, you can pass a number value such as <code class="highlighter-rouge">580px</code>, <code class="highlighter-rouge">48em</code>, or <code class="highlighter-rouge">32rem</code>.</p>
+
+<hr />
+
+<h3 id="breakpoint-between">breakpoint-between</h3>
+
+<p><strong>breakpoint-between($min, $max)</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">breakpoint-between</span><span class="p">(</span><span class="n">md</span><span class="o">,</span> <span class="n">lg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">544px</span><span class="p">)</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p><strong>$min, $max</strong>
+<br /></p>
+
+<p>Type: <code class="highlighter-rouge">size</code> / <code class="highlighter-rouge">number</code></p>
+
+<p>See a list of the default <a href="#breakpoint-sizes">breakpoint sizes</a>.</p>
+
+<p>Alternatively, you can pass a number value such as <code class="highlighter-rouge">580px</code>, <code class="highlighter-rouge">48em</code>, or <code class="highlighter-rouge">32rem</code>.</p>
+
+<hr />
+
+<h3 id="breakpoint-max">breakpoint-max</h3>
+
+<p><strong>breakpoint-max($size)</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">breakpoint-max</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p><strong>$size</strong>
+<br /></p>
+
+<p>Type: <code class="highlighter-rouge">size</code> / <code class="highlighter-rouge">number</code></p>
+
+<p>See a list of the default <a href="#breakpoint-sizes">breakpoint sizes</a>.</p>
+
+<p>Alternatively, you can pass a number value such as <code class="highlighter-rouge">580px</code>, <code class="highlighter-rouge">48em</code>, or <code class="highlighter-rouge">32rem</code>.</p>
+
+<hr />
+
+<h3 id="breakpoint-min">breakpoint-min</h3>
+
+<p><strong>breakpoint-min($size)</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">breakpoint-min</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p><strong>$size</strong>
+<br /></p>
+
+<p>Type: <code class="highlighter-rouge">size</code> / <code class="highlighter-rouge">number</code></p>
+
+<p>See a list of the default <a href="#breakpoint-sizes">breakpoint sizes</a>.</p>
+
+<p>Alternatively, you can pass a number value such as <code class="highlighter-rouge">580px</code>, <code class="highlighter-rouge">48em</code>, or <code class="highlighter-rouge">32rem</code>.</p>
+
+<hr />
+
+<h2 id="advanced-mixins">Advanced mixins</h2>
+
+<p>The advanced mixins of <code class="highlighter-rouge">seed-breakpoints</code> are typically used to automatically generate a series of classes that respond to the various <a href="#breakpoint-sizes">breakpoint sizes</a>.</p>
+
+<h3 id="breakpoint-all">breakpoint-all</h3>
+
+<p><strong>breakpoint-all()</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">breakpoint-all</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">544px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span><span class="err">\</span><span class="k">@sm</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span><span class="err">\</span><span class="k">@md</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">992px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element</span><span class="err">\</span><span class="k">@lg</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>This mixin loops through all the <a href="#breakpoint-sizes">breakpoint sizes</a> to generate the given <code class="highlighter-rouge">@content</code> of a selector. It also automatically includes the appropriate breakpoint modifiers.</p>
+
+<p>Note: There is a <code class="highlighter-rouge">\</code> added before the <code class="highlighter-rouge">@</code> symbol to validate the CSS class name. When the generated classes are used in markup, you can simply write <code class="highlighter-rouge">.element@md</code> without the <code class="highlighter-rouge">\</code>.</p>
+
+<hr />
+
+<h3 id="breakpoint-prop-map">breakpoint-prop-map</h3>
+
+<p><strong>breakpoint-prop-map($map, $properties)</strong></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nv">$states</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">error</span><span class="o">:</span> <span class="no">red</span><span class="o">,</span>
+  <span class="n">success</span><span class="o">:</span> <span class="no">green</span>
+<span class="p">);</span>
+
+<span class="nc">.alert</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">breakpoint-prop-map</span><span class="p">(</span><span class="nv">$states</span><span class="o">,</span> <span class="p">(</span><span class="n">color</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="nf">prop</span><span class="p">(</span><span class="n">color</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>example.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.element-error</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.element-success</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">544px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element-error</span><span class="err">\</span><span class="k">@sm</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.element-success</span><span class="err">\</span><span class="k">@sm</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element-error</span><span class="err">\</span><span class="k">@md</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.element-success</span><span class="err">\</span><span class="k">@md</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">992px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.element-error</span><span class="err">\</span><span class="k">@lg</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.element-success</span><span class="err">\</span><span class="k">@lg</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p><strong>$map</strong>
+<br />
+Type: <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps"><code class="highlighter-rouge">map</code></a> (Required)</p>
+
+<p><strong>$properties</strong>
+<br />
+Type: <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists"><code class="highlighter-rouge">list</code></a> (Required)</p>
+
+<p>This mixin combines the functionality of <a href="#breakpoint-all">breakpoint-all()</a> and <a href="/seed/mixins/seed-prop">prop-map()</a> to generate the <code class="highlighter-rouge">@content</code> of all the various <a href="#breakpoint-sizes">breakpoint sizes</a> while looping through the provided <code class="highlighter-rouge">$map</code>.</p>
+
+<p>Here is a real world example of this mixin being used in the <a href="/seed/utilities/display">seed-display</a> pack:</p>
+
+<ul>
+  <li><a href="https://github.com/helpscout/seed-display/blob/master/scss/pack/seed-display/_config.scss#L7">the map (scss)</a></li>
+  <li><a href="https://github.com/helpscout/seed-display/blob/master/scss/pack/seed-display/utilities/_display.scss#L7">breakpoint-prop-map (scss)</a></li>
+  <li><a href="https://github.com/helpscout/seed-display/blob/master/dist/seed-display.css#L6">output (css)</a></li>
+</ul>
+
+<hr />
+
+<h2 id="breakpoint-sizes">Breakpoint sizes</h2>
+
+<p>By default, <code class="highlighter-rouge">seed-breakpoints</code> comes with 5 breakpoints with values borrowed from <a href="https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L126">Bootstrap V4’s grid system</a>. These values can be modified by adjusting the <a href="https://github.com/helpscout/seed-breakpoints/blob/master/scss/pack/seed-breakpoints/_config.scss#L7">$seed-breakpoints map</a> in your project.</p>
+
+<hr />
+
+<h2 id="responsive-modifiers">Responsive modifiers</h2>
+
+<p>CSS classes generated with mixins such as <a href="#breakpoint-all">breakpoint-all()</a> or <a href="#breakpoint-prop-map">breakpoint-prop-map()</a>, <code class="highlighter-rouge">seed-breakpoints</code> automatically receive an <code class="highlighter-rouge">@&lt;breakpoint&gt;</code> suffix. This follows the naming convention established by <a href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/#responsive-suffixes">ITCSS</a> as well as the design principles of <a href="http://www.lukew.com/resources/mobile_first.asp">mobile first</a>.</p>
+
+<p>It starts with no suffix as for mobile viewports. It then works it’s way up from <code class="highlighter-rouge">@sm</code> - <code class="highlighter-rouge">@lg</code> to handle smaller viewports (Phablets)  to larger viewports (Desktops).</p>
+
+<p><strong>Example</strong>
+The <code class="highlighter-rouge">&lt;h1&gt;</code> starts off with a default (mobile) size of <code class="highlighter-rouge">tx-h5</code> (specified by a heading class from <a href="/seed/type/seed-typography/#headings">seed-typography</a>). As the viewport increases, the font size also increases as specified by the additional heading sizes with <code class="highlighter-rouge">@</code> breakpoint classes.</p>
+
+<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<h1 class="tx-h5 tx-h4@sm tx-h3@md tx-h1@lg">
+  Resize your browser, and watch me shrink/grow!
+</h1>
+</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"tx-h5 tx-h4@sm tx-h3@md tx-h1@lg"</span><span class="nt">&gt;</span>
+  Resize your browser, and watch me shrink/grow!
+<span class="nt">&lt;/h1&gt;</span></code></pre></div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-grid">seed-grid</a></li>
+</ul>
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="u-pad-t-xl u-mrg-b-xl">
+
+  <script src="/seed/js/jquery.min.js"></script>
+  <script src="/seed/js/bootstrap.min.js"></script>
+  <script src="/seed/js/anchor.min.js?v=1f4e3548191979a04378c4e92f4f47ea"></script>
+  <script src="/seed/js/clipboard.min.js"></script>
+
+  <script src="/seed/js/snippets.js"></script>
+  <script src="/seed/js/styleguide.js?v=c236822f975efbf78eb523de29a5744d"></script>
+
+</footer>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+  
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+  <script src="/seed/js/main.js?v=7c64f6d755c81bc7d3ece2f8fea9cb5a"></script>
+
+
+</body>
+
+</html>
