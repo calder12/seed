@@ -7,7 +7,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('verify-dependencies', function(callback) {
   console.log('Verifying dependencies!');
-  isOnline(function(err, online) {
+  isOnline().then(function(online) {
     if (online) {
       runSequence(
         'verify-bundler',
