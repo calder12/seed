@@ -18,7 +18,7 @@ class: "s-hs-docs s-hs-index"
     <a href="#get-started" class="c-button c-button--lg">Get Started</a>
   </p>
   <p class="t-tx-charcoal-200">
-    Docs is in progress. We're workin' on it!
+    Docs are in progress. We're workin' on it!
   </p>
 </div>
 

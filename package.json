@@ -34,7 +34,7 @@
     "run-sequence": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "yargs": "^6.5.0"
+    "yargs": "^6.6.0"
   },
   "dependencies": {
     "clipboard": "^1.5.16",
@@ -56,6 +56,7 @@
     "seed-display": "^0.1.4",
     "seed-dropdown": "0.0.6",
     "seed-family": "0.0.3",
+    "seed-fieldset": "0.0.1",
     "seed-flexy": "^0.2.0",
     "seed-floats": "^0.2.5",
     "seed-grid": "^0.3.12",
