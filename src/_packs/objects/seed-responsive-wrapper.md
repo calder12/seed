@@ -1,5 +1,6 @@
 ---
 title: Responsive Wrapper
+description: "Object class that provides horizontal scrolling when overflow occurs."
 section: Object
 layout: docs
 source: https://github.com/helpscout/seed-responsive-wrapper

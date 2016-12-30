@@ -1,5 +1,6 @@
 ---
 title: Inline
+description: "Object classes that properly adjacent align elements together."
 section: Object
 layout: docs
 source: https://github.com/helpscout/seed-inline

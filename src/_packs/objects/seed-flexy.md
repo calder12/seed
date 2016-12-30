@@ -1,5 +1,6 @@
 ---
 title: Flexy
+description: "Object classes that uses flexbox to intelligently align items together."
 section: Object
 layout: docs
 source: https://github.com/helpscout/seed-flexy

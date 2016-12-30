@@ -1,5 +1,6 @@
 ---
 title: Control Group
+description: "Object classes that align and group form-based elements together."
 section: Object
 layout: docs
 source: https://github.com/helpscout/seed-control-group

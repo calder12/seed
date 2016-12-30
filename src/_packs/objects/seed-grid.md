@@ -1,5 +1,6 @@
 ---
 title: Grid system
+description: "Object classes that provide grid structure."
 section: Object
 layout: docs
 source: https://github.com/helpscout/seed-grid
