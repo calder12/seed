@@ -40,11 +40,11 @@ The fieldset component helps group form elements like labels and inputs. The `.c
 <form>
   <fieldset class="c-fieldset">
     <label for="input1">Label</label>
-    <input id="input1" class="c-input" placeholder="Placeholder" value="Value">
+    <input id="input1" class="c-input" placeholder="Placeholder">
   </fieldset>
   <fieldset class="c-fieldset">
     <label for="input2">Label</label>
-    <input id="input2" class="c-input" placeholder="Placeholder" value="Value">
+    <input id="input2" class="c-input" placeholder="Placeholder">
   </fieldset>
 </form>
 {% endexample %}
@@ -54,7 +54,7 @@ Although recommended, it isn't necessary to use `.c-fieldset` with a `<fieldset>
 {% example html %}
 <div class="c-fieldset">
   <label for="input3">Label</label>
-  <input id="input3" class="c-input" placeholder="Placeholder" value="Value">
+  <input id="input3" class="c-input" placeholder="Placeholder">
 </div>
 {% endexample %}
 
@@ -78,13 +78,13 @@ It is recommended that [seed-grid](/seed/packs/seed-grid) object classes are use
   <div class="o-col-6">
     <div class="c-fieldset">
       <label>Label</label>
-      <input class="c-input" placeholder="Placeholder" value="Value">
+      <input class="c-input" placeholder="Placeholder">
     </div>
   </div>
   <div class="o-col-6">
     <div class="c-fieldset">
       <label>Label</label>
-      <input class="c-input" placeholder="Placeholder" value="Value">
+      <input class="c-input" placeholder="Placeholder">
     </div>
   </div>
 </div>
@@ -101,13 +101,13 @@ Alternatively, [seed-inline](/seed/packs/seed-inline) object classes can also be
   <div class="o-inline__item">
     <div class="c-fieldset">
       <label>Label</label>
-      <input class="c-input" placeholder="Placeholder" value="Value">
+      <input class="c-input" placeholder="Placeholder">
     </div>
   </div>
   <div class="o-inline__item">
     <div class="c-fieldset">
       <label>Label</label>
-      <input class="c-input" placeholder="Placeholder" value="Value">
+      <input class="c-input" placeholder="Placeholder">
     </div>
   </div>
 </div>
@@ -128,15 +128,15 @@ Applying the desired state class on `.c-fieldset` will automatically adjust the 
 {% example html %}
 <div class="c-fieldset is-error">
   <label>Error</label>
-  <input class="c-input" placeholder="Placeholder" value="Value">
+  <input class="c-input" placeholder="Placeholder">
 </div>
 <div class="c-fieldset is-success">
   <label>Success</label>
-  <input class="c-input" placeholder="Placeholder" value="Value">
+  <input class="c-input" placeholder="Placeholder">
 </div>
 <div class="c-fieldset is-warning">
   <label>Warning</label>
-  <input class="c-input" placeholder="Placeholder" value="Value">
+  <input class="c-input" placeholder="Placeholder">
 </div>
 {% endexample %}
 
@@ -149,7 +149,7 @@ If a native HTML `<fieldset>` selector is used, you can apply the supported `dis
 {% example html %}
 <fieldset class="c-fieldset" disabled>
   <label>Label</label>
-  <input class="c-input" placeholder="Placeholder" value="Value">
+  <input class="c-input" placeholder="Placeholder">
 </fieldset>
 {% endexample %}
 
