@@ -1,5 +1,6 @@
 ---
 title: Link
+description: "Component that provides styling for links."
 section: Component
 source: https://github.com/helpscout/seed-link
 seed-pack: seed-link

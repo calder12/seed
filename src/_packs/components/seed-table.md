@@ -1,5 +1,6 @@
 ---
 title: Table
+description: "Component that stylizes tables. Includes support for a variation of sizes and styles."
 section: Component
 source: https://github.com/helpscout/seed-table
 seed-pack: seed-table

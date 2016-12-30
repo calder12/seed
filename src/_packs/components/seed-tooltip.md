@@ -1,5 +1,6 @@
 ---
 title: Tooltip
+description: "Component that provides styling for tooltips. This component uses Bootstrap's Javascript to handle the interactions."
 section: Component
 source: https://github.com/helpscout/seed-tooltip
 seed-pack: seed-tooltip

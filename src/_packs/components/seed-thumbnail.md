@@ -1,5 +1,6 @@
 ---
 title: Thumbnail
+description: "Component that stylizes images for use as thumbnails. Includes support for a variation of sizes and styles."
 section: Component
 source: https://github.com/helpscout/seed-thumbnail
 seed-pack: seed-thumbnail

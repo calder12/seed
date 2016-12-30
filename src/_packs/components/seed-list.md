@@ -1,5 +1,6 @@
 ---
 title: List
+description: "Component that provides styling for a lists."
 section: Component
 source: https://github.com/helpscout/seed-list
 seed-pack: seed-list

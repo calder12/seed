@@ -1,5 +1,6 @@
 ---
 title: Modal
+description: "Component that provides styling for modals. This component uses Bootstrap's Javascript to handle the interactions."
 section: Component
 source: https://github.com/helpscout/seed-modal
 seed-pack: seed-modal
