@@ -109,6 +109,24 @@ In the markup examples (below), you will notice that for certain components ther
 
 
 
+## Selects
+
+For `<select>` dropdowns, check out [seed-input](/seed/packs/seed-input/#selects).
+
+{% example html %}
+<select class="c-input">
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+</select>
+{% endexample %}
+
+
+
+---
+
+
+
 ## Directions
 
 

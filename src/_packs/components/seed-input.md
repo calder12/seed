@@ -4,7 +4,7 @@ description: "Component for user-input. Includes support for a variation of size
 section: Component
 source: https://github.com/helpscout/seed-input
 seed-pack: seed-input
-keywords: form, input, form control, control
+keywords: form, input, form control, control, select
 ---
 
 Input component pack for Seed
@@ -45,6 +45,24 @@ npm install seed-input --save
 
 
 
+## Selects
+
+`.c-input` can be used to stylize `<select>` elements.
+
+{% example html %}
+<select class="c-input">
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+</select>
+{% endexample %}
+
+
+
+----
+
+
+
 ## Sizes
 
 ### Small
@@ -69,7 +87,7 @@ npm install seed-input --save
 
 
 
-----
+---
 
 
 
