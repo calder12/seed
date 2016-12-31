@@ -1,13 +1,13 @@
 ---
-title: Fieldset
+title: Form Group
 description: "Component that groups form elements like labels and inputs within a web form."
 section: Component
-source: https://github.com/helpscout/seed-fieldset
-seed-pack: seed-fieldset
-keywords: form, input, form group, formgroup, field, fieldset
+source: https://github.com/helpscout/seed-form-group
+seed-pack: seed-form-group
+keywords: form, input, form group, formgroup
 ---
 
-Fieldset component pack for Seed
+Form group component pack for Seed
 
 ## Contents
 
@@ -17,7 +17,7 @@ Fieldset component pack for Seed
 ## Install
 
 ```
-npm install seed-fieldset --save
+npm install seed-form-group --save
 ```
 
 
@@ -34,29 +34,21 @@ npm install seed-fieldset --save
 
 ## Example
 
-The fieldset component helps group form elements like labels and inputs. The `.c-fieldset` component is an enhancement on the native HTML [`<fieldset>`](https://developer.mozilla.org/en/docs/Web/HTML/Element/fieldset) selector.
+The form group component helps group form elements like labels and inputs.
 
 {% example html %}
 <form>
-  <fieldset class="c-fieldset">
+  <div class="c-fieldset">
     <label for="input1">Label</label>
     <input id="input1" class="c-input" placeholder="Placeholder">
-  </fieldset>
-  <fieldset class="c-fieldset">
+  </div>
+  <div class="c-fieldset">
     <label for="input2">Label</label>
     <input id="input2" class="c-input" placeholder="Placeholder">
-  </fieldset>
+  </div>
 </form>
 {% endexample %}
 
-
-Although recommended, it isn't necessary to use `.c-fieldset` with a `<fieldset>` selector. The class can be applied on selectors like `<div>`.
-{% example html %}
-<div class="c-fieldset">
-  <label for="input3">Label</label>
-  <input id="input3" class="c-input" placeholder="Placeholder">
-</div>
-{% endexample %}
 
 
 
@@ -66,7 +58,7 @@ Although recommended, it isn't necessary to use `.c-fieldset` with a `<fieldset>
 
 ## Inline
 
-Fieldsets can be inlined using a variety of methods.
+Form groups can be inlined using a variety of methods.
 
 
 ### Using Grid classes
@@ -76,13 +68,13 @@ It is recommended that [seed-grid](/seed/packs/seed-grid) object classes are use
 {% example html %}
 <div class="o-row">
   <div class="o-col-6">
-    <div class="c-fieldset">
+    <div class="c-form-group">
       <label>Label</label>
       <input class="c-input" placeholder="Placeholder">
     </div>
   </div>
   <div class="o-col-6">
-    <div class="c-fieldset">
+    <div class="c-form-group">
       <label>Label</label>
       <input class="c-input" placeholder="Placeholder">
     </div>
@@ -99,13 +91,13 @@ Alternatively, [seed-inline](/seed/packs/seed-inline) object classes can also be
 {% example html %}
 <div class="o-inline">
   <div class="o-inline__item">
-    <div class="c-fieldset">
+    <div class="c-form-group">
       <label>Label</label>
       <input class="c-input" placeholder="Placeholder">
     </div>
   </div>
   <div class="o-inline__item">
-    <div class="c-fieldset">
+    <div class="c-form-group">
       <label>Label</label>
       <input class="c-input" placeholder="Placeholder">
     </div>
@@ -122,35 +114,22 @@ Alternatively, [seed-inline](/seed/packs/seed-inline) object classes can also be
 
 ## States
 
-Applying the desired state class on `.c-fieldset` will automatically adjust the `<label>` and [seed-input](/seed/packs/seed-input) styles to match.
+Applying the desired state class on `.c-form-group` will automatically adjust the `<label>` and [seed-input](/seed/packs/seed-input) styles to match.
 
 
 {% example html %}
-<div class="c-fieldset is-error">
+<div class="c-form-group is-error">
   <label>Error</label>
   <input class="c-input" placeholder="Placeholder">
 </div>
-<div class="c-fieldset is-success">
+<div class="c-form-group is-success">
   <label>Success</label>
   <input class="c-input" placeholder="Placeholder">
 </div>
-<div class="c-fieldset is-warning">
+<div class="c-form-group is-warning">
   <label>Warning</label>
   <input class="c-input" placeholder="Placeholder">
 </div>
-{% endexample %}
-
-
-
-### Disabled
-
-If a native HTML `<fieldset>` selector is used, you can apply the supported `disabled` attribute on the selector.
-
-{% example html %}
-<fieldset class="c-fieldset" disabled>
-  <label>Label</label>
-  <input class="c-input" placeholder="Placeholder">
-</fieldset>
 {% endexample %}
 
 
