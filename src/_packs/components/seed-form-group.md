@@ -38,11 +38,11 @@ The form group component helps group form elements like labels and inputs.
 
 {% example html %}
 <form>
-  <div class="c-fieldset">
+  <div class="c-form-group">
     <label for="input1">Label</label>
     <input id="input1" class="c-input" placeholder="Placeholder">
   </div>
-  <div class="c-fieldset">
+  <div class="c-form-group">
     <label for="input2">Label</label>
     <input id="input2" class="c-input" placeholder="Placeholder">
   </div>
