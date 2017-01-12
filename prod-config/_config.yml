@@ -1,0 +1,9 @@
+url: "http://developer.helpscout.com/seed"
+baseurl:  ""
+
+ENV: production
+
+assets:
+  compress:
+    css: true
+  digest: true

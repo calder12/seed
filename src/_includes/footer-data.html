@@ -1,0 +1,18 @@
+{% capture data %}
+var SEEDDATA = {
+  packs: [
+    {% for pack in site.packs %}
+    {
+      name: '{{ pack.title }}',
+      slug: '{{ pack.seed-pack | lowercase }}',
+      type: '{{ pack.section | lowercase }}',
+      source: '{{ pack.source }}'
+    },
+    {% endfor %}
+  ]
+};
+{% endcapture %}
+
+<script type="text/javascript">
+{{ data | strip_newlines }}
+</script>

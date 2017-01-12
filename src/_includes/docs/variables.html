@@ -1,0 +1,10 @@
+{% for section in include.data %}
+{% if section.title %}
+## {{ section.title }}
+{% endif %}
+
+{% include docs/variables-table.html %}
+
+---
+
+{% endfor %}

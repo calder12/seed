@@ -1,0 +1,38 @@
+{% for section in include.data %}
+
+  <div class="c-card hs-code u-mrg-b-10">
+    <table class="c-table c-table--hover">
+      <thead>
+        {% if section.headers %}
+        {% for header in section.headers %}
+          <th class="o-col-6">{{ header }}</th>
+        {% endfor %}
+        {% else %}
+        <th class="o-col-6">Variable</th>
+        <th class="o-col-6">Default value</th>
+        {% endif %}
+      </thead>
+      <tbody>
+        {% for item in section.variables %}
+          <tr>
+            <td>
+              {% if item.variable == "--" %}
+              <span class="u-text-muted">--</span>
+              {% else %}
+              <code>{% if include.function %}{{ include.function }}{% endif %}{{ item.variable }}</code>
+              {% endif %}
+            </td>
+            <td>
+              {% if item.value == "--" %}
+              <span class="u-text-muted">--</span>
+              {% else %}
+              {{ item.value }}
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+{% endfor %}

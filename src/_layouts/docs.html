@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign doc_id = 'hs-doc' %}
+{% assign section_class = '' %}
+{% if page.title %}
+  {% capture doc_id %}{{ doc_id }}-{{ page.title | downcase | replace: ' ', '-' }}{% endcapture %}
+  {% capture doc_class %}s-hs-docs--{{ page.title | downcase | replace: ' ', '-' }}{% endcapture %}
+  {% capture section_class %}s-hs-docs--{{ page.section | downcase | replace: ' ', '-' }}{% endcapture %}
+{% endif %}
+<div id="{{ doc_id }}" class="s-hs-docs {{ doc_class }} {{ section_class }}">
+  <div class="hs-content__top" id="hs-content-top"></div>
+  {{ content }}
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>

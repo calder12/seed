@@ -1,63 +1,48 @@
-# seed [![Build Status](https://travis-ci.org/helpscout/seed.svg?branch=v2)](https://travis-ci.org/helpscout/seed) [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
+# Seed CSS
+==========
 
-Seed CSS Framework!
+## Requirements
+- Ruby
+- Bundler
+- Node
+- Gulp
 
-JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 
-## Install
+##### Ruby
+If you do not have Ruby on your system, check out [this guide](https://github.com/rbenv/rbenv) from rbenv.
+
+
+##### Bundler
+Once you have Ruby installed on your machine, run the following command to install [Bundler](http://bundler.io/)
 ```
-npm install seed-framework --save
-```
-
-## WIP
-
-This project has evolved like cray! There's lots more that needs to be added.
-
-### Todo components
-
-* [x] [Base styles](https://github.com/helpscout/seed-base)
-* [x] [Dropdowns](https://github.com/helpscout/seed-dropdown)
-* [x] [Modal](https://github.com/helpscout/seed-modal)
-* [x] [Popover](https://github.com/helpscout/seed-popover)
-* [x] [Table](https://github.com/helpscout/seed-table)
-* [x] [Tooltip](https://github.com/helpscout/seed-tooltip)
-* [ ] Progress bar
-* [ ] Spinner
-* [x] [Responsive video](https://github.com/helpscout/seed-video)
-* [ ] Breadcrumb
-* [ ] Collapse
-* [ ] Nav
-* [ ] Pagination (?)
-
-
-## Documentation
-
-You can find most of our documentation [here](http://style.helpscout.com/seed/packs/)!
-
-
-## Basic Usage
-
-### SCSS
-This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
-
-
-```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed');
-
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
-});
+gem install bundler
 ```
 
-Once that is setup, simply `@import` *seed* as needed in your `.scss` file:
+##### Node
+If you do not have Node installed on your machine, we recommend installing it using [Homebrew](https://github.com/customerio/mvp#homebrew).
 
-```scss
-// Packs
-@import "pack/seed/_index";
+Run the following command in your command line:
+```
+brew install node
+```
+
+
+##### Gulp
+Help Scout's styleguide site is compiled using Gulp. See the [Getting Started](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide for more information.
+
+```
+npm install -g gulp-cli
+```
+
+
+## Getting started
+
+Run the following to install all the node things:
+```
+npm install
+```
+
+When you're ready, run the following to fire it up! (P.S. It *should* automatically resolve/install ruby and node things for you)
+```
+gulp
 ```

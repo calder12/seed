@@ -1,0 +1,99 @@
+---
+
+name: Seed CSS Documentation
+title: Seed CSS Documentation
+source: ./src
+destination: ./seed
+
+ENV: development
+
+url: ""
+baseurl: "/seed"
+
+# Permalinks
+permalink: pretty
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+exclude:
+  - _site
+  - .asset-cache
+  - .cache
+  - .gitignore
+  - _assets/vendor
+  - framework/archived
+  - js
+  - node_modules
+  - prod-config
+  - scss
+  - site
+  - tmp
+  - "*.xml"
+
+keep_files:
+  - css
+  - fonts
+  # - images
+  - js
+  - "*.xml"
+
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+
+
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /guides/examples/:path/
+  guides:
+    output: true
+    permalink: /guides/:path/
+  packs:
+    output: true
+    permalink: /packs/:slug/
+
+
+# defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "docs"
+      section: "Examples"
+  -
+    scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "docs"
+      section: "Guides"
+      breadcrumb:
+        -
+          title: "Guides"
+          link: "/guides/"
+  -
+    scope:
+      path: ""
+      type: "packs"
+    values:
+      layout: "docs"
