@@ -9,8 +9,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.com/seed/css/main.css?v=6cba2ba358ab53c7b203aea40c8dbca0">
-  <link rel="stylesheet" href="http://developer.helpscout.com/seed/css/aktiv-webfont.css?v=9960f2336ba827efd0f362c1ee1f51a0">
+  <link rel="stylesheet" href="http://developer.helpscout.com/seed/css/main.css?v=d8172e7f7d4e3a841c62cf732fae305d">
+  <link rel="stylesheet" href="http://developer.helpscout.com/seed/css/aktiv-webfont.css?v=a1a334fce5086e07bc2c018f1ff3ca29">
   
   <link rel="icon" href="http://developer.helpscout.com/seed/favicon.ico" type="image/x-icon"/>
 
@@ -136,15 +136,10 @@
   </li>
   <li><a href="#example" id="markdown-toc-example">Example</a>    <ul>
       <li><a href="#inner-text-color" id="markdown-toc-inner-text-color">Inner text color</a></li>
+      <li><a href="#links" id="markdown-toc-links">Links</a></li>
     </ul>
   </li>
-  <li><a href="#states" id="markdown-toc-states">States</a>    <ul>
-      <li><a href="#error" id="markdown-toc-error">Error</a></li>
-      <li><a href="#info" id="markdown-toc-info">Info</a></li>
-      <li><a href="#success" id="markdown-toc-success">Success</a></li>
-      <li><a href="#warning" id="markdown-toc-warning">Warning</a></li>
-    </ul>
-  </li>
+  <li><a href="#states" id="markdown-toc-states">States</a></li>
 </ul>
 
 <h2 id="install">Install</h2>
@@ -165,14 +160,16 @@
 
 <h2 id="example">Example</h2>
 
+<p>Alerts support a wide variety of child selector types (<code class="highlighter-rouge">h1-h6</code>, <code class="highlighter-rouge">p</code>, <code class="highlighter-rouge">ul</code>, etc…) with any length of text.</p>
+
 <div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-alert">
-  <h3>Here's what's going on</h3>
-  <p>Here's some more detail about what's going on</p>
+<div class="c-alert" role="alert">
+  <h3>Just a heads up</h3>
+  <p>You my friend are responsible for delaying my rendezvous with star command!</p>
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Here's what's going on<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Here's some more detail about what's going on<span class="nt">&lt;/p&gt;</span>
+</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Just a heads up<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span>You my friend are responsible for delaying my rendezvous with star command!<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
 <hr />
@@ -182,71 +179,77 @@
 <p>To ensure the inner text color matches the alert color scheme, you can add the class <code class="highlighter-rouge">.c-alert__text</code>. This is useful to help override base text colors for headings (<code class="highlighter-rouge">h1-h6</code>) or lists (<code class="highlighter-rouge">ul</code>).</p>
 
 <div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-alert">
-  <h3>Here's what's going on</h3>
+<div class="c-alert" role="alert">
+  <h3>Just a heads up</h3>
   <p class="c-alert__text">
-    Here's some more detail about what's going on
+    You my friend are responsible for delaying my rendezvous with star command!
   </p>
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Here's what's going on<span class="nt">&lt;/h3&gt;</span>
+</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Just a heads up<span class="nt">&lt;/h3&gt;</span>
   <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-alert__text"</span><span class="nt">&gt;</span>
-    Here's some more detail about what's going on
+    You my friend are responsible for delaying my rendezvous with star command!
   <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
 <hr />
 
+<h3 id="links">Links</h3>
+
+<p>Links will automatically adapt the alert’s base text color. Links will also be underlined by default to help better distinguish them from plain ol’ text.</p>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-alert" role="alert">
+  <h3>We stick together</h3>
+  We stick together and can see it through. Cause <a href="https://www.youtube.com/watch?v=nMN4JZ8crVY" target="_blank">you've got a friend in me</a>.
+</div>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
 <h2 id="states">States</h2>
 
-<h3 id="error">Error</h3>
+<p>Alerts comes with a handful of <a href="/seed/packs/seed-states">color schemes</a> to represent states.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-alert is-error">
-  <h3>Here's what's going on</h3>
-  <p>Here's some more detail about what's going on</p>
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-alert is-error" role="alert">
+  <h3>You, Are, A, Toyyy!</h3>
+  <p>You're not the real thing. You're an action figure. You are a child's play thing!</p>
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-error"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Here's what's going on<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Here's some more detail about what's going on<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="info">Info</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-alert is-info">
-  <h3>Here's what's going on</h3>
-  <p>Here's some more detail about what's going on</p>
+<div class="c-alert is-info" role="alert">
+  <h3>Buzz?</h3>
+  <p>Buzz Lightyear, you're not worried are you?</p>
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-info"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Here's what's going on<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Here's some more detail about what's going on<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="success">Success</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-alert is-success">
-  <h3>Here's what's going on</h3>
-  <p>Here's some more detail about what's going on</p>
+<div class="c-alert is-success" role="alert">
+  <h3>Success!</h3>
+  <p>That's not flying, that's just falling with style ;)</p>
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Here's what's going on<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Here's some more detail about what's going on<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="warning">Warning</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-alert is-warning">
-  <h3>Here's what's going on</h3>
-  <p>Here's some more detail about what's going on</p>
+<div class="c-alert is-warning" role="alert">
+  <h3>Just a heads up</h3>
+  <p>You my friend are responsible for delaying my rendezvous with star command!</p>
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-warning"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3&gt;</span>Here's what's going on<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Here's some more detail about what's going on<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
+</div></div>
 
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert is-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
 
 </div>
 
@@ -269,11 +272,11 @@
 
   <script src="http://developer.helpscout.com/seed/js/jquery.min.js"></script>
   <script src="http://developer.helpscout.com/seed/js/bootstrap.min.js"></script>
-  <script src="http://developer.helpscout.com/seed/js/anchor.min.js?v=82266e71e04864059301fd44ef7598b7"></script>
+  <script src="http://developer.helpscout.com/seed/js/anchor.min.js?v=8e780720ec3de972d2f57d45d030d912"></script>
   <script src="http://developer.helpscout.com/seed/js/clipboard.min.js"></script>
 
   <script src="http://developer.helpscout.com/seed/js/snippets.js"></script>
-  <script src="http://developer.helpscout.com/seed/js/styleguide.js?v=0a79a1ea8d560a7d13617986be2e16d2"></script>
+  <script src="http://developer.helpscout.com/seed/js/styleguide.js?v=16adc3ad3e4f70f8cb9d254c5c4f0929"></script>
 
 </footer>
 
@@ -288,7 +291,7 @@
 var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form Group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress Bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
 </script>
 
-  <script src="http://developer.helpscout.com/seed/js/main.js?v=c9b5df086b4f5427b1e48fb6756aac60"></script>
+  <script src="http://developer.helpscout.com/seed/js/main.js?v=5dd17714d594e7453b25beccd047ecd8"></script>
 
 
 </body>
