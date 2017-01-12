@@ -1,5 +1,4 @@
 # Seed CSS
-==========
 
 ## Requirements
 - Ruby
