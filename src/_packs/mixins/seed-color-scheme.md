@@ -54,10 +54,10 @@ We believe the best way to organize your colors is to use a Sass [map](http://sa
 // Create our color scheme map
 $colors: (
   blue: (
-    $default: #3197D6,
-    $light: #DAF1FF,
-    $dark: #1F5E89,
-    $darkest: #143D57
+    default: #3197D6,
+    light: #DAF1FF,
+    dark: #1F5E89,
+    darkest: #143D57
   )
 );
 ```
@@ -71,10 +71,10 @@ Now we just need a way to access the color value to use it in our styles. The `s
 // Create our color scheme map
 $colors: (
   blue: (
-    $default: #3197D6,
-    $light: #DAF1FF,
-    $dark: #1F5E89,
-    $darkest: #143D57
+    default: #3197D6,
+    light: #DAF1FF,
+    dark: #1F5E89,
+    darkest: #143D57
   )
 );
 
