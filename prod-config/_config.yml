@@ -1,4 +1,4 @@
-url: "http://developer.helpscout.com/seed"
+url: "http://developer.helpscout.net/seed"
 baseurl:  ""
 
 ENV: production
