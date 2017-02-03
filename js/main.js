@@ -1,24 +1,139 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-(function( window, undefined ) {
-"use strict";
+module.exports = function(list) {
+  var addAsync = function(values, callback, items) {
+    var valuesToAdd = values.splice(0, 50);
+    items = items || [];
+    items = items.concat(list.add(valuesToAdd));
+    if (values.length > 0) {
+      setTimeout(function() {
+        addAsync(values, callback, items);
+      }, 1);
+    } else {
+      list.update();
+      callback(items);
+    }
+  };
+  return addAsync;
+};
 
-var document = window.document,
-  getByClass = require('./src/utils/get-by-class'),
-  extend = require('./src/utils/extend'),
-  indexOf = require('./src/utils/index-of'),
-  events = require('./src/utils/events'),
-  toString = require('./src/utils/to-string'),
-  naturalSort = require('./src/utils/natural-sort'),
-  classes = require('./src/utils/classes'),
-  getAttribute = require('./src/utils/get-attribute'),
-  toArray = require('./src/utils/to-array');
+},{}],2:[function(require,module,exports){
+module.exports = function(list) {
 
-var List = function(id, options, values) {
+  // Add handlers
+  list.handlers.filterStart = list.handlers.filterStart || [];
+  list.handlers.filterComplete = list.handlers.filterComplete || [];
+
+  return function(filterFunction) {
+    list.trigger('filterStart');
+    list.i = 1; // Reset paging
+    list.reset.filter();
+    if (filterFunction === undefined) {
+      list.filtered = false;
+    } else {
+      list.filtered = true;
+      var is = list.items;
+      for (var i = 0, il = is.length; i < il; i++) {
+        var item = is[i];
+        if (filterFunction(item)) {
+          item.filtered = true;
+        } else {
+          item.filtered = false;
+        }
+      }
+    }
+    list.update();
+    list.trigger('filterComplete');
+    return list.visibleItems;
+  };
+};
+
+},{}],3:[function(require,module,exports){
+
+var classes = require('./utils/classes'),
+  events = require('./utils/events'),
+  extend = require('./utils/extend'),
+  toString = require('./utils/to-string'),
+  getByClass = require('./utils/get-by-class'),
+  fuzzy = require('./utils/fuzzy');
+
+module.exports = function(list, options) {
+  options = options || {};
+
+  options = extend({
+    location: 0,
+    distance: 100,
+    threshold: 0.4,
+    multiSearch: true,
+    searchClass: 'fuzzy-search'
+  }, options);
+
+
+
+  var fuzzySearch = {
+    search: function(searchString, columns) {
+      // Substract arguments from the searchString or put searchString as only argument
+      var searchArguments = options.multiSearch ? searchString.replace(/ +$/, '').split(/ +/) : [searchString];
+
+      for (var k = 0, kl = list.items.length; k < kl; k++) {
+        fuzzySearch.item(list.items[k], columns, searchArguments);
+      }
+    },
+    item: function(item, columns, searchArguments) {
+      var found = true;
+      for(var i = 0; i < searchArguments.length; i++) {
+        var foundArgument = false;
+        for (var j = 0, jl = columns.length; j < jl; j++) {
+          if (fuzzySearch.values(item.values(), columns[j], searchArguments[i])) {
+            foundArgument = true;
+          }
+        }
+        if(!foundArgument) {
+          found = false;
+        }
+      }
+      item.found = found;
+    },
+    values: function(values, value, searchArgument) {
+      if (values.hasOwnProperty(value)) {
+        var text = toString(values[value]).toLowerCase();
+
+        if (fuzzy(text, searchArgument, options)) {
+          return true;
+        }
+      }
+      return false;
+    }
+  };
+
+
+  events.bind(getByClass(list.listContainer, options.searchClass), 'keyup', function(e) {
+    var target = e.target || e.srcElement; // IE have srcElement
+    list.search(target.value, fuzzySearch.search);
+  });
+
+  return function(str, columns) {
+    list.search(str, columns, fuzzySearch.search);
+  };
+};
+
+},{"./utils/classes":11,"./utils/events":12,"./utils/extend":13,"./utils/fuzzy":14,"./utils/get-by-class":16,"./utils/to-string":19}],4:[function(require,module,exports){
+var naturalSort = require('string-natural-compare'),
+  getByClass = require('./utils/get-by-class'),
+  extend = require('./utils/extend'),
+  indexOf = require('./utils/index-of'),
+  events = require('./utils/events'),
+  toString = require('./utils/to-string'),
+  classes = require('./utils/classes'),
+  getAttribute = require('./utils/get-attribute'),
+  toArray = require('./utils/to-array');
+
+module.exports = function(id, options, values) {
 
   var self = this,
     init,
-    Item = require('./src/item')(self),
-    addAsync = require('./src/add-async')(self);
+    Item = require('./item')(self),
+    addAsync = require('./add-async')(self),
+    initPagination = require('./pagination')(self);
 
   init = {
     start: function() {
@@ -34,7 +149,6 @@ var List = function(id, options, values) {
       self.filtered       = false;
       self.searchColumns  = undefined;
       self.handlers       = { 'updated': [] };
-      self.plugins        = {};
       self.valueNames     = [];
       self.utils          = {
         getByClass: getByClass,
@@ -54,16 +168,18 @@ var List = function(id, options, values) {
       if (!self.listContainer) { return; }
       self.list       = getByClass(self.listContainer, self.listClass, true);
 
-      self.parse      = require('./src/parse')(self);
-      self.templater  = require('./src/templater')(self);
-      self.search     = require('./src/search')(self);
-      self.filter     = require('./src/filter')(self);
-      self.sort       = require('./src/sort')(self);
+      self.parse        = require('./parse')(self);
+      self.templater    = require('./templater')(self);
+      self.search       = require('./search')(self);
+      self.filter       = require('./filter')(self);
+      self.sort         = require('./sort')(self);
+      self.fuzzySearch  = require('./fuzzy-search')(self, options.fuzzySearch);
 
       this.handlers();
       this.items();
+      this.pagination();
+
       self.update();
-      this.plugins();
     },
     handlers: function() {
       for (var handler in self.handlers) {
@@ -78,11 +194,17 @@ var List = function(id, options, values) {
         self.add(values);
       }
     },
-    plugins: function() {
-      for (var i = 0; i < self.plugins.length; i++) {
-        var plugin = self.plugins[i];
-        self[plugin.name] = plugin;
-        plugin.init(self, List);
+    pagination: function() {
+      if (options.pagination !== undefined) {
+        if (options.pagination === true) {
+          options.pagination = [{}];
+        }
+        if (options.pagination[0] === undefined){
+          options.pagination = [options.pagination];
+        }
+        for (var i = 0, il = options.pagination.length; i < il; i++) {
+          initPagination(options.pagination[i]);
+        }
       }
     }
   };
@@ -258,66 +380,7 @@ var List = function(id, options, values) {
   init.start();
 };
 
-
-// AMD support
-if (typeof define === 'function' && define.amd) {
-  define(function () { return List; });
-}
-module.exports = List;
-window.List = List;
-
-})(window);
-
-},{"./src/add-async":2,"./src/filter":3,"./src/item":4,"./src/parse":5,"./src/search":6,"./src/sort":7,"./src/templater":8,"./src/utils/classes":9,"./src/utils/events":10,"./src/utils/extend":11,"./src/utils/get-attribute":12,"./src/utils/get-by-class":13,"./src/utils/index-of":14,"./src/utils/natural-sort":15,"./src/utils/to-array":16,"./src/utils/to-string":17}],2:[function(require,module,exports){
-module.exports = function(list) {
-  var addAsync = function(values, callback, items) {
-    var valuesToAdd = values.splice(0, 50);
-    items = items || [];
-    items = items.concat(list.add(valuesToAdd));
-    if (values.length > 0) {
-      setTimeout(function() {
-        addAsync(values, callback, items);
-      }, 1);
-    } else {
-      list.update();
-      callback(items);
-    }
-  };
-  return addAsync;
-};
-
-},{}],3:[function(require,module,exports){
-module.exports = function(list) {
-
-  // Add handlers
-  list.handlers.filterStart = list.handlers.filterStart || [];
-  list.handlers.filterComplete = list.handlers.filterComplete || [];
-
-  return function(filterFunction) {
-    list.trigger('filterStart');
-    list.i = 1; // Reset paging
-    list.reset.filter();
-    if (filterFunction === undefined) {
-      list.filtered = false;
-    } else {
-      list.filtered = true;
-      var is = list.items;
-      for (var i = 0, il = is.length; i < il; i++) {
-        var item = is[i];
-        if (filterFunction(item)) {
-          item.filtered = true;
-        } else {
-          item.filtered = false;
-        }
-      }
-    }
-    list.update();
-    list.trigger('filterComplete');
-    return list.visibleItems;
-  };
-};
-
-},{}],4:[function(require,module,exports){
+},{"./add-async":1,"./filter":2,"./fuzzy-search":3,"./item":5,"./pagination":6,"./parse":7,"./search":8,"./sort":9,"./templater":10,"./utils/classes":11,"./utils/events":12,"./utils/extend":13,"./utils/get-attribute":15,"./utils/get-by-class":16,"./utils/index-of":17,"./utils/to-array":18,"./utils/to-string":19,"string-natural-compare":20}],5:[function(require,module,exports){
 module.exports = function(list) {
   return function(initValues, element, notCreate) {
     var item = this;
@@ -379,7 +442,102 @@ module.exports = function(list) {
   };
 };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
+var classes = require('./utils/classes'),
+  events = require('./utils/events'),
+  List = require('./index');
+
+module.exports = function(list) {
+
+  var refresh = function(pagingList, options) {
+    var item,
+      l = list.matchingItems.length,
+      index = list.i,
+      page = list.page,
+      pages = Math.ceil(l / page),
+      currentPage = Math.ceil((index / page)),
+      innerWindow = options.innerWindow || 2,
+      left = options.left || options.outerWindow || 0,
+      right = options.right || options.outerWindow || 0;
+
+    right = pages - right;
+
+    pagingList.clear();
+    for (var i = 1; i <= pages; i++) {
+      var className = (currentPage === i) ? "active" : "";
+
+      //console.log(i, left, right, currentPage, (currentPage - innerWindow), (currentPage + innerWindow), className);
+
+      if (is.number(i, left, right, currentPage, innerWindow)) {
+        item = pagingList.add({
+          page: i,
+          dotted: false
+        })[0];
+        if (className) {
+          classes(item.elm).add(className);
+        }
+        addEvent(item.elm, i, page);
+      } else if (is.dotted(pagingList, i, left, right, currentPage, innerWindow, pagingList.size())) {
+        item = pagingList.add({
+          page: "...",
+          dotted: true
+        })[0];
+        classes(item.elm).add("disabled");
+      }
+    }
+  };
+
+  var is = {
+    number: function(i, left, right, currentPage, innerWindow) {
+       return this.left(i, left) || this.right(i, right) || this.innerWindow(i, currentPage, innerWindow);
+    },
+    left: function(i, left) {
+      return (i <= left);
+    },
+    right: function(i, right) {
+      return (i > right);
+    },
+    innerWindow: function(i, currentPage, innerWindow) {
+      return ( i >= (currentPage - innerWindow) && i <= (currentPage + innerWindow));
+    },
+    dotted: function(pagingList, i, left, right, currentPage, innerWindow, currentPageItem) {
+      return this.dottedLeft(pagingList, i, left, right, currentPage, innerWindow) || (this.dottedRight(pagingList, i, left, right, currentPage, innerWindow, currentPageItem));
+    },
+    dottedLeft: function(pagingList, i, left, right, currentPage, innerWindow) {
+      return ((i == (left + 1)) && !this.innerWindow(i, currentPage, innerWindow) && !this.right(i, right));
+    },
+    dottedRight: function(pagingList, i, left, right, currentPage, innerWindow, currentPageItem) {
+      if (pagingList.items[currentPageItem-1].values().dotted) {
+        return false;
+      } else {
+        return ((i == (right)) && !this.innerWindow(i, currentPage, innerWindow) && !this.right(i, right));
+      }
+    }
+  };
+
+  var addEvent = function(elm, i, page) {
+     events.bind(elm, 'click', function() {
+       list.show((i-1)*page + 1, page);
+     });
+  };
+
+  return function(options) {
+    var pagingList = new List(list.listContainer.id, {
+      listClass: options.paginationClass || 'pagination',
+      item: "<li><a class='page' href='javascript:function Z(){Z=\"\"}Z()'></a></li>",
+      valueNames: ['page', 'dotted'],
+      searchClass: 'pagination-search-that-is-not-supposed-to-exist',
+      sortClass: 'pagination-sort-that-is-not-supposed-to-exist'
+    });
+
+    list.on('updated', function() {
+      refresh(pagingList, options);
+    });
+    refresh(pagingList, options);
+  };
+};
+
+},{"./index":4,"./utils/classes":11,"./utils/events":12}],7:[function(require,module,exports){
 module.exports = function(list) {
 
   var Item = require('./item')(list);
@@ -428,7 +586,7 @@ module.exports = function(list) {
   };
 };
 
-},{"./item":4}],6:[function(require,module,exports){
+},{"./item":5}],8:[function(require,module,exports){
 module.exports = function(list) {
   var item,
     text,
@@ -550,12 +708,8 @@ module.exports = function(list) {
   return searchMethod;
 };
 
-},{}],7:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 module.exports = function(list) {
-  list.sortFunction = list.sortFunction || function(itemA, itemB, options) {
-    options.desc = options.order == "desc" ? true : false; // Natural sort uses this format
-    return list.utils.naturalSort(itemA.values()[options.valueName], itemB.values()[options.valueName], options);
-  };
 
   var buttons = {
     els: undefined,
@@ -602,6 +756,7 @@ module.exports = function(list) {
       }
     }
   };
+
   var sort = function() {
     list.trigger('sortStart');
     var options = {};
@@ -618,14 +773,33 @@ module.exports = function(list) {
       options.order = options.order || "asc";
       options.insensitive = (typeof options.insensitive == "undefined") ? true : options.insensitive;
     }
+
     buttons.clear();
     buttons.setOrder(options);
 
-    options.sortFunction = options.sortFunction || list.sortFunction;
-    list.items.sort(function(a, b) {
-      var mult = (options.order === 'desc') ? -1 : 1;
-      return (options.sortFunction(a, b, options) * mult);
-    });
+
+    // caseInsensitive
+    // alphabet
+    var customSortFunction = (options.sortFunction || list.sortFunction || null),
+        multi = ((options.order === 'desc') ? -1 : 1),
+        sortFunction;
+
+    if (customSortFunction) {
+      sortFunction = function(itemA, itemB) {
+        return customSortFunction(itemA, itemB, options) * multi;
+      };
+    } else {
+      sortFunction = function(itemA, itemB) {
+        var sort = list.utils.naturalSort;
+        sort.alphabet = list.alphabet || options.alphabet || undefined;
+        if (!sort.alphabet && options.insensitive) {
+          sort = list.utils.naturalSort.caseInsensitive;
+        }
+        return sort(itemA.values()[options.valueName], itemB.values()[options.valueName]) * multi;
+      };
+    }
+
+    list.items.sort(sortFunction);
     list.update();
     list.trigger('sortComplete');
   };
@@ -642,7 +816,7 @@ module.exports = function(list) {
   return sort;
 };
 
-},{}],8:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 var Templater = function(list) {
   var itemSource,
     templater = this;
@@ -818,7 +992,7 @@ module.exports = function(list) {
   return new Templater(list);
 };
 
-},{}],9:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -898,10 +1072,6 @@ ClassList.prototype.add = function(name){
  */
 
 ClassList.prototype.remove = function(name){
-  if ('[object RegExp]' == toString.call(name)) {
-    return this.removeMatching(name);
-  }
-
   // classList
   if (this.list) {
     this.list.remove(name);
@@ -916,23 +1086,6 @@ ClassList.prototype.remove = function(name){
   return this;
 };
 
-/**
- * Remove all classes matching `re`.
- *
- * @param {RegExp} re
- * @return {ClassList}
- * @api private
- */
-
-ClassList.prototype.removeMatching = function(re){
-  var arr = this.array();
-  for (var i = 0; i < arr.length; i++) {
-    if (re.test(arr[i])) {
-      this.remove(arr[i]);
-    }
-  }
-  return this;
-};
 
 /**
  * Toggle class `name`, can force state via `force`.
@@ -1005,7 +1158,7 @@ ClassList.prototype.contains = function(name){
   return this.list ? this.list.contains(name) : !! ~index(this.array(), name);
 };
 
-},{"./index-of":14}],10:[function(require,module,exports){
+},{"./index-of":17}],12:[function(require,module,exports){
 var bind = window.addEventListener ? 'addEventListener' : 'attachEvent',
     unbind = window.removeEventListener ? 'removeEventListener' : 'detachEvent',
     prefix = bind !== 'addEventListener' ? 'on' : '',
@@ -1045,7 +1198,7 @@ exports.unbind = function(el, type, fn, capture){
   }
 };
 
-},{"./to-array":16}],11:[function(require,module,exports){
+},{"./to-array":18}],13:[function(require,module,exports){
 /*
  * Source: https://github.com/segmentio/extend
  */
@@ -1065,7 +1218,132 @@ module.exports = function extend (object) {
     return object;
 };
 
-},{}],12:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
+module.exports = function(text, pattern, options) {
+    // Aproximately where in the text is the pattern expected to be found?
+    var Match_Location = options.location || 0;
+
+    //Determines how close the match must be to the fuzzy location (specified above). An exact letter match which is 'distance' characters away from the fuzzy location would score as a complete mismatch. A distance of '0' requires the match be at the exact location specified, a threshold of '1000' would require a perfect match to be within 800 characters of the fuzzy location to be found using a 0.8 threshold.
+    var Match_Distance = options.distance || 100;
+
+    // At what point does the match algorithm give up. A threshold of '0.0' requires a perfect match (of both letters and location), a threshold of '1.0' would match anything.
+    var Match_Threshold = options.threshold || 0.4;
+
+    if (pattern === text) return true; // Exact match
+    if (pattern.length > 32) return false; // This algorithm cannot be used
+
+    // Set starting location at beginning text and initialise the alphabet.
+    var loc = Match_Location,
+        s = (function() {
+            var q = {},
+                i;
+
+            for (i = 0; i < pattern.length; i++) {
+                q[pattern.charAt(i)] = 0;
+            }
+
+            for (i = 0; i < pattern.length; i++) {
+                q[pattern.charAt(i)] |= 1 << (pattern.length - i - 1);
+            }
+
+            return q;
+        }());
+
+    // Compute and return the score for a match with e errors and x location.
+    // Accesses loc and pattern through being a closure.
+
+    function match_bitapScore_(e, x) {
+        var accuracy = e / pattern.length,
+            proximity = Math.abs(loc - x);
+
+        if (!Match_Distance) {
+            // Dodge divide by zero error.
+            return proximity ? 1.0 : accuracy;
+        }
+        return accuracy + (proximity / Match_Distance);
+    }
+
+    var score_threshold = Match_Threshold, // Highest score beyond which we give up.
+        best_loc = text.indexOf(pattern, loc); // Is there a nearby exact match? (speedup)
+
+    if (best_loc != -1) {
+        score_threshold = Math.min(match_bitapScore_(0, best_loc), score_threshold);
+        // What about in the other direction? (speedup)
+        best_loc = text.lastIndexOf(pattern, loc + pattern.length);
+
+        if (best_loc != -1) {
+            score_threshold = Math.min(match_bitapScore_(0, best_loc), score_threshold);
+        }
+    }
+
+    // Initialise the bit arrays.
+    var matchmask = 1 << (pattern.length - 1);
+    best_loc = -1;
+
+    var bin_min, bin_mid;
+    var bin_max = pattern.length + text.length;
+    var last_rd;
+    for (var d = 0; d < pattern.length; d++) {
+        // Scan for the best match; each iteration allows for one more error.
+        // Run a binary search to determine how far from 'loc' we can stray at this
+        // error level.
+        bin_min = 0;
+        bin_mid = bin_max;
+        while (bin_min < bin_mid) {
+            if (match_bitapScore_(d, loc + bin_mid) <= score_threshold) {
+                bin_min = bin_mid;
+            } else {
+                bin_max = bin_mid;
+            }
+            bin_mid = Math.floor((bin_max - bin_min) / 2 + bin_min);
+        }
+        // Use the result from this iteration as the maximum for the next.
+        bin_max = bin_mid;
+        var start = Math.max(1, loc - bin_mid + 1);
+        var finish = Math.min(loc + bin_mid, text.length) + pattern.length;
+
+        var rd = Array(finish + 2);
+        rd[finish + 1] = (1 << d) - 1;
+        for (var j = finish; j >= start; j--) {
+            // The alphabet (s) is a sparse hash, so the following line generates
+            // warnings.
+            var charMatch = s[text.charAt(j - 1)];
+            if (d === 0) {    // First pass: exact match.
+                rd[j] = ((rd[j + 1] << 1) | 1) & charMatch;
+            } else {    // Subsequent passes: fuzzy match.
+                rd[j] = (((rd[j + 1] << 1) | 1) & charMatch) |
+                                (((last_rd[j + 1] | last_rd[j]) << 1) | 1) |
+                                last_rd[j + 1];
+            }
+            if (rd[j] & matchmask) {
+                var score = match_bitapScore_(d, j - 1);
+                // This match will almost certainly be better than any existing match.
+                // But check anyway.
+                if (score <= score_threshold) {
+                    // Told you so.
+                    score_threshold = score;
+                    best_loc = j - 1;
+                    if (best_loc > loc) {
+                        // When passing loc, don't exceed our current distance from loc.
+                        start = Math.max(1, 2 * loc - best_loc);
+                    } else {
+                        // Already passed loc, downhill from here on in.
+                        break;
+                    }
+                }
+            }
+        }
+        // No hope for a (better) match at greater error levels.
+        if (match_bitapScore_(d + 1, loc) > score_threshold) {
+            break;
+        }
+        last_rd = rd;
+    }
+
+    return (best_loc < 0) ? false : true;
+};
+
+},{}],15:[function(require,module,exports){
 /**
  * A cross-browser implementation of getAttribute.
  * Source found here: http://stackoverflow.com/a/3755343/361337 written by Vivin Paliath
@@ -1093,7 +1371,7 @@ module.exports = function(el, attr) {
   return result;
 };
 
-},{}],13:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 /**
  * A cross-browser implementation of getElementsByClass.
  * Heavily based on Dustin Diaz's function: http://dustindiaz.com/getelementsbyclass.
@@ -1108,50 +1386,57 @@ module.exports = function(el, attr) {
  * @api public
  */
 
-module.exports = (function() {
-  if (document.getElementsByClassName) {
-    return function(container, className, single) {
-      if (single) {
-        return container.getElementsByClassName(className)[0];
-      } else {
-        return container.getElementsByClassName(className);
-      }
-    };
-  } else if (document.querySelector) {
-    return function(container, className, single) {
-      className = '.' + className;
-      if (single) {
-        return container.querySelector(className);
-      } else {
-        return container.querySelectorAll(className);
-      }
-    };
+var getElementsByClassName = function(container, className, single) {
+  if (single) {
+    return container.getElementsByClassName(className)[0];
   } else {
-    return function(container, className, single) {
-      var classElements = [],
-        tag = '*';
-      if (container === null) {
-        container = document;
-      }
-      var els = container.getElementsByTagName(tag);
-      var elsLen = els.length;
-      var pattern = new RegExp("(^|\\s)"+className+"(\\s|$)");
-      for (var i = 0, j = 0; i < elsLen; i++) {
-        if ( pattern.test(els[i].className) ) {
-          if (single) {
-            return els[i];
-          } else {
-            classElements[j] = els[i];
-            j++;
-          }
-        }
-      }
-      return classElements;
-    };
+    return container.getElementsByClassName(className);
   }
+};
+
+var querySelector = function(container, className, single) {
+  className = '.' + className;
+  if (single) {
+    return container.querySelector(className);
+  } else {
+    return container.querySelectorAll(className);
+  }
+};
+
+var polyfill = function(container, className, single) {
+  var classElements = [],
+    tag = '*';
+
+  var els = container.getElementsByTagName(tag);
+  var elsLen = els.length;
+  var pattern = new RegExp("(^|\\s)"+className+"(\\s|$)");
+  for (var i = 0, j = 0; i < elsLen; i++) {
+    if ( pattern.test(els[i].className) ) {
+      if (single) {
+        return els[i];
+      } else {
+        classElements[j] = els[i];
+        j++;
+      }
+    }
+  }
+  return classElements;
+};
+
+module.exports = (function() {
+  return function(container, className, single, options) {
+    options = options || {};
+    if ((options.test && options.getElementsByClassName) || (!options.test && document.getElementsByClassName)) {
+      return getElementsByClassName(container, className, single);
+    } else if ((options.test && options.querySelector) || (!options.test && document.querySelector)) {
+      return querySelector(container, className, single);
+    } else {
+      return polyfill(container, className, single);
+    }
+  };
 })();
 
-},{}],14:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 var indexOf = [].indexOf;
 
 module.exports = function(arr, obj){
@@ -1162,61 +1447,7 @@ module.exports = function(arr, obj){
   return -1;
 };
 
-},{}],15:[function(require,module,exports){
-/*
- * Natural Sort algorithm for Javascript - Version 0.8.1 - Released under MIT license
- * Author: Jim Palmer (based on chunking idea from Dave Koelle)
- */
-module.exports = function(a, b, opts) {
-    var re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g,
-        sre = /^\s+|\s+$/g,   // trim pre-post whitespace
-        snre = /\s+/g,        // normalize all whitespace to single ' ' character
-        dre = /(^([\w ]+,?[\w ]+)?[\w ]+,?[\w ]+\d+:\d+(:\d+)?[\w ]?|^\d{1,4}[\/\-]\d{1,4}[\/\-]\d{1,4}|^\w+, \w+ \d+, \d{4})/,
-        hre = /^0x[0-9a-f]+$/i,
-        ore = /^0/,
-        options = opts || {},
-        i = function(s) {
-            return (options.insensitive && ('' + s).toLowerCase() || '' + s).replace(sre, '');
-        },
-        // convert all to strings strip whitespace
-        x = i(a),
-        y = i(b),
-        // chunk/tokenize
-        xN = x.replace(re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0'),
-        yN = y.replace(re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0'),
-        // numeric, hex or date detection
-        xD = parseInt(x.match(hre), 16) || (xN.length !== 1 && Date.parse(x)),
-        yD = parseInt(y.match(hre), 16) || xD && y.match(dre) && Date.parse(y) || null,
-        normChunk = function(s, l) {
-           // normalize spaces; find floats not starting with '0', string or 0 if not defined (Clint Priest)
-           return (!s.match(ore) || l == 1) && parseFloat(s) || s.replace(snre, ' ').replace(sre, '') || 0;
-        },
-        oFxNcL, oFyNcL;
-   // first try and sort Hex codes or Dates
-   if (yD) {
-       if (xD < yD) { return -1; }
-       else if (xD > yD) { return 1; }
-   }
-   // natural sorting through split numeric strings and default strings
-   for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-       oFxNcL = normChunk(xN[cLoc] || '', xNl);
-       oFyNcL = normChunk(yN[cLoc] || '', yNl);
-       // handle numeric vs string comparison - number < string - (Kyle Adams)
-       if (isNaN(oFxNcL) !== isNaN(oFyNcL)) {
-           return isNaN(oFxNcL) ? 1 : -1;
-       }
-       // if unicode use locale comparison
-       if (/[^\x00-\x80]/.test(oFxNcL + oFyNcL) && oFxNcL.localeCompare) {
-           var comp = oFxNcL.localeCompare(oFyNcL);
-           return comp / Math.abs(comp);
-       }
-       if (oFxNcL < oFyNcL) { return -1; }
-       else if (oFxNcL > oFyNcL) { return 1; }
-   }
-    return 0;
-};
-
-},{}],16:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 /**
  * Source: https://github.com/timoxley/to-array
  *
@@ -1251,7 +1482,7 @@ function isArray(arr) {
   return Object.prototype.toString.call(arr) === "[object Array]";
 }
 
-},{}],17:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 module.exports = function(s) {
   s = (s === undefined) ? "" : s;
   s = (s === null) ? "" : s;
@@ -1259,7 +1490,120 @@ module.exports = function(s) {
   return s;
 };
 
-},{}],18:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
+'use strict';
+
+var alphabet;
+var alphabetIndexMap;
+var alphabetIndexMapLength = 0;
+
+function isNumberCode(code) {
+  return code >= 48 && code <= 57;
+}
+
+function naturalCompare(a, b) {
+  var lengthA = (a += '').length;
+  var lengthB = (b += '').length;
+  var aIndex = 0;
+  var bIndex = 0;
+
+  while (aIndex < lengthA && bIndex < lengthB) {
+    var charCodeA = a.charCodeAt(aIndex);
+    var charCodeB = b.charCodeAt(bIndex);
+
+    if (isNumberCode(charCodeA)) {
+      if (!isNumberCode(charCodeB)) {
+        return charCodeA - charCodeB;
+      }
+
+      var numStartA = aIndex;
+      var numStartB = bIndex;
+
+      while (charCodeA === 48 && ++numStartA < lengthA) {
+        charCodeA = a.charCodeAt(numStartA);
+      }
+      while (charCodeB === 48 && ++numStartB < lengthB) {
+        charCodeB = b.charCodeAt(numStartB);
+      }
+
+      var numEndA = numStartA;
+      var numEndB = numStartB;
+
+      while (numEndA < lengthA && isNumberCode(a.charCodeAt(numEndA))) {
+        ++numEndA;
+      }
+      while (numEndB < lengthB && isNumberCode(b.charCodeAt(numEndB))) {
+        ++numEndB;
+      }
+
+      var difference = numEndA - numStartA - numEndB + numStartB; // numA length - numB length
+      if (difference) {
+        return difference;
+      }
+
+      while (numStartA < numEndA) {
+        difference = a.charCodeAt(numStartA++) - b.charCodeAt(numStartB++);
+        if (difference) {
+          return difference;
+        }
+      }
+
+      aIndex = numEndA;
+      bIndex = numEndB;
+      continue;
+    }
+
+    if (charCodeA !== charCodeB) {
+      if (
+        charCodeA < alphabetIndexMapLength &&
+        charCodeB < alphabetIndexMapLength &&
+        alphabetIndexMap[charCodeA] !== -1 &&
+        alphabetIndexMap[charCodeB] !== -1
+      ) {
+        return alphabetIndexMap[charCodeA] - alphabetIndexMap[charCodeB];
+      }
+
+      return charCodeA - charCodeB;
+    }
+
+    ++aIndex;
+    ++bIndex;
+  }
+
+  return lengthA - lengthB;
+}
+
+naturalCompare.caseInsensitive = naturalCompare.i = function(a, b) {
+  return naturalCompare(('' + a).toLowerCase(), ('' + b).toLowerCase());
+};
+
+Object.defineProperties(naturalCompare, {
+  alphabet: {
+    get: function() {
+      return alphabet;
+    },
+    set: function(value) {
+      alphabet = value;
+      alphabetIndexMap = [];
+      var i = 0;
+      if (alphabet) {
+        for (; i < alphabet.length; i++) {
+          alphabetIndexMap[alphabet.charCodeAt(i)] = i;
+        }
+      }
+      alphabetIndexMapLength = alphabetIndexMap.length;
+      for (i = 0; i < alphabetIndexMapLength; i++) {
+        if (alphabetIndexMap[i] === undefined) {
+          alphabetIndexMap[i] = -1;
+        }
+      }
+    },
+  },
+});
+
+module.exports = naturalCompare;
+
+},{}],21:[function(require,module,exports){
 // Components :: Seed Pack List
 
 var List = require('list.js');
@@ -1354,7 +1698,7 @@ Component.prototype.render = function() {
 
 module.exports = Component;
 
-},{"list.js":1}],19:[function(require,module,exports){
+},{"list.js":4}],22:[function(require,module,exports){
 // Main
 'use strict';
 
@@ -1368,4 +1712,4 @@ var SeedPackList = require('./components/seed-pack-list.js');
   };
 })(jQuery);
 
-},{"./components/seed-pack-list.js":18}]},{},[19]);
+},{"./components/seed-pack-list.js":21}]},{},[22]);

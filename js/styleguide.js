@@ -6,17 +6,19 @@
     var $window = $(window);
     var $navBody = $('#js-hs-nav-body');
 
-    var $navLink = $('.nav__link');
+    var $navLink = $('.js-nav-link');
 
     $navLink.on('click', function(e) {
       var $this = $(this);
       var $parent = $this.parent();
       var $subNav = $parent.find('.nav-secondary');
       var section = $this.data('section');
+      var $arrow = $this.find('.js-nav-arrow');
 
       if($subNav.length) {
         e.preventDefault();
         $subNav.slideToggle(300, 'swing');
+        $arrow.toggleClass('a-rotate-180');
       }
     });
 
@@ -76,5 +78,7 @@
 
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
+  $("[rel='popover']").popover();
+  $(".input-helper").popover();
 
 })(jQuery);
