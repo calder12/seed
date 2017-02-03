@@ -9,16 +9,16 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="/seed/css/main.css?v=4b44a4578ecc707da89c9bb23f50e99d">
-  <link rel="stylesheet" href="/seed/css/aktiv-webfont.css?v=df0907b7ccce01ff89e4d77c75dc3b10">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=98044e932aa7405280f55e279e0ebf4a">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=d8febb2949a0bf02f84553bca6610bc4">
   
   
-  <link rel="icon" href="/seed/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
-  <script src="/seed/js/jquery.min.js"></script>
-  <script src="/seed/js/bootstrap.min.js"></script>
-  <script src="/seed/js/bootstrap-datepicker.min.js"></script>
-  <script src="/seed/js/audio-player.js"></script>
+  <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
+  <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
+  <script src="http://developer.helpscout.net/seed/js/bootstrap-datepicker.min.js"></script>
+  <script src="http://developer.helpscout.net/seed/js/audio-player.js"></script>
 
   <meta name="robots" content="noindex,nofollow" />
 </head>
@@ -28,10 +28,10 @@
   <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
     <div class="hs-nav-side__header">
   <a href="#" class="hs-nav-side__toggle" id="js-hs-nav-toggle">
-    <img src="/seed/images/styleguide/nav-toggle.svg" alt="">
+    <img src="http://developer.helpscout.net/seed/images/styleguide/nav-toggle.svg" alt="">
   </a>
   <div class="c-card u-mrg-b-none t-bdr-none">
-    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="/seed/">
+    <a class="u-pad-3 u-pad-5@md c-block--branding tx-center tx-no-underline t-tx-white u-centralize" href="http://developer.helpscout.net/seed/">
       <div class="tx-center">
         <h1>Seed CSS</h1>
         <div class="tx-12 tx-uppercase">
@@ -415,6 +415,75 @@ Type: <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists
 
 <p>By default, <code class="highlighter-rouge">seed-breakpoints</code> comes with 5 breakpoints with values borrowed from <a href="https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L126">Bootstrap V4’s grid system</a>. These values can be modified by adjusting the <a href="https://github.com/helpscout/seed-breakpoints/blob/master/scss/pack/seed-breakpoints/_config.scss#L7">$seed-breakpoints map</a> in your project.</p>
 
+<div class="c-card hs-code u-mrg-b-10">
+    <table class="c-table c-table--hover">
+      <thead>
+        
+        
+          <th class="o-col-6">Modifier</th>
+        
+          <th class="o-col-6">Mixin activates when…</th>
+        
+        
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td>
+              
+              <code>xs</code>
+              
+            </td>
+            <td>
+              
+              the viewport is smaller than 543px.
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              
+              <code>sm</code>
+              
+            </td>
+            <td>
+              
+              the viewport is larger than 544px.
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              
+              <code>md</code>
+              
+            </td>
+            <td>
+              
+              the viewport is larger than 768px.
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              
+              <code>lg</code>
+              
+            </td>
+            <td>
+              
+              the viewport is larger than 992px.
+              
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
 <hr />
 
 <h2 id="responsive-modifiers">Responsive modifiers</h2>
@@ -422,6 +491,75 @@ Type: <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists
 <p>CSS classes generated with mixins such as <a href="#breakpoint-all">breakpoint-all()</a> or <a href="#breakpoint-prop-map">breakpoint-prop-map()</a>, <code class="highlighter-rouge">seed-breakpoints</code> automatically receive an <code class="highlighter-rouge">@&lt;breakpoint&gt;</code> suffix. This follows the naming convention established by <a href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/#responsive-suffixes">ITCSS</a> as well as the design principles of <a href="http://www.lukew.com/resources/mobile_first.asp">mobile first</a>.</p>
 
 <p>It starts with no suffix as for mobile viewports. It then works it’s way up from <code class="highlighter-rouge">@sm</code> - <code class="highlighter-rouge">@lg</code> to handle smaller viewports (Phablets)  to larger viewports (Desktops).</p>
+
+<div class="c-card hs-code u-mrg-b-10">
+    <table class="c-table c-table--hover">
+      <thead>
+        
+        
+          <th class="o-col-6">Modifier</th>
+        
+          <th class="o-col-6">Activates…</th>
+        
+        
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td>
+              
+              <span class="u-text-muted">--</span>
+              
+            </td>
+            <td>
+              
+              Always.
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              
+              <code>@sm</code>
+              
+            </td>
+            <td>
+              
+              when the viewport is larger than 544px.
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              
+              <code>@md</code>
+              
+            </td>
+            <td>
+              
+              when the viewport is larger than 768px.
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              
+              <code>@lg</code>
+              
+            </td>
+            <td>
+              
+              when the viewport is larger than 992px.
+              
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
 
 <p><strong>Example</strong>
 The <code class="highlighter-rouge">&lt;h1&gt;</code> starts off with a default (mobile) size of <code class="highlighter-rouge">tx-h5</code> (specified by a heading class from <a href="/seed/type/seed-typography/#headings">seed-typography</a>). As the viewport increases, the font size also increases as specified by the additional heading sizes with <code class="highlighter-rouge">@</code> breakpoint classes.</p>
@@ -461,11 +599,11 @@ The <code class="highlighter-rouge">&lt;h1&gt;</code> starts off with a default 
 
   <footer class="u-pad-t-xl u-mrg-b-xl">
 
-  <script src="/seed/js/anchor.min.js?v=05c24bd53f16881934d778fda0be6288"></script>
-  <script src="/seed/js/clipboard.min.js"></script>
+  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=2494f64ccc6bc20f80f982daf4eb6aa6"></script>
+  <script src="http://developer.helpscout.net/seed/js/clipboard.min.js"></script>
 
-  <script src="/seed/js/snippets.js"></script>
-  <script src="/seed/js/styleguide.js?v=4a47761ad69507c3591fcc4d5350b4d8"></script>
+  <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
+  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=321c90c63b3bcf1bbab84c443e5a6d99"></script>
 
 </footer>
 
@@ -480,7 +618,7 @@ The <code class="highlighter-rouge">&lt;h1&gt;</code> starts off with a default 
 var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form Group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress Bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
 </script>
 
-  <script src="/seed/js/main.js?v=42a09e782a1d2d84ee692de4a36a1379"></script>
+  <script src="http://developer.helpscout.net/seed/js/main.js?v=a51bbe3f94cf512f490b657274af801f"></script>
 
 
 </body>
