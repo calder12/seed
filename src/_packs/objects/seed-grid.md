@@ -53,173 +53,10 @@ The grid class names have been modified to match Seed's CSS naming conventions:
 
 The column implementation of Seed is based on Bootstrap. However, the naming convention was heavily modified.
 
-### Sizes
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-The grid system uses a base of 12 (columns).
+{% include docs/variables-table.html data=site.data.seed.seed-grid.columns %}
 
-<table class="c-table">
-  <thead>
-    <tr>
-      <th>
-        Class
-      </th>
-      <th>
-        Width (%)
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign container = 1140 %}
-    {% assign columns = 12 %}
-
-    {% for n in (1..columns) %}
-      <tr>
-        <td>
-          <code>.o-col-{{ n }}</code>
-        </td>
-        <td>
-          {{ n | get_column_percentage }}%
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-
-
-### Default classes
-
-<table class="c-table">
-  <thead>
-    <tr>
-      <th>
-        Breakpoint
-      </th>
-      <th>
-        Example
-      </th>
-      <th>
-        The column's width will be set…
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        None
-      </td>
-      <td>
-        <code>.o-col-4</code>
-      </td>
-      <td>
-        Always.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>@sm</code>
-      </td>
-      <td>
-        <code>.o-col-4@sm</code>
-      </td>
-      <td>
-        when the viewport is larger than 544px.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>@md</code>
-      </td>
-      <td>
-        <code>.o-col-4@md</code>
-      </td>
-      <td>
-        when the viewport is larger than 768px.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>@lg</code>
-      </td>
-      <td>
-        <code>.o-col-4@lg</code>
-      </td>
-      <td>
-        when the viewport is larger than 992px.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-### Offset classes
-
-<table class="c-table">
-  <thead>
-    <tr>
-      <th>
-        Breakpoint
-      </th>
-      <th>
-        Example
-      </th>
-      <th>
-        The column's width will be set…
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        None
-      </td>
-      <td>
-        <code>.o-col-offset-4</code>
-      </td>
-      <td>
-        Always.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>@sm</code>
-      </td>
-      <td>
-        <code>.o-col-offset-4@sm</code>
-      </td>
-      <td>
-        when the viewport is larger than 544px.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>@md</code>
-      </td>
-      <td>
-        <code>.o-col-offset-4@md</code>
-      </td>
-      <td>
-        when the viewport is larger than 768px.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>@lg</code>
-      </td>
-      <td>
-        <code>.o-col-offset-4@lg</code>
-      </td>
-      <td>
-        when the viewport is larger than 992px.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-## Example
 
 {% example html %}
 <div class="o-container">
@@ -253,6 +90,12 @@ The grid system uses a base of 12 (columns).
 
 ## Offsetting columns
 
+Offset classes work similarly to columns classes. Instead of adjusting the size of the column, they're responsible for providing left margin spacing.
+
+All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+
+{% include docs/variables-table.html data=site.data.seed.seed-grid.offset %}
+
 {% example html %}
 <div class="o-row">
   <div class="o-col-4@md">.o-col-4@md</div>
@@ -264,6 +107,24 @@ The grid system uses a base of 12 (columns).
 </div>
 <div class="o-row">
   <div class="o-col-6@md o-col-offset-3@md">.o-col-6@md .o-col-offset-3@md</div>
+</div>
+{% endexample %}
+
+
+---
+
+
+## Reordering columns
+
+Push and pull classes allow you to reorder columns. They support all of the default [column sizes](/#columns) and **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+
+**Push**: Shifts grid columns to the right<br>
+**Pull**: Shifts grid columns to the left
+
+{% example html %}
+<div class="o-row">
+  <div class="o-col-9@md o-col-push-3@md">.o-col-9@md .o-col-push-3@md</div>
+  <div class="o-col-3@md o-col-pull-9@md">.o-col-3@md o-col-pull-9@md</div>
 </div>
 {% endexample %}
 
