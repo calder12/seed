@@ -1,5 +1,6 @@
 # Seed CSS
-==========
+
+Documentation for Help Scout's Seed (a modular CSS framework that scales).
 
 ## Requirements
 - Ruby
