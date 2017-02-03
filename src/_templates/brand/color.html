@@ -1,14 +1,12 @@
 {% if template.section %}
 {% for color_section in site.data.color-palette %}
   {% if color_section.title == template.section %}
-    <section class="u-mrg-b-5">
-      <header class="u-pad-b-4">
-        <h3 class="tx-h4 tx-400">
-          {{ color_section.title }} Colors
-        </h3>
-      </header>
+    <section class="u-mrg-b-5 s-content">
+      <h2>
+        {{ color_section.title }} Colors
+      </h2>
 
-      <div class="s-hs-docs">
+      <div class="s-hs-docs u-mrg-b-8">
         {{ template.content }}
       </div>
 

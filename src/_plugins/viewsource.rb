@@ -5,7 +5,7 @@ module Jekyll
         link = 'https://github.com/helpscout/seed/blob/develop/scss/' + link
       end
 
-      template = '<p><i class="icon icon-popup"></i> <a href="' + link + '" target="_blank" class="tx-xs tx-uppercase tx-700">View Source</a></p>'
+      template = '<p><a href="' + link + '" target="_blank" class="c-link--view-source tx-sm tx-500">View Source<i class="icon icon-new-window u-mrg-l-1"></i></a></p>'
 
       template
     end

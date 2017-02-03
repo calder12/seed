@@ -14,18 +14,24 @@
     {% assign slug_base = slug[1] %}
   {% endif %}
 
-  {% assign active_class = 't-tx-charcoal-200' %}
+  {% assign nav_link_is_active = false %}
+  {% assign active_class = 'c-list__active' %}
   {% assign item_active_class = 'u-hidden' %}
   {% if nav_url == slug_base %}
-    {% assign active_class = 'tx-600 t-tx-charcoal-300' %}
+    {% assign nav_link_is_active = true %}
+    {% assign active_class = 'tx-600 t-tx-charcoal-400' %}
     {% assign item_active_class = '' %}
   {% endif %}
 
+  {% if nav_url contains 'http' %}
+    {% capture nav_url %}{{ nav_url }}{% endcapture %}
+  {% endif %}
+
   {% unless nav_url contains '/' %}
-    {% capture nav_url %}/{{ nav_url}}{% endcapture %}
+    {% capture nav_url %}/{{ nav_url }}{% endcapture %}
   {% endunless %}
 
-  <li class="nav__item">
+  <li>
     {% assign nav_link = nav_url %}
     {% if nav.pages %}
       {% assign child = nav.pages.first %}
@@ -40,18 +46,40 @@
         {% capture nav_link %}{{ nav_link }}{{ child_slug }}/{% endcapture %}
       {% endif %}
     {% endif %}
-    <a href="{{ nav_link | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url }}" data-section="{{ nav_id }}" class="nav__link {{ active_class }}">
-      {{ nav.title }}
+
+    {% capture nav_link %}{{ nav_link | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+    {% if nav.link %}
+      {% assign nav_link = nav.link %}
+    {% endif %}
+
+    <a href="{{ nav_link }}"
+      data-section="{{ nav_id }}"
+      class="js-nav-link u-d-block u-pad-v-3 u-pad-h-6 tx-no-underline {{ active_class }}">
+      <div class="o-flexy">
+        <div class="o-flexy__item">
+          {{ nav.title }}
+        </div>
+        {% if nav.pages %}
+        <div class="o-flexy__item">
+          <i class="icon icon-caret-down tx-12 js-nav-arrow u-d-block t-tx-charcoal-200 {% if nav_link_is_active %}a-rotate-180 t-tx-charcoal-600{% endif %}"></i>
+        </div>
+        {% endif %}
+      </div>
     </a>
 
     {% if nav.pages %}
-      <ul class="c-list nav-secondary u-mrg-v-2 {{ item_active_class }}" data-subsection="{{ nav_id }}">
+      <ul class="c-list nav-secondary u-pad-v-2 u-pad-l-0 t-bg-grey-300 {{ item_active_class }}" data-subsection="{{ nav_id }}">
+
         {% for nav_item in nav.pages %}
 
           {% assign nav_item_id = nav_item.title | downcase | replace: ' ', '-' %}
 
           {% assign nav_item_url = nav_item_id %}
-          {% capture nav_item_url %}{{ nav_url }}/{{ nav_item_url }}{% endcapture %}
+          {% if nav_item.url %}
+            {% capture nav_item_url %}{{ nav_url }}/{{ nav_item.url }}{% endcapture %}
+          {% else %}
+            {% capture nav_item_url %}{{ nav_url }}/{{ nav_item_url }}{% endcapture %}
+          {% endif %}
 
           {% assign child_slug = '/' %}
           {% if nav_item.pages %}
@@ -59,32 +87,40 @@
             {% capture child_slug %}{{ child_slug }}{{ child.title | downcase | replace: ' ', '-' }}/{% endcapture %}
           {% endif %}
 
-          {% assign item_active_link_class = 't-tx-charcoal-200' %}
+          {% assign item_active_link_class = 'u-pad-h-6 u-pad-v-2 tx-14 tx-no-underline' %}
 
           {% if page.url contains nav_item_url %}
-            {% assign item_active_link_class = 'tx-600 t-tx-charcoal-300' %}
+            {% assign item_active_link_class = 'c-nav-secondary__active tx-600 t-tx-blue-500 u-pad-h-6 u-pad-v-2 tx-14 tx-no-underline' %}
           {% endif %}
 
-          <li class="nav-secondary__item" role="presentation">
-            <a href="{{ nav_item_url | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url | append: child_slug }}" class="{{ item_active_link_class }}">
+          <li class="nav-secondary__item u-pad-v-0" role="presentation">
+
+            <!-- Comment out Mobile section and add "Coming Soon" -->
+            {% if nav_item.title == "Android" %}
+              <span class="u-d-block u-pad-v-3 u-pad-h-6 t-tx-charcoal-300">Android &nbsp;<span class="c-badge t-bg-grey-500">Coming Soon</span></span>
+            {% else %}
+
+            <a href="{{ nav_item_url | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url | append: child_slug }}" class="{{ item_active_link_class }} u-d-block">
               {{ nav_item.title }}
             </a>
 
+            {% endif %}
+
             {% if nav_item.pages %}
 
-              <ul class="c-list nav-third {{ item_child_active_class }}" data-subsection="{{ nav_id }}">
+              <ul class="c-list nav-third u-pad-v-2 {{ item_child_active_class }}" data-subsection="{{ nav_id }}">
                 {% for nav_item_child in nav_item.pages %}
 
                   {% assign nav_item_child_id = nav_item_child.title | downcase | replace: ' ', '-' %}
                   {% capture nav_item_url %}{{ nav_url }}/{{ nav_item_id }}/{{ nav_item_child_id }}/{% endcapture %}
 
-                  {% assign item_active_class = 't-tx-charcoal-200' %}
+                  {% assign item_active_class = 'c-nav-third__active u-pad-l-10 u-pad-r-6' %}
                   {% if nav_item_url == page.url %}
-                    {% assign item_active_class = 'tx-600 t-tx-charcoal-300' %}
+                    {% assign item_active_class = 'tx-600 t-tx-charcoal-400' %}
                   {% endif %}
 
                   <li>
-                    <a href="{{ nav_item_url | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url }}" class="{{ item_active_class }}">
+                    <a href="{{ nav_item_url | replace: ' ', '-' | replace: '(', '' | replace: ')', '' | prepend: site.baseurl | prepend: site.url }}" class="{{ item_active_class }} u-d-block u-pad-l-4m u-pad-v-1 tx-14 tx-no-underline u-pad-l-10 u-pad-r-6">
                       {{ nav_item_child.title }}
                     </a>
                   </li>
