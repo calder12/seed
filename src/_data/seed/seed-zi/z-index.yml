@@ -1,0 +1,33 @@
+-
+  headers:
+    - Class
+    - Z-Index
+  variables:
+    - variable: u-zi-inherit
+      value: inherit
+    - variable: u-zi-initial
+      value: initial
+    - variable: u-zi-unset
+      value: unset
+    - variable: u-zi-hidden
+      value: -1
+    - variable: u-zi-0
+      value: 0
+    - variable: u-zi-1
+      value: 1
+    - variable: u-zi-2
+      value: 2
+    - variable: u-zi-3
+      value: 3
+    - variable: u-zi-5
+      value: 5
+    - variable: u-zi-10
+      value: 10
+    - variable: u-zi-100
+      value: 100
+    - variable: u-zi-200
+      value: 200
+    - variable: u-zi-1000
+      value: 1000
+    - variable: u-zi-max
+      value: 9999999

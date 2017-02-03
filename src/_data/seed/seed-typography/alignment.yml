@@ -1,0 +1,13 @@
+-
+  headers:
+    - Class
+    - Text alignment
+  variables:
+    - variable: tx-justify
+      value: justify
+    - variable: tx-left
+      value: left
+    - variable: tx-center
+      value: center
+    - variable: tx-right
+      value: right

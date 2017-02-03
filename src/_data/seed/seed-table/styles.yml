@@ -1,0 +1,11 @@
+-
+  headers:
+    - Class
+    - Description
+  variables:
+    - variable: c-table--bordered
+      value: Adds a border around the table
+    - variable: c-table--hover
+      value: Adds hover styles for table rows
+    - variable: c-table--striped
+      value: Adds alternative row stripe styles

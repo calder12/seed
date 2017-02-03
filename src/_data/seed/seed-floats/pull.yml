@@ -1,0 +1,11 @@
+-
+  headers:
+    - Class
+    - Float
+  variables:
+    - variable: u-pull-left
+      value: left
+    - variable: u-pull-right
+      value: right
+    - variable: u-pull-none
+      value: none

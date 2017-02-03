@@ -1,0 +1,13 @@
+-
+  headers:
+    - Class
+    - Dropdown direction
+  variables:
+    - variable: c-dropdown--up
+      value: up
+    - variable: c-dropdown--down
+      value: down
+    - variable: c-dropdown--left
+      value: left
+    - variable: c-dropdown--right
+      value: right

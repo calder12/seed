@@ -1,0 +1,17 @@
+-
+  headers:
+    - Class
+    - Font size
+  variables:
+    - variable: tx-h1
+      value: 3rem
+    - variable: tx-h2
+      value: 2.25rem
+    - variable: tx-h3
+      value: 1.5rem
+    - variable: tx-h4
+      value: 1.25rem
+    - variable: tx-h5
+      value: 1rem
+    - variable: tx-h6
+      value: 0.875rem

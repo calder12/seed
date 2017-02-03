@@ -1,0 +1,15 @@
+-
+  headers:
+    - Class
+    - Text decoration
+  variables:
+    - variable: tx-no-decoration
+      value: none
+    - variable: tx-no-underline
+      value: none
+    - variable: tx-overline
+      value: overline
+    - variable: tx-strikethrough
+      value: line-through
+    - variable: tx-underline
+      value: underline

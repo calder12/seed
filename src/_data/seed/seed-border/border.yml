@@ -1,0 +1,17 @@
+-
+  headers:
+    - Class
+    - Borders applied on…
+  variables:
+    - variable: "t-bdr"
+      value: top, right, bottom, left
+    - variable: "t-bdr-top"
+      value: top
+    - variable: "t-bdr-right"
+      value: right
+    - variable: "t-bdr-bottom"
+      value: bottom
+    - variable: "t-bdr-left"
+      value: left
+    - variable: "t-bdr-none"
+      value: none

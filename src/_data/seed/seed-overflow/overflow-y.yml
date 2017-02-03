@@ -1,0 +1,14 @@
+-
+  headers:
+    - Class
+    - Overflow
+  variables:
+    - variable: u-overflow-y-visible
+      value: visible
+    - variable: u-overflow-y-hidden
+      value: hidden
+    - variable: u-overflow-y-scroll
+      value: scroll
+    - variable: u-overflow-y-auto
+      value: auto
+

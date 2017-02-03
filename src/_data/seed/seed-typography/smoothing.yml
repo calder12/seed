@@ -1,0 +1,13 @@
+-
+  headers:
+    - Class
+    - Font-smoothing
+  variables:
+    - variable: tx-smooth
+      value: antialiased
+    - variable: tx-smooth-auto
+      value: auto
+    - variable: tx-smooth-initial
+      value: initial
+    - variable: tx-smooth-none
+      value: none

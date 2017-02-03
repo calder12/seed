@@ -1,0 +1,13 @@
+-
+  headers:
+    - Modifier
+    - Mixin activates when…
+  variables:
+    - variable: xs
+      value: the viewport is smaller than 543px.
+    - variable: sm
+      value: the viewport is larger than 544px.
+    - variable: md
+      value: the viewport is larger than 768px.
+    - variable: lg
+      value: the viewport is larger than 992px.

@@ -1,0 +1,11 @@
+-
+  headers:
+    - Class
+    - Word break
+  variables:
+    - variable: tx-break-all
+      value: break-all
+    - variable: tx-break-normal
+      value: normal
+    - variable: tx-break-keep-all
+      value: keep-all

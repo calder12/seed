@@ -1,0 +1,15 @@
+-
+  headers:
+    - Class
+    - Line-height
+  variables:
+    - variable: tx-lh-none
+      value: 0
+    - variable: tx-lh-reset
+      value: 1
+    - variable: tx-lh-heading
+      value: 1.2
+    - variable: tx-lh-body
+      value: 1.5
+    - variable: tx-lh-copy
+      value: 1.6
