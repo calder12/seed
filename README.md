@@ -2,6 +2,8 @@
 
 Documentation for Help Scout's Seed (a modular CSS framework that scales).
 
+[http://seedcss.com](http://seedcss.com)
+
 ## Requirements
 - Ruby
 - Bundler
