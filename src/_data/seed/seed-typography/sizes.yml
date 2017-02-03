@@ -1,0 +1,17 @@
+-
+  headers:
+    - Class
+    - Font size
+  variables:
+    - variable: tx-lead
+      value: 3.5rem
+    - variable: tx-xl
+      value: 1.28rem
+    - variable: tx-lg
+      value: 1.14rem
+    - variable: tx-md
+      value: 1rem
+    - variable: tx-sm
+      value: 0.92rem
+    - variable: tx-xs
+      value: 0.72rem

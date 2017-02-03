@@ -1,0 +1,9 @@
+-
+  headers:
+    - Class
+    - Word-wrap
+  variables:
+    - variable: tx-wrap-break
+      value: break-word
+    - variable: tx-wrap-normal
+      value: normal

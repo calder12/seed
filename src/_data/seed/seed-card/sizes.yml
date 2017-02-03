@@ -1,0 +1,11 @@
+-
+  headers:
+    - Class
+    - Padding
+  variables:
+    - variable: c-card__block--md
+      value: 20px 20px (Default)
+    - variable: c-card__block--sm
+      value: 12px 20px
+    - variable: c-card__block--xs
+      value: 8px 20px

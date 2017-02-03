@@ -1,0 +1,13 @@
+-
+  headers:
+    - Modifier
+    - Activates…
+  variables:
+    - variable: --
+      value: Always.
+    - variable: "@sm"
+      value: when the viewport is larger than 544px.
+    - variable: "@md"
+      value: when the viewport is larger than 768px.
+    - variable: "@lg"
+      value: when the viewport is larger than 992px.

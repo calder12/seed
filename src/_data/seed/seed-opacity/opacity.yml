@@ -1,0 +1,27 @@
+-
+  headers:
+    - Class
+    - Opacity
+  variables:
+    - variable: u-op-0
+      value: 0
+    - variable: u-op-1
+      value: 0.1
+    - variable: u-op-2
+      value: 0.2
+    - variable: u-op-3
+      value: 0.3
+    - variable: u-op-4
+      value: 0.4
+    - variable: u-op-5
+      value: 0.5
+    - variable: u-op-6
+      value: 0.6
+    - variable: u-op-7
+      value: 0.7
+    - variable: u-op-8
+      value: 0.8
+    - variable: u-op-9
+      value: 0.9
+    - variable: u-op-10
+      value: 1

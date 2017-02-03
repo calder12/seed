@@ -1,0 +1,31 @@
+-
+  headers:
+    - Class
+    - Min-width
+  variables:
+    - variable: u-width-min-0
+      value: 0%
+    - variable: u-width-min-1
+      value: 8.33333%
+    - variable: u-width-min-2
+      value: 16.66667%
+    - variable: u-width-min-3
+      value: 25%
+    - variable: u-width-min-4
+      value: 33.33333%
+    - variable: u-width-min-5
+      value: 41.66667%
+    - variable: u-width-min-6
+      value: 50%
+    - variable: u-width-min-7
+      value: 58.33333%
+    - variable: u-width-min-8
+      value: 66.66667%
+    - variable: u-width-min-9
+      value: 75%
+    - variable: u-width-min-10
+      value: 83.33333%
+    - variable: u-width-min-11
+      value: 91.66667%
+    - variable: u-width-min-12
+      value: 100%

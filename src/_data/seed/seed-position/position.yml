@@ -1,0 +1,17 @@
+-
+  headers:
+    - Class
+    - Position
+  variables:
+    - variable: u-pos-initial
+      value: initial
+    - variable: u-pos-inherit
+      value: inherit
+    - variable: u-pos-absolute
+      value: absolute
+    - variable: u-pos-fixed
+      value: fixed
+    - variable: u-pos-relative
+      value: relative
+    - variable: u-pos-static
+      value: static

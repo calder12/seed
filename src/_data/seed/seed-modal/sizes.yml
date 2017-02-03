@@ -1,0 +1,11 @@
+-
+  headers:
+    - Class
+    - Max-width
+  variables:
+    - variable: modal-dialog--lg
+      value: 900px
+    - variable: modal-dialog--md
+      value: 600px (Default)
+    - variable: modal-dialog--sm
+      value: 300px

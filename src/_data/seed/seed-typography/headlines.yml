@@ -1,0 +1,13 @@
+-
+  headers:
+    - Class
+    - Font size
+  variables:
+    - variable: tx-headline-1
+      value: 5rem
+    - variable: tx-headline-2
+      value: 4.5rem
+    - variable: tx-headline-3
+      value: 4rem
+    - variable: tx-headline-4
+      value: 3.5rem

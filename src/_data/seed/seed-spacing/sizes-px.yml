@@ -1,0 +1,25 @@
+-
+  headers:
+    - Size
+    - Value
+  variables:
+    - variable: 1
+      value: 4px
+    - variable: 2
+      value: 8px
+    - variable: 3
+      value: 12px
+    - variable: 4
+      value: 16px
+    - variable: 5
+      value: 20px
+    - variable: 6
+      value: 24px
+    - variable: 7
+      value: 28px
+    - variable: 8
+      value: 32px
+    - variable: 9
+      value: 36px
+    - variable: 10
+      value: 40px

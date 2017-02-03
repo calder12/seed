@@ -1,0 +1,31 @@
+-
+  headers:
+    - Class
+    - Font-weight
+  variables:
+    - variable: 100
+      value: 100
+    - variable: 200
+      value: 200
+    - variable: 300
+      value: 300
+    - variable: 400
+      value: 400
+    - variable: 500
+      value: 500
+    - variable: 600
+      value: 600
+    - variable: 700
+      value: 700
+    - variable: 800
+      value: 800
+    - variable: 900
+      value: 900
+    - variable: lighter
+      value: lighter
+    - variable: normal
+      value: normal
+    - variable: bold
+      value: bold
+    - variable: bolder
+      value: bolder

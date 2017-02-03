@@ -1,0 +1,13 @@
+-
+  headers:
+    - Class
+    - White-space
+  variables:
+    - variable: tx-ws-nowrap
+      value: nowrap
+    - variable: tx-ws-pre
+      value: pre
+    - variable: tx-ws-pre-line
+      value: pre-line
+    - variable: tx-ws-normal
+      value: normal

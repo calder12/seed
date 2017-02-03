@@ -1,0 +1,11 @@
+-
+  headers:
+    - Class
+    - Text-transform
+  variables:
+    - variable: tx-capitalize
+      value: capitalize
+    - variable: tx-lowercase
+      value: lowercase
+    - variable: tx-uppercase
+      value: uppercase

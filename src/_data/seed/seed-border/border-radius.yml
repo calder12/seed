@@ -1,0 +1,19 @@
+-
+  headers:
+    - Class
+    - Border radius
+  variables:
+    - variable: "t-bdr-r-0"
+      value: 0px
+    - variable: "t-bdr-r-1"
+      value: 1px
+    - variable: "t-bdr-r-2"
+      value: 2px
+    - variable: "t-bdr-r-3"
+      value: 3px
+    - variable: "t-bdr-r-4"
+      value: 4px
+    - variable: "t-bdr-r-circle"
+      value: 50%
+    - variable: "t-bdr-r-pill"
+      value: 9999px
