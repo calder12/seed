@@ -9,8 +9,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=9579138d20341e105d5bb7c7049702b0">
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=dd35ecd13ec9b2e417223ca589f30699">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=84f28f57ed5ba0710ea9b4b034e3aaca">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=9be0886cb0b7b7c9767d08bcb1bdc251">
   
   
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
@@ -146,6 +146,8 @@
   <li><a href="#mixins" id="markdown-toc-mixins">Mixins</a>    <ul>
       <li><a href="#export" id="markdown-toc-export">export</a></li>
       <li><a href="#publish" id="markdown-toc-publish">publish</a></li>
+      <li><a href="#unload" id="markdown-toc-unload">unload</a></li>
+      <li><a href="#reload" id="markdown-toc-reload">reload</a></li>
     </ul>
   </li>
   <li><a href="#related" id="markdown-toc-related">Related</a></li>
@@ -241,7 +243,7 @@
 
 <p><strong>$name</strong><br />
 Type: <code class="highlighter-rouge">string</code><br />
-Description: The unique name of the module you want controlled.
+Description: The unique name of the module you want controlled.<br />
 Content: The styles you want controlled.</p>
 
 <div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
@@ -283,13 +285,15 @@ Content: The styles you want controlled.</p>
 
 <p><strong>Note</strong>: You <strong>cannot</strong> use an <code class="highlighter-rouge">@import</code> inside the <code class="highlighter-rouge">export</code> mixin. That is because <code class="highlighter-rouge">export</code> uses a series of <code class="highlighter-rouge">@if</code> statements behind the scenes, and Sass does not allow for <code class="highlighter-rouge">@import</code> to be used within conditional statements. (<a href="/seed/packs/seed-publish/conditional-imports">See above</a>)</p>
 
+<hr />
+
 <h3 id="publish">publish</h3>
 
 <p><strong>publish($name)</strong></p>
 
 <p><strong>$name</strong><br />
 Type: <code class="highlighter-rouge">string</code><br />
-Description: The unique name of the module you want controlled.</p>
+Description: The unique name of the module you want published.</p>
 
 <p>Use the <code class="highlighter-rouge">publish</code> mixin when you have completed building your module/pack. This effectively blocks all rendering of CSS for the exported <code class="highlighter-rouge">$name</code> passed the point of publishing.</p>
 
@@ -343,6 +347,120 @@ Description: The unique name of the module you want controlled.</p>
 
 <hr />
 
+<h3 id="unload">unload</h3>
+
+<p><strong>unload($names…)</strong></p>
+
+<p><strong>$names</strong><br />
+Type: <code class="highlighter-rouge">string</code>|<code class="highlighter-rouge">list</code><br />
+Description: The unique name of the module(s) you to be ignored by <code class="highlighter-rouge">publish()</code>.</p>
+
+<p>Modules matching the name of the arguments passed into <code class="highlighter-rouge">unload()</code> will <strong>not</strong> render when CSS is compiled.</p>
+
+<p><strong>Use case</strong></p>
+
+<p>You want to use this brand new <code class="highlighter-rouge">meal-pack</code> in your Sass project (<code class="highlighter-rouge">meal-pack</code> doesn’t really exist, but it would be cool if it did). <code class="highlighter-rouge">meal-pack</code> requires a handful of dependencies:</p>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>meal-pack
+├── sandwich-pack
+│   ├── bun-pack
+│   ├── tomato-pack
+│   ├── deli-pack
+│   └── sauce-pack
+├── snack-pack
+├── sides-pack
+└── drink-pack
+</code></pre></div></div>
+
+<p>For your setup, you want to use <code class="highlighter-rouge">meal-pack</code> <strong>except</strong> for <code class="highlighter-rouge">sides-pack</code>. At this point, you have two options:</p>
+
+<ol>
+  <li>Manually include all the individual packs that make up <code class="highlighter-rouge">meal-pack</code>.</li>
+  <li>Include <code class="highlighter-rouge">meal-pack</code>, and simply exclude <code class="highlighter-rouge">side-pack</code>.</li>
+</ol>
+
+<p>The #2 solution is what the <code class="highlighter-rouge">unload()</code> mixin was designed to accomplish!</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+</span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
+
+<span class="c1">// Step 1: Exclude packs
+</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+
+<span class="c1">// Step 2: @import the pack containing the excluded packs
+</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+
+<span class="c1">// styles within sides-pack will not be generated
+</span></code></pre>
+</div></div></div>
+
+<p>The <code class="highlighter-rouge">unload</code> mixin accepts lists as well as nested lists:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+</span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
+
+<span class="c1">// Step 1: Exclude packs
+</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span>
+  <span class="n">sides</span><span class="o">,</span>
+  <span class="n">snack</span><span class="o">,</span>
+  <span class="p">(</span>
+    <span class="no">tomato</span><span class="o">,</span>
+    <span class="n">sauce</span>
+  <span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">// Step 2: @import the pack containing the excluded packs
+</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+
+<span class="c1">// styles within sides, snack, tomato, and sauce packs will not be generated
+</span></code></pre>
+</div></div></div>
+
+<hr />
+
+<h3 id="reload">reload</h3>
+
+<p><strong>reload($names…)</strong></p>
+
+<p><strong>$names</strong><br />
+Type: <code class="highlighter-rouge">string</code>|<code class="highlighter-rouge">list</code><br />
+Description: The unique name of the module(s) (that have been affected by <code class="highlighter-rouge">unload()</code>) you want to allow <code class="highlighter-rouge">publish()</code> to work on.</p>
+
+<p><code class="highlighter-rouge">reload()</code> exists as a way to provide finer grain control to when/where packs can be loaded.</p>
+
+<p>In the <a href="/seed/packs/seed-publish/#unload"><code class="highlighter-rouge">unload()</code></a> example with the <code class="highlighter-rouge">sides</code> pack:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+</span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
+
+<span class="c1">// Step 1: Exclude packs
+</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+
+<span class="c1">// Step 2: @import the pack containing the excluded packs
+</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+
+<span class="c1">// styles within sides-pack will not be generated
+</span></code></pre>
+</div></div></div>
+
+<p>Let’s say that we actually <strong>do</strong> want sides to load, but we want it to load somewhere else in our Sass code. By using the <code class="highlighter-rouge">reload()</code> mixin, we can re-enable <code class="highlighter-rouge">publish()</code> to generate CSS for the specified pack.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_snacks.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+</span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
+
+<span class="c1">// Step 1: Re-include packs
+</span><span class="k">@include</span> <span class="nd">reload</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+
+<span class="c1">// Step 2: @import the pack containing the previously excluded packs
+</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+
+<span class="c1">// styles within sides-pack will be generated,
+// even though they have been previously excluded.
+</span></code></pre>
+</div></div></div>
+
+<hr />
+
 <h2 id="related">Related</h2>
 
 <ul>
@@ -368,11 +486,11 @@ Description: The unique name of the module you want controlled.</p>
 
   <footer class="u-pad-t-xl u-mrg-b-xl">
 
-  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=7e9c2ef1a0e1ce0f0b47a1f9106bd0b3"></script>
+  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=3eb900fe25faec4b212aa8d4e522fa8f"></script>
   <script src="http://developer.helpscout.net/seed/js/clipboard.min.js"></script>
 
   <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=2b7bde5cc307000b55b1000d0002169d"></script>
+  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=97b04d93d458821d25d4cf66c96eb199"></script>
 
 </footer>
 
@@ -387,7 +505,7 @@ Description: The unique name of the module you want controlled.</p>
 var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form Group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input-addons'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress Bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Video',      slug: 'seed-video',      type: 'Component',      source: 'https://github.com/helpscout/seed-video'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
 </script>
 
-  <script src="http://developer.helpscout.net/seed/js/main.js?v=be7c815f7e667837fcd0b89b98644b83"></script>
+  <script src="http://developer.helpscout.net/seed/js/main.js?v=a8e5a28a82276b1128be9534e7f11bea"></script>
 
 
 </body>
