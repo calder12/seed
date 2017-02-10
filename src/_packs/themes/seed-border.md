@@ -76,3 +76,15 @@ Border radiuses can be adjusted by adding a `.t-bdr-r` class.
   I have a border radius of a lot of px!
 </div>
 {% endexample %}
+
+
+
+
+---
+
+
+
+## Configurations
+
+
+{% include docs/config.html config="seed-border" %}

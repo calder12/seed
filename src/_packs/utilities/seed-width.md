@@ -61,6 +61,17 @@ These classes can also be combined with the utility classes from [seed-width-min
 ---
 
 
+
+## Configurations
+
+{% include docs/config.html config="seed-width" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-grid](/seed/packs/seed-grid)

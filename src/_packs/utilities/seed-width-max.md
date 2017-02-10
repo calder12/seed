@@ -63,6 +63,16 @@ These classes can also be combined with the utility classes from [seed-width](/s
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-width-max" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-grid](/seed/packs/seed-grid)

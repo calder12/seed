@@ -76,7 +76,20 @@ Font color theme classes for `seed-helpscout-theme` can be used together with th
 {% endexample %}
 
 
+
 ---
+
+
+
+## Configurations
+
+
+{% include docs/config.html config="seed-helpscout-theme" %}
+
+
+
+---
+
 
 
 ## Related

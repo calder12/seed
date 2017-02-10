@@ -113,6 +113,17 @@ These size modifier classes support **[responsive modifiers](/seed/packs/seed-br
 
 
 
+## Configurations
+
+
+{% include docs/config.html config="seed-card" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-dropdown](/seed/packs/seed-dropdown)

@@ -2,7 +2,7 @@
 title: Input Addons
 description: "Components to provide additional context for form inputs. Includes support for a variation of sizes."
 section: Component
-source: https://github.com/helpscout/seed-input
+source: https://github.com/helpscout/seed-input-addons
 seed-pack: seed-input-addons
 keywords: form, input, form control, control, addons, add-ons
 ---
@@ -144,6 +144,16 @@ Static inputs are plain-text elements that are paired with [input components](/s
   </div>
 </div>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-input-addons" %}
 
 
 

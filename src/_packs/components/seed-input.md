@@ -91,6 +91,16 @@ npm install seed-input --save
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-input" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-control-group](/seed/packs/seed-control-group)

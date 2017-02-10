@@ -200,6 +200,16 @@ At the moment, Flexbox doesn't play nicely with CSS truncation (specifically the
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-flexy" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-inline](/seed/packs/seed-inline)

@@ -462,6 +462,17 @@ The following are [states](/seed/packs/seed-states/) that can be applied to tabl
 ```
 
 
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-table" %}
+
+
+
 ---
 
 

@@ -93,6 +93,16 @@ $seed-reset-enable-reboot: false;
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-reset" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-base](/seed/packs/seed-base)

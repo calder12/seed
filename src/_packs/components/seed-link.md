@@ -44,3 +44,12 @@ You may also used the `.c-link` component class to style your `<a>` or another s
 <button class="c-link">Button Link</button>
 {% endexample %}
 
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-link" %}

@@ -138,6 +138,16 @@ Applying the desired state class on `.c-form-group` will automatically adjust th
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-form-group" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-grid](/seed/packs/seed-grid)

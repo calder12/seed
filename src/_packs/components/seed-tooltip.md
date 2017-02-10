@@ -71,6 +71,20 @@ Four options are available: top, right, bottom, and left aligned.
 
 
 
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-tooltip" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-popover](/seed/packs/seed-popover)

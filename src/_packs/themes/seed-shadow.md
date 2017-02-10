@@ -79,3 +79,13 @@ In the example below, the card starts off with a default box shadow amount of `1
   Default shadow of 1. Hover shadow of 5.
 </div>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-shadow" %}

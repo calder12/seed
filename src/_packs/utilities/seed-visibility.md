@@ -72,6 +72,16 @@ This technique is borrowed from [Bootstrap's screen reader](http://getbootstrap.
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-visibility" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-display](/seed/packs/seed-display)

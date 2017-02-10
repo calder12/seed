@@ -101,6 +101,17 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 
 
+## Configurations
+
+
+{% include docs/config.html config="seed-avatar" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-thumbnail](/seed/packs/seed-thumbnail)

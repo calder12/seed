@@ -139,6 +139,16 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-thumbnail" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-avatar](/seed/packs/seed-avatar)

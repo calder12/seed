@@ -79,6 +79,20 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
 
 
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-popover" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-dropdown](/seed/packs/seed-dropdown)

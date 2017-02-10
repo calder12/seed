@@ -72,6 +72,16 @@ The second `<div>` is initially hidden, as specified by `u-d-none`. It only beco
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-display" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-visibility](/seed/packs/seed-visibility)

@@ -235,6 +235,17 @@ The borders of the `seed-dropdown` toggles will automatically adjust when placed
 
 
 
+## Configurations
+
+
+{% include docs/config.html config="seed-dropdown" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-button](/seed/packs/seed-button)

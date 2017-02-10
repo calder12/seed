@@ -74,6 +74,16 @@ Combining components from [seed-input-addons](/seed/packs/seed-input-addons) and
 
 
 
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-control-group" %}
+
+
+
 ----
 
 

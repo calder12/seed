@@ -153,6 +153,16 @@ Below is an example of a large modal:
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-modal" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-button](/seed/packs/seed-button)

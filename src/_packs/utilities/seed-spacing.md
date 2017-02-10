@@ -155,3 +155,13 @@ By default, `seed-spacing` provides a range of sizes `1-10` using a base of `4px
 ## Directional modifiers
 
 {% include docs/variables-table.html data=site.data.seed.seed-spacing.directions %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-spacing" %}

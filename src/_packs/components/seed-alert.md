@@ -128,3 +128,14 @@ Alerts comes with a handful of [color schemes](/seed/packs/seed-states) to repre
   ...
 </div>
 ```
+
+
+
+---
+
+
+
+## Configurations
+
+
+{% include docs/config.html config="seed-alert" %}

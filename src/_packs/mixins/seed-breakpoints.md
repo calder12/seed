@@ -302,7 +302,20 @@ The `<h1>` starts off with a default (mobile) size of `tx-h5` (specified by a he
 {% endexample %}
 
 
+
 ---
+
+
+
+## Configurations
+
+
+{% include docs/config.html config="seed-breakpoints" %}
+
+
+
+---
+
 
 
 ## Related

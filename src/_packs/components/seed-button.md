@@ -150,6 +150,16 @@ Below are state styles that can be applied to ``.c-button`` elements.
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-button" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-control-group](/seed/packs/seed-control-group)
