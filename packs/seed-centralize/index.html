@@ -9,8 +9,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=d1e3ebb539c292aa63c4794be9c9fb11">
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=ae1e08bf5accefcba19db3fa9a67e0d6">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=9579138d20341e105d5bb7c7049702b0">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=dd35ecd13ec9b2e417223ca589f30699">
   
   
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
@@ -147,6 +147,8 @@
       <li><a href="#multiple-child-elements" id="markdown-toc-multiple-child-elements">Multiple child elements</a></li>
     </ul>
   </li>
+  <li><a href="#configurations" id="markdown-toc-configurations">Configurations</a></li>
+  <li><a href="#related" id="markdown-toc-related">Related</a></li>
 </ul>
 
 <h2 id="install">Install</h2>
@@ -237,6 +239,190 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
+<h2 id="configurations">Configurations</h2>
+
+<p>Below are the default Sass configuration variables for seed-button. The variables can be found in the pack’s <code class="highlighter-rouge">_config.scss</code> file.</p>
+
+<div class="language-scss highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Namespace
+</span><span class="nv">$seed-button-namespace</span><span class="p">:</span> <span class="s2">"c-button"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-primary-namespace</span><span class="p">:</span> <span class="s2">"primary"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-link-namespace</span><span class="p">:</span> <span class="s2">"link"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-error-namespace</span><span class="p">:</span> <span class="s2">"is-</span><span class="si">#{</span><span class="nv">$seed-states-error-namespace</span><span class="si">}</span><span class="s2">"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-success-namespace</span><span class="p">:</span> <span class="s2">"is-</span><span class="si">#{</span><span class="nv">$seed-states-success-namespace</span><span class="si">}</span><span class="s2">"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-warning-namespace</span><span class="p">:</span> <span class="s2">"is-</span><span class="si">#{</span><span class="nv">$seed-states-warning-namespace</span><span class="si">}</span><span class="s2">"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Animation
+</span><span class="nv">$seed-button-transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">0</span><span class="mi">.1s</span> <span class="n">ease</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Border
+</span><span class="nv">$seed-button-border-radius</span><span class="p">:</span> <span class="nv">$seed-border-radius</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-border-size</span><span class="p">:</span> <span class="nv">$seed-border-size</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-border-style</span><span class="p">:</span> <span class="nv">$seed-border-style</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Font
+</span><span class="nv">$seed-button-font-size</span><span class="p">:</span> <span class="m">1rem</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-font-weight</span><span class="p">:</span> <span class="nb">normal</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Height
+</span><span class="nv">$seed-button-height</span><span class="p">:</span> <span class="nv">$seed-control-size-default</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-button-line-height</span><span class="p">:</span> <span class="nv">$seed-button-height</span> <span class="o">-</span> <span class="nf">ceil</span><span class="p">(</span><span class="nv">$seed-button-border-size</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Padding
+</span><span class="nv">$seed-button-padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">1em</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Sizes
+</span><span class="nv">$seed-button-sizes</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">sm</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">font-size</span><span class="o">:</span> <span class="m">0</span><span class="mi">.875rem</span><span class="o">,</span>
+    <span class="n">height</span><span class="o">:</span> <span class="nf">_get</span><span class="p">(</span><span class="nv">$seed-control-sizes</span><span class="o">,</span> <span class="n">sm</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">line-height</span><span class="o">:</span> <span class="nf">_get</span><span class="p">(</span><span class="nv">$seed-control-sizes</span><span class="o">,</span> <span class="n">sm</span><span class="p">)</span> <span class="o">-</span> <span class="nf">ceil</span><span class="p">(</span><span class="nv">$seed-button-border-size</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="mi">.5em</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">md</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">font-size</span><span class="o">:</span> <span class="m">1rem</span><span class="o">,</span>
+    <span class="n">height</span><span class="o">:</span> <span class="nf">_get</span><span class="p">(</span><span class="nv">$seed-control-sizes</span><span class="o">,</span> <span class="n">md</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">line-height</span><span class="o">:</span> <span class="nf">_get</span><span class="p">(</span><span class="nv">$seed-control-sizes</span><span class="o">,</span> <span class="n">md</span><span class="p">)</span> <span class="o">-</span> <span class="nf">ceil</span><span class="p">(</span><span class="nv">$seed-button-border-size</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">1em</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">lg</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">font-size</span><span class="o">:</span> <span class="m">1</span><span class="mi">.25rem</span><span class="o">,</span>
+    <span class="n">height</span><span class="o">:</span> <span class="nf">_get</span><span class="p">(</span><span class="nv">$seed-control-sizes</span><span class="o">,</span> <span class="n">lg</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">line-height</span><span class="o">:</span> <span class="nf">_get</span><span class="p">(</span><span class="nv">$seed-control-sizes</span><span class="o">,</span> <span class="n">lg</span><span class="p">)</span> <span class="o">-</span> <span class="nf">ceil</span><span class="p">(</span><span class="nv">$seed-button-border-size</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">1</span><span class="mi">.5em</span>
+  <span class="p">)</span>
+<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Colors
+</span><span class="nv">$seed-button-color</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">default</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+    <span class="n">hover</span><span class="o">:</span> <span class="mh">#f9f9f9</span><span class="o">,</span>
+    <span class="n">active</span><span class="o">:</span> <span class="mh">#f4f4f4</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">default</span><span class="o">:</span> <span class="mh">#ddd</span><span class="o">,</span>
+    <span class="n">hover</span><span class="o">:</span> <span class="mh">#ddd</span><span class="o">,</span>
+    <span class="n">active</span><span class="o">:</span> <span class="mh">#ddd</span><span class="o">,</span>
+    <span class="n">focus</span><span class="o">:</span> <span class="mh">#3197D6</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">box-shadow</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">default</span><span class="o">:</span> <span class="nb">none</span><span class="o">,</span>
+    <span class="n">active</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="nf">rgba</span><span class="p">(</span><span class="no">black</span><span class="o">,</span> <span class="m">0</span><span class="mi">.2</span><span class="p">)</span> <span class="nb">inset</span><span class="o">,</span>
+    <span class="n">focus</span><span class="o">:</span> <span class="nb">none</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="nb">text</span><span class="o">:</span> <span class="mh">#2b2b2b</span><span class="o">,</span>
+<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="nv">$seed-button-styles</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">primary</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">_generate-states</span><span class="o">:</span> <span class="bp">false</span><span class="o">,</span>
+    <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="mh">#3197D6</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="mh">#3197D6</span><span class="o">,</span> <span class="m">4</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="mh">#3197D6</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="mh">#237AB3</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="mh">#237AB3</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="mh">#237AB3</span><span class="o">,</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="mh">#237AB3</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">box-shadow</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1px</span> <span class="nf">rgba</span><span class="p">(</span><span class="no">white</span><span class="o">,</span> <span class="m">0</span><span class="mi">.4</span><span class="p">)</span> <span class="nb">inset</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="nb">text</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+    <span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="n">link</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">_generate-states</span><span class="o">:</span> <span class="bp">true</span><span class="o">,</span>
+    <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nb">transparent</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nb">transparent</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nb">transparent</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nb">transparent</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nb">transparent</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nb">transparent</span><span class="o">,</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="mh">#237AB3</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">box-shadow</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nb">none</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nb">none</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nb">none</span><span class="o">,</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="nb">none</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="nb">text</span><span class="o">:</span> <span class="mh">#3197D6</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+
+<span class="nv">$seed-button-color-states</span><span class="p">:</span> <span class="p">(</span>
+  <span class="si">#{</span><span class="nv">$seed-button-error-namespace</span><span class="si">}</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">_state</span><span class="p">(</span><span class="n">error</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">error</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">4</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">error</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">error</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">error</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">error</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">box-shadow</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1px</span> <span class="nf">rgba</span><span class="p">(</span><span class="no">white</span><span class="o">,</span> <span class="m">0</span><span class="mi">.4</span><span class="p">)</span> <span class="nb">inset</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="nb">text</span><span class="o">:</span> <span class="mh">#fff</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="si">#{</span><span class="nv">$seed-button-success-namespace</span><span class="si">}</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">_state</span><span class="p">(</span><span class="n">success</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">success</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">4</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">success</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">success</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">success</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">success</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">box-shadow</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1px</span> <span class="nf">rgba</span><span class="p">(</span><span class="no">white</span><span class="o">,</span> <span class="m">0</span><span class="mi">.4</span><span class="p">)</span> <span class="nb">inset</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="nb">text</span><span class="o">:</span> <span class="mh">#fff</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="si">#{</span><span class="nv">$seed-button-warning-namespace</span><span class="si">}</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">_state</span><span class="p">(</span><span class="n">warning</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">warning</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">4</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">warning</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">warning</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">warning</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">active</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nf">_state</span><span class="p">(</span><span class="n">warning</span><span class="o">,</span> <span class="n">border-color</span><span class="p">)</span><span class="o">,</span> <span class="m">8</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">box-shadow</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">focus</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1px</span> <span class="nf">rgba</span><span class="p">(</span><span class="no">white</span><span class="o">,</span> <span class="m">0</span><span class="mi">.4</span><span class="p">)</span> <span class="nb">inset</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="nb">text</span><span class="o">:</span> <span class="mh">#fff</span>
+  <span class="p">)</span>
+<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-spacing">seed-spacing</a></li>
+</ul>
 
 </div>
 
@@ -257,11 +443,11 @@
 
   <footer class="u-pad-t-xl u-mrg-b-xl">
 
-  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=d5d8090ff5a7ae2e06465d92c36cf31b"></script>
+  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=7e9c2ef1a0e1ce0f0b47a1f9106bd0b3"></script>
   <script src="http://developer.helpscout.net/seed/js/clipboard.min.js"></script>
 
   <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=0f6f94c14693388a3c312ebe2fabc9af"></script>
+  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=2b7bde5cc307000b55b1000d0002169d"></script>
 
 </footer>
 
@@ -273,10 +459,10 @@
   
 
 <script type="text/javascript">
-var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form Group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress Bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form Group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input-addons'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress Bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Video',      slug: 'seed-video',      type: 'Component',      source: 'https://github.com/helpscout/seed-video'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
 </script>
 
-  <script src="http://developer.helpscout.net/seed/js/main.js?v=691503da2a49171b3b4bca0fd3ab7992"></script>
+  <script src="http://developer.helpscout.net/seed/js/main.js?v=be7c815f7e667837fcd0b89b98644b83"></script>
 
 
 </body>
