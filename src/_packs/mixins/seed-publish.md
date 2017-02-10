@@ -113,7 +113,7 @@ Conditional imports were accidentally working in [v3.4.2 of Node Sass](https://g
 
 **$name**<br>
 Type: `string`<br>
-Description: The unique name of the module you want controlled.
+Description: The unique name of the module you want controlled.<br>
 Content: The styles you want controlled.
 
 ``` _menu.scss
@@ -158,13 +158,17 @@ There is **no limit** on the number of times the `export` mixin can be used on a
 
 
 
+---
+
+
+
 ### publish
 
 **publish($name)**
 
 **$name**<br>
 Type: `string`<br>
-Description: The unique name of the module you want controlled.
+Description: The unique name of the module you want published.
 
 Use the `publish` mixin when you have completed building your module/pack. This effectively blocks all rendering of CSS for the exported `$name` passed the point of publishing.
 
@@ -214,6 +218,132 @@ Regardless of how many times the files are imported (regardless of where they co
 .menu-item {
   display: block;
 }
+```
+
+
+
+---
+
+
+
+### unload
+
+**unload($names…)**
+
+**$names**<br>
+Type: `string`|`list`<br>
+Description: The unique name of the module(s) you to be ignored by `publish()`.
+
+Modules matching the name of the arguments passed into `unload()` will **not** render when CSS is compiled.
+
+
+**Use case**
+
+You want to use this brand new `meal-pack` in your Sass project (`meal-pack` doesn't really exist, but it would be cool if it did). `meal-pack` requires a handful of dependencies:
+
+```
+meal-pack
+├── sandwich-pack
+│   ├── bun-pack
+│   ├── tomato-pack
+│   ├── deli-pack
+│   └── sauce-pack
+├── snack-pack
+├── sides-pack
+└── drink-pack
+```
+
+For your setup, you want to use `meal-pack` **except** for `sides-pack`. At this point, you have two options:
+
+1. Manually include all the individual packs that make up `meal-pack`.
+2. Include `meal-pack`, and simply exclude `side-pack`.
+
+The #2 solution is what the `unload()` mixin was designed to accomplish!
+
+
+
+``` _menu.scss
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Step 1: Exclude packs
+@include unload(sides);
+
+// Step 2: @import the pack containing the excluded packs
+@import "pack/seed-meal/_index";
+
+// styles within sides-pack will not be generated
+```
+
+The `unload` mixin accepts lists as well as nested lists:
+
+``` _menu.scss
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Step 1: Exclude packs
+@include unload(
+  sides,
+  snack,
+  (
+    tomato,
+    sauce
+  )
+);
+
+// Step 2: @import the pack containing the excluded packs
+@import "pack/seed-meal/_index";
+
+// styles within sides, snack, tomato, and sauce packs will not be generated
+```
+
+
+
+---
+
+
+
+### reload
+
+**reload($names…)**
+
+**$names**<br>
+Type: `string`|`list`<br>
+Description: The unique name of the module(s) (that have been affected by `unload()`) you want to allow `publish()` to work on.
+
+`reload()` exists as a way to provide finer grain control to when/where packs can be loaded.
+
+In the [`unload()`](/seed/packs/seed-publish/#unload) example with the `sides` pack:
+
+```_menu.scss
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Step 1: Exclude packs
+@include unload(sides);
+
+// Step 2: @import the pack containing the excluded packs
+@import "pack/seed-meal/_index";
+
+// styles within sides-pack will not be generated
+```
+
+
+Let's say that we actually **do** want sides to load, but we want it to load somewhere else in our Sass code. By using the `reload()` mixin, we can re-enable `publish()` to generate CSS for the specified pack.
+
+
+```_snacks.scss
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Step 1: Re-include packs
+@include reload(sides);
+
+// Step 2: @import the pack containing the previously excluded packs
+@import "pack/seed-meal/_index";
+
+// styles within sides-pack will be generated,
+// even though they have been previously excluded.
 ```
 
 
