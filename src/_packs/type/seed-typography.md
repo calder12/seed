@@ -219,3 +219,13 @@ by Pixar Animation Studios and released by Walt Disney Pictures.
 ## Wrap
 
 {% include docs/variables-table.html data=site.data.seed.seed-typography.wrap %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-typography" %}

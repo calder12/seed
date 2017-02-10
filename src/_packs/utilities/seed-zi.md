@@ -54,6 +54,16 @@ npm install seed-zi --save
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-zi" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-position](/seed/packs/seed-position)

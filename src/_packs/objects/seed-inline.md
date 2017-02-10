@@ -219,6 +219,16 @@ The various sizes will adjust the spacing to the right and below each `.o-inline
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-inline" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-flexy](/seed/packs/seed-flexy)

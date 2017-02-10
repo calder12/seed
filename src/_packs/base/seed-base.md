@@ -53,6 +53,17 @@ It is recommended that `seed-base` be imported as near to the top of your SCSS a
 
 
 
+## Configurations
+
+
+{% include docs/config.html config="seed-base" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-reset](/seed/packs/seed-reset)

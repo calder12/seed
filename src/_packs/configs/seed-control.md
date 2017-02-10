@@ -111,6 +111,17 @@ It is recommended you use the `_get()` function from [seed-dash](/seed/packs/see
 
 
 
+## Configurations
+
+
+{% include docs/config.html config="seed-control" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-button](/seed/packs/seed-button)

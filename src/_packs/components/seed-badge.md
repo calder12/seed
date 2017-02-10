@@ -79,3 +79,14 @@ You can create custom colored badges by using the `.t-bg-` based classes from th
   Dark green
 </span>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+
+{% include docs/config.html config="seed-badge" %}

@@ -45,3 +45,13 @@ npm install seed-opacity --save
 <div class="u-op-5">I'm sorta visible</div>
 <div class="u-op-1">I'm like… barely visible</div>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-opacity" %}

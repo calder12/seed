@@ -43,3 +43,13 @@ You may also used the `.c-hr` component class to style your `<hr>` or another se
 <hr class="c-hr">
 <div class="c-hr"></div>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-hr" %}

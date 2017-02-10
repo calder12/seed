@@ -95,6 +95,16 @@ A horizontal scrollbar will automatically appear if content within a `.o-respons
 
 
 
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-responsive-wrapper" %}
+
+
+
 ----
 
 

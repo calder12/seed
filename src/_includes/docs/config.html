@@ -1,0 +1,9 @@
+{% if include.config %}
+{% capture _path %}configs/{{ include.config }}.html{% endcapture %}
+
+Below are the default Sass configuration variables for {{ include.config }}. The variables can be found in the pack's `_config.scss` file.
+
+```scss
+{% include {{ _path }} %}
+```
+{% endif %}

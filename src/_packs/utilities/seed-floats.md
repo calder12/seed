@@ -98,6 +98,16 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-floats" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-flexy](/seed/packs/seed-flexy)

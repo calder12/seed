@@ -90,3 +90,21 @@ Depending on the types of elements, they can be horizontally aligned using `.tx-
   </div>
 </div>
 {% endexample %}
+
+
+
+## Configurations
+
+
+
+{% include docs/config.html config="seed-button" %}
+
+
+
+---
+
+
+
+## Related
+
+* [seed-spacing](/seed/packs/seed-spacing)

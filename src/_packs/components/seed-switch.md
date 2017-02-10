@@ -78,3 +78,13 @@ npm install seed-switch --save
   <span class="c-switch-toggle"></span>
 </label>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-switch" %}

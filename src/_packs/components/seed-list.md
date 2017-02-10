@@ -199,6 +199,16 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-list" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-dropdown](/seed/packs/seed-dropdown)

@@ -63,6 +63,16 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 
 
+## Configurations
+
+{% include docs/config.html config="seed-overflow" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-position](/seed/packs/seed-position)

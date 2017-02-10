@@ -87,3 +87,13 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
   <div class="c-progress-bar__bar" role="progressbar" aria-value="30" style="width: 30%;"></div>
 </div>
 {% endexample %}
+
+
+
+---
+
+
+
+## Configurations
+
+{% include docs/config.html config="seed-progress-bar" %}
