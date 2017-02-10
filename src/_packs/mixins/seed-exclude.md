@@ -7,6 +7,8 @@ source: https://github.com/helpscout/seed-exclude
 seed-pack: seed-exclude
 ---
 
+**DEPRECATED: This pack has been deprecated in favor of the `unload()` mixin in [seed-publish](/seed/packs/seed-publish/#unload)**.
+
 Mixin that excludes modules published with [seed-publish](/seed/packs/seed-publish)
 
 ## Contents
