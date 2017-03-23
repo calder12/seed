@@ -4,7 +4,7 @@ description: "Component that provides styling for a lists."
 section: Component
 source: https://github.com/helpscout/seed-list
 seed-pack: seed-list
-keywords: list, unstyled, unstyle
+keywords: list, unstyled, unstyle, bullet, numbered
 ---
 
 List component pack for Seed
@@ -82,6 +82,8 @@ Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modif
 
 ### Bordered
 
+Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+
 {% example html %}
 <ul class="c-list c-list--bordered">
   <li>Chia seeds</li>
@@ -93,7 +95,22 @@ Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modif
 {% endexample %}
 
 
+### Bullet
+
+{% example html %}
+<div class="c-list c-list--bullet">
+  <div class="c-list__item">Chia seeds</div>
+  <div class="c-list__item">Flax seeds</div>
+  <div class="c-list__item">Sesame seeds</div>
+  <div class="c-list__item">Pumpkin seeds</div>
+  <div class="c-list__item">Sunflower seeds</div>
+</div>
+{% endexample %}
+
+
 ### Dotted
+
+Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <ul class="c-list c-list--dotted">
@@ -121,12 +138,25 @@ Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modif
 {% endexample %}
 
 
+### Number
+
+{% example html %}
+<div class="c-list c-list--number">
+  <div class="c-list__item">Chia seeds</div>
+  <div class="c-list__item">Flax seeds</div>
+  <div class="c-list__item">Sesame seeds</div>
+  <div class="c-list__item">Pumpkin seeds</div>
+  <div class="c-list__item">Sunflower seeds</div>
+</div>
+{% endexample %}
+
+
+
 ---
 
 
-## Sizes
 
-All of the following sizes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+## Sizes
 
 
 ### Extra small
