@@ -4,7 +4,7 @@ description: "Component that provides a flexible UI container. Includes support 
 section: Component
 source: https://github.com/helpscout/seed-card
 seed-pack: seed-card
-keywords: card, panel, container, wrapper
+keywords: card, panel, container, wrapper, block
 ---
 
 Card component pack for Seed

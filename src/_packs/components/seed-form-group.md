@@ -4,7 +4,7 @@ description: "Component that groups form elements like labels and inputs within 
 section: Component
 source: https://github.com/helpscout/seed-form-group
 seed-pack: seed-form-group
-keywords: form, input, form group, formgroup
+keywords: form, input, form group, formgroup, fieldset
 ---
 
 Form group component pack for Seed

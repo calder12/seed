@@ -4,7 +4,7 @@ description: "Component that stylizes tables. Includes support for a variation o
 section: Component
 source: https://github.com/helpscout/seed-table
 seed-pack: seed-table
-keywords: table
+keywords: table, tbody, thead, row
 ---
 
 Table component pack for Seed

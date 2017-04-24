@@ -4,7 +4,7 @@ description: "Component that provides styling for modals. This component uses Bo
 section: Component
 source: https://github.com/helpscout/seed-modal
 seed-pack: seed-modal
-keywords: modal, bootstrap
+keywords: modal, bootstrap, overlay
 ---
 
 Modal component pack for Seed
