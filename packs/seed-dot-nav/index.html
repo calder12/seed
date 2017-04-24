@@ -9,8 +9,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=0d78ef9b55a1509c4f0ebe6574548c42">
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=e31b879b533b3c4b438c08eed55c45c9">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=c2ace72cbcd20d8c6938a43c582f0547">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/aktiv-webfont.css?v=fa7575bafa2b310c86ef6fca4ed4cef7">
   
   
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
@@ -146,15 +146,11 @@
       <li><a href="#sizing" id="markdown-toc-sizing">Sizing</a></li>
     </ul>
   </li>
-  <li><a href="#states" id="markdown-toc-states">States</a>    <ul>
+  <li><a href="#styles" id="markdown-toc-styles">Styles</a>    <ul>
       <li><a href="#static" id="markdown-toc-static">Static</a></li>
     </ul>
   </li>
-  <li><a href="#states-1" id="markdown-toc-states-1">States</a>    <ul>
-      <li><a href="#active" id="markdown-toc-active">Active</a></li>
-      <li><a href="#disabled" id="markdown-toc-disabled">Disabled</a></li>
-    </ul>
-  </li>
+  <li><a href="#states" id="markdown-toc-states">States</a></li>
   <li><a href="#configurations" id="markdown-toc-configurations">Configurations</a></li>
   <li><a href="#related" id="markdown-toc-related">Related</a></li>
 </ul>
@@ -208,133 +204,41 @@
 
 <p>These size modifier classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
 
-<p><strong>Left</strong></p>
-
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav c-dot-nav--left">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-</div></div>
-
-<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--left"</span><span class="nt">&gt;</span>
+<table class="c-table u-mrg-b-8"> <thead> <tr> <th> Modifier </th> <th> Class </th> <th> Description </th> </tr> </thead> <tbody> <tr> <td>Left</td> <td><code>c-dot-nav--left</code></td> <td>Aligns the component to the left</td> </tr> <tr> <td>Center</td> <td><code>c-dot-nav--center</code></td> <td>Aligns the component in the center (horizontally)</td> </tr> <tr> <td>Right</td> <td><code>c-dot-nav--right</code></td> <td>Aligns the component to the right</td> </tr> </tbody> </table>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--left"> <p><strong>Left</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--left"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--left"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
-</code></pre>
-</div></div></div>
-
-<p><strong>Center</strong></p>
-
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-</div></div>
-
-<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--center"</span><span class="nt">&gt;</span>
+</code></pre> </div></div></div> </div>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--center"> <p><strong>Center</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--center"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--center"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
-</code></pre>
-</div></div></div>
-
-<p><strong>Right</strong></p>
-
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav c-dot-nav--right">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-</div></div>
-
-<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--right"</span><span class="nt">&gt;</span>
+</code></pre> </div></div></div> </div>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--right"> <p><strong>Right</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--right"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--right"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
-</code></pre>
-</div></div></div>
+</code></pre> </div></div></div> </div>
 
 <h3 id="sizing">Sizing</h3>
 
 <p>These size modifier classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav c-dot-nav--dot-lg c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-</div></div>
-
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav c-dot-nav--dot-md c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-</div></div>
-
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav c-dot-nav--dot-sm c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-</div></div>
-
-<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-lg"</span><span class="nt">&gt;</span>
+<table class="c-table u-mrg-b-8"> <thead> <tr> <th> Modifier </th> <th> Class </th> <th> Description </th> </tr> </thead> <tbody> <tr> <td>Large</td> <td><code>c-dot-nav--dot-lg</code></td> <td>Changes the dot sizes to 16px</td> </tr> <tr> <td>Medium</td> <td><code>c-dot-nav--dot-md</code></td> <td>Changes the dot sizes to 10px (Default size)</td> </tr> <tr> <td>Small</td> <td><code>c-dot-nav--dot-sm</code></td> <td>Changes the dot sizes to 8px</td> </tr> </tbody> </table>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-lg"> <p><strong>Large</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-lg"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-lg"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-md"</span><span class="nt">&gt;</span>
+</code></pre> </div></div></div> </div>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-md"> <p><strong>Medium</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-md"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-md"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-sm"</span><span class="nt">&gt;</span>
+</code></pre> </div></div></div> </div>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-sm"> <p><strong>Small</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-sm"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-sm"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
-</code></pre>
-</div></div></div>
+</code></pre> </div></div></div> </div>
 
 <hr />
 
-<h2 id="states">States</h2>
+<h2 id="styles">Styles</h2>
 
 <h3 id="static">Static</h3>
 
@@ -384,35 +288,23 @@
 
 <hr />
 
-<h2 id="states-1">States</h2>
+<h2 id="states">States</h2>
 
-<h3 id="active">Active</h3>
+<p>Dot nav items can have individual states.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link">Link</a>
-  </li>
-</ul>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
+<table class="c-table u-mrg-b-8"> <thead> <tr> <th> Modifier </th> <th> Class </th> <th> Description </th> </tr> </thead> <tbody> <tr> <td>Active</td> <td><code>is-active</code></td> <td>Changes the default dot color</td> </tr> <tr> <td>Disabled</td> <td><code>is-disabled</code></td> <td>Mutes the dot and disables the cursor</td> </tr> </tbody> </table>
+<div class="s-hs-docs s-example-modifier s-example-modifier--is-active"> <p><strong>Active</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-dot-nav__item is-active"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-dot-nav__link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+    ...
   <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></div></div></div>
-
-<h3 id="disabled">Disabled</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<ul class="c-dot-nav">
-  <li class="c-dot-nav__item is-disabled">
-    <a href="#" class="c-dot-nav__link">Link</a>
-  </li>
-</ul>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre> </div></div></div> </div>
+<div class="s-hs-docs s-example-modifier s-example-modifier--is-disabled"> <p><strong>Disabled</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav"> <li class="c-dot-nav__item is-disabled"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-dot-nav__item is-disabled"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-dot-nav__link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+    ...
   <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></div></div></div>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre> </div></div></div> </div>
 
 <hr />
 
@@ -481,11 +373,11 @@
 
   <footer class="u-pad-t-xl u-mrg-b-xl">
 
-  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=97787a1f2bba9ddc4ffd91549b0c7db6"></script>
+  <script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=034a53125ed4a560dedc1091489606bb"></script>
   <script src="http://developer.helpscout.net/seed/js/clipboard.min.js"></script>
 
   <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=c137bed3954b573f7d0b9472bde72b82"></script>
+  <script src="http://developer.helpscout.net/seed/js/styleguide.js?v=0d469c13ac7e281799d071f58b6f24f8"></script>
 
 </footer>
 
@@ -500,7 +392,7 @@
 var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dot Nav',      slug: 'seed-dot-nav',      type: 'Component',      source: 'https://github.com/helpscout/seed-dot-nav'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form Group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input Addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input-addons'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Nav',      slug: 'seed-nav',      type: 'Component',      source: 'https://github.com/helpscout/seed-nav'    },        {      name: 'Option Card',      slug: 'seed-option-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-option-card'    },        {      name: 'Pagination',      slug: 'seed-pagination',      type: 'Component',      source: 'https://github.com/helpscout/seed-pagination'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress Bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Video',      slug: 'seed-video',      type: 'Component',      source: 'https://github.com/helpscout/seed-video'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme system',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Exclude',      slug: 'seed-exclude',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-exclude'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control Group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive Wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Background and font colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Vertical Align',      slug: 'seed-vertical-align',      type: 'Utility',      source: 'https://github.com/helpscout/seed-vertical-align'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
 </script>
 
-  <script src="http://developer.helpscout.net/seed/js/main.js?v=4dc8f2c20669fb26033017d0078b1992"></script>
+  <script src="http://developer.helpscout.net/seed/js/main.js?v=ab6146edc451f1830fe86f085f18373d"></script>
 
 
 </body>
