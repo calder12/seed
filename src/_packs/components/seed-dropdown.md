@@ -24,7 +24,7 @@ npm install seed-dropdown --save
 ### Dependencies
 
 * [seed-border](/seed/packs/seed-border)
-* [seed-bootstrap-fade](https://github.com/helpscout/seed-bootstrap-fade)
+* [seed-bootstrap-fade](/seed/packs/bootstrap-fade)
 * [seed-button](/seed/packs/seed-button)
 * [seed-control-group](/seed/packs/seed-control-group)
 * [seed-card](/seed/packs/seed-card)

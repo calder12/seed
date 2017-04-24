@@ -4,7 +4,13 @@ description: "Component used for navigation or progression represented with seri
 section: Component
 source: https://github.com/helpscout/seed-dot-nav
 seed-pack: seed-dot-nav
-keywords: dot, dots, dot nav, nav, progress, 
+keywords:
+   - dot
+   - dot
+   - dotnav
+   - dot nav
+   - nav
+   - progress
 ---
 
 Dot navigation component pack for Seed

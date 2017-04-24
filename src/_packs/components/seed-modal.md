@@ -23,7 +23,7 @@ npm install seed-modal --save
 
 ### Dependencies
 
-* [seed-bootstrap-fade](https://github.com/helpscout/seed-bootstrap-fade)
+* [seed-bootstrap-fade](/seed/packs/bootstrap-fade)
 * [seed-breakpoints](/seed/packs/seed-breakpoints)
 * [seed-card](/seed/packs/seed-card)
 * [seed-dash](/seed/packs/seed-dash)

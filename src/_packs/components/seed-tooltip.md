@@ -23,7 +23,7 @@ npm install seed-tooltip --save
 
 ### Dependencies
 
-* [seed-bootstrap-fade](https://github.com/helpscout/seed-bootstrap-fade)
+* [seed-bootstrap-fade](/seed/packs/seed-bootstrap-fade)
 * [seed-publish](/seed/packs/seed-publish)
 * [seed-this](/seed/packs/seed-this)
 
