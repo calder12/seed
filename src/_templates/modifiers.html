@@ -1,0 +1,40 @@
+---
+modifier: false
+---
+{% if template.modifier %}
+  <table class="c-table u-mrg-b-8">
+    <thead>
+      <tr>
+        <th>
+          Modifier
+        </th>
+        <th>
+          Class
+        </th>
+        <th>
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for mod in template.modifier %}
+      {% if mod.class and mod.title and mod.description %}
+      <tr>
+        <td>{{ mod.title }}</td>
+        <td><code>{{ mod.class }}</code></td>
+        <td>{{ mod.description }}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  {% for mod in template.modifier %}
+  <div class="s-hs-docs s-example-modifier s-example-modifier--{{ mod.class }}">
+    {% if mod.class and mod.title %}
+      <p><strong>{{ mod.title }}</strong></p>
+
+      {{ template.content || replace: "$modifier", mod.class }}
+    {% endif %}
+  </div>
+  {% endfor %}
+{% endif %}

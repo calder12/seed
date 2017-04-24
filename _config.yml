@@ -16,6 +16,10 @@ permalink: pretty
 markdown: kramdown
 highlighter: rouge
 
+gems:
+  - jekyll-contentblocks
+  - jekyll-template
+
 kramdown:
   input: GFM
   hard_wrap: false

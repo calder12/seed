@@ -54,13 +54,26 @@ npm install seed-dot-nav --save
 
 ## Modifiers
 
+
 ### Alignment
 
 These size modifier classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-**Left**
+{% modifiers %}
+---
+modifier: 
+  - title: "Left"
+    class: "c-dot-nav--left"
+    description: "Aligns the component to the left"
+  - title: "Center"
+    class: "c-dot-nav--center"
+    description: "Aligns the component in the center (horizontally)"
+  - title: "Right"
+    class: "c-dot-nav--right"
+    description: "Aligns the component to the right"
+---
 {% example %}
-<ul class="c-dot-nav c-dot-nav--left">
+<ul class="c-dot-nav $modifier">
   <li class="c-dot-nav__item is-active">
     <a href="#" class="c-dot-nav__link"></a>
   </li>
@@ -74,54 +87,11 @@ These size modifier classes support **[responsive modifiers](/seed/packs/seed-br
 {% endexample %}
 
 ```html
-<ul class="c-dot-nav c-dot-nav--left">
+<ul class="c-dot-nav $modifier">
   ...
 </ul>
 ```
-
-
-**Center**
-{% example %}
-<ul class="c-dot-nav c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-{% endexample %}
-
-```html
-<ul class="c-dot-nav c-dot-nav--center">
-  ...
-</ul>
-```
-
-
-**Right**
-{% example %}
-<ul class="c-dot-nav c-dot-nav--right">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-{% endexample %}
-
-```html
-<ul class="c-dot-nav c-dot-nav--right">
-  ...
-</ul>
-```
+{% endmodifiers %}
 
 
 
@@ -129,34 +99,21 @@ These size modifier classes support **[responsive modifiers](/seed/packs/seed-br
 
 These size modifier classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
+{% modifiers %}
+---
+modifier: 
+  - title: "Large"
+    class: "c-dot-nav--dot-lg"
+    description: "Changes the dot sizes to 16px"
+  - title: "Medium"
+    class: "c-dot-nav--dot-md"
+    description: "Changes the dot sizes to 10px (Default size)"
+  - title: "Small"
+    class: "c-dot-nav--dot-sm"
+    description: "Changes the dot sizes to 8px"
+---
 {% example %}
-<ul class="c-dot-nav c-dot-nav--dot-lg c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-{% endexample %}
-{% example %}
-<ul class="c-dot-nav c-dot-nav--dot-md c-dot-nav--center">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-  <li class="c-dot-nav__item">
-    <a href="#" class="c-dot-nav__link"></a>
-  </li>
-</ul>
-{% endexample %}
-{% example %}
-<ul class="c-dot-nav c-dot-nav--dot-sm c-dot-nav--center">
+<ul class="c-dot-nav $modifier">
   <li class="c-dot-nav__item is-active">
     <a href="#" class="c-dot-nav__link"></a>
   </li>
@@ -170,23 +127,19 @@ These size modifier classes support **[responsive modifiers](/seed/packs/seed-br
 {% endexample %}
 
 ```html
-<ul class="c-dot-nav c-dot-nav--dot-lg">
-  ...
-</ul>
-<ul class="c-dot-nav c-dot-nav--dot-md">
-  ...
-</ul>
-<ul class="c-dot-nav c-dot-nav--dot-sm">
+<ul class="c-dot-nav $modifier">
   ...
 </ul>
 ```
+{% endmodifiers %}
+
 
 
 ---
 
 
 
-## States
+## Styles
 
 ### Static
 
@@ -223,26 +176,40 @@ A static `.c-dot-nav` component is used to indicate progress, typically used in 
 
 ## States
 
-### Active
+Dot nav items can have individual states.
 
-{% example html %}
+{% modifiers %}
+---
+modifier: 
+  - title: "Active"
+    class: "is-active"
+    description: "Changes the default dot color"
+  - title: "Disabled"
+    class: "is-disabled"
+    description: "Mutes the dot and disables the cursor"
+---
+{% example %}
 <ul class="c-dot-nav">
-  <li class="c-dot-nav__item is-active">
-    <a href="#" class="c-dot-nav__link">Link</a>
+  <li class="c-dot-nav__item $modifier">
+    <a href="#" class="c-dot-nav__link"></a>
+  </li>
+  <li class="c-dot-nav__item">
+    <a href="#" class="c-dot-nav__link"></a>
+  </li>
+  <li class="c-dot-nav__item">
+    <a href="#" class="c-dot-nav__link"></a>
   </li>
 </ul>
 {% endexample %}
 
-
-### Disabled
-
-{% example html %}
+```html
 <ul class="c-dot-nav">
-  <li class="c-dot-nav__item is-disabled">
-    <a href="#" class="c-dot-nav__link">Link</a>
+  <li class="c-dot-nav__item $modifier">
+    ...
   </li>
 </ul>
-{% endexample %}
+```
+{% endmodifiers %}
 
 
 
