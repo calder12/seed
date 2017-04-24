@@ -105,3 +105,4 @@ npm install seed-input --save
 
 * [seed-control-group](/seed/packs/seed-control-group)
 * [seed-input-addons](/seed/packs/seed-input-addons)
+* [seed-option-card](/seed/packs/seed-option-card)

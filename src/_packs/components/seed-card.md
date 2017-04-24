@@ -127,3 +127,4 @@ These size modifier classes support **[responsive modifiers](/seed/packs/seed-br
 ## Related
 
 * [seed-dropdown](/seed/packs/seed-dropdown)
+* [seed-option-card](/seed/packs/seed-option-card)
