@@ -5,7 +5,7 @@ section: Utility
 layout: docs
 source: https://github.com/helpscout/seed-centralize
 seed-pack: seed-centralize
-keywords: align, center, vertical
+keywords: align, center, vertical, middle
 ---
 
 Centralize utility pack for Seed
@@ -108,3 +108,4 @@ Depending on the types of elements, they can be horizontally aligned using `.tx-
 ## Related
 
 * [seed-spacing](/seed/packs/seed-spacing)
+* [seed-vertical-align](/seed/packs/seed-vertical-align)

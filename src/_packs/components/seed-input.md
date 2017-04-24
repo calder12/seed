@@ -4,7 +4,7 @@ description: "Component for user-input. Includes support for a variation of size
 section: Component
 source: https://github.com/helpscout/seed-input
 seed-pack: seed-input
-keywords: form, input, form control, control, select
+keywords: form, input, form control, control, select, textarea, text
 ---
 
 Input component pack for Seed
@@ -105,3 +105,4 @@ npm install seed-input --save
 
 * [seed-control-group](/seed/packs/seed-control-group)
 * [seed-input-addons](/seed/packs/seed-input-addons)
+* [seed-option-card](/seed/packs/seed-option-card)

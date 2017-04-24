@@ -4,7 +4,7 @@ description: "Component that provides styling for a horizontal line."
 section: Component
 source: https://github.com/helpscout/seed-hr
 seed-pack: seed-hr
-keywords: horizontal, hr, border
+keywords: horizontal, hr, border, divider
 ---
 
 Horizontal rule component pack for Seed

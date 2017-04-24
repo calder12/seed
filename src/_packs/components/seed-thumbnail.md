@@ -4,7 +4,7 @@ description: "Component that stylizes images for use as thumbnails. Includes sup
 section: Component
 source: https://github.com/helpscout/seed-thumbnail
 seed-pack: seed-thumbnail
-keywords: thumbnail, image, "16:9"
+keywords: thumbnail, image, "16:9", img, thumb
 ---
 
 Thumbnail component pack for Seed
