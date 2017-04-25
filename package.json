@@ -95,7 +95,6 @@
     "seed-width": "0.4.3",
     "seed-width-fx": "0.1.1",
     "seed-width-max": "0.1.2",
-    "seed-width-min": "0.1.2",
-    "styleguide": "git+ssh://git@github.com/helpscout/styleguide.git#v1.2.3"
+    "seed-width-min": "0.1.2"
   }
 }

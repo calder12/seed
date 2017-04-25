@@ -1,0 +1,11 @@
+// Components :: Link
+
+.c-link {
+  // Modifiers
+  &--plain {
+    color: _color(charcoal, 500);
+    &:hover {
+      color: _color(charcoal, 500);
+    }
+  }
+}

@@ -13,7 +13,6 @@ gulp.task('verify-dependencies', function(callback) {
         'verify-bundler',
         'verify-gems',
         'verify-npm',
-        'verify-bower',
         callback
       );
     }

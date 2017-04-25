@@ -1,6 +1,6 @@
 ---
-title: Seed CSS
-layout: generic
+title: "Seed CSS"
+layout: "default"
 class: "s-hs-docs s-hs-index"
 ---
 

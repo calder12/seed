@@ -1,0 +1,9 @@
+// Fonts :: Index
+
+// hs-icon font path
+$app-icon-font-path: "/seed/fonts/";
+$custom-app-icon-font-path: $app-icon-font-path;
+
+@import "./aktiv-webfont";
+@import "./app/icons";
+@import "./custom-app/icons";

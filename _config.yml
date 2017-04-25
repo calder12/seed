@@ -49,17 +49,9 @@ exclude:
 keep_files:
   - css
   - fonts
-  # - images
+  - images
   - js
   - "*.xml"
-
-
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _scss
-  style:            :compressed
 
 
 # Collections

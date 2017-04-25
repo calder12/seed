@@ -1,4 +1,6 @@
-- title: Guides
-  pages:
-    - title: Quick start
-    - title: Examples
+- title: "Quick Start"
+  link: "/seed/guides/quick-start/seed-packs"
+- title: "Seed Packs"
+  link: "/seed/packs"
+- title: "Examples"
+  link: "/seed/examples"

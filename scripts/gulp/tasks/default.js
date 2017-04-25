@@ -9,7 +9,6 @@ gulp.task('default', function(callback) {
   runSequence(
     'verify-dependencies',
     'clean-jekyll',
-    'copy-styleguide',
     'jekyll-incremental',
     [
       'copy-fonts',

@@ -34,7 +34,7 @@ npm install seed-avatar --save
 
 {% example html %}
 <div class="c-avatar">
-  <img src="/seed/images/styleguide/seed.png" class="c-avatar__image">
+  <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}
 
@@ -48,7 +48,7 @@ npm install seed-avatar --save
 
 {% example html %}
 <div class="c-avatar c-avatar--rounded">
-  <img src="/seed/images/styleguide/seed.png" class="c-avatar__image">
+  <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}
 
@@ -64,7 +64,7 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 {% example html %}
 <div class="c-avatar c-avatar--xs">
-  <img src="/seed/images/styleguide/seed.png" class="c-avatar__image">
+  <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}
 
@@ -73,7 +73,7 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 {% example html %}
 <div class="c-avatar c-avatar--sm">
-  <img src="/seed/images/styleguide/seed.png" class="c-avatar__image">
+  <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}
 
@@ -82,7 +82,7 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 {% example html %}
 <div class="c-avatar c-avatar--md">
-  <img src="/seed/images/styleguide/seed.png" class="c-avatar__image">
+  <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}
 
@@ -91,7 +91,7 @@ All of the following sizes support **[responsive modifiers](/seed/packs/seed-bre
 
 {% example html %}
 <div class="c-avatar c-avatar--lg">
-  <img src="/seed/images/styleguide/seed.png" class="c-avatar__image">
+  <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}
 
