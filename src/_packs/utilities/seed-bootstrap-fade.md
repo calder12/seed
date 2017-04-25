@@ -1,13 +1,12 @@
 ---
-title: Bootstrap Fade
+title: "Bootstrap Fade"
 description: "Fade utility class abstracted from Bootstrap"
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-bootstrap-fade
-seed-pack: seed-bootstrap-fade
+section: "Utility"
+source: "https://github.com/helpscout/seed-bootstrap-fade"
+seed-pack: "seed-bootstrap-fade"
 keywords:
-  - bootstrap
   - animation
+  - bootstrap
   - fade
 ---
 

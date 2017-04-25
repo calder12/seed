@@ -92,4 +92,4 @@ defaults:
       path: ""
       type: "packs"
     values:
-      layout: "docs"
+      layout: "packs"

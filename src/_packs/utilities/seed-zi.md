@@ -1,11 +1,14 @@
 ---
-title: Z-index
+title: "Z-Index"
 description: "Utility classes that provide a range of z-index values."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-zi
-seed-pack: seed-zi
-keywords: z-index, z index, z, layer
+section: "Utility"
+source: "https://github.com/helpscout/seed-zi"
+seed-pack: "seed-zi"
+keywords:
+  - layer
+  - z
+  - z-index
+  - zindex
 ---
 
 Z-index utility pack for Seed

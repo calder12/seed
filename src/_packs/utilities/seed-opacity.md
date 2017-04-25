@@ -1,11 +1,14 @@
 ---
-title: Opacity
+title: "Opacity"
 description: "Utility classes that adjust the opacity value of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-opacity
-seed-pack: seed-opacity
-keywords: transparent, opacity, transparency
+section: "Utility"
+source: "https://github.com/helpscout/seed-opacity"
+seed-pack: "seed-opacity"
+keywords:
+  - opacity
+  - transparency
+  - transparent
+  - visibility
 ---
 
 Opacity utility pack for Seed

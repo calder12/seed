@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "two-column"
 ---
 
 {% assign doc_id = 'hs-doc' %}
@@ -9,8 +9,8 @@ layout: default
   {% capture doc_class %}s-hs-docs--{{ page.title | downcase | replace: ' ', '-' }}{% endcapture %}
   {% capture section_class %}s-hs-docs--{{ page.section | downcase | replace: ' ', '-' }}{% endcapture %}
 {% endif %}
-<div id="{{ doc_id }}" class="s-hs-docs {{ doc_class }} {{ section_class }}">
-  <div class="hs-content__top" id="hs-content-top"></div>
+<div id="s-docs" class="s-copy s-docs s-hs-docs {{ doc_class }} {{ section_class }}">
+  <div class="s-docs__top" id="hs-content-top"></div>
   {{ content }}
 </div>
 
@@ -18,6 +18,6 @@ layout: default
   <hr class="u-mrg-t-8">
 
   <div class="tx-right">
-    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+    <a href="#" class="t-tx-charcoal-200 tx-sm">Back to top</a>
   </div>
 </div>

@@ -1,11 +1,13 @@
 ---
-title: Width (Max)
+title: "Width (Max)"
 description: "Utility classes that provide a range of max width (%) sizes."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-width-max
-seed-pack: seed-width-max
-keywords: max-width, max, width
+section: "Utility"
+source: "https://github.com/helpscout/seed-width-max"
+seed-pack: "seed-width-max"
+keywords:
+  - max
+  - maxwidth
+  - width
 ---
 
 Width (max) utility pack for Seed

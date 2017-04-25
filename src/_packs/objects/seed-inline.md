@@ -1,11 +1,12 @@
 ---
-title: Inline
+title: "Inline"
 description: "Object classes that properly adjacent align elements together."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-inline
-seed-pack: seed-inline
-keywords: inline, list
+section: "Object"
+source: "https://github.com/helpscout/seed-inline"
+seed-pack: "seed-inline"
+keywords:
+  - inline
+  - list
 ---
 
 Inline object pack for Seed

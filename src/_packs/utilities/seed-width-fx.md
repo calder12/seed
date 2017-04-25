@@ -1,11 +1,16 @@
 ---
-title: Width (Fixed)
+title: "Width (Fixed)"
 description: "Utility classes that provide a range of fixed width (px) sizes."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-width-fx
-seed-pack: seed-width-fx
-keywords: width, fixed, px
+section: "Utility"
+source: "https://github.com/helpscout/seed-width-fx"
+seed-pack: "seed-width-fx"
+keywords:
+  - fixed
+  - fixedwidth
+  - fx
+  - pixel
+  - px
+  - width
 ---
 
 Width (fixed) utility pack for Seed

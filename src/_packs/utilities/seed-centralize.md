@@ -1,11 +1,14 @@
 ---
-title: Centralize
+title: "Centralize"
 description: "Vertically and horizontally alignment elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-centralize
-seed-pack: seed-centralize
-keywords: align, center, vertical, middle
+section: "Utility"
+source: "https://github.com/helpscout/seed-centraliz"
+seed-pack: "seed-centraliz"
+keywords:
+   - align
+   - center
+   - middle
+   - vertical
 ---
 
 Centralize utility pack for Seed

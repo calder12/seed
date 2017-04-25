@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="tx-smooth">
+    <div class="o-container o-container--site u-pad-h-5@sm u-pad-h-8@lg">
+      <div class="o-row">
+        <div class="o-col-12">
+          {% include nav/main.html %}
+          <section class="s-main-content s-copy" id="content">
+            {{ content }}
+          </section>
+          {% include footer.html %}
+        </div>
+      </div>
+    </div>
+    {% include footer-data.html %}
+    {% include footer-scripts.html %}
+  </body>
+</html>

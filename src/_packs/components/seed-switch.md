@@ -1,10 +1,14 @@
 ---
-title: Switch
+title: "Switch"
 description: "Component that provides a switch-like appearance for checkbox or radio form elements."
-section: Component
-source: https://github.com/helpscout/seed-switch
-seed-pack: seed-switch
-keywords: switch, checkbox
+section: "Component"
+source: "https://github.com/helpscout/seed-switch"
+seed-pack: "seed-switch"
+keywords:
+  - check
+  - checkbox
+  - input
+  - switch
 ---
 
 Switch component pack for Seed

@@ -1,0 +1,26 @@
+// Components :: Sidebar nav
+
+@import "pack/seed-family/_index";
+@import "pack/seed-helpscout-theme/_index";
+
+.c-sidebar-nav {
+  list-style: none;
+  padding-left: 0;
+
+  a {
+    color: _color(charcoal, 200);
+    transition: color 0.2s ease;
+
+    @include parent(" > li.active > ") {
+      color: _color(charcoal, 600);
+    }
+
+    @include parent("ul > li.active > ") {
+      color: _color(charcoal, 600);
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}

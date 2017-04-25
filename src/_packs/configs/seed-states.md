@@ -1,10 +1,13 @@
 ---
-title: States
+title: "States"
 description: "A configuration of styles for states, such as error or success."
-section: Config
-layout: docs
-source: https://github.com/helpscout/seed-states
-seed-pack: seed-states
+section: "Config"
+source: "https://github.com/helpscout/seed-states"
+seed-pack: "seed-states"
+keywords:
+  - config
+  - states
+  - state
 ---
 
 States config pack for Seed

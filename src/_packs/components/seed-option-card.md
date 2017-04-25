@@ -1,10 +1,18 @@
 ---
-title: Option Card
+title: "Option card"
 description: "Component that enhances the UI of an input checkbox or radio."
-section: Component
-source: https://github.com/helpscout/seed-option-card
-seed-pack: seed-option-card
-keywords: option, card, checkbox, radio, select, options
+section: "Component"
+source: "https://github.com/helpscout/seed-option-card"
+seed-pack: "seed-option-card"
+keywords:
+  - card
+  - check
+  - checkbox
+  - option
+  - options
+  - radio
+  - select
+  - tile
 ---
 
 Option card component pack for Seed

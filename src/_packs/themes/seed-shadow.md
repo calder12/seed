@@ -1,11 +1,17 @@
 ---
-title: Shadow
+title: "Shadow"
 description: "Thematic classes to adjust box-shadow styles."
-section: Theme
-layout: docs
-source: https://github.com/helpscout/seed-shadow
-seed-pack: seed-shadow
-keywords: box-shadow, box, shadow, animate, hover, drop
+section: "Theme"
+source: "https://github.com/helpscout/seed-shadow"
+seed-pack: "seed-shadow"
+keywords:
+  - animate
+  - box
+  - box-shadow
+  - boxshadow
+  - drop
+  - hover
+  - shadow
 ---
 
 Shadow theme pack for Seed

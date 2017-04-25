@@ -1,10 +1,17 @@
 ---
-title: Exclude
+title: "Exclude"
 description: "A mixin that prevents published Seed packs from compiling."
-section: Mixin
-layout: docs
-source: https://github.com/helpscout/seed-exclude
-seed-pack: seed-exclude
+section: "Mixin"
+source: "https://github.com/helpscout/seed-exclude"
+seed-pack: "seed-exclude"
+keywords:
+  - exclude
+  - export
+  - guard
+  - header
+  - import
+  - once
+  - publish
 ---
 
 **DEPRECATED: This pack has been deprecated in favor of the `unload()` mixin in [seed-publish](/seed/packs/seed-publish/#unload)**.

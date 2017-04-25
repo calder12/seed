@@ -1,10 +1,19 @@
 ---
-title: Thumbnail
+title: "Thumbnail"
 description: "Component that stylizes images for use as thumbnails. Includes support for a variation of sizes and styles."
-section: Component
-source: https://github.com/helpscout/seed-thumbnail
-seed-pack: seed-thumbnail
-keywords: thumbnail, image, "16:9", img, thumb
+section: "Component"
+source: "https://github.com/helpscout/seed-thumbnail"
+seed-pack: "seed-thumbnail"
+keywords:
+  - "16:9"
+  - featured
+  - featuredimage
+  - image
+  - img
+  - portrait
+  - square
+  - thumb
+  - thumbnail
 ---
 
 Thumbnail component pack for Seed

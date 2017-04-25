@@ -1,11 +1,17 @@
 ---
-title: Floats
+title: "Floats"
 description: "Utility classes that provide floating and clearfixing styles to elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-floats
-seed-pack: seed-floats
-keywords: float, pull, left, right, clearfix, clear
+section: "Utility"
+source: "https://github.com/helpscout/seed-floats"
+seed-pack: "seed-floats"
+keywords:
+  - clear
+  - clearfix
+  - float
+  - layout
+  - left
+  - pull
+  - right
 ---
 
 Floats utility pack for Seed

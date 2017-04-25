@@ -1,0 +1,18 @@
+<ul>
+  {% for type in site.data.seed-pack-types %}
+    <li>
+      {{ type }}
+      <ul>
+        {% for pack in site.packs %}
+          {% if pack.section == type %}
+          <li>
+            <a href="/seed/packs/{{ pack.slug }}">
+              {{ pack.title }}
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

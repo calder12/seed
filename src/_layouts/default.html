@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body class="tx-smooth">
-    <div class="o-container">
-      <div class="o-row">
-        <div class="o-col-10@md o-col-offset-1@md">
-          {% include nav/main.html %}
-          <section class="s-main-content" id="content">
-            {% include page/header.html %}
-            {{ content }}
-          </section>
-        </div>
-      </div>
-    </div>
-    {% include footer.html %}
-    {% include footer-data.html %}
-    {% include footer-scripts.html %}
-  </body>
-</html>
+---
+layout: "base"
+---
+{% include page/header.html %}
+{{ content }}

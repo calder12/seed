@@ -1,10 +1,12 @@
 ---
-title: Link
+title: "Link"
 description: "Component that provides styling for links."
-section: Component
-source: https://github.com/helpscout/seed-link
-seed-pack: seed-link
-keywords: link, click
+section: "Component"
+source: "https://github.com/helpscout/seed-link"
+seed-pack: "seed-link"
+keywords:
+  - anchor
+  - link
 ---
 
 Link component pack for Seed

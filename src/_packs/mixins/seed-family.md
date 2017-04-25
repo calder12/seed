@@ -1,10 +1,14 @@
 ---
-title: Family
+title: "Family"
 description: "Mixins that enable manipulation of parent or sibling selectors."
-section: Mixin
-layout: docs
-source: https://github.com/helpscout/seed-family
-seed-pack: seed-family
+section: "Mixin"
+source: "https://github.com/helpscout/seed-family"
+seed-pack: "seed-family"
+keywords:
+  - family
+  - parent
+  - selector
+  - sibling
 ---
 
 Selector-based mixin pack for Seed

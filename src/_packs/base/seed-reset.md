@@ -1,10 +1,16 @@
 ---
-title: Reset
+title: "Reset"
 description: "Normalizes HTML element styles to ensure better consistency and adherence to modern standards."
-section: Base
-source: https://github.com/helpscout/seed-reset
-seed-pack: seed-reset
-keywords: base, reboot, reset, normalize
+section: "Base"
+source: "https://github.com/helpscout/seed-reset"
+seed-pack: "seed-reset"
+keywords:
+  - base
+  - clean
+  - normal
+  - normalize
+  - reboot
+  - reset
 ---
 
 Reset pack for Seed

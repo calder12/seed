@@ -1,10 +1,18 @@
 ---
-title: Nav
+title: "Nav"
 description: "Component used for navigation represented with a list of links. Includes support for a variation of sizes and styles."
-section: Component
-source: https://github.com/helpscout/seed-nav
-seed-pack: seed-nav
-keywords: nav, navigation, tab, nav-tab, nav tabs,
+section: "Component"
+source: "https://github.com/helpscout/seed-nav"
+seed-pack: "seed-nav"
+keywords:
+  - nav
+  - navigation
+  - stack
+  - tab
+  - tabnav
+  - navtab
+  - navtabs
+  - tabs
 ---
 
 Navigation component pack for Seed

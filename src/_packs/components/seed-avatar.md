@@ -1,10 +1,12 @@
 ---
-title: Avatar
+title: "Avatar"
 description: "Component that stylizes images for use as avatars. Includes support for a variation of sizes and styles."
-section: Component
-source: https://github.com/helpscout/seed-avatar
-seed-pack: seed-avatar
-keywords: avatar, image
+section: "Component"
+source: "https://github.com/helpscout/seed-avatar"
+seed-pack: "seed-avatar"
+keywords:
+  - avatar
+  - image
 ---
 
 Avatar component pack for Seed

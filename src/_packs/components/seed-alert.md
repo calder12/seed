@@ -1,18 +1,22 @@
 ---
-title: Alert
+title: "Alert"
 description: "Component that provides contextual feedback for actions. Includes support for a variation of states."
 section: Component
-source: https://github.com/helpscout/seed-alert
-seed-pack: seed-alert
-keywords: alert, status
+source: "https://github.com/helpscout/seed-alert"
+seed-pack: "seed-alert"
+keywords:
+  - alert
+  - status
 ---
 
 Alert component pack for Seed
+
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
 
 ## Install
 

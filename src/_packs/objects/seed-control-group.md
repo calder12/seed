@@ -1,11 +1,16 @@
 ---
-title: Control Group
+title: "Control group"
 description: "Object classes that align and group form-based elements together."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-control-group
-seed-pack: seed-control-group
-keywords: btn-group, control, group, btn, btn group, button group
+section: "Object"
+source: "https://github.com/helpscout/seed-control-group"
+seed-pack: "seed-control-group"
+keywords:
+  - btn-group
+  - control
+  - group
+  - btn
+  - button group
+  - segment
 ---
 
 Control group object pack for Seed

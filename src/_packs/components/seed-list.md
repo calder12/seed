@@ -1,10 +1,18 @@
 ---
-title: List
+title: "List"
 description: "Component that provides styling for a lists."
-section: Component
-source: https://github.com/helpscout/seed-list
-seed-pack: seed-list
-keywords: list, unstyled, unstyle, bullet, numbered
+section: "Component"
+source: "https://github.com/helpscout/seed-list"
+seed-pack: "seed-list"
+keywords:
+  - bullet
+  - list
+  - number
+  - numbered
+  - ordered
+  - unordered
+  - unstyle
+  - unstyled
 ---
 
 List component pack for Seed

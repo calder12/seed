@@ -1,11 +1,12 @@
 ---
-title: Border
+title: "Border"
 description: "Thematic classes to adjust border styles."
-section: Theme
-layout: docs
-source: https://github.com/helpscout/seed-border
-seed-pack: seed-border
-keywords: border
+section: "Theme"
+source: "https://github.com/helpscout/seed-border"
+seed-pack: "seed-border"
+keywords:
+  - border
+  - radius
 ---
 
 Border theme pack for Seed

@@ -1,11 +1,16 @@
 ---
-title: Responsive Wrapper
+title: "Responsive wrapper"
 description: "Object class that provides horizontal scrolling when overflow occurs."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-responsive-wrapper
-seed-pack: seed-responsive-wrapper
-keywords: responsive, overflow, scrollbar
+section: "Object"
+source: "https://github.com/helpscout/seed-responsive-wrapper"
+seed-pack: "seed-responsive-wrapper"
+keywords:
+  - container
+  - responsive
+  - overflow
+  - scroll
+  - scrollbar
+  - wrapper
 ---
 
 Responsive wrapper object pack for Seed

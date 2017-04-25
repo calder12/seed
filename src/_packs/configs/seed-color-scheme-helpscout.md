@@ -1,10 +1,14 @@
 ---
-title: Color scheme (Help Scout)
+title: "Color scheme (Help Scout)"
 description: "A color scheme configuration based on Help Scout's color palette."
-section: Config
-layout: docs
-source: https://github.com/helpscout/seed-color-scheme-helpscout
-seed-pack: seed-color-scheme-helpscout
+section: "Config"
+source: "https://github.com/helpscout/seed-color-scheme-helpscout"
+seed-pack: "seed-color-scheme-helpscout"
+keywords:
+  - brand
+  - color scheme
+  - config
+  - help scout
 ---
 
 Help Scout color scheme pack for Seed

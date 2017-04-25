@@ -1,11 +1,13 @@
 ---
-title: Width (Min)
+title: "Width (Min)"
 description: "Utility classes that provide a range of min width (%) sizes."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-width-min
-seed-pack: seed-width-min
-keywords: min-width, min, width
+section: "Utility"
+source: "https://github.com/helpscout/seed-width-min"
+seed-pack: "seed-width-min"
+keywords:
+  - min
+  - minwidth
+  - width
 ---
 
 Width (min) utility pack for Seed

@@ -1,11 +1,17 @@
 ---
-title: Grid system
+title: "Grid system"
 description: "Object classes that provide grid structure."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-grid
-seed-pack: seed-grid
-keywords: grid, container, row, col, column, responsive
+section: "Object"
+source: "https://github.com/helpscout/seed-grid"
+seed-pack: "seed-grid"
+keywords:
+  - col
+  - column
+  - container
+  - grid
+  - layout
+  - responsive
+  - row
 ---
 
 Grid system pack for Seed
@@ -43,7 +49,7 @@ The grid class names have been modified to match Seed's CSS naming conventions:
 * ``.row`` was renamed to ``.o-row``
 * ``.col`` was heavily modified.
 
-  <a href="http://v4-alpha.getbootstrap.com/layout/grid/" target="_blank">Learn more</a> about Bootstraps' grid system.
+<a href="http://v4-alpha.getbootstrap.com/layout/grid/" target="_blank">Learn more</a> about Bootstraps' grid system.
 
 
 ---

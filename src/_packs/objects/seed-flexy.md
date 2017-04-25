@@ -1,11 +1,18 @@
 ---
-title: Flexy
+title: "Flexy"
 description: "Object classes that uses flexbox to intelligently align items together."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-flexy
-seed-pack: seed-flexy
-keywords: flexy, flexbox, align, float, pull
+section: "Object"
+source: "https://github.com/helpscout/seed-flexy"
+seed-pack: "seed-flexy"
+keywords:
+  - align
+  - alignment
+  - flex
+  - flexbox
+  - flexy
+  - float
+  - pull
+  - vertical
 ---
 
 Flex object pack for Seed

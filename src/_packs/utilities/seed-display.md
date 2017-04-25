@@ -1,11 +1,18 @@
 ---
-title: Display
+title: "Display"
 description: "Utility classes that adjust the display styles of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-display
-seed-pack: seed-display
-keywords: display, block, hide, responsive
+section: "Utility"
+source: "https://github.com/helpscout/seed-display"
+seed-pack: "seed-display"
+keywords:
+   - block
+   - display
+   - hidden
+   - hide
+   - inline
+   - inline-block
+   - inlineblock
+   - responsive
 ---
 
 Display utility pack for Seed

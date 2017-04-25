@@ -1,11 +1,13 @@
 ---
-title: Overflow
+title: "Overflow"
 description: "Utility classes that adjust the overflow styles of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-overflow
-seed-pack: seed-overflow
-keywords: overflow, hidden, scroll
+section: "Utility"
+source: "https://github.com/helpscout/seed-overflow"
+seed-pack: "seed-overflow"
+keywords:
+  - hidden
+  - overflow
+  - scroll
 ---
 
 Overflow utility pack for Seed

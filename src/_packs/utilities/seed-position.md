@@ -1,11 +1,14 @@
 ---
-title: Position
+title: "Position"
 description: "Utility classes that adjust the position styles of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-position
-seed-pack: seed-position
-keywords: position, relative, absolute, fixed
+section: "Utility"
+source: "https://github.com/helpscout/seed-position"
+seed-pack: "seed-position"
+keywords:
+  - absolute
+  - fixed
+  - position
+  - relative
 ---
 
 Position utility pack for Seed

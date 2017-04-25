@@ -1,10 +1,13 @@
 ---
-title: Popover
+title: "Popover"
 description: "Component that provides styling for popovers. This component uses Bootstrap's Javascript to handle the interactions."
-section: Component
-source: https://github.com/helpscout/seed-popover
-seed-pack: seed-popover
-keywords: popover, bootstrap
+section: "Component"
+source: "https://github.com/helpscout/seed-popover"
+seed-pack: "seed-popover"
+keywords:
+  - bootstrap
+  - popover
+  - tooltip
 ---
 
 Popover component pack for Seed

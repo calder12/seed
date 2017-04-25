@@ -1,10 +1,13 @@
 ---
-title: Control
+title: "Control"
 description: "A configuration of sizes for controls, such as inputs and buttons."
-section: Config
-layout: docs
-source: https://github.com/helpscout/seed-control
-seed-pack: seed-control
+section: "Config"
+layout: "docs"
+source: "https://github.com/helpscout/seed-control"
+seed-pack: "seed-control"
+keywords:
+  - config
+  - control
 ---
 
 Control config pack for Seed

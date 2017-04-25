@@ -1,11 +1,16 @@
 ---
-title: Vertical Align
+title: "Vertical Align"
 description: "Utility classes that adjust the vertical alignment of inline elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-vertical-align
-seed-pack: seed-vertical-align
-keywords: vertical, align, middle, center, text, inline
+section: "Utility"
+source: "https://github.com/helpscout/seed-vertical-align"
+seed-pack: "seed-vertical-align"
+keywords:
+ - align
+ - center
+ - inline
+ - middle
+ - text
+ - vertical
 ---
 
 Vertical alignment utility pack for Seed

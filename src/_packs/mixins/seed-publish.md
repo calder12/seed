@@ -1,10 +1,17 @@
 ---
-title: Publish
+title: "Publish"
 description: "Mixin that acts as an include guard, preventing undesired duplication of compiled CSS styles."
-section: Mixin
-layout: docs
-source: https://github.com/helpscout/seed-publish
-seed-pack: seed-publish
+section: "Mixin"
+source: "https://github.com/helpscout/seed-publish"
+seed-pack: "seed-publish"
+keywords:
+  - exclude
+  - export
+  - guard
+  - header
+  - import
+  - once
+  - publish
 ---
 
 Mixins that manage rendered CSS from modular importing

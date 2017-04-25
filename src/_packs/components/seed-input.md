@@ -1,10 +1,17 @@
 ---
-title: Input
+title: "Input"
 description: "Component for user-input. Includes support for a variation of sizes and states."
-section: Component
-source: https://github.com/helpscout/seed-input
-seed-pack: seed-input
-keywords: form, input, form control, control, select, textarea, text
+section: "Component"
+source: "https://github.com/helpscout/seed-input"
+seed-pack: "seed-input"
+keywords:
+   - control
+   - field
+   - form
+   - formcontrol
+   - input
+   - select
+   - textarea
 ---
 
 Input component pack for Seed

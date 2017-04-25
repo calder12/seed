@@ -1,11 +1,18 @@
 ---
-title: Background and font colors (Help Scout)
+title: "Colors (Help Scout)"
 description: "Thematic classes to adjust background and text colors – based on the Help Scout color scheme."
-section: Theme
-layout: docs
-source: https://github.com/helpscout/seed-helpscout-theme
-seed-pack: seed-helpscout-theme
-keywords: helpscout, color, theme, bg, text, tx, font, color
+section: "Theme"
+source: "https://github.com/helpscout/seed-helpscout-theme"
+seed-pack: "seed-helpscout-theme"
+keywords: 
+  - helpscout
+  - color
+  - theme
+  - bg
+  - text
+  - tx
+  - font
+  - color
 ---
 
 Help Scout theme pack for Seed

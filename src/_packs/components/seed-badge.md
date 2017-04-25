@@ -1,10 +1,13 @@
 ---
-title: Badge
+title: "Badge"
 description: "Component that helps indicate status. Includes support for a variation of states."
-section: Component
-source: https://github.com/helpscout/seed-badge
-seed-pack: seed-badge
-keywords: badge, label, count
+section: "Component"
+source: "https://github.com/helpscout/seed-badge"
+seed-pack: "seed-badge"
+keywords:
+  - badge
+  - count
+  - label
 ---
 
 Badge component pack for Seed

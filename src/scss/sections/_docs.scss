@@ -1,0 +1,66 @@
+// Sections :: Docs
+
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-helpscout-theme/_index";
+
+.s-docs {
+  position: relative;
+
+  &__top {
+    + * {
+      margin-top: 0;
+    }
+
+    + p {
+      font-size: 120%;
+      font-weight: 300;
+      margin-bottom: 1.5em;
+      margin-top: 0;
+
+      @include breakpoint(md) {
+        font-size: 130%;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+
+    thead th {
+      border-top: none;
+      border-bottom: 1px solid #E3E8EB;
+      vertical-align: bottom;
+    }
+
+    th,
+    td {
+      border-top: 1px solid #E3E8EB;
+      padding: 12px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  // Styling Jekyll Table of Contents elements
+  #contents {
+    color: _color(charcoal, 200);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+  }
+
+  #markdown-toc {
+    margin-bottom: 3em;
+    > li:first-child {
+      display: none;
+    }
+  }
+}
