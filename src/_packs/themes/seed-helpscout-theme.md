@@ -15,7 +15,7 @@ keywords:
   - color
 ---
 
-Help Scout theme pack for Seed
+A series of thematic classes that adjust the background and font color properties of a selector based on Help&nbsp;Scout's [color palette](http://style.helpscout.com/brand/color/).
 
 
 ## Install
@@ -37,6 +37,21 @@ npm install seed-helpscout-theme --save
 
 
 ## Background colors
+
+An example background color theme class looks like this:
+
+```
+.t-bg-blue-500
+```
+
+
+| Characters | Description        |
+| ---        | ---                |
+| `t`        | prefix for "theme" |
+| `bg`       | background         |
+| `blue`     | color              |
+| `500`      | shade              |
+
 
 All of the colors and shades from the [Help Scout color palette](/brand/color/) are available to be used as background colors.
 
@@ -60,6 +75,21 @@ Background color theme classes for `seed-helpscout-theme` can be used together w
 
 
 ## Font colors
+
+An example font color theme class looks like this:
+
+```
+.t-tx-blue-500
+```
+
+
+| Characters | Description        |
+| ---        | ---                |
+| `t`        | prefix for "theme" |
+| `bg`       | text               |
+| `blue`     | color              |
+| `500`      | shade              |
+
 
 All of the colors and shades from the [Help Scout color palette](/brand/color/) are available to be used as font colors.
 

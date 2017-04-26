@@ -14,7 +14,7 @@ keywords:
   - shadow
 ---
 
-Shadow theme pack for Seed
+A series of thematic classes that adjust the box-shadow property of a selector.
 
 
 ## Install
@@ -37,7 +37,16 @@ npm install seed-shadow --save
 
 ## Usage
 
-{% include docs/variables-table.html data=site.data.seed.seed-shadow.shadow %}
+
+| Class         | Box shadow                      |
+| ---           | ---                             |
+| `.t-shadow-0` | 0 1px 1px transparent           |
+| `.t-shadow-1` | 0 1px 1px rgba(0, 0, 0, 0.1)    |
+| `.t-shadow-2` | 0 2px 4px rgba(0, 0, 0, 0.1)    |
+| `.t-shadow-3` | 0 4px 6px rgba(0, 0, 0, 0.12)   |
+| `.t-shadow-4` | 0 8px 10px rgba(0, 0, 0, 0.12)  |
+| `.t-shadow-5` | 0 12px 16px rgba(0, 0, 0, 0.12) |
+
 
 **Example**
 
@@ -70,7 +79,16 @@ npm install seed-shadow --save
 
 `seed-shadow` provides the ability to add a subtle box-shadow adjustment upon hovering. The box-shadow amount is the same as the default, ranging from `0-5`. However, these box-shadows only get applied when a selector is in a `:hover` state.
 
-{% include docs/variables-table.html data=site.data.seed.seed-shadow.shadow-hover %}
+
+| Class               | Box shadow                      |
+| ---                 | ---                             |
+| `.t-shadow-hover-0` | 0 1px 1px transparent           |
+| `.t-shadow-hover-1` | 0 1px 1px rgba(0, 0, 0, 0.1)    |
+| `.t-shadow-hover-2` | 0 2px 4px rgba(0, 0, 0, 0.1)    |
+| `.t-shadow-hover-3` | 0 4px 6px rgba(0, 0, 0, 0.12)   |
+| `.t-shadow-hover-4` | 0 8px 10px rgba(0, 0, 0, 0.12)  |
+| `.t-shadow-hover-5` | 0 12px 16px rgba(0, 0, 0, 0.12) |
+
 
 **Example**
 
