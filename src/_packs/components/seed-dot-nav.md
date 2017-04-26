@@ -1,11 +1,10 @@
 ---
-title: Dot Nav
+title: "Dot nav"
 description: "Component used for navigation or progression represented with series of dots. Includes support for a variation of sizes and styles."
-section: Component
-source: https://github.com/helpscout/seed-dot-nav
-seed-pack: seed-dot-nav
+section: "Component"
+source: "https://github.com/helpscout/seed-dot-nav"
+seed-pack: "seed-dot-nav"
 keywords:
-   - dot
    - dot
    - dotnav
    - dot nav
@@ -15,10 +14,6 @@ keywords:
 
 Dot navigation component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

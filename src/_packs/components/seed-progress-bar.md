@@ -1,18 +1,20 @@
 ---
-title: Progress Bar
+title: "Progress bar"
 description: "Component that provides a progress feedback. Includes support for a variation of sizes."
-section: Component
-source: https://github.com/helpscout/seed-progress-bar
-seed-pack: seed-progress-bar
-keywords: progress, progress-bar, bar, feedback, status, loading
+section: "Component"
+source: "https://github.com/helpscout/seed-progress-bar"
+seed-pack: "seed-progress-bar"
+keywords:
+  - bar
+  - feedback
+  - loading
+  - progress
+  - progressbar
+  - status
 ---
 
 Progres bar component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

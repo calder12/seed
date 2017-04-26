@@ -1,19 +1,20 @@
 ---
-title: Vertical Align
+title: "Vertical Align"
 description: "Utility classes that adjust the vertical alignment of inline elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-vertical-align
-seed-pack: seed-vertical-align
-keywords: vertical, align, middle, center, text, inline
+section: "Utility"
+source: "https://github.com/helpscout/seed-vertical-align"
+seed-pack: "seed-vertical-align"
+keywords:
+ - align
+ - center
+ - inline
+ - middle
+ - text
+ - vertical
 ---
 
-Vertical alignment utility pack for Seed
+A series of utility classes that adjust the vertical-alignment property of a inline selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -38,13 +39,24 @@ npm install seed-vertical-align --save
 
 See the list of [responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers).
 
-{% include docs/variables-table.html data=site.data.seed.seed-vertical-align.alignments %}
+
+| Class               | Vertical Aligment |
+| ---                 | ---               |
+| `.u-va-bottom`      | bottom            |
+| `.u-va-inherit`     | inherit           |
+| `.u-va-initial`     | initial           |
+| `.u-va-middle`      | middle            |
+| `.u-va-text-bottom` | text-bottom       |
+| `.u-va-text-top`    | text-top          |
+| `.u-va-top`         | top               |
+| `.u-va-top`         | top               |
+
 
 ### Example
 
 {% example html %}
-<span class="u-va-middle tx-h1">Big Text</span>
-<span>I'm in the middle!</span>
+<span class="u-va-middle tx-h1">Prospector?</span>
+<span>You're outta your box!</span>
 {% endexample %}
 
 

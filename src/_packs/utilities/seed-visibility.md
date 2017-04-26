@@ -1,19 +1,16 @@
 ---
-title: Visibility
+title: "Visibility"
 description: "Utility classes that adjust the visibility styles of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-visibility
-seed-pack: seed-visibility
-keywords: visibility
+section: "Utility"
+source: "https://github.com/helpscout/seed-visibility"
+seed-pack: "seed-visibility"
+keywords:
+  - invisible
+  - visibility
 ---
 
-Visibility utility pack for Seed
+A series of utility classes that adjust the visibility property of a inline selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -37,8 +34,11 @@ npm install seed-visibility --save
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-visibility.visibility %}
 
+| Class          | Visibility |
+| ---            | ---        |
+| `.u-invisible` | hidden     |
+| `.u-visible`   | visible    |
 
 
 ### Example

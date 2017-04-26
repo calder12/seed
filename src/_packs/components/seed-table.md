@@ -1,18 +1,19 @@
 ---
-title: Table
+title: "Table"
 description: "Component that stylizes tables. Includes support for a variation of sizes and styles."
-section: Component
-source: https://github.com/helpscout/seed-table
-seed-pack: seed-table
-keywords: table, tbody, thead, row
+section: "Component"
+source: "https://github.com/helpscout/seed-table"
+seed-pack: "seed-table"
+keywords:
+  - data
+  - row
+  - table
+  - tbody
+  - thread
 ---
 
 Table component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

@@ -1,0 +1,117 @@
+// Sections :: Docs
+
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-helpscout-theme/_index";
+
+.s-docs {
+  position: relative;
+
+  &__top {
+    + * {
+      margin-top: 0;
+    }
+
+    + p {
+      font-size: 120%;
+      font-weight: 300;
+      margin-bottom: 1.5em;
+      margin-top: 0;
+
+      @include breakpoint(md) {
+        font-size: 130%;
+      }
+    }
+  }
+
+  > table {
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    width: 100%;
+
+    thead th {
+      border-top: none;
+      border-bottom: 1px solid #E3E8EB;
+      vertical-align: bottom;
+    }
+
+    th,
+    td {
+      border-top: 1px solid #E3E8EB;
+      padding: 12px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  // Styling Jekyll Table of Contents elements
+  #contents {
+    color: _color(charcoal, 200);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+  }
+
+  #markdown-toc {
+    margin-bottom: 3em;
+    > li:first-child {
+      display: none;
+    }
+  }
+
+  // Typography adjustments
+  & > {
+    h2,
+    h3 {
+      margin-bottom: 0.5em;
+      margin-top: 44px;
+    }
+
+    h4,
+    h5 {
+      margin-bottom: 0.5em;
+      margin-top: 20px;
+    }
+
+    h2 + h3,
+    h3 + h4 {
+      margin-top: 28px;
+    }
+
+    h4 {
+      color: _color(charcoal, 600);
+      font-size: 0.8em;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      + p {
+        font-size: 85%;
+        margin-top: -10px;
+      }
+    }
+
+    p {
+      margin-bottom: 0.5em;
+      margin-top: 1em;
+      line-height: 1.6;
+    }
+
+    hr {
+      margin-bottom: 3em;
+      margin-top: 3em;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+  }
+}

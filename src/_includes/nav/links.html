@@ -1,0 +1,15 @@
+<nav>
+  <ul class="c-list c-list--inline u-mrg-b-0">
+    {% for link in site.data.nav %}
+    <li class="u-mrg-r-4">
+      <a
+        href="{{ link.link }}"
+        title="{{ link.title }}"
+        class="c-link c-link--plain tx-600"
+      >
+        {{ link.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

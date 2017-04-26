@@ -1,18 +1,20 @@
 ---
-title: Form Group
+title: "Form group"
 description: "Component that groups form elements like labels and inputs within a web form."
-section: Component
-source: https://github.com/helpscout/seed-form-group
-seed-pack: seed-form-group
-keywords: form, input, form group, formgroup, fieldset
+section: "Component"
+source: "https://github.com/helpscout/seed-form-group"
+seed-pack: "seed-form-group"
+keywords:
+  - control
+  - fieldset
+  - form
+  - form group
+  - formgroup
+  - input
 ---
 
 Form group component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

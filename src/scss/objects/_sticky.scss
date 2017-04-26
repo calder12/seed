@@ -1,0 +1,23 @@
+// Objects :: Sticky
+
+@import "pack/seed-breakpoints/_index";
+
+.o-sticky {
+  position: relative;
+  top: 0;
+  will-change: position, top;
+
+  // States
+  // Bootstrap's Affix
+  @include breakpoint(md) {
+    &.affix {
+      position: fixed;
+      transition: top 0.3s ease;
+      top: 20px;
+    }
+
+    &.affix-bottom {
+      position: absolute;
+    }
+  }
+}

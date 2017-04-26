@@ -49,17 +49,9 @@ exclude:
 keep_files:
   - css
   - fonts
-  # - images
+  - images
   - js
   - "*.xml"
-
-
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _scss
-  style:            :compressed
 
 
 # Collections
@@ -89,7 +81,7 @@ defaults:
       path: ""
       type: "guides"
     values:
-      layout: "docs"
+      layout: "packs"
       section: "Guides"
       breadcrumb:
         -
@@ -100,4 +92,4 @@ defaults:
       path: ""
       type: "packs"
     values:
-      layout: "docs"
+      layout: "packs"

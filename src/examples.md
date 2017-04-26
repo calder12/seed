@@ -1,7 +1,9 @@
 ---
-title: Seed examples
-layout: docs
+title: "Seed examples"
+layout: "generic"
 ---
+
+# Seed Examples
 
 <p class="tx-lead">A list of UI examples you can create with Seed</p>
 

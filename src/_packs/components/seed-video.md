@@ -1,18 +1,20 @@
 ---
-title: Video
+title: "Video"
 description: "Component that provides responsive behavior to video embeds."
-section: Component
-source: https://github.com/helpscout/seed-video
-seed-pack: seed-video
-keywords: video, embed, iframe, object, wistia
+section: "Component"
+source: "https://github.com/helpscout/seed-video"
+seed-pack: "seed-video"
+keywords:
+  - embed
+  - iframe
+  - object
+  - video
+  - wistia
+  - youtube
 ---
 
 Video component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

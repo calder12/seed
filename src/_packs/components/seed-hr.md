@@ -1,18 +1,20 @@
 ---
-title: Horizontal rule
+title: "Horizontal rule"
 description: "Component that provides styling for a horizontal line."
-section: Component
-source: https://github.com/helpscout/seed-hr
-seed-pack: seed-hr
-keywords: horizontal, hr, border, divider
+section: "Component"
+source: "https://github.com/helpscout/seed-hr"
+seed-pack: "seed-hr"
+keywords:
+  - border
+  - divide
+  - divider
+  - horizontal
+  - hr
+  - rule
 ---
 
 Horizontal rule component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

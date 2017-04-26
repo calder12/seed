@@ -1,0 +1,16 @@
+// Components :: Highlight (Rouge)
+
+.highlighter-rouge .highlight {
+  background-color: white;
+  font-size: 0.85rem;
+  padding: 5px;
+
+  code,
+  pre {
+    background-color: transparent;
+    border: none;
+    color: _color(charcoal, 500);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}

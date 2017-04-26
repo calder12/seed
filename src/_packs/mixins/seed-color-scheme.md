@@ -1,18 +1,19 @@
 ---
-title: Color scheme system
+title: "Color scheme system"
 description: "A mixin that defines and manages a Sass color scheme configuration."
-section: Mixin
-layout: docs
-source: https://github.com/helpscout/seed-color-scheme
-seed-pack: seed-color-scheme
+section: "Mixin"
+source: "https://github.com/helpscout/seed-color-scheme"
+seed-pack: "seed-color-scheme"
+keywords:
+  - color
+  - mixin
+  - scheme
+  - system
+  - variable
 ---
 
 Color scheme system pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

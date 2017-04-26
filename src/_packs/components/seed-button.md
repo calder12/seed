@@ -1,20 +1,20 @@
 ---
-title: Button
+title: "Button"
 description: "Component for user-actions. Includes support for a variation of sizes, styles, and states."
-section: Component
-source: https://github.com/helpscout/seed-button
-seed-pack: seed-button
-keywords: button, btn, form
+section: "Component"
+source: "https://github.com/helpscout/seed-button"
+seed-pack: "seed-button"
+keywords:
+  - btn
+  - button
+  - form
+  - link
 ---
 
 Button component pack for Seed
 
 Use Seed's custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

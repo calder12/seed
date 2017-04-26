@@ -1,19 +1,16 @@
 ---
-title: Border
+title: "Border"
 description: "Thematic classes to adjust border styles."
-section: Theme
-layout: docs
-source: https://github.com/helpscout/seed-border
-seed-pack: seed-border
-keywords: border
+section: "Theme"
+source: "https://github.com/helpscout/seed-border"
+seed-pack: "seed-border"
+keywords:
+  - border
+  - radius
 ---
 
-Border theme pack for Seed
+A series of thematic classes that adjust the border property of a selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -35,7 +32,15 @@ npm install seed-border --save
 
 `.t-bdr` supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-border.border %}
+
+| Class           | Borders applied on…      |
+| ---             | ---                      |
+| `.t-bdr`        | top, right, bottom, left |
+| `.t-bdr-top`    | top                      |
+| `.t-bdr-right`  | right                    |
+| `.t-bdr-bottom` | bottom                   |
+| `.t-bdr-left`   | left                     |
+
 
 **Example**
 
@@ -64,7 +69,17 @@ npm install seed-border --save
 
 Border radiuses can be adjusted by adding a `.t-bdr-r` class.
 
-{% include docs/variables-table.html data=site.data.seed.seed-border.border-radius %}
+
+| Class             | Borders radius |
+| ---               | ---            |
+| `.t-bdr-r-0`      | 0px            |
+| `.t-bdr-r-1`      | 1px            |
+| `.t-bdr-r-2`      | 2px            |
+| `.t-bdr-r-3`      | 3px            |
+| `.t-bdr-r-4`      | 4px            |
+| `.t-bdr-r-circle` | 50%            |
+| `.t-bdr-r-pill`   | 9999px         |
+
 
 **Example**
 
@@ -76,7 +91,6 @@ Border radiuses can be adjusted by adding a `.t-bdr-r` class.
   I have a border radius of a lot of px!
 </div>
 {% endexample %}
-
 
 
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="hs-styleguide tx-smooth">
+  <div class="hs-nav-side t-bdr-right@md t-bg-grey-200">
+    {% include docs-nav.html %}
+  </div>
+  <div class="hs-container">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-10@lg o-col-offset-1@lg">
+          <section id="content">
+            {% if page.title %}
+            <header class="u-mrg-t-6 u-mrg-b-4 u-pad-t-2 u-pad-b-1">
+              {% if page.section %}
+                <div class="o-flexy">
+                  <div class="o-flexy__item">
+                    <div class="tx-h5 tx-600 t-tx-charcoal-300">
+                      <ul class="c-list c-list--inline u-mrg-b-0">
+                        {% if page.seed-pack %}
+                          <li>
+                            <a href="/seed/packs/">Seed Packs</a>
+                          </li>
+                          <li>
+                            <span class="tx-400 u-op-4">/</span>
+                          </li>
+                        {% endif %}
+                        {% if page.breadcrumb %}
+                        {% for item in page.breadcrumb %}
+                          <li>
+                          {% if item.link %}
+                            <a href="{{ item.link }}">{{ item.title }}</a>
+                          {% else %}
+                            {{ item.title }}
+                          {% endif %}
+                          </li>
+                        {% endfor %}
+                        {% else %}
+                        <li>
+                          {{ page.section }}
+                        </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                  </div>
+                  {% if page.seed-pack %}
+                  <div class="o-flexy__item u-d-none u-d-block@sm">
+                    <a href="https://travis-ci.org/helpscout/{{ page.seed-pack }}" target="_blank" class="tx-no-underline">
+                      <img src="https://travis-ci.org/helpscout/{{ page.seed-pack }}.svg?branch=master">
+                    </a>
+                    <a href="https://www.npmjs.com/package/{{ page.seed-pack }}" target="_blank" class="tx-no-underline">
+                      <img src="https://badge.fury.io/js/{{ page.seed-pack }}.svg">
+                    </a>
+                  </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+              <h1 class="tx-lh-heading tx-h3 tx-h2@sm tx-500 u-mrg-t-2 u-mrg-b-2">
+                {{ page.title }}
+              </h1>
+
+              {% if page.seed-pack %}
+                <div class="u-mrg-v-1 tx-sm">
+                  <span class="u-op-4">Pack name:</span>
+                  <span class="u-op-7">{{ page.seed-pack }}</span>
+                </div>
+              {% endif %}
+
+              {% if page.source %}
+                <div class="u-mrg-t-3">
+                  {{ page.source | viewsource }}
+                </div>
+              {% endif %}
+
+            </header>
+            {% endif %}
+
+            {{ content }}
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  {% include footer-data.html %}
+  {% include footer-scripts.html %}
+
+</body>
+
+</html>

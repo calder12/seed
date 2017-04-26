@@ -1,21 +1,18 @@
 ---
-title: Centralize
+title: "Centralize"
 description: "Vertically and horizontally alignment elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-centralize
-seed-pack: seed-centralize
-keywords: align, center, vertical, middle
+section: "Utility"
+source: "https://github.com/helpscout/seed-centralize"
+seed-pack: "seed-centralize"
+keywords:
+   - align
+   - center
+   - middle
+   - vertical
 ---
 
-Centralize utility pack for Seed
+Utility classes that uses [flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/) to magically vertically/horizontally align things.
 
-This pack uses [flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/) to magically vertically/horizontally align things.
-
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -44,7 +41,7 @@ This utility pack supports **[responsive modifiers](/seed/packs/seed-breakpoints
 
 {% example html %}
 <div class="u-centralize t-bg-blue-200" style="height: 200px;">
-  <h1>I'm in the middle</h1>
+  <h1>You've got a friend in me</h1>
 </div>
 {% endexample %}
 
@@ -59,8 +56,8 @@ Below is an example of misalignment if there is more tha child element:
 
 {% example html %}
 <div class="u-centralize t-bg-blue-200" style="height: 200px;">
-  <h1>I'm in the middle</h1>
-  <p>Aww… I wanna be too!</p>
+  <h1>You've got a friend in me</h1>
+  <p>When the road looks rough ahead</p>
 </div>
 {% endexample %}
 
@@ -69,10 +66,10 @@ Instead, keep all of the child elements **within a container**:
 {% example html %}
 <div class="u-centralize t-bg-blue-200" style="height: 200px;">
   <div>
-    <h1>I'm in the middle</h1>
+    <h1>You've got a friend in me</h1>
     <p>
-      Yay! I'm in the middle now.<br>
-      Kinda.
+      When the road looks rough ahead<br>
+      And you're miles and miles
     </p>
   </div>
 </div>
@@ -85,8 +82,8 @@ Depending on the types of elements, they can be horizontally aligned using `.tx-
 {% example html %}
 <div class="u-centralize t-bg-blue-200" style="height: 200px;">
   <div class="tx-center">
-    <h1>I'm in the middle</h1>
-    <p>I'm totes in the middle now.</p>
+    <h1>You've got a friend in me</h1>
+    <p>When the road looks rough ahead</p>
   </div>
 </div>
 {% endexample %}
@@ -97,7 +94,7 @@ Depending on the types of elements, they can be horizontally aligned using `.tx-
 
 
 
-{% include docs/config.html config="seed-button" %}
+{% include docs/config.html config="seed-centralize" %}
 
 
 

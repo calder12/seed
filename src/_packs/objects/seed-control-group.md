@@ -1,19 +1,20 @@
 ---
-title: Control Group
+title: "Control group"
 description: "Object classes that align and group form-based elements together."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-control-group
-seed-pack: seed-control-group
-keywords: btn-group, control, group, btn, btn group, button group
+section: "Object"
+source: "https://github.com/helpscout/seed-control-group"
+seed-pack: "seed-control-group"
+keywords:
+  - btn-group
+  - control
+  - group
+  - btn
+  - button group
+  - segment
 ---
 
-Control group object pack for Seed
+A series of classes that help align, combine, and group elements together for UI components like button groups or segment controls.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -36,16 +37,7 @@ npm install seed-control-group --save
 
 ## Example
 
-{% example html %}
-<div class="o-control-group" role="group">
-  <input class="c-input o-control-group__block" value="I'm an input!" />
-  <button class="c-button">Button!</button>
-</div>
-{% endexample %}
-
-
-## Configurations
-
+Border, border-radius, and z-index properties are automatically adjusted for elements placed within an `.o-contorl-group` selector.
 
 ### Button groups
 
@@ -56,6 +48,21 @@ Using the button component from [seed-button](/seed/packs/seed-button).
   <button class="c-button">Button</button>
   <button class="c-button">Button</button>
   <button class="c-button">Button</button>
+</div>
+{% endexample %}
+
+
+
+## Full-width items
+
+In order for a particular element to have a (responsive) full-width, the class of `.o-control-group__block` must be applied.
+
+### Input / button combo
+
+{% example html %}
+<div class="o-control-group" role="group">
+  <input class="c-input o-control-group__block" value="I'm an input!" />
+  <button class="c-button">Button!</button>
 </div>
 {% endexample %}
 

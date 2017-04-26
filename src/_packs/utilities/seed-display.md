@@ -1,19 +1,22 @@
 ---
-title: Display
+title: "Display"
 description: "Utility classes that adjust the display styles of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-display
-seed-pack: seed-display
-keywords: display, block, hide, responsive
+section: "Utility"
+source: "https://github.com/helpscout/seed-display"
+seed-pack: "seed-display"
+keywords:
+   - block
+   - display
+   - hidden
+   - hide
+   - inline
+   - inline-block
+   - inlineblock
+   - responsive
 ---
 
-Display utility pack for Seed
+A series of utility classes that adjust the display property of a selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -38,7 +41,14 @@ npm install seed-display --save
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-display.display %}
+
+| Class               | Display Value |
+| ---                 | ---           |
+| `.u-d-initial`      | initial       |
+| `.u-d-none`         | none          |
+| `.u-d-block`        | block         |
+| `.u-d-inline`       | inline        |
+| `.u-d-inline-block` | inline-block  |
 
 
 ### Example

@@ -1,18 +1,19 @@
 ---
-title: Breakpoints
+title: "Breakpoints"
 description: "A collection of mixins that work with CSS media queries."
-section: Mixin
-layout: docs
-source: https://github.com/helpscout/seed-breakpoints
-seed-pack: seed-breakpoints
+section: "Mixin"
+source: "https://github.com/helpscout/seed-breakpoints"
+seed-pack: "seed-breakpoints"
+keywords:
+  - breakpoint
+  - media
+  - mixin
+  - query
+  - responsive
 ---
 
 Breakpoints (media query) mixin pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

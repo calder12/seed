@@ -1,19 +1,20 @@
 ---
-title: Width (Fixed)
+title: "Width (Fixed)"
 description: "Utility classes that provide a range of fixed width (px) sizes."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-width-fx
-seed-pack: seed-width-fx
-keywords: width, fixed, px
+section: "Utility"
+source: "https://github.com/helpscout/seed-width-fx"
+seed-pack: "seed-width-fx"
+keywords:
+  - fixed
+  - fixedwidth
+  - fx
+  - pixel
+  - px
+  - width
 ---
 
-Width (fixed) utility pack for Seed
+A series of utility classes that adjust the width (px) property of a selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -39,7 +40,18 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 These classes can also be combined with the utility classes from [seed-width-min](/seed/packs/seed-width-min) and [seed-width-max](/seed/packs/seed-width-max).
 
-{% include docs/variables-table.html data=site.data.seed.seed-width-fx.width %}
+
+| Class           | Width (px) |
+| ---             | ---        |
+| `.u-width-fx-0` | 0px        |
+| `.u-width-fx-1` | 50px       |
+| `.u-width-fx-2` | 100px      |
+| `.u-width-fx-3` | 150px      |
+| `.u-width-fx-4` | 200px      |
+| `.u-width-fx-5` | 250px      |
+| `.u-width-fx-6` | 300px      |
+| `.u-width-fx-7` | 350px      |
+| `.u-width-fx-8` | 400px      |
 
 
 ### Example

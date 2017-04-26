@@ -1,18 +1,16 @@
 ---
-title: Tooltip
+title: "Tooltip"
 description: "Component that provides styling for tooltips. This component uses Bootstrap's Javascript to handle the interactions."
-section: Component
-source: https://github.com/helpscout/seed-tooltip
-seed-pack: seed-tooltip
-keywords: tooltip, bootstrap
+section: "Component"
+source: "https://github.com/helpscout/seed-tooltip"
+seed-pack: "seed-tooltip"
+keywords:
+  - bootstrap
+  - tooltip
 ---
 
 Tooltip component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

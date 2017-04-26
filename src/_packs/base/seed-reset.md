@@ -1,18 +1,19 @@
 ---
-title: Reset
+title: "Reset"
 description: "Normalizes HTML element styles to ensure better consistency and adherence to modern standards."
-section: Base
-source: https://github.com/helpscout/seed-reset
-seed-pack: seed-reset
-keywords: base, reboot, reset, normalize
+section: "Base"
+source: "https://github.com/helpscout/seed-reset"
+seed-pack: "seed-reset"
+keywords:
+  - base
+  - clean
+  - normal
+  - normalize
+  - reboot
+  - reset
 ---
 
-Reset pack for Seed
-
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+Normalizes HTML element styles to ensure better consistency and adherence to modern CSS standards.
 
 ## Install
 
@@ -33,13 +34,13 @@ npm install seed-reset --save
 
 ## About
 
-By default, the seed-reset pack contains the following CSS reset styles:
+By default, this pack contains the following CSS reset styles:
 
 * [normalize.css](https://necolas.github.io/normalize.css/)
 * [Bootstrap V4's Reboot](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss)
 * [Bootstrap V4's Print](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_print.scss)
 
-The Bootstrap reset styles have been adjusted slightly to remove Bootstrap specific styles.
+Bootstrap's reset styles have been slightly adjusted to remove Bootstrap specific styles.
 
 
 

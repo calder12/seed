@@ -1,18 +1,17 @@
 ---
-title: Modal
+title: "Modal"
 description: "Component that provides styling for modals. This component uses Bootstrap's Javascript to handle the interactions."
-section: Component
-source: https://github.com/helpscout/seed-modal
-seed-pack: seed-modal
-keywords: modal, bootstrap, overlay
+section: "Component"
+source: "https://github.com/helpscout/seed-modal"
+seed-pack: "seed-modal"
+keywords:
+  - bootstrap
+  - modal
+  - overlay
 ---
 
 Modal component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

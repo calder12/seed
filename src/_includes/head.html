@@ -7,19 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
-  <link rel="stylesheet" href="{{ "/css/aktiv-webfont.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
-  {% if page.title == 'Blog' %}
-  <link rel="stylesheet" href="http://www.helpscout.net/css/blog.css">
-  {% endif %}
-  {% if page.path contains 'web-app' %}
-  <link rel="stylesheet" href="{{ "/css/hs-app.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
-  {% endif %}
   <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}" type="image/x-icon"/>
 
-  <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  <script src="{{ "/js/bootstrap-datepicker.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  <script src="{{ "/js/audio-player.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-
-  <meta name="robots" content="noindex,nofollow" />
+  <meta name="robots" content="index, follow" />
 </head>

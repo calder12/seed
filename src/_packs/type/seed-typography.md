@@ -1,19 +1,25 @@
 ---
-title: Typography
+title: "Typography"
 description: "A collection of typography based styles."
-section: Text
-layout: docs
-source: https://github.com/helpscout/seed-typography
-seed-pack: seed-typography
-keywords: typography, text, tx, font, weight, size, type
+section: "Text"
+source: "https://github.com/helpscout/seed-typography"
+seed-pack: "seed-typography"
+keywords:
+  - bold
+  - font
+  - header
+  - size
+  - size
+  - sizing
+  - text
+  - tx
+  - type
+  - typography
+  - weight
 ---
 
 Typography pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

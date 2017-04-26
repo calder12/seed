@@ -50,8 +50,8 @@ title: "Twitter - Tweet"
 {% endexample %}
 
 
-## Packs utilized
-
+{% contentfor sidebar %}
+### Packs
 * Components
   * [seed-avatar](/seed/packs/seed-avatar)
   * [seed-thumbnail](/seed/packs/seed-thumbnail)
@@ -64,3 +64,4 @@ title: "Twitter - Tweet"
 * Utilities
   * [seed-display](/seed/packs/seed-display)
   * [seed-spacing](/seed/packs/seed-spacing)
+{% endcontentfor %}

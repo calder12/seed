@@ -1,18 +1,17 @@
 ---
-title: Pagination
+title: "Pagination"
 description: "Component used for paginated navigation represented with a list of numbered links. Includes support for a variation of sizes and styles."
-section: Component
-source: https://github.com/helpscout/seed-pagination
-seed-pack: seed-pagination
-keywords: pagination, pager, nav
+section: "Component"
+source: "https://github.com/helpscout/seed-pagination"
+seed-pack: "seed-pagination"
+keywords:
+  - nav
+  - pagination
+  - pager
 ---
 
 Pagination component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

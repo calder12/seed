@@ -1,19 +1,17 @@
 ---
-title: Width (Max)
+title: "Width (Max)"
 description: "Utility classes that provide a range of max width (%) sizes."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-width-max
-seed-pack: seed-width-max
-keywords: max-width, max, width
+section: "Utility"
+source: "https://github.com/helpscout/seed-width-max"
+seed-pack: "seed-width-max"
+keywords:
+  - max
+  - maxwidth
+  - width
 ---
 
-Width (max) utility pack for Seed
+A series of utility classes that adjust the max-width (%) property of a selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -40,7 +38,22 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 These classes can also be combined with the utility classes from [seed-width](/seed/packs/seed-width)/[seed-width-fx](/seed/packs/seed-width-fx) and [seed-width-min](/seed/packs/seed-width-min).
 
-{% include docs/variables-table.html data=site.data.seed.seed-width-max.width %}
+
+| Class             | Max Width (%) |
+| ---               | ---           |
+| `.u-width-max-0`  | 0%            |
+| `.u-width-max-1`  | 8.33333%      |
+| `.u-width-max-2`  | 16.66667%     |
+| `.u-width-max-3`  | 25%           |
+| `.u-width-max-4`  | 33.33333%     |
+| `.u-width-max-5`  | 41.66667%     |
+| `.u-width-max-6`  | 50%           |
+| `.u-width-max-7`  | 58.33333%     |
+| `.u-width-max-8`  | 66.66667%     |
+| `.u-width-max-9`  | 75%           |
+| `.u-width-max-10` | 83.33333%     |
+| `.u-width-max-11` | 91.66667%     |
+| `.u-width-max-12` | 100%          |
 
 
 ### Example

@@ -1,0 +1,37 @@
+{% if page.title %}
+<header class="u-mrg-b-4 u-pad-b-1">
+  {% if page.section %}
+    <div class="o-flexy o-flexy--gap-md">
+      {% if page.seed-pack %}
+        <div clas="o-flexy__item">
+          <p class="u-mrg-0 tx-sm">
+            <span class="u-op-3">Pack: </span>
+            <span class="u-op-5">{{ page.seed-pack }}</span>
+          </p>
+        </div>
+      {% endif %}
+      {% if page.seed-pack %}
+      <div class="o-flexy__item u-d-none u-d-block@sm">
+        <a href="https://travis-ci.org/helpscout/{{ page.seed-pack }}" target="_blank" class="tx-no-underline">
+          <img src="https://travis-ci.org/helpscout/{{ page.seed-pack }}.svg?branch=master">
+        </a>
+        <a href="https://www.npmjs.com/package/{{ page.seed-pack }}" target="_blank" class="tx-no-underline">
+          <img src="https://badge.fury.io/js/{{ page.seed-pack }}.svg">
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <h1 class="tx-lh-heading tx-h3 tx-h1@sm tx-300 u-mrg-t-2 u-mrg-b-2">
+    {{ page.title }}
+  </h1>
+
+  {% if page.source %}
+    <div class="tx-700">
+      {{ page.source | viewsource }}
+    </div>
+  {% endif %}
+
+</header>
+{% endif %}

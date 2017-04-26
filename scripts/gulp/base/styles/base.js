@@ -9,17 +9,16 @@ var harvester = require('seed-harvester');
 var packer = require('seed-packer');
 
 // Initialize packer
-packer(global.config.src + '/_assets/stylesheets/plugins/_seed-packs.scss');
+packer(global.config.src + '/scss/plugins/_seed-packs.scss');
 
 // Setup harvester
 var includePaths = harvester(
-  'node_modules/styleguide/src/_assets',
   global.config.src + '/_assets/stylesheets',
   global.config.src + '/_assets/vendors'
 );
 
 gulp.task('styles-base', function(callback) {
-  return gulp.src(global.config.src + '/_assets/stylesheets/*.scss')
+  return gulp.src(global.config.src + '/scss/*.scss')
   .pipe(plumber())
   .pipe(sourcemaps.init())
   .pipe(

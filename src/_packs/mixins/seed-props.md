@@ -1,18 +1,24 @@
 ---
-title: Props
+title: "Props"
 description: "A function/mixin combo that provides callback-like functionality with Sass maps."
-section: Mixin
-layout: docs
-source: https://github.com/helpscout/seed-props
-seed-pack: seed-props
+section: "Mixin"
+source: "https://github.com/helpscout/seed-props"
+seed-pack: "seed-props"
+keywords:
+  - argument
+  - array
+  - callback
+  - function
+  - maps
+  - mixin
+  - object
+  - prop
+  - props
+  - variable
 ---
 
 Props mixin pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

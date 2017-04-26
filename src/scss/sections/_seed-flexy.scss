@@ -1,0 +1,28 @@
+// Layouts :: Flex
+
+@import "pack/seed-helpscout-theme/_index";
+
+.s-hs-docs--flexy {
+  .hs-code {
+    .o-flexy {
+      border: 1px dashed _color(blue, 300);
+      padding: 2px;
+      margin-bottom: 5px;
+    }
+
+    .o-flexy__item,
+    .o-flexy__block {
+      background-color: _color(blue, 100);
+      border: 1px solid _color(blue, 300);
+      font-size: 0.9rem;
+      padding: 2px 4px;
+      margin: 2px;
+    }
+
+    .o-flexy--top,
+    .o-flexy--middle,
+    .o-flexy--bottom {
+      height: 60px;
+    }
+  }
+}

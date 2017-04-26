@@ -1,19 +1,18 @@
 ---
-title: Position
+title: "Position"
 description: "Utility classes that adjust the position styles of elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-position
-seed-pack: seed-position
-keywords: position, relative, absolute, fixed
+section: "Utility"
+source: "https://github.com/helpscout/seed-position"
+seed-pack: "seed-position"
+keywords:
+  - absolute
+  - fixed
+  - position
+  - relative
 ---
 
-Position utility pack for Seed
+A series of utility classes that adjust the position property of a selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -36,7 +35,15 @@ npm install seed-position --save
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-position.position %}
+
+| Class             | Position |
+| ---               | ---      |
+| `.u-pos-absolute` | absolute |
+| `.u-pos-fixed`    | fixed    |
+| `.u-pos-inherit`  | inherit  |
+| `.u-pos-initial`  | initial  |
+| `.u-pos-relative` | relative |
+| `.u-pos-static`   | static   |
 
 
 

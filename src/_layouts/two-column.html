@@ -1,0 +1,13 @@
+---
+layout: "base"
+---
+{% contentblock breadcrumb %}
+<div class="o-row">
+  <div class="o-col-3@md js-spy-sidebar">
+    {% contentblock sidebar %}
+  </div>
+  <div class="o-col-9@md">
+    {% include page/header.html %}
+    {{ content }}
+  </div>
+</div>

@@ -102,7 +102,8 @@ title: "Airbnb - City guide collage"
 ```
 
 
-## Packs utilized
+{% contentfor sidebar %}
+### Packs
 
 * Components
   * [seed-thumbnail](/seed/packs/seed-thumbnail)
@@ -115,3 +116,4 @@ title: "Airbnb - City guide collage"
 * Utilities
   * [seed-display](/seed/packs/seed-display)
   * [seed-spacing](/seed/packs/seed-spacing)
+{% endcontentfor %}

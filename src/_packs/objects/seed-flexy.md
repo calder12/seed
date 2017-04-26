@@ -1,19 +1,23 @@
 ---
-title: Flexy
+title: "Flexy"
 description: "Object classes that uses flexbox to intelligently align items together."
-section: Object
-layout: docs
-source: https://github.com/helpscout/seed-flexy
-seed-pack: seed-flexy
-keywords: flexy, flexbox, align, float, pull
+section: "Object"
+source: "https://github.com/helpscout/seed-flexy"
+seed-pack: "seed-flexy"
+keywords:
+  - align
+  - alignment
+  - flex
+  - flexbox
+  - flexy
+  - float
+  - pull
+  - vertical
 ---
 
-Flex object pack for Seed
 
-## Contents
+A series of classes that use Flexbox to intelligently align elements together. These classes can be helpful to vertically align UI elements of varying heights.
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -35,9 +39,9 @@ npm install seed-flexy --save
 
 ## About
 
-Flex is a unique layout component that utilizes flexbox to align items. Flex are typically used in headers, footers, any other areas that require alignment of controls in a single line height.
+`seed-flexy` is a unique layout object class that uses flexbox to align items. `seed-flexy` classes are typically used in headers, footers, any other areas that require alignment of elements in a single line height.
 
-Note: Items within will align to the outer edges of Flex.
+Note: Items within will align to the outer edges of `seed-flexy`.
 
 
 ---
@@ -51,10 +55,10 @@ Note: Items within will align to the outer edges of Flex.
 {% example html %}
 <div class="o-flexy">
   <div class="o-flexy__item">
-    Flex Item
+    Woody
   </div>
   <div class="o-flexy__item">
-    Flex Item
+    Buzz
   </div>
 </div>
 {% endexample %}
@@ -65,23 +69,23 @@ Note: Items within will align to the outer edges of Flex.
 
 
 
-## Flex item
+## Flexy item
 
-You can add as many ``.o-flexy__item`` elements within a ``.o-flexy`` as needed, and they will be spaced apart evenly.
+You can add as many `.o-flexy__item` elements within a `.o-flexy` as needed, and they will be spaced apart evenly.
 
 {% example html %}
 <div class="o-flexy">
   <div class="o-flexy__item">
-    Flex Item
+    Woody
   </div>
   <div class="o-flexy__item">
-    Flex Item
+    Buzz
   </div>
   <div class="o-flexy__item">
-    Flex Item
+    Jessie
   </div>
   <div class="o-flexy__item">
-    Flex Item
+    Bullseye
   </div>
 </div>
 {% endexample %}
@@ -89,22 +93,22 @@ You can add as many ``.o-flexy__item`` elements within a ``.o-flexy`` as needed,
 
 ### Alignment
 
-Use the margin utility class of `u-mrg-*-auto` to help control the alignment of your `.o-flexy__item`. Replace `*` with the direction **opposite** of the direction you wish to align your item.
+Aligning items within a `.o-flexy` element feels counter-intuitive compared to traditional (and straight-forward) `float: left` or `float: right` layout adjustments. To align an item a certain direction (left), the item's opposite margin (`margin-right`) must be set to `auto`.
 
-(Note: The current implementation of this isn't very intuitive. This will be fixed in a future update!)
+The utility class of `u-mrg-*-auto` (from [seed-spacing](/seed/packs/seed-spacing)) can be used control the alignment of your `.o-flexy__item`. Replace `*` with the direction **opposite** of the direction you wish to align your item.
 
 {% example html %}
 <div class="o-flexy">
   <div class="o-flexy__item u-mrg-l-auto">
-    Flex Item (Aligned right)
+    Buzz (Aligned right)
   </div>
 </div>
 <div class="o-flexy">
   <div class="o-flexy__item">
-    Flex Item (Default)
+    Woody (Default)
   </div>
   <div class="o-flexy__item u-mrg-r-auto">
-    Flex Item (Aligned left)
+    Rex (Aligned left)
   </div>
 </div>
 {% endexample %}
@@ -117,23 +121,23 @@ Use the margin utility class of `u-mrg-*-auto` to help control the alignment of 
 
 ## Flex block
 
-``.o-flexy__block`` is a utility component used to fill up space between or around ``.o-flexy__item`` elements.
+``.o-flexy__block`` is an element used to fill up space between or around `.o-flexy__item` elements.
 
 Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="o-flexy">
   <div class="o-flexy__item">
-    Flex Item
+    Woody
   </div>
   <div class="o-flexy__item">
-    Flex Item
+    Buzz
   </div>
   <div class="o-flexy__block">
-    Flex Block
+    Rex
   </div>
   <div class="o-flexy__item">
-    Flex Item
+    Slinky
   </div>
 </div>
 {% endexample %}
@@ -146,24 +150,32 @@ Supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modif
 
 ## Vertical alignment
 
-You can apply the vertical alignment utility classes to vertically align the children elements within a ``.o-flexy``.
+You can apply the vertical alignment modifier class to adjust the vertically align the child elements within a `.o-flexy`.
 
 All of the vertical alignment modifiers support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+
+
+| Class              | Vertical aligment | CSS Property              |
+| ---                | ---               | ---                       |
+| `.o-flexy--top`    | Top               | `align-items: flex-start` |
+| `.o-flexy--middle` | Middle (Default)  | `align-items: center`     |
+| `.o-flexy--bottom` | Bottom            | `align-items: flex-end`   |
+
 
 {% example html %}
 <div class="o-flexy o-flexy--top">
   <div class="o-flexy__item">
-    <span class="text-muted">I'm at the top!</span>
+    <span class="text-muted">😱 There's a…</span>
   </div>
 </div>
 <div class="o-flexy o-flexy--middle">
   <div class="o-flexy__item">
-    <span class="text-muted">I'm in the middle!</span>
+    <span class="text-muted">🐍 snake…</span>
   </div>
 </div>
 <div class="o-flexy o-flexy--bottom">
   <div class="o-flexy__item">
-    <span class="text-muted">I'm at the bottom!</span>
+    <span class="text-muted">👢 in my boot!</span>
   </div>
 </div>
 {% endexample %}
@@ -174,16 +186,14 @@ All of the vertical alignment modifiers support **[responsive modifiers](/seed/p
 
 ## Text truncation
 
-**Deprecated**: The `.o-flexy--reset` modifier has been [deprecated](https://github.com/helpscout/seed-flexy/releases/tag/v0.2.0). `.o-flexy__item` and `.o-flexy__block` now properly handle truncation by default.
-
-At the moment, Flexbox doesn't play nicely with CSS truncation (specifically the ``white-space: nowrap`` attribute. To resolve this, add either the ``.o-flexy--reset`` class to your flex item/block respectively.
+At the moment, Flexbox doesn't play nicely with CSS truncation (specifically the `white-space: nowrap` attribute. If you plan on using CSS truncation, avoid applying your truncation class directly on a `.o-flexy__item` or `.o-flexy__block`.
 
 {% example html %}
 <div class="o-flexy">
   <div class="o-flexy__item">
-    Flex Item
+    Summary:
   </div>
-  <div class="o-flexy__block o-flexy--reset">
+  <div class="o-flexy__block">
     <div class="tx-truncate">
       Toy Story is a 1995 American computer-animated buddy-comedy adventure film produced
       by Pixar Animation Studios and released by Walt Disney Pictures. Directed by John Lasseter,

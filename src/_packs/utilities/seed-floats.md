@@ -1,19 +1,21 @@
 ---
-title: Floats
+title: "Floats"
 description: "Utility classes that provide floating and clearfixing styles to elements."
-section: Utility
-layout: docs
-source: https://github.com/helpscout/seed-floats
-seed-pack: seed-floats
-keywords: float, pull, left, right, clearfix, clear
+section: "Utility"
+source: "https://github.com/helpscout/seed-floats"
+seed-pack: "seed-floats"
+keywords:
+  - clear
+  - clearfix
+  - float
+  - layout
+  - left
+  - pull
+  - right
 ---
 
-Floats utility pack for Seed
+A series of utility classes that adjust the float property of a selector, with support for responsive modifiers.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -47,13 +49,13 @@ For most use cases, applying a "clearfix" class to the parent selector containin
 {% example html %}
 <div class="u-clearfix">
   <div class="u-pull-left">
-    Lefty
+    Buzz
   </div>
   <div class="u-pull-left">
-    Lefty
+    Slinky
   </div>
   <div class="u-pull-right">
-    Righty
+    Woody
   </div>
 </div>
 {% endexample %}
@@ -66,7 +68,12 @@ For most use cases, applying a "clearfix" class to the parent selector containin
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-floats.pull %}
+
+| Class           | Float |
+| ---             | ---   |
+| `.u-pull-left`  | left  |
+| `.u-pull-right` | right |
+| `.u-pull-none`  | none  |
 
 
 **Example**
@@ -74,7 +81,7 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 {% example html %}
 <div class="u-clearfix">
   <div class="u-pull-right">
-    I'm being pull to the right!
+    Woody
   </div>
 </div>
 {% endexample %}
@@ -90,8 +97,12 @@ For most use-cases, the [clearfix](#clearfix) utility class is able to handle fl
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 
-{% include docs/variables-table.html data=site.data.seed.seed-floats.clear %}
-
+| Class            | Clearfix |
+| ---              | ---      |
+| `.u-clear-none`  | none     |
+| `.u-clear-left`  | left     |
+| `.u-clear-right` | right    |
+| `.u-clear-both`  | both     |
 
 
 ---
