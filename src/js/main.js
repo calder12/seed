@@ -19,6 +19,7 @@ var rxs = require('./vendor/rxs');
     var rxsResize = function() {
       rxSidebarNavWidth.set({
         width: $spySidebar.width() + 'px',
+        willChange: 'width',
       });
     };
 
