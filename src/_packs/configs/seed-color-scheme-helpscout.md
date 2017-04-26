@@ -11,12 +11,7 @@ keywords:
   - help scout
 ---
 
-Help Scout color scheme pack for Seed
-
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+A series of color scheme variables with Help&nbsp;Scout's [color palette](http://style.helpscout.com/brand/color/).
 
 ## Install
 
@@ -35,9 +30,9 @@ npm install seed-color-scheme-helpscout --save
 
 ## Usage
 
-The Help Scout color scheme pack consists of all the colors and shades in our [color palette](/brand/color).
+This pack consists of all the colors and shades in Help&nsbp;Scout's [color palette](http://style.helpscout.com/brand/color/).
 
-Use the **_color()** mixin (provided by [seed-color-scheme](/seed/packs/seed-color-scheme)) to reference a color from this pack.
+The **_color()** mixin (provided by [seed-color-scheme](/seed/packs/seed-color-scheme)) is used to reference a color from this pack.
 
 ```example.scss
 .element {

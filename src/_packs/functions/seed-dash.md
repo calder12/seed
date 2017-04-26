@@ -1,18 +1,28 @@
 ---
-title: Dash
+title: "Dash"
 description: "Functions that get, set, and extend Sass maps."
-section: Function
-layout: docs
-source: https://github.com/helpscout/seed-dash
-seed-pack: seed-dash
+section: "Function"
+source: "https://github.com/helpscout/seed-dash"
+seed-pack: "seed-dash"
+keywords:
+  - array
+  - dash
+  - extend
+  - functional
+  - get
+  - helper
+  - library
+  - list
+  - lodash
+  - map
+  - maps
+  - set
+  - underscore
 ---
 
-Dash mixin pack for Seed
 
-## Contents
+A tiny utility library with functions designed to make it easier to work with Sass lists and maps.
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -34,10 +44,11 @@ Gets the value(s) at the key of an object.
 
 **_get($object, arguments...)**
 
-**Arguments**
 
-1. `$object` (List \| Map): The object to query.
-2. `argmuents…` (String): The key(s) of the property to get.
+| Argument     | Type       | Description                        |
+| ---          | ---        | ---                                |
+| `$object`    | List / Map | The object to query.               |
+| `arguments…` | String     | The key(s) of the property to get. |
 
 
 **Example: List**
@@ -117,10 +128,11 @@ Sets the value(s) at the key of an object.
 
 **_set($object, arguments...)**
 
-**Arguments**
 
-1. `$object` (List \| Map): The object to query.
-2. `argmuents…` (String): The key(s) of the property to set.
+| Argument     | Type       | Description                        |
+| ---          | ---        | ---                                |
+| `$object`    | List / Map | The object to query.               |
+| `arguments…` | String     | The key(s) of the property to set. |
 
 
 **Example: List**
@@ -223,10 +235,12 @@ Adds or updates values of an object;
 
 **_extend($object, arguments...)**
 
-**Arguments**
 
-1. `$object` (List \| Map): The object to query.
-2. `argmuents…` (String): The key(s) of the property to extend.
+| Argument     | Type       | Description                           |
+| ---          | ---        | ---                                   |
+| `$object`    | List / Map | The object to query.                  |
+| `arguments…` | String     | The key(s) of the property to extend. |
+
 
 **Example: List**
 ```example.scss

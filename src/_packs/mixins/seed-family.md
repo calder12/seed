@@ -11,12 +11,9 @@ keywords:
   - sibling
 ---
 
-Selector-based mixin pack for Seed
 
-## Contents
+A library of mixins that enable manipulation of a selector based on it's relationship with parent or sibling selectors.
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -30,25 +27,23 @@ npm install seed-family --save
 
 ## About
 
-`seed-family` is a pack that offers mixins that manipulate parent or sibling selectors. Because of how CSS works, it's (currently) not possible to target parent selectors or classes in any way.
+Because of how CSS works, it's (currently) not possible to create rules based on the target's parent selectors or previous sibling classes in any way. This pack aims to help resolve these issues.
 
 This use-case doesn't occur very often, but it's not too uncommon either.
 
-### The problem
+### Problem
 
 Take the following CSS for a menu component (structured with the BEM convention).
 
 ``` _menu.scss
 .menu {
-  // styles
-
   &__item {
     display: none;
   }
 }
 ```
 
-### The workaround
+### Workarounds
 
 The `.menu__item` is hidden with `display: none` by default. We want it to be `display: block` when the `.menu.is-active`.
 
@@ -56,8 +51,6 @@ We currently have to write it like this:
 
 ``` _menu.scss
 .menu {
-  // styles
-
   &__item {
     display: none;
   }
@@ -72,14 +65,12 @@ We currently have to write it like this:
 
 The class of `.menu__item` is repeated. Not to mention that `.menu__item` no longer manages its own styles, but instead, they are abstracted and dicated by `.menu`. What's worse is that `&` no longer references `.menu` in the context of `&.is-active` (but that's a separate issue).
 
-### The ideal
+### Ideal
 
 Wouldn't it be nice if we could write something like this?
 
 ``` _menu.scss
 .menu {
-  // styles
-
   &__item {
     display: none;
 
@@ -104,16 +95,16 @@ When the parent, in this case `.menu`, has the `.is-active` class, change the di
 
 **parent($selector)**
 
-**$selector**<br>
-Type: `string`<br>
-Description: The desired parent class/selector.
 
-We can write our menu styles similarly to our ["ideal"](#the-ideal) example.
+| Argument    | Type   | Description                            |
+| ---         | ---    | ---                                    |
+| `$selector` | String | The desired parent selector to target. |
+
+
+We can write our menu styles similarly to our ["ideal"](#ideal) example.
 
 ``` _menu.scss
 .menu {
-  // styles
-
   &__item {
     display: none;
 
@@ -147,7 +138,7 @@ Let's break it down:
 * `@include parent` - Activating the `parent` mixin.
 * `"{&}.is-active"` - The parent selector + the `.is-active` class.
 
-In this example, `&` still references `.menu`. That is because it's direct parent selector is `.menu`, unlike our [workaround](/#the-workaround) example.
+In this example, `&` still references `.menu`. That is because it's direct parent selector is `.menu`, unlike our [workaround](/#workarounds) example.
 
 ```scss
 .menu {
@@ -167,16 +158,16 @@ In this example, `&` still references `.menu`. That is because it's direct paren
 
 ### sibling
 
-**$selector**<br>
-Type: `string`<br>
-Description: The desired parent class/selector.
+**sibling($selector)**
+
+| Argument    | Type   | Description                             |
+| ---         | ---    | ---                                     |
+| `$selector` | String | The desired sibling selector to target. |
 
 In CSS, we can target the sibling selector that comes **after**, but **not before**. The `sibling` mixin allows you to reference the sibling selector the comes before your current selector.
 
 ``` _menu.scss
 .menu {
-  // styles
-
   &__item {
     margin-top: 0;
 

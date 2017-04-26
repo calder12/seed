@@ -1,25 +1,25 @@
 // Plugins :: Highlighter-Rouge
 
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-helpscout-theme/_index";
 
 .highlighter-rouge {
+  $br: 4px;
+
   background-color: white;
   border: 1px solid _color(grey, 500);
-  border-radius: 3px;
+  border-radius: $br;
   margin-bottom: 2em;
-
-  @include breakpoint(lg) {
-    margin-bottom: 4em;
-  }
+  margin-top: 1em;
 
   > * {
     &:first-child {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
+      border-top-left-radius: $br;
+      border-top-right-radius: $br;
     }
     &:last-child {
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: $br;
+      border-bottom-right-radius: $br;
     }
   }
 
@@ -35,7 +35,6 @@
   .highlight-header {
     background-color: _color(grey, 200);
     border-bottom: 1px solid _color(grey, 500);
-    // color: _color(charcoal, 200);
     padding: 3px 10px;
 
     pre {
@@ -46,7 +45,6 @@
   }
 
   .highlight {
-    // background: _color(grey, 200);
     overflow: auto;
     padding: 0;
     margin-bottom: 0;
@@ -97,11 +95,5 @@
 
   code, kbd, pre, samp {
     padding: 0;
-  }
-
-  + .c-callout {
-    @include breakpoint(lg) {
-      margin-top: -36px;
-    }
   }
 }

@@ -1,18 +1,21 @@
 ---
-title: This
+title: "This"
 description: "A function that reliably gets the current working selector."
-section: Function
-layout: docs
-source: https://github.com/helpscout/seed-this
-seed-pack: seed-this
+section: "Function"
+source: "https://github.com/helpscout/seed-this"
+seed-pack: "seed-this"
+keywords:
+  - current
+  - function
+  - root
+  - scope
+  - selector
+  - this
+  - variable
 ---
 
-Selected-based function pack for Seed
+A function that reliably gets the current scoped selector - similar to Javascript's usage of `this`.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 
@@ -43,7 +46,7 @@ $('.menu-items').each(function() {
 ```
 
 
-### The problem
+### Problem
 
 With native Sass, we have to rely on `&` to reference the current selector. Although `&` does reference the current selector, it also references all the selectors that come before it. It also doesn't allow you to re-use the same selector again in recursive nesting situations (e.g. a `.menu` within a `.menu`).
 
@@ -81,7 +84,7 @@ But what we actually get is this:
 }
 ```
 
-### The work-around
+### Workarounds
 
 A common work-aroud to this issue is to variablize `&` and use the variable as your selector (similar to jQuery's `$this` or `$self`):
 
@@ -108,7 +111,7 @@ However, this **only works** if the selector that `&` is refering to is one leve
   margin-left: 10px; }
 ```
 
-### The solution
+### Solution
 
 Using the `this()` function instead of `&` will give us the results we want:
 
