@@ -13,8 +13,8 @@ keywords:
   - wrapper
 ---
 
-Responsive wrapper object pack for Seed
 
+A class that provides horizontal scrolling around it's inner contents when overflow occurs.
 
 ## Install
 

@@ -5,7 +5,7 @@ layout: "generic"
 
 <div class="tx-center u-mrg-b-10 s-docs">
   <div class="o-col-10@md o-col-offset-1@md">
-    <p class="tx-h1 tx-300 tx-lh-heading u-mrg-t-0">
+    <p class="tx-h2 tx-h1@md tx-300 tx-lh-heading u-mrg-t-0">
       A modular CSS<br>framework that scales.
     </p>
   </div>

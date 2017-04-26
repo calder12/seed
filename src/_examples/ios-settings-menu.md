@@ -38,7 +38,8 @@ title: "iOS inspired settings menu"
 {% endexample %}
 
 
-## Packs utilized
+{% contentfor sidebar %}
+### Packs
 
 * Components
   * [seed-list](/seed/packs/seed-list)
@@ -49,3 +50,4 @@ title: "iOS inspired settings menu"
   * [seed-display](/seed/packs/seed-display)
   * [seed-spacing](/seed/packs/seed-spacing)
   * [seed-width](/seed/packs/seed-width)
+{% endcontentfor %}

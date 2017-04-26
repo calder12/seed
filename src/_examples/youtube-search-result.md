@@ -37,7 +37,8 @@ title: "YouTube - Search result"
 {% endexample %}
 
 
-## Packs utilized
+{% contentfor sidebar %}
+### Packs
 
 * Components
   * [seed-thumbnail](/seed/packs/seed-thumbnail)
@@ -51,3 +52,4 @@ title: "YouTube - Search result"
   * [seed-display](/seed/packs/seed-display)
   * [seed-spacing](/seed/packs/seed-spacing)
   * [seed-width-fx](/seed/packs/seed-width-fx)
+{% endcontentfor %}
