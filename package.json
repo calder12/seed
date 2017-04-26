@@ -39,6 +39,7 @@
   "dependencies": {
     "clipboard": "^1.5.16",
     "list.js": "^1.5.0",
+    "rxs": "0.4.1",
     "sass-pathfinder": "0.0.5",
     "seed-alert": "0.2.6",
     "seed-avatar": "0.1.2",
