@@ -10,7 +10,7 @@ keywords:
   - fade
 ---
 
-Bootstrap fade utility pack for Seed
+Fade animation utility classes abstracted from Bootstrap. These classes are used to add fade transition effects to various Bootstrap components, such as modals and dropdowns.
 
 
 ## Install

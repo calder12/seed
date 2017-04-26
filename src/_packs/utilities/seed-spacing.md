@@ -14,7 +14,7 @@ keywords:
   - spacing
 ---
 
-Spacing utility pack for Seed
+A series of utility classes that adjust the margin and padding property of a selector, with support for responsive modifiers.
 
 
 ## Install
@@ -48,9 +48,13 @@ An example spacing utility class looks like this:
 .u-mrg-5
 ```
 
-* `u` = prefix indicating "utility"
-* `mrg` = margin
-* `5` = size
+
+| Characters | Description                 |
+| ---        | ---                         |
+| `u`        | prefix indicating "utility" |
+| `mrg`      | margin                      |
+| `5`        | size                        |
+
 
 The above class will add a margin of `20px` in all directions when applied to a selector.
 
@@ -80,10 +84,12 @@ The following example is applicable only to margin utility classes.
 .u-mrg-l-auto
 ```
 
-* `u` = prefix indicating "utility"
-* `mrg` = margin
-* `l` = left
-* `auto` = auto margin
+| Characters | Description                 |
+| ---        | ---                         |
+| `u`        | prefix indicating "utility" |
+| `mrg`      | margin                      |
+| `l`        | left                        |
+| `auto`     | auto margin                 |
 
 
 ---
@@ -97,9 +103,11 @@ The following example is applicable to both padding and margin utility classes.
 .u-mrg-5
 ```
 
-* `u` = prefix indicating "utility"
-* `mrg` = margin
-* `5` = size
+| Characters | Description                 |
+| ---        | ---                         |
+| `u`        | prefix indicating "utility" |
+| `mrg`      | margin                      |
+| `5`        | size                        |
 
 
 ---
@@ -115,10 +123,12 @@ See the list of [directional modifiers](/#directional-modifiers).
 .u-mrg-t-5
 ```
 
-* `u` = prefix indicating "utility"
-* `mrg` = margin
-* `t` = top
-* `5` = size
+| Characters | Description                 |
+| ---        | ---                         |
+| `u`        | prefix indicating "utility" |
+| `mrg`      | margin                      |
+| `t`        | top                         |
+| `5`        | size                        |
 
 
 ---
@@ -134,11 +144,14 @@ See the list of [responsive modifiers](/seed/packs/seed-breakpoints/#responsive-
 .u-mrg-t-5@md
 ```
 
-* `u` = prefix indicating "utility"
-* `mrg` = margin
-* `t` = top
-* `5` = size
-* `@md` = at the `md` breakpoint
+
+| Characters | Description                         |
+| ---        | ---                                 |
+| `u`        | prefix indicating "utility"         |
+| `mrg`      | margin                              |
+| `t`        | top                                 |
+| `5`        | size                                |
+| `@md`      | apply margin at the `md` breakpoint |
 
 
 ---
@@ -151,12 +164,33 @@ See the list of [responsive modifiers](/seed/packs/seed-breakpoints/#responsive-
 By default, `seed-spacing` provides a range of sizes `1-10` using a base of `4px`.
 
 
-{% include docs/variables-table.html data=site.data.seed.seed-spacing.sizes-px %}
+| Sizes | Value (px) |
+| ---   | ---        |
+| `0`   | 0          |
+| `1`   | 4px        |
+| `2`   | 8px        |
+| `3`   | 12px       |
+| `4`   | 16px       |
+| `5`   | 20px       |
+| `6`   | 24px       |
+| `7`   | 28px       |
+| `8`   | 32px       |
+| `9`   | 36px       |
+| `10`  | 40px       |
 
 
 ## Directional modifiers
 
-{% include docs/variables-table.html data=site.data.seed.seed-spacing.directions %}
+
+| Modifier | Direction      |
+| ---      | ---            |
+|          | all            |
+| `t`      | top            |
+| `r`      | right          |
+| `b`      | bottom         |
+| `l`      | left           |
+| `h`      | top and bottom |
+| `v`      | left and right |
 
 
 

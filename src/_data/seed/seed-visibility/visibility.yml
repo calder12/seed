@@ -1,9 +1,0 @@
--
-  headers:
-    - Class
-    - Visibility
-  variables:
-    - variable: u-invisible
-      value: hidden
-    - variable: u-visible
-      value: visible

@@ -10,7 +10,7 @@ keywords:
   - width
 ---
 
-Width (min) utility pack for Seed
+A series of utility classes that adjust the min-width (%) property of a selector, with support for responsive modifiers.
 
 
 ## Install
@@ -39,7 +39,22 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 These classes can also be combined with the utility classes from [seed-width](/seed/packs/seed-width)/[seed-width-fx](/seed/packs/seed-width-fx) and [seed-width-max](/seed/packs/seed-width-max).
 
-{% include docs/variables-table.html data=site.data.seed.seed-width-min.width %}
+
+| Class             | Min Width (%) |
+| ---               | ---           |
+| `.u-width-min-0`  | 0%            |
+| `.u-width-min-1`  | 8.33333%      |
+| `.u-width-min-2`  | 16.66667%     |
+| `.u-width-min-3`  | 25%           |
+| `.u-width-min-4`  | 33.33333%     |
+| `.u-width-min-5`  | 41.66667%     |
+| `.u-width-min-6`  | 50%           |
+| `.u-width-min-7`  | 58.33333%     |
+| `.u-width-min-8`  | 66.66667%     |
+| `.u-width-min-9`  | 75%           |
+| `.u-width-min-10` | 83.33333%     |
+| `.u-width-min-11` | 91.66667%     |
+| `.u-width-min-12` | 100%          |
 
 
 ### Example

@@ -10,7 +10,7 @@ keywords:
   - scroll
 ---
 
-Overflow utility pack for Seed
+A series of utility classes that adjust the overflow property of a selector, with support for responsive modifiers.
 
 
 ## Install
@@ -37,24 +37,39 @@ npm install seed-overflow --save
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-overflow.overflow %}
 
+| Class                 | Overflow |
+| ---                   | ---      |
+| `.u-overflow-visible` | visible  |
+| `.u-overflow-hidden`  | hidden   |
+| `.u-overflow-scroll`  | scroll   |
+| `.u-overflow-auto`    | auto     |
 
 
 ### Horizontal only
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-overflow.overflow-x %}
 
+| Class                   | Overflow |
+| ---                     | ---      |
+| `.u-overflow-x-visible` | visible  |
+| `.u-overflow-x-hidden`  | hidden   |
+| `.u-overflow-x-scroll`  | scroll   |
+| `.u-overflow-x-auto`    | auto     |
 
 
 ### Vertical only
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-overflow.overflow-y %}
 
+| Class                   | Overflow |
+| ---                     | ---      |
+| `.u-overflow-y-visible` | visible  |
+| `.u-overflow-y-hidden`  | hidden   |
+| `.u-overflow-y-scroll`  | scroll   |
+| `.u-overflow-y-auto`    | auto     |
 
 
 ---

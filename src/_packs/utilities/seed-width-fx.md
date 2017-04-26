@@ -13,7 +13,7 @@ keywords:
   - width
 ---
 
-Width (fixed) utility pack for Seed
+A series of utility classes that adjust the width (px) property of a selector, with support for responsive modifiers.
 
 
 ## Install
@@ -40,7 +40,18 @@ All of the following classes support **[responsive modifiers](/seed/packs/seed-b
 
 These classes can also be combined with the utility classes from [seed-width-min](/seed/packs/seed-width-min) and [seed-width-max](/seed/packs/seed-width-max).
 
-{% include docs/variables-table.html data=site.data.seed.seed-width-fx.width %}
+
+| Class           | Width (px) |
+| ---             | ---        |
+| `.u-width-fx-0` | 0px        |
+| `.u-width-fx-1` | 50px       |
+| `.u-width-fx-2` | 100px      |
+| `.u-width-fx-3` | 150px      |
+| `.u-width-fx-4` | 200px      |
+| `.u-width-fx-5` | 250px      |
+| `.u-width-fx-6` | 300px      |
+| `.u-width-fx-7` | 350px      |
+| `.u-width-fx-8` | 400px      |
 
 
 ### Example

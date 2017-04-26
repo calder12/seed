@@ -13,7 +13,7 @@ keywords:
  - vertical
 ---
 
-Vertical alignment utility pack for Seed
+A series of utility classes that adjust the vertical-alignment property of a inline selector, with support for responsive modifiers.
 
 
 ## Install
@@ -39,13 +39,24 @@ npm install seed-vertical-align --save
 
 See the list of [responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers).
 
-{% include docs/variables-table.html data=site.data.seed.seed-vertical-align.alignments %}
+
+| Class               | Vertical Aligment |
+| ---                 | ---               |
+| `.u-va-bottom`      | bottom            |
+| `.u-va-inherit`     | inherit           |
+| `.u-va-initial`     | initial           |
+| `.u-va-middle`      | middle            |
+| `.u-va-text-bottom` | text-bottom       |
+| `.u-va-text-top`    | text-top          |
+| `.u-va-top`         | top               |
+| `.u-va-top`         | top               |
+
 
 ### Example
 
 {% example html %}
-<span class="u-va-middle tx-h1">Big Text</span>
-<span>I'm in the middle!</span>
+<span class="u-va-middle tx-h1">Prospector?</span>
+<span>You're outta your box!</span>
 {% endexample %}
 
 

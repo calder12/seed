@@ -15,7 +15,7 @@ keywords:
    - responsive
 ---
 
-Display utility pack for Seed
+A series of utility classes that adjust the display property of a selector, with support for responsive modifiers.
 
 
 ## Install
@@ -41,7 +41,14 @@ npm install seed-display --save
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-display.display %}
+
+| Class               | Display Value |
+| ---                 | ---           |
+| `.u-d-initial`      | initial       |
+| `.u-d-none`         | none          |
+| `.u-d-block`        | block         |
+| `.u-d-inline`       | inline        |
+| `.u-d-inline-block` | inline-block  |
 
 
 ### Example
