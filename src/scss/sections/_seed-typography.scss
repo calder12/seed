@@ -1,0 +1,11 @@
+// Layouts :: Width
+
+@import "pack/seed-typography/mixins/truncate";
+
+.s-hs-doc--seed-typography {
+  .hs-code {
+    .u-text-nowrap {
+      @include text-truncate;
+    }
+  }
+}

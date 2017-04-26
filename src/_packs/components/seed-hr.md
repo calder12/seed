@@ -15,10 +15,6 @@ keywords:
 
 Horizontal rule component pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

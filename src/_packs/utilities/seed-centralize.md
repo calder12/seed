@@ -15,10 +15,6 @@ Centralize utility pack for Seed
 
 This pack uses [flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/) to magically vertically/horizontally align things.
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

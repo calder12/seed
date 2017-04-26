@@ -16,10 +16,6 @@ keywords:
 
 Mixins that manage rendered CSS from modular importing
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

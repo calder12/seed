@@ -13,6 +13,7 @@ keywords:
 
 A series of color scheme variables with Help&nbsp;Scout's [color palette](http://style.helpscout.com/brand/color/).
 
+
 ## Install
 
 ```
@@ -30,7 +31,7 @@ npm install seed-color-scheme-helpscout --save
 
 ## Usage
 
-This pack consists of all the colors and shades in Help&nsbp;Scout's [color palette](http://style.helpscout.com/brand/color/).
+This pack consists of all the colors and shades in Help&nbsp;Scout's [color palette](http://style.helpscout.com/brand/color/).
 
 The **_color()** mixin (provided by [seed-color-scheme](/seed/packs/seed-color-scheme)) is used to reference a color from this pack.
 

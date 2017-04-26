@@ -5,6 +5,7 @@
 .o-sticky {
   position: relative;
   top: 0;
+  will-change: position, top;
 
   // States
   // Bootstrap's Affix

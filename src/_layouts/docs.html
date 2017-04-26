@@ -9,7 +9,7 @@ layout: "two-column"
   {% capture doc_class %}s-hs-docs--{{ page.title | downcase | replace: ' ', '-' }}{% endcapture %}
   {% capture section_class %}s-hs-docs--{{ page.section | downcase | replace: ' ', '-' }}{% endcapture %}
 {% endif %}
-<div id="s-docs" class="s-copy s-docs s-hs-docs {{ doc_class }} {{ section_class }}">
+<div id="s-docs" class="s-docs s-hs-docs {{ doc_class }} {{ section_class }}">
   <div class="s-docs__top" id="hs-content-top"></div>
   {{ content }}
 </div>

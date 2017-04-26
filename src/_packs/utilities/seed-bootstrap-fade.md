@@ -12,10 +12,6 @@ keywords:
 
 Bootstrap fade utility pack for Seed
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

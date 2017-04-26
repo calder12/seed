@@ -1,7 +1,20 @@
 // Sections :: Seed-Grid
 
+@import "pack/seed-helpscout-theme/_index";
+
 .s-hs-docs--grid-system {
   .hs-code {
+    [class*="o-row"] {
+      background-color: _color(blue, 100);
+      border: 1px dashed _color(blue, 200);
+      padding: 5px;
+    }
+
+    [class*="o-col"] {
+      background-color: _color(blue, 200);
+      border: 1px solid _color(blue, 300);
+    }
+
     th[class*="o-col"] {
       background-color: transparent;
       border: none;

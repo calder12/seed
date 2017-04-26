@@ -18,10 +18,6 @@ keywords:
 
 Mixin that excludes modules published with [seed-publish](/seed/packs/seed-publish)
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Install
 

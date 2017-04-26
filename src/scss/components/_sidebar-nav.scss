@@ -11,6 +11,7 @@
   a {
     color: _color(charcoal, 200);
     transition: color 0.2s ease;
+    will-change: color;
 
     @include parent(" > li.active > ") {
       color: _color(charcoal, 600);
@@ -22,6 +23,12 @@
   }
 
   ul {
+    display:none;
     list-style: none;
+    will-change: display;
+
+    @include parent("li.active > ") {
+      display: block;
+    }
   }
 }
