@@ -1,5 +1,6 @@
 ---
 title: "Seed CSS"
+description: "A modular CSS framework that scales."
 layout: "generic"
 ---
 
