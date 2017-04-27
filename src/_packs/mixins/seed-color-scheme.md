@@ -12,7 +12,7 @@ keywords:
   - variable
 ---
 
-Color scheme system pack for Seed
+A library allows you to define variable-based color palettes. This Sass mixin/functoin combo helps improve consistency and maintainability of color variables.
 
 
 ## Install
@@ -25,12 +25,7 @@ npm install seed-color-scheme --save
 
 
 
-## About
-
-`seed-color-scheme` was created to improve consistency and maintainability with color variables inside a Sass project. We believe that all colors, especially high-use/brand colors **should be variablized**.
-
-
-### The problem
+### Problem
 
 The current convention is to store all color variables in a variables file, which looks like this:
 
@@ -47,7 +42,7 @@ $secondary-nav-background: $dark-blue;
 Things start to get messy when your color palette grows and when you create variables to reference color variables (e.g. `$hero-background`).
 
 
-### The solution
+### Solution
 
 We believe the best way to organize your colors is to use a Sass [map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps):
 
@@ -101,11 +96,11 @@ The color scheming system requires using both the `_color` mixin and function to
 
 ### _color (Function)
 
-**_color(argument…)**
+**_color(arguments…)**
 
-**arguments**<br>
-Type: `string`<br>
-Description: Comma separated strings that correspond to the color scheme map.
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `arguments…` | String | Comma separated string values that correspond to the color scheme map. |
 
 ```_example.scss
 .element {
@@ -122,9 +117,10 @@ Note: The `_color` function can only get colors adding to the color scheme via t
 
 **_color($map)**
 
-**$map**<br>
-Type: `map`<br>
-Description: A Sass map consisting of color values. Nested maps are allowed.
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$map` | Map | A Sass map consisting of color values. Nested maps are allowed. |
+
 
 ```_example.scss
 // Create the custom color map

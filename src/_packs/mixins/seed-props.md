@@ -17,7 +17,7 @@ keywords:
   - variable
 ---
 
-Props mixin pack for Seed
+A library with a function/mixin combo that provides callback-like functionality in Sass for maps. It is especially handy for iterating over large or complex maps.
 
 
 ## Install
@@ -31,8 +31,7 @@ npm install seed-props --save
 
 ## About
 
-`seed-props` is a function/mixin combo that provides callback-like functionality in Sass for maps. It is especially handy for iterating over large or complex maps.
-Its design pattern is similar to [callback functions](https://en.wikipedia.org/wiki/Callback_(computer_programming)) found in other programming languages like Javascript.
+This pack's design pattern is similar to [callback functions](https://en.wikipedia.org/wiki/Callback_(computer_programming)) found in other programming languages like Javascript.
 
 ```example.js
 var stuffs = [1, 2, 3, 4];
@@ -55,15 +54,13 @@ This design pattern is extremely useful. Unfortunately, the ability to natively 
 
 **prop-map($map, (arguments…))**
 
+| Argument | Type | Description |
+| --- | --- | --- |
+| `$map` | [Map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) | A Sass map with `key:value` pairs to iterate over. |
+| `arguments…` | [List](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists) | Argument names to reference the `value` of the `key:value` pair in the `$map`. |
+
 The prop-map mixin allows you to loop through a map and use arguments as variables in your styles (@content).
 You have to use the [prop() function](#prop-function) for your @content to utilize the arguments defined in your prop-map.
-
-**$map**<br>
-A sass [map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps).
-
-**arguments…**<br>
-Argument names to reference the `value` of the `key:value` pair in your `$map`.
-
 
 `prop-map` uses the `key` of your `$map` as the newly generated class name (separated by a **single** hypen).
 
@@ -95,8 +92,9 @@ $greetings: (
 
 **prop($property)**
 
-**$property**<br>
-A sass [list](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists).
+| Argument | Type | Description |
+| --- | --- | --- |
+| `$property` | [List](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists) | Property names to reference the `value` of the `key:value` pair in the `$map`. |
 
 The `prop()` function works together within the [`prop-map` mixin](#prop-map-mixin). It cannot work on it's own.
 

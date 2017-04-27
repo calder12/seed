@@ -12,7 +12,7 @@ keywords:
   - responsive
 ---
 
-Breakpoints (media query) mixin pack for Seed
+A collection of mixins that work with CSS media queries. These mobile-first designed mixins make it easier write and maintain media query based rules.
 
 
 ## Install
@@ -30,14 +30,12 @@ npm install seed-breakpoints --save
 
 ---
 
-{% capture mixin_sizes %}
-Type: `size` / `number`
-
+{% capture mixin_size_description %}
 See a list of the default [breakpoint sizes](#breakpoint-sizes).
 
 Alternatively, you can pass a number value such as `580px`, `48em`, or `32rem`.
 {% endcapture %}
-{% assign mixin_sizes = mixin_sizes | markdownify %}
+{% assign mixin_size_description = mixin_size_description | markdownify %}
 
 
 ## Basic mixins
@@ -47,6 +45,13 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 ### breakpoint
 
 **breakpoint($size)**
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$size` | String / Number | The min-width size for the media query rule. |
+
+{{ mixin_size_description }}
+
 
 ``` example.scss
 .element {
@@ -64,10 +69,6 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 }
 ```
 
-**$size**
-<br>
-{{ mixin_sizes }}
-
 
 ---
 
@@ -76,6 +77,12 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 
 **breakpoint-between($min, $max)**
 
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$min` | String / Number | The min-width size for the media query rule. |
+| `$max` | String / Number | The max-width size for the media query rule. |
+
+{{ mixin_size_description }}
 
 ``` example.scss
 .element {
@@ -93,9 +100,6 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 }
 ```
 
-**$min, $max**
-<br>
-{{ mixin_sizes }}
 
 
 ---
@@ -104,6 +108,13 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 ### breakpoint-max
 
 **breakpoint-max($size)**
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$size` | String / Number | The max-width size for the media query rule. |
+
+{{ mixin_size_description }}
+
 
 ``` example.scss
 .element {
@@ -121,9 +132,6 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 }
 ```
 
-**$size**
-<br>
-{{ mixin_sizes }}
 
 
 ---
@@ -132,6 +140,12 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
 ### breakpoint-min
 
 **breakpoint-min($size)**
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$size` | String / Number | The min-width size for the media query rule. |
+
+{{ mixin_size_description }}
 
 ``` example.scss
 .element {
@@ -148,10 +162,6 @@ The basic mixins of `seed-breakpoints` are typically used to customize the respo
   }
 }
 ```
-
-**$size**
-<br>
-{{ mixin_sizes }}
 
 
 ---
@@ -204,7 +214,13 @@ Note: There is a `\` added before the `@` symbol to validate the CSS class name.
 
 ### breakpoint-prop-map
 
-**breakpoint-prop-map($map, $properties)**
+**breakpoint-prop-map($map, $properties…)**
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$map` | [Map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) (Required) | A map with key/value pairs to iterate over. |
+| `$properties` | [List](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) (Required) | A list of strings to be retrieved with the `prop()` function. |
+
 
 ``` example.scss
 $states: (
@@ -252,14 +268,6 @@ $states: (
 }
 ```
 
-**$map**
-<br>
-Type: [`map`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) (Required)
-
-**$properties**
-<br>
-Type: [`list`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists) (Required)
-
 This mixin combines the functionality of [breakpoint-all()](#breakpoint-all) and [prop-map()](/seed/mixins/seed-prop) to generate the `@content` of all the various [breakpoint sizes](#breakpoint-sizes) while looping through the provided `$map`.
 
 Here is a real world example of this mixin being used in the [seed-display](/seed/utilities/display) pack:
@@ -276,7 +284,12 @@ Here is a real world example of this mixin being used in the [seed-display](/see
 
 By default, `seed-breakpoints` comes with 5 breakpoints with values borrowed from [Bootstrap V4's grid system](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L126). These values can be modified by adjusting the [$seed-breakpoints map](https://github.com/helpscout/seed-breakpoints/blob/master/scss/pack/seed-breakpoints/_config.scss#L7) in your project.
 
-{% include docs/variables-table.html data=site.data.seed.seed-breakpoints.sizes %}
+| Modifier | Mixin activates when…               |
+| ---      | ---                                 |
+| `xs`     | the viewport is smaller than 543px. |
+| `sm`     | the viewport is larger than 544px.  |
+| `md`     | the viewport is larger than 768px.  |
+| `lg`     | the viewport is larger than 992px.  |
 
 
 
@@ -291,6 +304,14 @@ CSS classes generated with mixins such as [breakpoint-all()](#breakpoint-all) or
 It starts with no suffix as for mobile viewports. It then works it's way up from `@sm` - `@lg` to handle smaller viewports (Phablets)  to larger viewports (Desktops).
 
 {% include docs/variables-table.html data=site.data.seed.seed-breakpoints.breakpoints %}
+
+
+| Modifier | Activates when…                    |
+| ---      | ---                                |
+|          | Always.                            |
+| `@sm`    | the viewport is larger than 544px. |
+| `@md`    | the viewport is larger than 768px. |
+| `@lg`    | the viewport is larger than 992px. |
 
 
 **Example**
