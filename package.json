@@ -2,9 +2,9 @@
   "name": "seed",
   "version": "3.0.1",
   "description": "Seed Documentation",
-  "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
     "deploy": "gulp deploy"
   },
   "repository": {
