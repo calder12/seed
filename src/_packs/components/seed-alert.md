@@ -9,7 +9,7 @@ keywords:
   - status
 ---
 
-Alert component pack for Seed
+A component that provides contextual feedback for actions. This component supports a wide range of context configurations that combine text, icons, buttons, and links.
 
 
 ## Install
@@ -36,8 +36,8 @@ Alerts support a wide variety of child selector types (`h1-h6`, `p`, `ul`, etcâ€
 
 {% example html %}
 <div class="c-alert" role="alert">
-  <h3>Just a heads up</h3>
-  <p>You my friend are responsible for delaying my rendezvous with star command!</p>
+  <h3>You, Are, A, Toyyy!</h3>
+  <p>You're not the real thing. You're an action figure. You are a child's play thing!</p>
 </div>
 {% endexample %}
 
@@ -51,14 +51,22 @@ Alerts support a wide variety of child selector types (`h1-h6`, `p`, `ul`, etcâ€
 
 To ensure the inner text color matches the alert color scheme, you can add the class `.c-alert__text`. This is useful to help override base text colors for headings (`h1-h6`) or lists (`ul`).
 
-{% example html %}
+{% example %}
 <div class="c-alert" role="alert">
-  <h3>Just a heads up</h3>
+  <h3>You, Are, A, Toyyy!</h3>
   <p class="c-alert__text">
-    You my friend are responsible for delaying my rendezvous with star command!
+    <p>You're not the real thing. You're an action figure. You are a child's play thing!</p>
   </p>
 </div>
 {% endexample %}
+
+```html
+<div class="c-alert" role="alert">
+  <p class="c-alert__text">
+    ...
+  </p>
+</div>
+```
 
 
 

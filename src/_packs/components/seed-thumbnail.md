@@ -16,7 +16,7 @@ keywords:
   - thumbnail
 ---
 
-Thumbnail component pack for Seed
+A component that stylizes images for use as thumbnails. This component provides various thumbnail styles and sizes.
 
 
 ## Install
@@ -39,7 +39,7 @@ npm install seed-thumbnail --save
 
 
 
-## Usage
+## Example
 
 {% example html %}
 <div class="c-thumbnail">
@@ -65,41 +65,21 @@ Use the `<a>` selector for the `.c-thumbnail` class to create clickable thumbnai
 
 
 
-## Modifiers
+## Sizes
 
-### Wide
+These modifier classes adjust the ratio of the thumbnail.
+These classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-This adjusts the thumbnail to have a 16:9 ratio (which is the default thumbnail ratio).
-This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+| Modifier class         | Ratio | Example   |
+| ---                    | ---   | ---       |
+| Default                | 16:9  | 1920x1080 |
+| `.c-thumbnail--wide`   | 16:9  | 1920x1080 |
+| `.c-thumbnail--sd`     | 4:3   | 800x600   |
+| `.c-thumbnail--square` | 1:1   | 400x400   |
 
-{% example html %}
-<div class="c-thumbnail c-thumbnail--wide">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
-</div>
-{% endexample %}
-
-
-
-### SD
-
-This adjusts the thumbnail to have a 4:3 ratio.
-This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--sd">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
-</div>
-{% endexample %}
-
-
-
-### Square
-
-This adjusts the thumbnail to have a 1:1 ratio.
-This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
-
-{% example html %}
-<div class="c-thumbnail c-thumbnail--square">
   <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
@@ -112,28 +92,18 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 
 ## Alignment
 
-### Top
+These modifier classes adjust the image position within the thumbnail.
+These classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+
+| Modifier class         | Alignment       |
+| ---                    | ---             |
+| `.c-thumbnail--top`    | Top             |
+| `.c-thumbnail--center` | Middle (Defaut) |
+| `.c-thumbnail--bottom` | Bottom          |
+
 
 {% example html %}
 <div class="c-thumbnail c-thumbnail--top">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
-</div>
-{% endexample %}
-
-
-### Middle
-
-{% example html %}
-<div class="c-thumbnail c-thumbnail--middle">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
-</div>
-{% endexample %}
-
-
-### Bottom
-
-{% example html %}
-<div class="c-thumbnail c-thumbnail--bottom">
   <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image">
 </div>
 {% endexample %}
@@ -157,3 +127,4 @@ This class supports **[responsive modifiers](/seed/packs/seed-breakpoints/#respo
 ## Related
 
 * [seed-avatar](/seed/packs/seed-avatar)
+* [seed-video](/seed/packs/seed-video)

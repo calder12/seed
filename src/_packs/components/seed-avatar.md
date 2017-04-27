@@ -9,7 +9,7 @@ keywords:
   - image
 ---
 
-Avatar component pack for Seed
+A component that stylizes images for use as avatars. This component provides a handful of different avatar styles and sizes.
 
 
 ## Install
@@ -58,37 +58,16 @@ npm install seed-avatar --save
 
 All of the following sizes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-### Extra small
+| Modifier class  | Avatar size |
+| ---             | ---         |
+| `.c-avatar--xs` | 28px        |
+| `.c-avatar--sm` | 32px        |
+| `.c-avatar--md` | 40px        |
+| `.c-avatar--lg` | 50px        |
+
 
 {% example html %}
 <div class="c-avatar c-avatar--xs">
-  <img src="/seed/images/seed.png" class="c-avatar__image">
-</div>
-{% endexample %}
-
-
-### Small
-
-{% example html %}
-<div class="c-avatar c-avatar--sm">
-  <img src="/seed/images/seed.png" class="c-avatar__image">
-</div>
-{% endexample %}
-
-
-### Medium
-
-{% example html %}
-<div class="c-avatar c-avatar--md">
-  <img src="/seed/images/seed.png" class="c-avatar__image">
-</div>
-{% endexample %}
-
-
-### Large
-
-{% example html %}
-<div class="c-avatar c-avatar--lg">
   <img src="/seed/images/seed.png" class="c-avatar__image">
 </div>
 {% endexample %}

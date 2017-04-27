@@ -13,7 +13,7 @@ keywords:
   - youtube
 ---
 
-Video component pack for Seed
+A component that provides responsive behavior to video-based media, with support for HTML video, canvas, iFrames and object embeds.
 
 
 ## Install
@@ -67,7 +67,13 @@ The default ratio for `.c-video` is 16:9. However, this can be modified by apply
 
 All of the following classes support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
 
-{% include docs/variables-table.html data=site.data.seed.seed-video.sizes %}
+
+| Class             | Ratio |
+| ---               | ---   |
+| `.c-video--u-wide` | 21:9  |
+| `.c-video--gr`     | 16:10 |
+| `.c-video--wide`   | 16:9  |
+| `.c-video--sd`     | 4:3   |
 
 
 
