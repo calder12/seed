@@ -303,8 +303,6 @@ CSS classes generated with mixins such as [breakpoint-all()](#breakpoint-all) or
 
 It starts with no suffix as for mobile viewports. It then works it's way up from `@sm` - `@lg` to handle smaller viewports (Phablets)  to larger viewports (Desktops).
 
-{% include docs/variables-table.html data=site.data.seed.seed-breakpoints.breakpoints %}
-
 
 | Modifier | Activates when…                    |
 | ---      | ---                                |
