@@ -343,3 +343,4 @@ The `<h1>` starts off with a default (mobile) size of `tx-h5` (specified by a he
 ## Related
 
 * [seed-grid](/seed/packs/seed-grid)
+* [seed-props](/seed/packs/seed-prop)
