@@ -1,4 +1,4 @@
-# Seed CSS
+# Seed CSS [![Build Status](https://travis-ci.org/helpscout/seed.svg?branch=master)](https://travis-ci.org/helpscout/seed)
 
 Documentation for Help Scout's Seed (a modular CSS framework that scales).
 
