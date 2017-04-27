@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=77f87a1de1d8b72106566725da04e0ba">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=8b384c854550f28fdb8a55eab08d96e4">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -133,7 +133,7 @@
   
 
 
-<p>Avatar component pack for Seed</p>
+<p>A component that stylizes images for use as avatars. This component provides a handful of different avatar styles and sizes.</p>
 
 <h2 id="install">Install</h2>
 
@@ -179,43 +179,38 @@
 
 <p>All of the following sizes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
 
-<h3 id="extra-small">Extra small</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Modifier class</th>
+      <th>Avatar size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.c-avatar--xs</code></td>
+      <td>28px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-avatar--sm</code></td>
+      <td>32px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-avatar--md</code></td>
+      <td>40px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-avatar--lg</code></td>
+      <td>50px</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-avatar c-avatar--xs">
   <img src="/seed/images/seed.png" class="c-avatar__image" />
 </div>
 </div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar--xs"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="small">Small</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-avatar c-avatar--sm">
-  <img src="/seed/images/seed.png" class="c-avatar__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar--sm"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="medium">Medium</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-avatar c-avatar--md">
-  <img src="/seed/images/seed.png" class="c-avatar__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar--md"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="large">Large</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-avatar c-avatar--lg">
-  <img src="/seed/images/seed.png" class="c-avatar__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar--lg"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
@@ -302,12 +297,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=d3923cfc7a55aaef64ed1dcd37ac72bd"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=626a276668b06121123e7b056449d0f9"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=b51789963c2e03b65aedbac26b9e4593"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=032ca620f3ef72d0531d020670440904"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=a62880478fb7d874e82ef0bc0f28ec00"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=62d5248c73b192d904f196b6dbea586d"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=963cba97c7ba911aa7bf1c4008072b77"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=cad208150647fce26a66a46caa00af32"></script>
 
   </body>
 </html>

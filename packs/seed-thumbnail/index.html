@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=06fd8707272caab4ffeea2a890cdbd28">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=80ba9d63fa216eca7a9ff3cfdf1f5581">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -133,7 +133,7 @@
   
 
 
-<p>Thumbnail component pack for Seed</p>
+<p>A component that stylizes images for use as thumbnails. This component provides various thumbnail styles and sizes.</p>
 
 <h2 id="install">Install</h2>
 
@@ -151,7 +151,7 @@
 
 <hr />
 
-<h2 id="usage">Usage</h2>
+<h2 id="example">Example</h2>
 
 <div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-thumbnail">
@@ -175,25 +175,42 @@
 
 <hr />
 
-<h2 id="modifiers">Modifiers</h2>
+<h2 id="sizes">Sizes</h2>
 
-<h3 id="wide">Wide</h3>
+<p>These modifier classes adjust the ratio of the thumbnail.
+These classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
 
-<p>This adjusts the thumbnail to have a 16:9 ratio (which is the default thumbnail ratio).
-This class supports <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-thumbnail c-thumbnail--wide">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-thumbnail c-thumbnail--wide"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/examples/cupcake.jpg"</span> <span class="na">class=</span><span class="s">"c-thumbnail__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="sd">SD</h3>
-
-<p>This adjusts the thumbnail to have a 4:3 ratio.
-This class supports <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Modifier class</th>
+      <th>Ratio</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Default</td>
+      <td>16:9</td>
+      <td>1920x1080</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-thumbnail--wide</code></td>
+      <td>16:9</td>
+      <td>1920x1080</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-thumbnail--sd</code></td>
+      <td>4:3</td>
+      <td>800x600</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-thumbnail--square</code></td>
+      <td>1:1</td>
+      <td>400x400</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-thumbnail c-thumbnail--sd">
@@ -203,50 +220,41 @@ This class supports <strong><a href="/seed/packs/seed-breakpoints/#responsive-mo
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/examples/cupcake.jpg"</span> <span class="na">class=</span><span class="s">"c-thumbnail__image"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
-<h3 id="square">Square</h3>
-
-<p>This adjusts the thumbnail to have a 1:1 ratio.
-This class supports <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-thumbnail c-thumbnail--square">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-thumbnail c-thumbnail--square"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/examples/cupcake.jpg"</span> <span class="na">class=</span><span class="s">"c-thumbnail__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
 <hr />
 
 <h2 id="alignment">Alignment</h2>
 
-<h3 id="top">Top</h3>
+<p>These modifier classes adjust the image position within the thumbnail.
+These classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modifier class</th>
+      <th>Alignment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.c-thumbnail--top</code></td>
+      <td>Top</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-thumbnail--center</code></td>
+      <td>Middle (Defaut)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-thumbnail--bottom</code></td>
+      <td>Bottom</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-thumbnail c-thumbnail--top">
   <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image" />
 </div>
 </div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-thumbnail c-thumbnail--top"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/examples/cupcake.jpg"</span> <span class="na">class=</span><span class="s">"c-thumbnail__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="middle">Middle</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-thumbnail c-thumbnail--middle">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-thumbnail c-thumbnail--middle"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/examples/cupcake.jpg"</span> <span class="na">class=</span><span class="s">"c-thumbnail__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<h3 id="bottom">Bottom</h3>
-
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-thumbnail c-thumbnail--bottom">
-  <img src="/seed/images/examples/cupcake.jpg" class="c-thumbnail__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-thumbnail c-thumbnail--bottom"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/examples/cupcake.jpg"</span> <span class="na">class=</span><span class="s">"c-thumbnail__image"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
@@ -310,6 +318,7 @@ This class supports <strong><a href="/seed/packs/seed-breakpoints/#responsive-mo
 
 <ul>
   <li><a href="/seed/packs/seed-avatar">seed-avatar</a></li>
+  <li><a href="/seed/packs/seed-video">seed-video</a></li>
 </ul>
 
 
@@ -356,12 +365,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=1617cd3733aa8266bc20bd9db91ca37a"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=0c09dba4500cfcb808d8ebf8f792234f"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=62091d9bef13a882242e4edb984b61f4"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=80c23d32992cb6270c8c2f74fb25cf4b"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=4dba1fbac09d1b78dac7a2cf764bafa2"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=f89c15e6695d160d6cf65db4c642ee6e"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=d819f4c48c927920a9fd9f6f3e15a5c1"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=b9d9126e835c427793d0e12c86b760dd"></script>
 
   </body>
 </html>
