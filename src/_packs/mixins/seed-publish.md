@@ -14,7 +14,7 @@ keywords:
   - publish
 ---
 
-Mixins that manage rendered CSS from modular importing
+A library that provides the ability to setup include guards, preventing undesired duplication of compiled CSS styles.
 
 
 ## Install
@@ -30,10 +30,10 @@ npm install seed-publish --save
 
 `seed-publish` is a mixin combo that acts as an "[include guard](https://en.wikipedia.org/wiki/Include_guard)" that prevents undesired duplicate CSS rendering. This can potentially occur from multiple uses of `@import` – a common design pattern in Seed CSS.
 
-These mixins will likely be used **exclusively in the creation of seed packs**.
+These mixins will likely be used **in the creation of Seed Packs**.
 
 
-### The problem
+### Problem
 
 Leveraging existing styles is fundamental to the scalable CSS. Let's pretend we have this amazing `.box` component pack:
 
@@ -83,7 +83,7 @@ However, because our `menu` component already imported our `box` component, the 
 ```
 
 
-### The workarounds
+### Workarounds
 
 We **could** just omit importing of `box` in our `menu` component pack. But this means that the pack is incomplete, and it is up to the project importing it to provide the missing styles.
 
@@ -112,12 +112,14 @@ Conditional imports were accidentally working in [v3.4.2 of Node Sass](https://g
 
 ### export
 
-**export($name)**
+**export($name)** (Mixin)
 
-**$name**<br>
-Type: `string`<br>
-Description: The unique name of the module you want controlled.<br>
-Content: The styles you want controlled.
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$name`    | String  | The **unique name** of the module you want guarded/controlled. |
+| `@content` | Content | The styles you want guarded/controlled.                        |
+
 
 ``` _menu.scss
 // Dependencies
@@ -167,11 +169,13 @@ There is **no limit** on the number of times the `export` mixin can be used on a
 
 ### publish
 
-**publish($name)**
+**publish($name)** (Mixin)
 
-**$name**<br>
-Type: `string`<br>
-Description: The unique name of the module you want published.
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$name` | String | The **unique name** of the module you want published. |
+
 
 Use the `publish` mixin when you have completed building your module/pack. This effectively blocks all rendering of CSS for the exported `$name` passed the point of publishing.
 
@@ -231,11 +235,12 @@ Regardless of how many times the files are imported (regardless of where they co
 
 ### unload
 
-**unload($names…)**
+**unload($names…)** (Mixin)
 
-**$names**<br>
-Type: `string`|`list`<br>
-Description: The unique name of the module(s) you to be ignored by `publish()`.
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$names…` | String / List | The **unique name** of the module(s) you want ignored by `publish()`. |
+
 
 Modules matching the name of the arguments passed into `unload()` will **not** render when CSS is compiled.
 
@@ -308,11 +313,13 @@ The `unload` mixin accepts lists as well as nested lists:
 
 ### reload
 
-**reload($names…)**
+**reload($names…)** (Mixin)
 
-**$names**<br>
-Type: `string`|`list`<br>
-Description: The unique name of the module(s) (that have been affected by `unload()`) you want to allow `publish()` to work on.
+
+| Argument | Type | Description |
+| ---      | ---  | ---         |
+| `$names…` | String / List | The **unique name** of the module(s), that have been `unload()`, you want to re-enable for `publish()`. |
+
 
 `reload()` exists as a way to provide finer grain control to when/where packs can be loaded.
 
@@ -357,4 +364,5 @@ Let's say that we actually **do** want sides to load, but we want it to load som
 
 ## Related
 
-* [seed-exclude](/seed/packs/seed-exclude)
+* [seed-dash](/seed/packs/seed-dash)
+* [seed-props](/seed/packs/seed-props)
