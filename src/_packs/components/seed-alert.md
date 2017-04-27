@@ -55,7 +55,7 @@ To ensure the inner text color matches the alert color scheme, you can add the c
 <div class="c-alert" role="alert">
   <h3>You, Are, A, Toyyy!</h3>
   <p class="c-alert__text">
-    <p>You're not the real thing. You're an action figure. You are a child's play thing!</p>
+    You're not the real thing. You're an action figure. You are a child's play thing!
   </p>
 </div>
 {% endexample %}
