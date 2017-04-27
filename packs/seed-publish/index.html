@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=70d084aa016e4e1191a91840ef30c5b5">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=62d2d4ab0b95fad5c8cef8e03fbf944f">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -133,7 +133,7 @@
   
 
 
-<p>Mixins that manage rendered CSS from modular importing</p>
+<p>A library that provides the ability to setup include guards, preventing undesired duplication of compiled CSS styles.</p>
 
 <h2 id="install">Install</h2>
 
@@ -146,9 +146,9 @@
 
 <p><code class="highlighter-rouge">seed-publish</code> is a mixin combo that acts as an “<a href="https://en.wikipedia.org/wiki/Include_guard">include guard</a>” that prevents undesired duplicate CSS rendering. This can potentially occur from multiple uses of <code class="highlighter-rouge">@import</code> – a common design pattern in Seed CSS.</p>
 
-<p>These mixins will likely be used <strong>exclusively in the creation of seed packs</strong>.</p>
+<p>These mixins will likely be used <strong>in the creation of Seed Packs</strong>.</p>
 
-<h3 id="the-problem">The problem</h3>
+<h3 id="problem">Problem</h3>
 
 <p>Leveraging existing styles is fundamental to the scalable CSS. Let’s pretend we have this amazing <code class="highlighter-rouge">.box</code> component pack:</p>
 
@@ -197,7 +197,7 @@
 </code></pre>
 </div></div></div>
 
-<h3 id="the-workarounds">The workarounds</h3>
+<h3 id="workarounds">Workarounds</h3>
 
 <p>We <strong>could</strong> just omit importing of <code class="highlighter-rouge">box</code> in our <code class="highlighter-rouge">menu</code> component pack. But this means that the pack is incomplete, and it is up to the project importing it to provide the missing styles.</p>
 
@@ -221,12 +221,29 @@
 
 <h3 id="export">export</h3>
 
-<p><strong>export($name)</strong></p>
+<p><strong>export($name)</strong> (Mixin)</p>
 
-<p><strong>$name</strong><br />
-Type: <code class="highlighter-rouge">string</code><br />
-Description: The unique name of the module you want controlled.<br />
-Content: The styles you want controlled.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$name</code></td>
+      <td>String</td>
+      <td>The <strong>unique name</strong> of the module you want guarded/controlled.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">@content</code></td>
+      <td>Content</td>
+      <td>The styles you want guarded/controlled.</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
@@ -271,11 +288,24 @@ Content: The styles you want controlled.</p>
 
 <h3 id="publish">publish</h3>
 
-<p><strong>publish($name)</strong></p>
+<p><strong>publish($name)</strong> (Mixin)</p>
 
-<p><strong>$name</strong><br />
-Type: <code class="highlighter-rouge">string</code><br />
-Description: The unique name of the module you want published.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$name</code></td>
+      <td>String</td>
+      <td>The <strong>unique name</strong> of the module you want published.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Use the <code class="highlighter-rouge">publish</code> mixin when you have completed building your module/pack. This effectively blocks all rendering of CSS for the exported <code class="highlighter-rouge">$name</code> passed the point of publishing.</p>
 
@@ -331,11 +361,24 @@ Description: The unique name of the module you want published.</p>
 
 <h3 id="unload">unload</h3>
 
-<p><strong>unload($names…)</strong></p>
+<p><strong>unload($names…)</strong> (Mixin)</p>
 
-<p><strong>$names</strong><br />
-Type: <code class="highlighter-rouge">string</code>|<code class="highlighter-rouge">list</code><br />
-Description: The unique name of the module(s) you to be ignored by <code class="highlighter-rouge">publish()</code>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$names…</code></td>
+      <td>String / List</td>
+      <td>The <strong>unique name</strong> of the module(s) you want ignored by <code class="highlighter-rouge">publish()</code>.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Modules matching the name of the arguments passed into <code class="highlighter-rouge">unload()</code> will <strong>not</strong> render when CSS is compiled.</p>
 
@@ -402,11 +445,24 @@ Description: The unique name of the module(s) you to be ignored by <code class="
 
 <h3 id="reload">reload</h3>
 
-<p><strong>reload($names…)</strong></p>
+<p><strong>reload($names…)</strong> (Mixin)</p>
 
-<p><strong>$names</strong><br />
-Type: <code class="highlighter-rouge">string</code>|<code class="highlighter-rouge">list</code><br />
-Description: The unique name of the module(s) (that have been affected by <code class="highlighter-rouge">unload()</code>) you want to allow <code class="highlighter-rouge">publish()</code> to work on.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$names…</code></td>
+      <td>String / List</td>
+      <td>The <strong>unique name</strong> of the module(s), that have been <code class="highlighter-rouge">unload()</code>, you want to re-enable for <code class="highlighter-rouge">publish()</code>.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p><code class="highlighter-rouge">reload()</code> exists as a way to provide finer grain control to when/where packs can be loaded.</p>
 
@@ -446,7 +502,8 @@ Description: The unique name of the module(s) (that have been affected by <code 
 <h2 id="related">Related</h2>
 
 <ul>
-  <li><a href="/seed/packs/seed-exclude">seed-exclude</a></li>
+  <li><a href="/seed/packs/seed-dash">seed-dash</a></li>
+  <li><a href="/seed/packs/seed-props">seed-props</a></li>
 </ul>
 
 
@@ -493,12 +550,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=5a01be6f849f2af78163b5337e6cf8ee"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=5aa75363497a0bbd7e4309eeb62d5636"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=9f5d397bee6ec21e946bf98302eb82ac"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=1feb04d8085b2bb775bc9822f723ef7c"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=c9507da0566a059e0b5e394b4dfe0d1f"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=4a4e21349e3f6578b048ebdb263c7a48"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=4e17c3d11e3065efb3a8b263ea89952b"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=b5104a9ddef4d4b6bbd3f540c70108b7"></script>
 
   </body>
 </html>
