@@ -1,5 +1,5 @@
 ---
-title: "Color scheme system"
+title: "Color scheme"
 description: "A mixin that defines and manages a Sass color scheme configuration."
 section: "Mixin"
 source: "https://github.com/helpscout/seed-color-scheme"
@@ -143,6 +143,72 @@ $my-colors: (
 ```
 
 Note: Colors are only accessibile to the `_color` function after it's been added to the color scheme via the `@include _color` mixin.
+
+
+
+---
+
+
+
+### Defaults
+
+If a key of `default` is defined for a map within your color scheme, the `_color()` function will default to it if no additional key argument is provided.
+
+```_example.scss
+// Create the custom color map
+$my-colors: (
+  primary: (
+    default: pink,
+    red: red,
+    blue: blue
+  ),
+);
+
+// Adding it to the color scheme
+@include _color($my-colors);
+
+.element {
+  color: _color(primary); // Will output pink, as it is defined as "default"
+}
+```
+
+```_example.css
+.element {
+  color: pink;
+}
+```
+
+
+
+---
+
+
+
+## Namespacing
+
+It is **recommended** that you namespace your color scheme when defining it with `_color()`. This is to prevent potential overrides with color schemes being defined by external Seed Packs or modules.
+
+```app.scss
+// Import the color scheme mixin
+@import "pack/seed-color-scheme/_index";
+
+// Namespace your color scheme. In this example, we're using "app"
+$color-scheme: (
+  app: (
+    background: #f3f3f3,
+  ),
+);
+
+// Set the color scheme
+@include _color($color-scheme);
+
+
+// Use your color scheme
+html {
+  backgrond: _color(app, background);
+}
+```
+
 
 
 
