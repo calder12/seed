@@ -216,6 +216,18 @@ html {
 
 
 
+## Configurations
+
+Since update [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.0), `seed-color-scheme` adds a default color scheme from [`seed-color-scheme-helpscout`](/seed/packs/seed-color-scheme-helpscout) as well as some default namespaces.
+
+{% include docs/config.html config="seed-color-scheme" %}
+
+
+
+---
+
+
+
 ## Related
 
 * [seed-color-scheme-helpscout](/seed/packs/seed-color-scheme-helpscout)
