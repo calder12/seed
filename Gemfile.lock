@@ -13,6 +13,9 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-components (0.0.1)
+      htmlcompressor (~> 0.3.1)
+      jekyll (>= 3.1.2)
     jekyll-contentblocks (1.2.0)
       jekyll
     jekyll-sass-converter (1.5.0)
@@ -42,6 +45,7 @@ PLATFORMS
 DEPENDENCIES
   htmlcompressor (~> 0.3.1)
   jekyll (= 3.1.2)
+  jekyll-components (= 0.0.1)
   jekyll-contentblocks (= 1.2.0)
   jekyll-template (= 0.21.0)
   kramdown (~> 1.12)
@@ -49,4 +53,4 @@ DEPENDENCIES
   unindent (~> 1.0)
 
 BUNDLED WITH
-   1.14.6
+   1.15.0
