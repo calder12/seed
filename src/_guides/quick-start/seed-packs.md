@@ -23,13 +23,6 @@ Getting setup with Seed packs can be thought of in 3 steps (the **"three I's"** 
 ---
 
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
-
-
-
 ## 1. Install
 
 Seed's CSS modules live on and are managed by [npm](https://www.npmjs.com/) (Node's package manager). If you're workflow already has a `package.json` file, then you're ready to start adding some [Seed packs](/packs)!
