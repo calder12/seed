@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=a7d9f2391d002a5aa8398cf458c96f9c">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=4d2ea9d27394120b9adf5cc36d7e73cb">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -337,6 +337,204 @@
 
 <hr />
 
+<h2 id="configurations">Configurations</h2>
+
+<p>Since update <a href="https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.0">v0.1.0</a>, <code class="highlighter-rouge">seed-color-scheme</code> adds a default color scheme from <a href="/seed/packs/seed-color-scheme-helpscout"><code class="highlighter-rouge">seed-color-scheme-helpscout</code></a> as well as some default namespaces.</p>
+
+<p>Below are the default Sass configuration variables for seed-color-scheme. The variables can be found in the pack’s <code class="highlighter-rouge">_config.scss</code> file.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>seed-color-scheme/_config.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Base
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="no">white</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+  <span class="no">black</span><span class="o">:</span> <span class="mh">#000</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Colors
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="o">//</span> <span class="n">Primary</span>
+  <span class="no">blue</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">100</span><span class="o">:</span> <span class="mh">#f7fcfe</span><span class="o">,</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#daf1ff</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#aedfff</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#71bff1</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#3197d6</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#237ab3</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#1f5e89</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#194c6e</span><span class="o">,</span>
+    <span class="m">900</span><span class="o">:</span> <span class="mh">#143d57</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="n">charcoal</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#93a1af</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#72808e</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#4f5d6b</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#394956</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#2a3b47</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#253540</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#1d2b36</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="n">grey</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#f9fafa</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#f1f3f5</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#e3e8eb</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#d6dde3</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#c1cbd4</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#b4c0ca</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#a5b2bd</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="o">//</span> <span class="n">Secondary</span>
+  <span class="no">yellow</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">100</span><span class="o">:</span> <span class="mh">#fffdf6</span><span class="o">,</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#fff6e2</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#ffe8b5</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#ffd56d</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#ffc646</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#f5b126</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#d79400</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#b37100</span><span class="o">,</span>
+    <span class="m">900</span><span class="o">:</span> <span class="mh">#875200</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="no">green</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">100</span><span class="o">:</span> <span class="mh">#fafdfb</span><span class="o">,</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#e4fbe6</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#c4f0ce</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#81dc9e</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#4bc27d</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#3cb170</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#2f9f62</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#228350</span><span class="o">,</span>
+    <span class="m">900</span><span class="o">:</span> <span class="mh">#23633e</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="no">red</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">100</span><span class="o">:</span> <span class="mh">#fef7f6</span><span class="o">,</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#ffe3e2</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#ffa2a2</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#f45b55</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#e52f28</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#d21b14</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#ba1f19</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#9d1f1a</span><span class="o">,</span>
+    <span class="m">900</span><span class="o">:</span> <span class="mh">#731814</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="no">purple</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">100</span><span class="o">:</span> <span class="mh">#fbfbfe</span><span class="o">,</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#eaeafc</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#d1d2f6</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#a3a4f3</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#7e80e7</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#696aca</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#585b9e</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#45467d</span><span class="o">,</span>
+    <span class="m">900</span><span class="o">:</span> <span class="mh">#383966</span>
+  <span class="p">)</span><span class="o">,</span>
+
+  <span class="no">orange</span><span class="o">:</span> <span class="p">(</span>
+    <span class="m">100</span><span class="o">:</span> <span class="mh">#fff8f2</span><span class="o">,</span>
+    <span class="m">200</span><span class="o">:</span> <span class="mh">#ffead8</span><span class="o">,</span>
+    <span class="m">300</span><span class="o">:</span> <span class="mh">#ffd3ae</span><span class="o">,</span>
+    <span class="m">400</span><span class="o">:</span> <span class="mh">#ffa75a</span><span class="o">,</span>
+    <span class="m">500</span><span class="o">:</span> <span class="mh">#ff9139</span><span class="o">,</span>
+    <span class="m">600</span><span class="o">:</span> <span class="mh">#e87800</span><span class="o">,</span>
+    <span class="m">700</span><span class="o">:</span> <span class="mh">#c76400</span><span class="o">,</span>
+    <span class="m">800</span><span class="o">:</span> <span class="mh">#a45300</span><span class="o">,</span>
+    <span class="m">900</span><span class="o">:</span> <span class="mh">#813c00</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Namespace: Brand
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="n">brand</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">primary</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">danger</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">error</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">info</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">success</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">green</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">warning</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">yellow</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Namespace: Background
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="n">background</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">body</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+    <span class="n">ui</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span>
+      <span class="nb">lighter</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">grey</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">light</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">grey</span><span class="o">,</span> <span class="m">300</span><span class="p">)</span><span class="o">,</span>
+    <span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Namespace: Border
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="n">border</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">default</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">grey</span><span class="o">,</span> <span class="m">400</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">divider</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">grey</span><span class="o">,</span> <span class="m">300</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">ui</span><span class="o">:</span> <span class="p">(</span>
+      <span class="nb">default</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">grey</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">dark</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">grey</span><span class="o">,</span> <span class="m">600</span><span class="p">)</span><span class="o">,</span>
+    <span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Namespace: Text
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="nb">text</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">default</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">charcoal</span><span class="o">,</span> <span class="m">600</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">subtle</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">charcoal</span><span class="o">,</span> <span class="m">400</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">muted</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="n">charcoal</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Namespace: Link
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="n">link</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">default</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+    <span class="n">hover</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">400</span><span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+<span class="c1">// Namespace: States
+</span><span class="k">@include</span> <span class="nd">_color</span><span class="p">((</span>
+  <span class="n">state</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">danger</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">background-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">border-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">800</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">error</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">background-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">border-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">red</span><span class="o">,</span> <span class="m">800</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">info</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">background-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">border-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">blue</span><span class="o">,</span> <span class="m">800</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">success</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">background-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">green</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">border-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">green</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">green</span><span class="o">,</span> <span class="m">800</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+    <span class="n">warning</span><span class="o">:</span> <span class="p">(</span>
+      <span class="n">background-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">yellow</span><span class="o">,</span> <span class="m">200</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">border-color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">yellow</span><span class="o">,</span> <span class="m">500</span><span class="p">)</span><span class="o">,</span>
+      <span class="n">color</span><span class="o">:</span> <span class="nf">_color</span><span class="p">(</span><span class="no">yellow</span><span class="o">,</span> <span class="m">800</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">));</span>
+
+</code></pre>
+</div></div></div>
+
+<hr />
+
 <h2 id="related">Related</h2>
 
 <ul>
@@ -388,12 +586,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=64cba21851241baa9dc993dddcfdab57"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=450407533b40152593a6e70ad1ece8a4"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=3db060bba1b5f0a448c44e5a2ed0224b"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=fd05c06172928cea20f37b23176bf980"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=7544143941215c0bfe57ff49e2c66d95"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=74ee3fb16b907d7d98126238a79b2181"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=abe08078b51b6d7353d6022152d45e55"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=f88726f8b00e638c4154e21f04bcace5"></script>
 
   </body>
 </html>
