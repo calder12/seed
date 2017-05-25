@@ -1,7 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% if page.override_site_title %}
+  <title>{{ page.title }}</title>
+  {% else %}
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% endif %}
   <meta name="description" content="{{ page.description }}">
   <meta name="google-site-verification" content="rbVmAorB3dDQgACd0o8-3OeAUYTOPHCgC4rjnBjuX9U" />
 

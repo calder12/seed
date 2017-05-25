@@ -1,5 +1,6 @@
 ---
-title: "Barista"
+title: "Barista: CSS Unit Testing | Seed"
+override_site_title: true
 description: "Barista: A Javascript utility for CSS unit testing."
 layout: "generic"
 ---
