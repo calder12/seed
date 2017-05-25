@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Navbar | Seed CSS Documentation</title>
+  <meta name="description" content="Component used for the main header navigation, with support for links and dropdowns, optimized for multiple device sizes">
+  <meta name="google-site-verification" content="rbVmAorB3dDQgACd0o8-3OeAUYTOPHCgC4rjnBjuX9U" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=c9a4da50995266963c6e31534e43a2ac">
+  <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="index, follow" />
+</head>
+
+  <body class="tx-smooth">
+    <div class="o-container o-container--site u-pad-h-5@sm u-pad-h-8@lg">
+      <div class="o-row">
+        <div class="o-col-12">
+          <div class="o-flexy@sm u-mrg-t-8">
+  <div class="o-flexy__item u-mrg-r-10@sm">
+    <div class="c-logo">
+  <a href="/seed" class="u-d-block" title="Seed">
+    <img src="/seed/images/seed-logo.svg" width="120" height="53" />
+    <span class="u-sr-only">
+      <h1>Seed</h1>
+    </span>
+  </a>
+</div>
+
+  </div>
+  <div class="o-flexy__item u-mrg-t-2 u-mrg-t-0@sm u-mrg-r-auto">
+    <nav>
+  <ul class="c-list c-list--inline u-mrg-b-0">
+    
+    <li class="u-mrg-r-2 u-mrg-r-4@md tx-sm tx-md@md">
+      <a
+        href="/seed/#get-started"
+        title="Get Started"
+        class="c-link c-link--plain tx-600"
+      >
+        Get Started
+      </a>
+    </li>
+    
+    <li class="u-mrg-r-2 u-mrg-r-4@md tx-sm tx-md@md">
+      <a
+        href="/seed/packs"
+        title="Seed Packs"
+        class="c-link c-link--plain tx-600"
+      >
+        Seed Packs
+      </a>
+    </li>
+    
+    <li class="u-mrg-r-2 u-mrg-r-4@md tx-sm tx-md@md">
+      <a
+        href="/seed/examples"
+        title="Examples"
+        class="c-link c-link--plain tx-600"
+      >
+        Examples
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+
+  </div>
+</div>
+<hr class="u-mrg-t-3 u-mrg-b-6 u-mrg-b-8@md u-mrg-b-10@lg">
+
+          <section class="s-main-content" id="content">
+            
+
+<div class="o-row">
+  <div class="o-col-3@md js-spy-sidebar">
+    
+<div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
+  <p class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1">
+    Contents
+  </p>
+  <ul id="toc" class="nav c-sidebar-nav rx-sidebar-nav-width"></ul>
+</div>
+
+  </div>
+  <div class="o-col-9@md">
+    
+<header class="u-mrg-b-4 u-pad-b-1">
+  
+    <div class="o-flexy o-flexy--gap-md">
+      
+        <div clas="o-flexy__item">
+          <p class="u-mrg-0 tx-sm">
+            <span class="u-op-3">Pack: </span>
+            <span class="u-op-5">seed-navbar</span>
+          </p>
+        </div>
+      
+      
+      <div class="o-flexy__item u-d-none u-d-block@sm">
+        <a href="https://travis-ci.org/helpscout/seed-navbar" target="_blank" class="tx-no-underline">
+          <img src="https://travis-ci.org/helpscout/seed-navbar.svg?branch=master">
+        </a>
+        <a href="https://www.npmjs.com/package/seed-navbar" target="_blank" class="tx-no-underline">
+          <img src="https://badge.fury.io/js/seed-navbar.svg">
+        </a>
+      </div>
+      
+    </div>
+  
+
+  <h1 class="tx-lh-heading tx-h3 tx-h1@sm tx-300 u-mrg-t-2 u-mrg-b-2">
+    Navbar
+  </h1>
+
+  
+    <div class="tx-700">
+      <p class="u-mrg-0"><a href="https://github.com/helpscout/seed-navbar" target="_blank" class="c-link--view-source tx-sm">View Source</a></p>
+    </div>
+  
+
+</header>
+
+
+    
+
+
+<div id="s-docs" class="s-docs s-hs-docs s-hs-docs--navbar s-hs-docs--component">
+  <div class="s-docs__top" id="hs-content-top"></div>
+  
+
+
+<p>A component used for the main header navigation, with support for links and dropdowns, optimized for multiple device sizes.</p>
+
+<p>This component’s Javascript interactions are powered by <a href="https://v4-alpha.getbootstrap.com/components/navbar/">Bootstrap</a>.</p>
+
+<h2 id="install">Install</h2>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-navbar --save
+</code></pre></div></div>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<ul>
+  <li><a href="/seed/packs/seed-button">seed-button</a></li>
+  <li><a href="/seed/packs/seed-dropdown">seed-dropdown</a></li>
+  <li><a href="/seed/packs/seed-nav">seed-nav</a></li>
+  <li><a href="/seed/packs/seed-publish">seed-publish</a></li>
+</ul>
+
+<hr />
+
+<h2 id="example">Example</h2>
+
+<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-navbar navbar">
+  <div class="c-navbar__header">
+    <div class="c-navbar__item">
+      <a href="#" class="c-navbar__brand">Brand</a>
+    </div>
+    <div class="c-navbar__item c-navbar__item--right">
+      <button class="c-navbar__toggle c-button" data-toggle="collapse" data-target="#navbar">
+        <span class="c-navbar__toggle-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="c-navbar__item collapse navbar-collapse" id="navbar">
+    <ul class="c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md">
+      <li>
+        <a class="c-nav__link is-active" href="#">
+          Home
+        </a>
+      </li>
+      <li>
+        <a class="c-nav__link" href="#">
+          Features
+        </a>
+      </li>
+      <li class="c-dropdown dropdown c-nav__item">
+        <a class="c-nav__link c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+          Dropdown button
+        </a>
+        <div class="c-card c-dropdown__menu c-dropdown__menu--truncate dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="c-list">
+            <a class="c-list__item dropdown-item" href="#">Action</a>
+            <a class="c-list__item dropdown-item" href="#">Another action</a>
+            <a class="c-list__item dropdown-item disabled" href="#">Something else here</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-navbar__brand"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item c-navbar__item--right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-navbar__toggle c-button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-navbar__toggle-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav__link is-active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          Home
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav__link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          Features
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-dropdown dropdown c-nav__item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav__link c-dropdown__toggle dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"dropdownMenuButton"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          Dropdown button
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card c-dropdown__menu c-dropdown__menu--truncate dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"dropdownMenuButton"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-list__item dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-list__item dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-list__item dropdown-item disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
+
+<hr />
+
+<h2 id="components">Components</h2>
+
+<p>The Navbar component contains a variety of smaller sub-components for content and structural purposes.</p>
+
+<h3 id="main-component">Main component</h3>
+
+<p>The main component for Navbar is a <code class="highlighter-rouge">&lt;div&gt;</code> selector that has a class name of <code class="highlighter-rouge">.c-navbar</code> <strong>and</strong> <code class="highlighter-rouge">.navbar</code>. The additional <code class="highlighter-rouge">.navbar</code> class is necessary for Bootstrap’s Javascript to work correctly.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h3 id="sub-components">Sub-components</h3>
+
+<h4 id="header">Header</h4>
+
+<p>This sub-component provides structure and contains elements to be presented on devices with smaller viewport sizes.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h4 id="nav-item">Nav Item</h4>
+
+<p>This sub-component provides structure and wraps inner content and components with the Navbar.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<p><strong>Modifiers</strong></p>
+
+<p>These alignment modifier classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modifier</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.c-navbar__item--left</code></td>
+      <td>Aligns the nav item to the left.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.c-navbar__item--right</code></td>
+      <td>Aligns the nav item to the right.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="brand">Brand</h4>
+
+<p><strong>(Optional)</strong></p>
+
+<p>This sub-component provides adjusted styles for text-based branding. This component isn’t necessary, as it can be subtituted with an image logo or other text.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-navbar__brand"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h4 id="toggle">Toggle</h4>
+
+<p>This sub-component toggles the collapse/expand of the Navbar’s links. This component only appears for devices with smaller viewports.</p>
+
+<p><code class="highlighter-rouge">data</code> attributes are necessary for Bootstrap’s Javascript to work correctly.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    ...
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-navbar__toggle c-button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-navbar__toggle-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h4 id="collapse">Collapse</h4>
+
+<p>This sub-component contains the navigation links (and dropdowns) within the Navbar. Items added within this component will be hidden for devices with smaller viewports until the Navbar’s <a href="#toggle">toggle</a> is triggered.</p>
+
+<p>The <code class="highlighter-rouge">id</code> attribute and <code class="highlighter-rouge">collapse navbar-collapse</code> class names are necessary for Bootstrap’s Javascript to work correctly.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h4 id="nav">Nav</h4>
+
+<p>This sub-component uses <a href="/seed/packs/seed-nav">seed-nav</a> to provide structure for the Navbar’s links.</p>
+
+<p>The additional <code class="highlighter-rouge">c-nav</code> modifiers are necessary for the Nav component to render correctly for multiple viewport sizes.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav__link is-active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          ...
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h4 id="dropdown">Dropdown</h4>
+
+<p><strong>(Optional)</strong></p>
+
+<p>This sub-component uses <a href="/seed/packs/seed-dropdown">seed-dropdown</a> to provide structure for the Navbar’s dropdown links.</p>
+
+<p>Check out the <a href="/seed/packs/seed-dropdown">seed-dropdown documentation</a> for more information about how the Dropdown component works.</p>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__header"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-navbar__item collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md"</span><span class="nt">&gt;</span>
+      ...
+      <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-dropdown dropdown c-nav__item"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="configurations">Configurations</h2>
+
+<p>Below are the default Sass configuration variables for seed-navbar. The variables can be found in the pack’s <code class="highlighter-rouge">_config.scss</code> file.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>seed-navbar/_config.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Namespaces
+</span><span class="nv">$seed-navbar-namespace</span><span class="p">:</span> <span class="n">c-navbar</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-brand-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-navbar-namespace</span><span class="si">}</span><span class="n">__brand</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-collapse-namespace</span><span class="p">:</span> <span class="nb">collapse</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span> <span class="c1">// From Bootstrap
+</span><span class="nv">$seed-navbar-collapsing-namespace</span><span class="p">:</span> <span class="n">collapsing</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span> <span class="c1">// From Bootstrap
+</span><span class="nv">$seed-navbar-header-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-navbar-namespace</span><span class="si">}</span><span class="n">__header</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-item-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-navbar-namespace</span><span class="si">}</span><span class="n">__item</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-toggle-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-navbar-namespace</span><span class="si">}</span><span class="n">__toggle</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-toggle-icon-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-navbar-namespace</span><span class="si">}</span><span class="n">__toggle-icon</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Configs
+</span><span class="nv">$seed-navbar-min-height</span><span class="p">:</span> <span class="m">48px</span><span class="o">!</span> <span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-brand-font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.25rem</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-brand-margin-right</span><span class="p">:</span> <span class="m">1rem</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-toggle-icon-size</span><span class="p">:</span> <span class="m">20px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$seed-navbar-toggle-icon-border-color</span><span class="p">:</span> <span class="mh">#4F5D6B</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="related">Related</h2>
+
+<ul>
+  <li><a href="/seed/packs/seed-dropdown">seed-dropdown</a></li>
+  <li><a href="/seed/packs/seed-nav">seed-nav</a></li>
+</ul>
+
+
+</div>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8">
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200 tx-sm">Back to top</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+          </section>
+          
+<hr class="u-mrg-t-10 u-mrg-b-5">
+<div class="u-pad-b-10">
+  <div class="o-flexy">
+    <div class="o-flexy__item">
+      &copy; <a href="http://helpscout.net" class="c-link c-link--plain">Help Scout</a>
+      2017 
+    </div>
+    <div class="o-flexy__item">
+    </div>
+  </div>
+</div>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dot nav',      slug: 'seed-dot-nav',      type: 'Component',      source: 'https://github.com/helpscout/seed-dot-nav'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input-addons'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Nav',      slug: 'seed-nav',      type: 'Component',      source: 'https://github.com/helpscout/seed-nav'    },        {      name: 'Navbar',      slug: 'seed-navbar',      type: 'Component',      source: 'https://github.com/helpscout/seed-navbar'    },        {      name: 'Option card',      slug: 'seed-option-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-option-card'    },        {      name: 'Pagination',      slug: 'seed-pagination',      type: 'Component',      source: 'https://github.com/helpscout/seed-pagination'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Video',      slug: 'seed-video',      type: 'Component',      source: 'https://github.com/helpscout/seed-video'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Bootstrap Fade',      slug: 'seed-bootstrap-fade',      type: 'Utility',      source: 'https://github.com/helpscout/seed-bootstrap-fade'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Vertical Align',      slug: 'seed-vertical-align',      type: 'Utility',      source: 'https://github.com/helpscout/seed-vertical-align'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-Index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+    <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
+<script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=ef3a886e5750eb19e0963a4b087ecc71"></script>
+<script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=33a5d6013a98531f815b76973535b9cc"></script>
+<script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=fa0a4eeadfa6eadbbd7cd8c7e03f8750"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=847b8dd13c65f8429045560238684a65"></script>
+
+  </body>
+</html>
