@@ -15,7 +15,7 @@ $comment-color: _color(grey, 700);
     background: #eef;
   }
 
-  .err   { color: #a61717; background-color: #e3d2d2 } // Error
+  // .err   { color: #a61717; background-color: #e3d2d2 } // Error
   .k     { font-weight: bold } // Keyword
   .o     { font-weight: bold } // Operator
   .c     { color: $comment-color; font-style: italic } // Comment
