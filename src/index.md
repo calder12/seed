@@ -5,6 +5,9 @@ layout: "generic"
 ---
 
 <div class="tx-center u-mrg-b-10 s-docs">
+  <p class="tx-center t-tx-charcoal-300 tx-h4">
+    <strong class="tx-700">Seed</strong>
+  </p>
   <div class="o-col-10@md o-col-offset-1@md">
     <p class="tx-h2 tx-h1@md tx-300 tx-lh-heading u-mrg-t-0">
       A modular CSS<br>framework that scales.
@@ -136,11 +139,4 @@ Although Seed's modules are available for download and use, Seed is much more th
 
 
 
-
-<div class="u-pad-v-5 u-mrg-b-3">
-  <hr class="u-mrg-t-8">
-
-  <div class="tx-right">
-    <a href="#" class="t-tx-charcoal-200">Back to top</a>
-  </div>
-</div>
+{% include footer/back-to-top.html %}

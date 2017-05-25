@@ -1,11 +1,11 @@
 <nav>
-  <ul class="c-list c-list--inline u-mrg-b-0">
+  <ul class="c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md">
     {% for link in site.data.nav %}
-    <li class="u-mrg-r-2 u-mrg-r-4@md tx-sm tx-md@md">
+    <li class="u-mrg-v-0">
       <a
         href="{{ link.link }}"
         title="{{ link.title }}"
-        class="c-link c-link--plain tx-600"
+        class="c-nav__link c-link c-link--plain tx-600"
       >
         {{ link.title }}
       </a>

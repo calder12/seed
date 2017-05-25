@@ -1,9 +1,17 @@
-<div class="o-flexy@sm u-mrg-t-8">
-  <div class="o-flexy__item u-mrg-r-10@sm">
-    {% include nav/logo.html %}
+<div class="c-navbar navbar">
+  <div class="c-navbar__header">
+    <div class="c-navbar__item u-pad-t-4 u-pad-b-2 u-mrg-r-5">
+      {% include nav/logo.html %}
+    </div>
+    <div class="c-navbar__item c-navbar__item--right">
+      <button class="c-navbar__toggle c-button" data-toggle="collapse" data-target="#navbar">
+        <span class="c-navbar__toggle-icon"></span>
+      </button>
+    </div>
   </div>
-  <div class="o-flexy__item u-mrg-t-2 u-mrg-t-0@sm u-mrg-r-auto">
+  <div class="c-navbar__item collapse navbar-collapse" id="navbar">
     {% include nav/links.html %}
   </div>
 </div>
+
 <hr class="u-mrg-t-3 u-mrg-b-6 u-mrg-b-8@md u-mrg-b-10@lg">
