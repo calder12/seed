@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Barista | Seed CSS Documentation</title>
+  <meta name="description" content="Barista: A Javascript utility for CSS unit testing.">
+  <meta name="google-site-verification" content="rbVmAorB3dDQgACd0o8-3OeAUYTOPHCgC4rjnBjuX9U" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=ff7570b0a62bb3b73c0950fa8e883cae">
+  <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
+
+  <meta name="robots" content="index, follow" />
+</head>
+
+  <body class="tx-smooth">
+    <div class="o-container o-container--site u-pad-h-5@sm u-pad-h-8@lg">
+      <div class="o-row">
+        <div class="o-col-12">
+          <div class="c-navbar navbar">
+  <div class="c-navbar__header">
+    <div class="c-navbar__item u-pad-t-4 u-pad-b-2 u-mrg-r-5">
+      <div class="c-logo">
+  <a href="/seed" class="u-d-block" title="Seed">
+    <img src="/seed/images/seed-logo.svg" width="120" height="53" />
+    <span class="u-sr-only">
+      <h1>Seed</h1>
+    </span>
+  </a>
+</div>
+
+    </div>
+    <div class="c-navbar__item c-navbar__item--right">
+      <button class="c-navbar__toggle c-button" data-toggle="collapse" data-target="#navbar">
+        <span class="c-navbar__toggle-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="c-navbar__item collapse navbar-collapse" id="navbar">
+    <nav>
+  <ul class="c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md">
+    
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/#get-started"
+        title="Get Started"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Get Started
+      </a>
+    </li>
+    
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/packs"
+        title="Seed Packs"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Seed Packs
+      </a>
+    </li>
+    
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/examples"
+        title="Examples"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Examples
+      </a>
+    </li>
+    
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/css-unit-testing"
+        title="Unit Testing"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Unit Testing
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+
+  </div>
+</div>
+
+<hr class="u-mrg-t-3 u-mrg-b-6 u-mrg-b-8@md u-mrg-b-10@lg">
+
+          <section class="s-main-content" id="content">
+            <div class="o-row">
+  <div class="o-col-10@md o-col-offset-1@md o-col-8@lg o-col-offset-2@lg">
+    <div class="s-docs">
+      <div class="tx-center u-mrg-b-10 s-docs">
+  <p class="tx-center t-tx-charcoal-300 tx-h4">
+    <strong class="tx-700">Barista</strong>
+  </p>
+  <div class="o-col-10@md o-col-offset-1@md">
+    <p class="tx-h2 tx-h1@md tx-300 tx-lh-heading u-mrg-t-0">
+      CSS Unit Testing.<br />
+      <strong class="tx-700">Oh yes.</strong>
+    </p>
+  </div>
+  <p class="tx-center u-mrg-b-5">
+    <img src="/seed/images/barista.png" title="Seed Barista" alt="Seed Barista" width="200" />
+  </p>
+  <p class="tx-lead t-tx-charcoal-300">
+    Compatible with most major test runners and assertion libraries.
+  </p>
+  <p>
+    <a href="#get-started" class="c-button c-button--lg">Get Started</a>
+  </p>
+  <p>
+    <a href="https://github.com/helpscout/seed-barista">View Source on Github</a>
+  </p>
+</div>
+
+<hr />
+
+<p><a href="https://travis-ci.org/helpscout/seed-barista"><img src="https://travis-ci.org/helpscout/seed-barista.svg?branch=master" alt="Build Status" /></a> <a href="https://badge.fury.io/js/seed-barista"><img src="https://badge.fury.io/js/seed-barista.svg" alt="npm version" /></a> <a href="https://david-dm.org/helpscout/seed-barista"><img src="https://david-dm.org/helpscout/seed-barista/status.svg" alt="dependencies Status" /></a></p>
+
+<p><br /></p>
+
+<h1 id="get-started">Get Started</h1>
+
+<h2 id="install-barista">Install Barista</h2>
+
+<p>Run the following command to add Barista to your project:</p>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-barista --save-dev
+</code></pre></div></div>
+
+<p>Although Barista is compatible with most major test runners, the Barista’s documentation uses <strong><a href="https://mochajs.org/">Mocha</a></strong> and <strong><a href="http://chaijs.com/">Chai</a></strong></p>
+
+<p>These can be added with the following command:</p>
+
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install mocha chai --save-dev
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="basic-usage">Basic Usage</h2>
+
+<h3 id="standard"><a href="https://github.com/helpscout/seed-barista/blob/master/docs/api/standard.md">Standard</a></h3>
+
+<p>Below is an example of how you can setup a <a href="https://mochajs.org/">Mocha</a> test with Barista. A fast and simple way to test <code class="highlighter-rouge">.scss</code> output is to verify the rendered output matches against expected strings.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">expect</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'chai'</span><span class="p">).</span><span class="nx">expect</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">barista</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'seed-barista'</span><span class="p">);</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'harry component styles'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'should render a class of wizard + harry'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">barista</span><span class="p">({</span> <span class="na">file</span><span class="p">:</span> <span class="s1">'_wizard.scss'</span> <span class="p">});</span>
+    <span class="kd">var</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">output</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">'.your-a-wizard.harry'</span><span class="p">);</span>
+
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">exists</span><span class="p">()).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="kc">true</span><span class="p">;</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'background'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'color'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'yellow'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div></div></div>
+
+<p>Check out the full <a href="https://github.com/helpscout/seed-barista/blob/master/docs/api/standard.md">API documentation</a>.</p>
+
+<h3 id="mounted"><a href="https://github.com/helpscout/seed-barista/blob/master/docs/api/mounted.md">Mounted</a></h3>
+
+<p>Mounted based testing creates a <a href="https://github.com/tmpvar/jsdom">virtual DOM</a>, allowing you to write assertions against DOM elements. Barista’s Mounted API uses jQuery to retrieve computed CSS styles.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">expect</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'chai'</span><span class="p">).</span><span class="nx">expect</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">barista</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'seed-barista'</span><span class="p">);</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'harry component styles'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'should render a class of wizard + harry'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">barista</span><span class="p">({</span> <span class="na">file</span><span class="p">:</span> <span class="s1">'_wizard.scss'</span> <span class="p">}).</span><span class="nx">mount</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">output</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'.your-a-wizard.harry'</span><span class="p">);</span>
+
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">length</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">above</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">css</span><span class="p">(</span><span class="s1">'background'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">css</span><span class="p">(</span><span class="s1">'color'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'yellow'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div></div></div>
+
+<p>Check out the full <a href="https://github.com/helpscout/seed-barista/blob/master/docs/api/mounted.md">API documentation</a>.</p>
+
+<hr />
+
+<h2 id="example">Example</h2>
+
+<p>Below is a sample test for a Button component with the styles written inline.</p>
+
+<div class="language-js highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Test :: Examples :: Button</span>
+<span class="s1">'use strict'</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">barista</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'seed-barista'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">expect</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'chai'</span><span class="p">).</span><span class="nx">expect</span><span class="p">;</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'example: test: button'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">styles</span> <span class="o">=</span> <span class="err">`</span>
+    <span class="p">.</span><span class="nx">btn</span> <span class="p">{</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="nx">blue</span><span class="p">;</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="mi">1</span><span class="nx">px</span> <span class="nx">solid</span><span class="p">;</span>
+      <span class="nx">border</span><span class="o">-</span><span class="nx">color</span><span class="err">:</span> <span class="nx">blue</span><span class="p">;</span>
+      <span class="o">&amp;</span><span class="err">:</span><span class="nx">hover</span> <span class="p">{</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="nx">red</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="o">&amp;</span><span class="err">:</span><span class="nx">active</span> <span class="p">{</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="nx">purple</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="o">&amp;</span><span class="err">:</span><span class="nx">focus</span> <span class="p">{</span>
+        <span class="nx">border</span><span class="o">-</span><span class="nx">color</span><span class="err">:</span> <span class="nx">red</span><span class="p">;</span>
+        <span class="o">&amp;</span><span class="err">:</span><span class="nx">active</span> <span class="p">{</span>
+          <span class="nx">border</span><span class="o">-</span><span class="nx">color</span><span class="err">:</span> <span class="nx">purple</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+  <span class="err">`</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">barista</span><span class="p">({</span>
+    <span class="na">content</span><span class="p">:</span> <span class="nx">styles</span><span class="p">,</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'should have an active state + style'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">output</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">'.btn:active'</span><span class="p">);</span>
+
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'background'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'purple'</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'should have a focus state + style'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">output</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">'.btn:focus'</span><span class="p">);</span>
+
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'border-color'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'red'</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'should have a focus:active state + style'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">output</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">'.btn:focus:active'</span><span class="p">);</span>
+
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">exists</span><span class="p">()).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="kc">true</span><span class="p">;</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">rule</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'border-color'</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="s1">'purple'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
+<h2 id="in-the-wild">In the wild</h2>
+
+<p>Barista has been used extensively in Seed Packs. (We’re working towards 100% coverage!).</p>
+
+<p>Below are a couple of packs already using Barista for testing:</p>
+
+<ul>
+  <li><a href="https://github.com/helpscout/seed-button/tree/master/test">seed-button</a></li>
+  <li><a href="https://github.com/helpscout/seed-color-scheme/tree/master/test">seed-color-scheme</a></li>
+  <li><a href="https://github.com/helpscout/seed-dot-nav/tree/master/test">seed-dot-nav</a></li>
+  <li><a href="https://github.com/helpscout/seed-input/tree/master/test">seed-input</a></li>
+  <li><a href="https://github.com/helpscout/seed-navbar/tree/master/test">seed-navbar</a></li>
+  <li><a href="https://github.com/helpscout/seed-publish/tree/master/test">seed-publish</a></li>
+</ul>
+
+<div class="u-pad-v-5 u-mrg-b-3">
+  <hr class="u-mrg-t-8" />
+
+  <div class="tx-right">
+    <a href="#" class="t-tx-charcoal-200">Back to top</a>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+          </section>
+          
+<hr class="u-mrg-t-10 u-mrg-b-5">
+<div class="u-pad-b-10">
+  <div class="o-flexy">
+    <div class="o-flexy__item">
+      &copy; <a href="http://helpscout.net" class="c-link c-link--plain">Help Scout</a>
+      2017 
+    </div>
+    <div class="o-flexy__item">
+    </div>
+  </div>
+</div>
+
+<div id="c-overlay" class="c-overlay">
+  <div class="c-overlay__content"></div>
+  <div class="c-overlay__background"></div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+
+<script type="text/javascript">
+var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',      type: 'Base',      source: 'https://github.com/helpscout/seed-base'    },        {      name: 'Reset',      slug: 'seed-reset',      type: 'Base',      source: 'https://github.com/helpscout/seed-reset'    },        {      name: 'Alert',      slug: 'seed-alert',      type: 'Component',      source: 'https://github.com/helpscout/seed-alert'    },        {      name: 'Avatar',      slug: 'seed-avatar',      type: 'Component',      source: 'https://github.com/helpscout/seed-avatar'    },        {      name: 'Badge',      slug: 'seed-badge',      type: 'Component',      source: 'https://github.com/helpscout/seed-badge'    },        {      name: 'Button',      slug: 'seed-button',      type: 'Component',      source: 'https://github.com/helpscout/seed-button'    },        {      name: 'Card',      slug: 'seed-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-card'    },        {      name: 'Dot nav',      slug: 'seed-dot-nav',      type: 'Component',      source: 'https://github.com/helpscout/seed-dot-nav'    },        {      name: 'Dropdown',      slug: 'seed-dropdown',      type: 'Component',      source: 'https://github.com/helpscout/seed-dropdown'    },        {      name: 'Form group',      slug: 'seed-form-group',      type: 'Component',      source: 'https://github.com/helpscout/seed-form-group'    },        {      name: 'Horizontal rule',      slug: 'seed-hr',      type: 'Component',      source: 'https://github.com/helpscout/seed-hr'    },        {      name: 'Input addons',      slug: 'seed-input-addons',      type: 'Component',      source: 'https://github.com/helpscout/seed-input-addons'    },        {      name: 'Input',      slug: 'seed-input',      type: 'Component',      source: 'https://github.com/helpscout/seed-input'    },        {      name: 'Link',      slug: 'seed-link',      type: 'Component',      source: 'https://github.com/helpscout/seed-link'    },        {      name: 'List',      slug: 'seed-list',      type: 'Component',      source: 'https://github.com/helpscout/seed-list'    },        {      name: 'Modal',      slug: 'seed-modal',      type: 'Component',      source: 'https://github.com/helpscout/seed-modal'    },        {      name: 'Nav',      slug: 'seed-nav',      type: 'Component',      source: 'https://github.com/helpscout/seed-nav'    },        {      name: 'Navbar',      slug: 'seed-navbar',      type: 'Component',      source: 'https://github.com/helpscout/seed-navbar'    },        {      name: 'Option card',      slug: 'seed-option-card',      type: 'Component',      source: 'https://github.com/helpscout/seed-option-card'    },        {      name: 'Pagination',      slug: 'seed-pagination',      type: 'Component',      source: 'https://github.com/helpscout/seed-pagination'    },        {      name: 'Popover',      slug: 'seed-popover',      type: 'Component',      source: 'https://github.com/helpscout/seed-popover'    },        {      name: 'Progress bar',      slug: 'seed-progress-bar',      type: 'Component',      source: 'https://github.com/helpscout/seed-progress-bar'    },        {      name: 'Switch',      slug: 'seed-switch',      type: 'Component',      source: 'https://github.com/helpscout/seed-switch'    },        {      name: 'Table',      slug: 'seed-table',      type: 'Component',      source: 'https://github.com/helpscout/seed-table'    },        {      name: 'Thumbnail',      slug: 'seed-thumbnail',      type: 'Component',      source: 'https://github.com/helpscout/seed-thumbnail'    },        {      name: 'Tooltip',      slug: 'seed-tooltip',      type: 'Component',      source: 'https://github.com/helpscout/seed-tooltip'    },        {      name: 'Video',      slug: 'seed-video',      type: 'Component',      source: 'https://github.com/helpscout/seed-video'    },        {      name: 'Color scheme (Help Scout)',      slug: 'seed-color-scheme-helpscout',      type: 'Config',      source: 'https://github.com/helpscout/seed-color-scheme-helpscout'    },        {      name: 'Control',      slug: 'seed-control',      type: 'Config',      source: 'https://github.com/helpscout/seed-control'    },        {      name: 'States',      slug: 'seed-states',      type: 'Config',      source: 'https://github.com/helpscout/seed-states'    },        {      name: 'Dash',      slug: 'seed-dash',      type: 'Function',      source: 'https://github.com/helpscout/seed-dash'    },        {      name: 'This',      slug: 'seed-this',      type: 'Function',      source: 'https://github.com/helpscout/seed-this'    },        {      name: 'Breakpoints',      slug: 'seed-breakpoints',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-breakpoints'    },        {      name: 'Color scheme',      slug: 'seed-color-scheme',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-color-scheme'    },        {      name: 'Family',      slug: 'seed-family',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-family'    },        {      name: 'Props',      slug: 'seed-props',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-props'    },        {      name: 'Publish',      slug: 'seed-publish',      type: 'Mixin',      source: 'https://github.com/helpscout/seed-publish'    },        {      name: 'Control group',      slug: 'seed-control-group',      type: 'Object',      source: 'https://github.com/helpscout/seed-control-group'    },        {      name: 'Flexy',      slug: 'seed-flexy',      type: 'Object',      source: 'https://github.com/helpscout/seed-flexy'    },        {      name: 'Grid system',      slug: 'seed-grid',      type: 'Object',      source: 'https://github.com/helpscout/seed-grid'    },        {      name: 'Inline',      slug: 'seed-inline',      type: 'Object',      source: 'https://github.com/helpscout/seed-inline'    },        {      name: 'Responsive wrapper',      slug: 'seed-responsive-wrapper',      type: 'Object',      source: 'https://github.com/helpscout/seed-responsive-wrapper'    },        {      name: 'Border',      slug: 'seed-border',      type: 'Theme',      source: 'https://github.com/helpscout/seed-border'    },        {      name: 'Colors (Help Scout)',      slug: 'seed-helpscout-theme',      type: 'Theme',      source: 'https://github.com/helpscout/seed-helpscout-theme'    },        {      name: 'Shadow',      slug: 'seed-shadow',      type: 'Theme',      source: 'https://github.com/helpscout/seed-shadow'    },        {      name: 'Typography',      slug: 'seed-typography',      type: 'Text',      source: 'https://github.com/helpscout/seed-typography'    },        {      name: 'Bootstrap Fade',      slug: 'seed-bootstrap-fade',      type: 'Utility',      source: 'https://github.com/helpscout/seed-bootstrap-fade'    },        {      name: 'Centralize',      slug: 'seed-centralize',      type: 'Utility',      source: 'https://github.com/helpscout/seed-centralize'    },        {      name: 'Display',      slug: 'seed-display',      type: 'Utility',      source: 'https://github.com/helpscout/seed-display'    },        {      name: 'Floats',      slug: 'seed-floats',      type: 'Utility',      source: 'https://github.com/helpscout/seed-floats'    },        {      name: 'Opacity',      slug: 'seed-opacity',      type: 'Utility',      source: 'https://github.com/helpscout/seed-opacity'    },        {      name: 'Overflow',      slug: 'seed-overflow',      type: 'Utility',      source: 'https://github.com/helpscout/seed-overflow'    },        {      name: 'Position',      slug: 'seed-position',      type: 'Utility',      source: 'https://github.com/helpscout/seed-position'    },        {      name: 'Spacing',      slug: 'seed-spacing',      type: 'Utility',      source: 'https://github.com/helpscout/seed-spacing'    },        {      name: 'Vertical Align',      slug: 'seed-vertical-align',      type: 'Utility',      source: 'https://github.com/helpscout/seed-vertical-align'    },        {      name: 'Visibility',      slug: 'seed-visibility',      type: 'Utility',      source: 'https://github.com/helpscout/seed-visibility'    },        {      name: 'Width (Fixed)',      slug: 'seed-width-fx',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-fx'    },        {      name: 'Width (Max)',      slug: 'seed-width-max',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-max'    },        {      name: 'Width (Min)',      slug: 'seed-width-min',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width-min'    },        {      name: 'Width',      slug: 'seed-width',      type: 'Utility',      source: 'https://github.com/helpscout/seed-width'    },        {      name: 'Z-Index',      slug: 'seed-zi',      type: 'Utility',      source: 'https://github.com/helpscout/seed-zi'    },      ]};
+</script>
+
+    <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
+<script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=c7ef1c37f7d684e3b6ac33af54ac6b0b"></script>
+<script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=1504cdd4d6432d00167cf5b62af0ca87"></script>
+<script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=70a4f6018f80d3e392de677ef1babb4f"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=d20d9be74499759864653ca31bf14968"></script>
+
+  </body>
+</html>
