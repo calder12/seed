@@ -185,6 +185,7 @@ Below are a couple of packs already using Barista for testing:
 
 * [seed-button](https://github.com/helpscout/seed-button/tree/master/test)
 * [seed-color-scheme](https://github.com/helpscout/seed-color-scheme/tree/master/test)
+* [seed-dash](https://github.com/helpscout/seed-dash/tree/master/test)
 * [seed-dot-nav](https://github.com/helpscout/seed-dot-nav/tree/master/test)
 * [seed-input](https://github.com/helpscout/seed-input/tree/master/test)
 * [seed-navbar](https://github.com/helpscout/seed-navbar/tree/master/test)
