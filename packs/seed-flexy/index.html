@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=180db3c9cf96d30a4c61d4304c982c18">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=0a7e7a5b6acf60e75cc2361a1255d988">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -376,6 +376,85 @@
 
 <hr />
 
+<h2 id="gap">Gap</h2>
+
+<p>The Gap modifier automatically provides a bit of spacing (margin) between the items and blocks within a Flexy object.</p>
+
+<p>All of the gap spacing modifiers support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Margin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.o-flexy--gap-xs</code></td>
+      <td>4px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.o-flexy--gap-sm</code></td>
+      <td>8px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.o-flexy--gap-md</code></td>
+      <td>12px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.o-flexy--gap-lg</code></td>
+      <td>16px</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">.o-flexy--gap-xl</code></td>
+      <td>20px</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+With Gap:
+<div class="o-flexy o-flexy--gap-lg">
+  <div class="o-flexy__block">
+    Woody
+  </div>
+  <div class="o-flexy__item">
+    Buzz
+  </div>
+  <div class="o-flexy__item">
+    Rex
+  </div>
+  <div class="o-flexy__item">
+    Slinky
+  </div>
+</div>
+<br />
+Without Gap:
+<div class="o-flexy">
+  <div class="o-flexy__block">
+    Woody
+  </div>
+  <div class="o-flexy__item">
+    Buzz
+  </div>
+  <div class="o-flexy__item">
+    Rex
+  </div>
+  <div class="o-flexy__item">
+    Slinky
+  </div>
+</div>
+</div></div>
+
+<div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"o-flexy o-flexy--gap-lg"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<hr />
+
 <h2 id="text-truncation">Text truncation</h2>
 
 <p>At the moment, Flexbox doesn’t play nicely with CSS truncation (specifically the <code class="highlighter-rouge">white-space: nowrap</code> attribute. If you plan on using CSS truncation, avoid applying your truncation class directly on a <code class="highlighter-rouge">.o-flexy__item</code> or <code class="highlighter-rouge">.o-flexy__block</code>.</p>
@@ -425,6 +504,15 @@
   <span class="nb">middle</span><span class="o">:</span> <span class="nb">center</span><span class="o">,</span>
   <span class="nb">bottom</span><span class="o">:</span> <span class="n">flex-end</span><span class="o">,</span>
   <span class="n">stretch</span><span class="o">:</span> <span class="n">stretch</span>
+<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+
+<span class="c1">// Gap
+</span><span class="nv">$seed-flexy-gap-sizes</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">xs</span><span class="o">:</span> <span class="m">4px</span><span class="o">,</span>
+  <span class="n">sm</span><span class="o">:</span> <span class="m">8px</span><span class="o">,</span>
+  <span class="n">md</span><span class="o">:</span> <span class="m">12px</span><span class="o">,</span>
+  <span class="n">lg</span><span class="o">:</span> <span class="m">16px</span><span class="o">,</span>
+  <span class="n">xl</span><span class="o">:</span> <span class="m">20px</span><span class="o">,</span>
 <span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
 
 </code></pre>
@@ -482,12 +570,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=aeeddcb49bd2a4192a318015c3c36e77"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=243a402228b252452ba593ba37971bef"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=ebdd03a41dabb38948472753da7ec183"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=b2135330bd4a8549f4fbaf21458cfea5"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=4ec3a816c22a40d0a37dba555dadfa11"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=df13e8e930e1a8a0a75c1314fbb7907e"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=f2274adec81fcb8845262bfc7b331a00"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=abb62eb59fd34877607ea43781cba112"></script>
 
   </body>
 </html>
