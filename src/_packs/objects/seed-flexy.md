@@ -181,7 +181,70 @@ All of the vertical alignment modifiers support **[responsive modifiers](/seed/p
 {% endexample %}
 
 
+
 ---
+
+
+
+## Gap
+
+The Gap modifier automatically provides a bit of spacing (margin) between the items and blocks within a Flexy object.
+
+All of the gap spacing modifiers support **[responsive modifiers](/seed/packs/seed-breakpoints/#responsive-modifiers)**.
+
+
+| Class              | Margin |
+| ---                | ---    |
+| `.o-flexy--gap-xs` | 4px    |
+| `.o-flexy--gap-sm` | 8px    |
+| `.o-flexy--gap-md` | 12px   |
+| `.o-flexy--gap-lg` | 16px   |
+| `.o-flexy--gap-xl` | 20px   |
+
+
+{% example %}
+With Gap:
+<div class="o-flexy o-flexy--gap-lg">
+  <div class="o-flexy__block">
+    Woody
+  </div>
+  <div class="o-flexy__item">
+    Buzz
+  </div>
+  <div class="o-flexy__item">
+    Rex
+  </div>
+  <div class="o-flexy__item">
+    Slinky
+  </div>
+</div>
+<br>
+Without Gap:
+<div class="o-flexy">
+  <div class="o-flexy__block">
+    Woody
+  </div>
+  <div class="o-flexy__item">
+    Buzz
+  </div>
+  <div class="o-flexy__item">
+    Rex
+  </div>
+  <div class="o-flexy__item">
+    Slinky
+  </div>
+</div>
+{% endexample %}
+
+```html
+<div class="o-flexy o-flexy--gap-lg">
+  ...
+</div>
+```
+
+
+---
+
 
 
 ## Text truncation

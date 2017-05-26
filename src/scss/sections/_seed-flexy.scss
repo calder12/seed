@@ -24,5 +24,15 @@
     .o-flexy--bottom {
       height: 60px;
     }
+
+    .o-flexy--gap-lg {
+      > * {
+        margin-left: 16px;
+
+        &:first-child {
+          margin-left: 2px;
+        }
+      }
+    }
   }
 }
