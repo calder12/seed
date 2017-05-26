@@ -110,6 +110,12 @@ Conditional imports were accidentally working in [v3.4.2 of Node Sass](https://g
 
 ## Mixins
 
+Rex, the lovable dinosaur from Disney Pixar's Toy Story, will be used to illustrate how `seed-publish`'s mixins can be used to customize the styles of a Rex CSS component.
+
+<div class="tx-center u-mrg-v-8">
+  <img src="/seed/images/examples/rex.jpg" width="300" />
+</div>
+
 ### export
 
 **export($name)** (Mixin)
@@ -121,13 +127,13 @@ Conditional imports were accidentally working in [v3.4.2 of Node Sass](https://g
 | `@content` | Content | The styles you want guarded/controlled.                        |
 
 
-``` _menu.scss
+``` _rex.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
-@include export(my-awesome-menu) {
-  .menu {
-    background: blue;
+@include export(rex) {
+  .rex {
+    color: green;
   }
 }
 ```
@@ -135,26 +141,26 @@ Conditional imports were accidentally working in [v3.4.2 of Node Sass](https://g
 There is **no limit** on the number of times the `export` mixin can be used on a unique name. This is useful for controlling styles across multiple files.
 
 
-``` _menu.scss
+``` _rex.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
-@include export(my-awesome-menu) {
-  .menu {
-    background: blue;
+@include export(rex) {
+  .rex {
+    color: green;
   }
 }
 
-@import "./menu-item";
+@import "./battery";
 ```
 
-``` _menu-item.scss
+``` _battery.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
-@include export(my-awesome-menu) {
-  .menu-item {
-    display: block;
+@include export(rex) {
+  .rex-battery {
+    display: none;
   }
 }
 ```
@@ -179,51 +185,51 @@ There is **no limit** on the number of times the `export` mixin can be used on a
 
 Use the `publish` mixin when you have completed building your module/pack. This effectively blocks all rendering of CSS for the exported `$name` passed the point of publishing.
 
-```_awesome-menu.scss
+```_rex.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
-@import "./menu";
+@import "./rex";
 
 // Publish
-@include publish(my-awesome-menu);
+@include publish(rex);
 ```
 
-```awesome-menu.css
-.menu {
-  background: blue;
+```rex.css
+.rex {
+  color: green;
 }
-.menu-item {
-  display: block;
+.rex-battery {
+  display: none;
 }
 ```
 
 Regardless of how many times the files are imported (regardless of where they come from), they will not compile after the `publish` mixin has been used.
 
-```_awesome-menu.scss
+```_rex.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
-@import "./menu";
+@import "./rex";
 
 // Publish
-@include publish(my-awesome-menu);
+@include publish(rex);
 // The following @import will not render because the content
 // has already been published.
-@import "./menu";
-@import "./menu";
-@import "./menu";
-@import "./menu";
-@import "./menu";
-@import "./menu";
+@import "./rex";
+@import "./rex";
+@import "./rex";
+@import "./rex";
+@import "./rex";
+@import "./rex";
 ```
 
-```awesome-menu.css
-.menu {
-  background: blue;
+```rex.css
+.rex {
+  color: green;
 }
-.menu-item {
-  display: block;
+.rex-battery {
+  display: none;
 }
 ```
 
@@ -247,62 +253,62 @@ Modules matching the name of the arguments passed into `unload()` will **not** r
 
 **Use case**
 
-You want to use this brand new `meal-pack` in your Sass project (`meal-pack` doesn't really exist, but it would be cool if it did). `meal-pack` requires a handful of dependencies:
+You want to use this brand new `rex-pack` in your Sass project (`rex-pack` doesn't really exist, but it would be cool if it did). `rex-pack` requires a handful of dependencies:
 
 ```
-meal-pack
-├── sandwich-pack
-│   ├── bun-pack
-│   ├── tomato-pack
-│   ├── deli-pack
-│   └── sauce-pack
-├── snack-pack
-├── sides-pack
-└── drink-pack
+rex-pack
+├── rex-figure-pack
+│   ├── rex-head-pack
+│   ├── rex-arms-pack
+│   ├── rex-body-pack
+│   ├── rex-leg-pack
+│   └── rex-tail-pack
+├── accessories-pack
+└── battery-pack
 ```
 
-For your setup, you want to use `meal-pack` **except** for `sides-pack`. At this point, you have two options:
+For your setup, you want to use `rex-pack` **except** for `battery-pack`. At this point, you have two options:
 
-1. Manually include all the individual packs that make up `meal-pack`.
-2. Include `meal-pack`, and simply exclude `side-pack`.
+1. Manually include all the individual packs that make up `rex-pack`.
+2. Include `rex-pack`, and simply exclude `battery-pack`.
 
 The #2 solution is what the `unload()` mixin was designed to accomplish!
 
 
 
-``` _menu.scss
+``` _toys.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
 // Step 1: Exclude packs
-@include unload(sides);
+@include unload(battery);
 
 // Step 2: @import the pack containing the excluded packs
-@import "pack/seed-meal/_index";
+@import "pack/rex/_index";
 
-// styles within sides-pack will not be generated
+// styles within battery-pack will not be generated
 ```
 
 The `unload` mixin accepts lists as well as nested lists:
 
-``` _menu.scss
+``` _toys.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
 // Step 1: Exclude packs
 @include unload(
-  sides,
-  snack,
+  accessories,
+  battery,
   (
-    tomato,
-    sauce
+    arms,
+    tail,
   )
 );
 
 // Step 2: @import the pack containing the excluded packs
-@import "pack/seed-meal/_index";
+@import "pack/rex/_index";
 
-// styles within sides, snack, tomato, and sauce packs will not be generated
+// styles within accessories, battery, arm, and tail packs will not be generated
 ```
 
 
@@ -323,36 +329,41 @@ The `unload` mixin accepts lists as well as nested lists:
 
 `reload()` exists as a way to provide finer grain control to when/where packs can be loaded.
 
-In the [`unload()`](/seed/packs/seed-publish/#unload) example with the `sides` pack:
+In the [`unload()`](/seed/packs/seed-publish/#unload) example with the `battery` pack:
 
-```_menu.scss
+```_toys.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
 // Step 1: Exclude packs
-@include unload(sides);
+@include unload(battery);
 
 // Step 2: @import the pack containing the excluded packs
-@import "pack/seed-meal/_index";
+@import "pack/rex/_index";
 
-// styles within sides-pack will not be generated
+// styles within battery-pack will not be generated
 ```
 
 
 Let's say that we actually **do** want sides to load, but we want it to load somewhere else in our Sass code. By using the `reload()` mixin, we can re-enable `publish()` to generate CSS for the specified pack.
 
 
-```_snacks.scss
+```_toys.scss
 // Dependencies
 @import "pack/seed-publish/_index";
 
+// Previously excluded (unloaded) battery
+@include unload(battery);
+
+...
+
 // Step 1: Re-include packs
-@include reload(sides);
+@include reload(battery);
 
 // Step 2: @import the pack containing the previously excluded packs
-@import "pack/seed-meal/_index";
+@import "pack/rex/_index";
 
-// styles within sides-pack will be generated,
+// styles within battery-pack will be generated,
 // even though they have been previously excluded.
 ```
 
