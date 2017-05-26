@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=a629e6dcf134a3532e48cf466d117f0f">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=8546633cf3ac3362a9f89a94237c00e9">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -239,6 +239,12 @@
 
 <h2 id="mixins">Mixins</h2>
 
+<p>Rex, the lovable dinosaur from Disney Pixar’s Toy Story, will be used to illustrate how <code class="highlighter-rouge">seed-publish</code>’s mixins can be used to customize the styles of a Rex CSS component.</p>
+
+<div class="tx-center u-mrg-v-8">
+  <img src="/seed/images/examples/rex.jpg" width="300" />
+</div>
+
 <h3 id="export">export</h3>
 
 <p><strong>export($name)</strong> (Mixin)</p>
@@ -265,12 +271,12 @@
   </tbody>
 </table>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_rex.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
-<span class="k">@include</span> <span class="nd">export</span><span class="p">(</span><span class="n">my-awesome-menu</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nc">.menu</span> <span class="p">{</span>
-    <span class="nl">background</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="k">@include</span> <span class="nd">export</span><span class="p">(</span><span class="n">rex</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.rex</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
@@ -278,25 +284,25 @@
 
 <p>There is <strong>no limit</strong> on the number of times the <code class="highlighter-rouge">export</code> mixin can be used on a unique name. This is useful for controlling styles across multiple files.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_rex.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
-<span class="k">@include</span> <span class="nd">export</span><span class="p">(</span><span class="n">my-awesome-menu</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nc">.menu</span> <span class="p">{</span>
-    <span class="nl">background</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="k">@include</span> <span class="nd">export</span><span class="p">(</span><span class="n">rex</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.rex</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">@import</span> <span class="s2">"./menu-item"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./battery"</span><span class="p">;</span>
 </code></pre>
 </div></div></div>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu-item.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_battery.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
-<span class="k">@include</span> <span class="nd">export</span><span class="p">(</span><span class="n">my-awesome-menu</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nc">.menu-item</span> <span class="p">{</span>
-    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="k">@include</span> <span class="nd">export</span><span class="p">(</span><span class="n">rex</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.rex-battery</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
@@ -329,50 +335,50 @@
 
 <p>Use the <code class="highlighter-rouge">publish</code> mixin when you have completed building your module/pack. This effectively blocks all rendering of CSS for the exported <code class="highlighter-rouge">$name</code> passed the point of publishing.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_awesome-menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_rex.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
 
 <span class="c1">// Publish
-</span><span class="k">@include</span> <span class="nd">publish</span><span class="p">(</span><span class="n">my-awesome-menu</span><span class="p">);</span>
+</span><span class="k">@include</span> <span class="nd">publish</span><span class="p">(</span><span class="n">rex</span><span class="p">);</span>
 </code></pre>
 </div></div></div>
 
-<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>awesome-menu.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
-  <span class="nl">background</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>rex.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.rex</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nc">.menu-item</span> <span class="p">{</span>
-  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="nc">.rex-battery</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 </div></div></div>
 
 <p>Regardless of how many times the files are imported (regardless of where they come from), they will not compile after the <code class="highlighter-rouge">publish</code> mixin has been used.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_awesome-menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_rex.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
 
 <span class="c1">// Publish
-</span><span class="k">@include</span> <span class="nd">publish</span><span class="p">(</span><span class="n">my-awesome-menu</span><span class="p">);</span>
+</span><span class="k">@include</span> <span class="nd">publish</span><span class="p">(</span><span class="n">rex</span><span class="p">);</span>
 <span class="c1">// The following @import will not render because the content
 // has already been published.
-</span><span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"./menu"</span><span class="p">;</span>
+</span><span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"./rex"</span><span class="p">;</span>
 </code></pre>
 </div></div></div>
 
-<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>awesome-menu.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.menu</span> <span class="p">{</span>
-  <span class="nl">background</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>rex.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.rex</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nc">.menu-item</span> <span class="p">{</span>
-  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="nc">.rex-battery</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 </div></div></div>
@@ -404,60 +410,60 @@
 
 <p><strong>Use case</strong></p>
 
-<p>You want to use this brand new <code class="highlighter-rouge">meal-pack</code> in your Sass project (<code class="highlighter-rouge">meal-pack</code> doesn’t really exist, but it would be cool if it did). <code class="highlighter-rouge">meal-pack</code> requires a handful of dependencies:</p>
+<p>You want to use this brand new <code class="highlighter-rouge">rex-pack</code> in your Sass project (<code class="highlighter-rouge">rex-pack</code> doesn’t really exist, but it would be cool if it did). <code class="highlighter-rouge">rex-pack</code> requires a handful of dependencies:</p>
 
-<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>meal-pack
-├── sandwich-pack
-│   ├── bun-pack
-│   ├── tomato-pack
-│   ├── deli-pack
-│   └── sauce-pack
-├── snack-pack
-├── sides-pack
-└── drink-pack
+<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>rex-pack
+├── rex-figure-pack
+│   ├── rex-head-pack
+│   ├── rex-arms-pack
+│   ├── rex-body-pack
+│   ├── rex-leg-pack
+│   └── rex-tail-pack
+├── accessories-pack
+└── battery-pack
 </code></pre></div></div>
 
-<p>For your setup, you want to use <code class="highlighter-rouge">meal-pack</code> <strong>except</strong> for <code class="highlighter-rouge">sides-pack</code>. At this point, you have two options:</p>
+<p>For your setup, you want to use <code class="highlighter-rouge">rex-pack</code> <strong>except</strong> for <code class="highlighter-rouge">battery-pack</code>. At this point, you have two options:</p>
 
 <ol>
-  <li>Manually include all the individual packs that make up <code class="highlighter-rouge">meal-pack</code>.</li>
-  <li>Include <code class="highlighter-rouge">meal-pack</code>, and simply exclude <code class="highlighter-rouge">side-pack</code>.</li>
+  <li>Manually include all the individual packs that make up <code class="highlighter-rouge">rex-pack</code>.</li>
+  <li>Include <code class="highlighter-rouge">rex-pack</code>, and simply exclude <code class="highlighter-rouge">battery-pack</code>.</li>
 </ol>
 
 <p>The #2 solution is what the <code class="highlighter-rouge">unload()</code> mixin was designed to accomplish!</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_toys.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
 <span class="c1">// Step 1: Exclude packs
-</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">battery</span><span class="p">);</span>
 
 <span class="c1">// Step 2: @import the pack containing the excluded packs
-</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+</span><span class="k">@import</span> <span class="s2">"pack/rex/_index"</span><span class="p">;</span>
 
-<span class="c1">// styles within sides-pack will not be generated
+<span class="c1">// styles within battery-pack will not be generated
 </span></code></pre>
 </div></div></div>
 
 <p>The <code class="highlighter-rouge">unload</code> mixin accepts lists as well as nested lists:</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_toys.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
 <span class="c1">// Step 1: Exclude packs
 </span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span>
-  <span class="n">sides</span><span class="o">,</span>
-  <span class="n">snack</span><span class="o">,</span>
+  <span class="n">accessories</span><span class="o">,</span>
+  <span class="n">battery</span><span class="o">,</span>
   <span class="p">(</span>
-    <span class="no">tomato</span><span class="o">,</span>
-    <span class="n">sauce</span>
+    <span class="n">arms</span><span class="o">,</span>
+    <span class="n">tail</span><span class="o">,</span>
   <span class="p">)</span>
 <span class="p">);</span>
 
 <span class="c1">// Step 2: @import the pack containing the excluded packs
-</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+</span><span class="k">@import</span> <span class="s2">"pack/rex/_index"</span><span class="p">;</span>
 
-<span class="c1">// styles within sides, snack, tomato, and sauce packs will not be generated
+<span class="c1">// styles within accessories, battery, arm, and tail packs will not be generated
 </span></code></pre>
 </div></div></div>
 
@@ -486,33 +492,38 @@
 
 <p><code class="highlighter-rouge">reload()</code> exists as a way to provide finer grain control to when/where packs can be loaded.</p>
 
-<p>In the <a href="/seed/packs/seed-publish/#unload"><code class="highlighter-rouge">unload()</code></a> example with the <code class="highlighter-rouge">sides</code> pack:</p>
+<p>In the <a href="/seed/packs/seed-publish/#unload"><code class="highlighter-rouge">unload()</code></a> example with the <code class="highlighter-rouge">battery</code> pack:</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_menu.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_toys.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
 <span class="c1">// Step 1: Exclude packs
-</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">battery</span><span class="p">);</span>
 
 <span class="c1">// Step 2: @import the pack containing the excluded packs
-</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+</span><span class="k">@import</span> <span class="s2">"pack/rex/_index"</span><span class="p">;</span>
 
-<span class="c1">// styles within sides-pack will not be generated
+<span class="c1">// styles within battery-pack will not be generated
 </span></code></pre>
 </div></div></div>
 
 <p>Let’s say that we actually <strong>do</strong> want sides to load, but we want it to load somewhere else in our Sass code. By using the <code class="highlighter-rouge">reload()</code> mixin, we can re-enable <code class="highlighter-rouge">publish()</code> to generate CSS for the specified pack.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_snacks.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>_toys.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Dependencies
 </span><span class="k">@import</span> <span class="s2">"pack/seed-publish/_index"</span><span class="p">;</span>
 
-<span class="c1">// Step 1: Re-include packs
-</span><span class="k">@include</span> <span class="nd">reload</span><span class="p">(</span><span class="n">sides</span><span class="p">);</span>
+<span class="c1">// Previously excluded (unloaded) battery
+</span><span class="k">@include</span> <span class="nd">unload</span><span class="p">(</span><span class="n">battery</span><span class="p">);</span>
+
+<span class="err">...
+
+// </span><span class="na">Step</span><span class="err"> </span><span class="na">1</span><span class="p">:</span> <span class="n">Re-include</span> <span class="n">packs</span>
+<span class="o">@</span><span class="n">include</span> <span class="nf">reload</span><span class="p">(</span><span class="n">battery</span><span class="p">);</span>
 
 <span class="c1">// Step 2: @import the pack containing the previously excluded packs
-</span><span class="k">@import</span> <span class="s2">"pack/seed-meal/_index"</span><span class="p">;</span>
+</span><span class="k">@import</span> <span class="s2">"pack/rex/_index"</span><span class="p">;</span>
 
-<span class="c1">// styles within sides-pack will be generated,
+<span class="c1">// styles within battery-pack will be generated,
 // even though they have been previously excluded.
 </span></code></pre>
 </div></div></div>
@@ -570,12 +581,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=32103d205e8a0fed4ace759506051157"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=f2b380a28730c7775f83024c75a17498"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=41c7d6226e9f50979e0ab0e69bb4537a"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=c3a6789b5ea9dcd50182b464e0e390b2"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=90a98ce704722e6a41393ff13350fc7e"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=cde0c4b201eaeb03c53b3dc049c95fb5"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=ac8f80d3f29a1cb91224d2a95e4d8abf"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=45ea999117bfb74e10f4cd95d921617f"></script>
 
   </body>
 </html>
