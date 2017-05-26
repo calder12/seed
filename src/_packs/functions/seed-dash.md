@@ -7,7 +7,10 @@ seed-pack: "seed-dash"
 keywords:
   - array
   - dash
+  - deep
+  - deep extend
   - extend
+  - function
   - functional
   - get
   - helper
@@ -18,6 +21,7 @@ keywords:
   - maps
   - set
   - underscore
+  - util
 ---
 
 A tiny utility library with functions designed to make it easier to work with Sass lists and maps.
@@ -230,7 +234,7 @@ $map: (
 
 ### extend
 
-Adds or updates values of an object;
+Adds or updates values of an object
 
 **_extend($object, arguments...)**
 
@@ -331,5 +335,62 @@ $map: (
       box-shadow: 0 0 1px rgba(black, 0.2)
     )
   )
+);
+```
+
+
+
+---
+
+
+
+### deep-extend
+
+Adds or updates values of an object
+
+**_deep-extend($object, arguments...)**
+
+
+| Argument     | Type       | Description                           |
+| ---          | ---        | ---                                   |
+| `$object`    | List / Map | The object to query.                  |
+| `arguments…` | String     | The key(s) of the property to extend. |
+
+
+```example.scss
+$map: (
+  color: (
+    background: red,
+    border: black
+  ),
+  padding: (
+    top: 0,
+    right: 10px,
+    bottom: 0,
+    left: 0,
+  ),
+);
+
+$updated-map: (
+  padding: (
+    bottom: 10px,
+  ),
+);
+
+// Update the original $map
+$map: _deep-extend($map, $updated-map);
+
+// Updated $map is now
+$map: (
+  color: (
+    background: red,
+    border: black
+  ),
+  padding: (
+    top: 0,
+    right: 10px,
+    bottom: 10px,
+    left: 0,
+  ),
 );
 ```
