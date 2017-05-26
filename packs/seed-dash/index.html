@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=76ca5cf9353a975e0f39d5e948ce792d">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=e135d1c736edbd5546b6ffad1c6080e0">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -376,7 +376,7 @@
 
 <h3 id="extend">extend</h3>
 
-<p>Adds or updates values of an object;</p>
+<p>Adds or updates values of an object</p>
 
 <p><strong>_extend($object, arguments…)</strong></p>
 
@@ -493,6 +493,74 @@
 </code></pre>
 </div></div></div>
 
+<hr />
+
+<h3 id="deep-extend">deep-extend</h3>
+
+<p>Adds or updates values of an object</p>
+
+<p><strong>_deep-extend($object, arguments…)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$object</code></td>
+      <td>List / Map</td>
+      <td>The object to query.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">arguments…</code></td>
+      <td>String</td>
+      <td>The key(s) of the property to extend.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>example.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nv">$map</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">color</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="no">red</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="no">black</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">padding</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">top</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
+    <span class="nb">right</span><span class="o">:</span> <span class="m">10px</span><span class="o">,</span>
+    <span class="nb">bottom</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
+    <span class="nb">left</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">);</span>
+
+<span class="nv">$updated-map</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">padding</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">bottom</span><span class="o">:</span> <span class="m">10px</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">);</span>
+
+<span class="c1">// Update the original $map
+</span><span class="nv">$map</span><span class="p">:</span> <span class="nf">_deep-extend</span><span class="p">(</span><span class="nv">$map</span><span class="o">,</span> <span class="nv">$updated-map</span><span class="p">);</span>
+
+<span class="c1">// Updated $map is now
+</span><span class="nv">$map</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">color</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">background</span><span class="o">:</span> <span class="no">red</span><span class="o">,</span>
+    <span class="n">border</span><span class="o">:</span> <span class="no">black</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">padding</span><span class="o">:</span> <span class="p">(</span>
+    <span class="nb">top</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
+    <span class="nb">right</span><span class="o">:</span> <span class="m">10px</span><span class="o">,</span>
+    <span class="nb">bottom</span><span class="o">:</span> <span class="m">10px</span><span class="o">,</span>
+    <span class="nb">left</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+<span class="p">);</span>
+</code></pre>
+</div></div></div>
+
 
 </div>
 
@@ -537,12 +605,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=6bb6e5be0f126bc391d8babb4442fe99"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=49cf36542b39e1896396208d96bd7487"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=9374a1087469c5b0de51c15e7858ca13"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=ec982b25edd396d401c19af2442aa178"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=f41fea1477b50d60f4e62affb73e2df4"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=9c48c3f8becf4afdd7df0515d0dd37b2"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=ec24626bb4f165266664062007573456"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=c71e2a48be5f2dbaa5b11d7653ada3b2"></script>
 
   </body>
 </html>
