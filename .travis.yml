@@ -24,6 +24,7 @@ install:
   - npm install
 
 before_script:
+  - npm rebuild node-sass --force
   - npm install gulp-cli -g
 
 script:
