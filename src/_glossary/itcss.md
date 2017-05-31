@@ -7,7 +7,7 @@ description: "ITCSS is a CSS architecture created by Harry Roberts. It's an acro
 
 It's an acronym that stands for:
 
-<div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-400">
+<div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-200">
   <strong class="t-tx-charcoal-600">I</strong>nverted
   <strong class="t-tx-charcoal-600">T</strong>riangle
   <strong class="t-tx-charcoal-600">CSS</strong>

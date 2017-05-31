@@ -7,7 +7,7 @@ description: "BEM is a CSS naming convention. It's an acronym that stands for Bl
 
 It's an acronym that stands for:
 
-<div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-400">
+<div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-200">
   <strong class="t-tx-charcoal-600">B</strong>lock
   <strong class="t-tx-charcoal-600">E</strong>lement
   <strong class="t-tx-charcoal-600">M</strong>odifier
