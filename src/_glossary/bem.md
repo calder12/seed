@@ -21,7 +21,7 @@ Block, Element, and Modifier form the pattern the BEM convention uses for naming
 
 ### Block
 
-A Block is a top-level element, often a [component](/seed/glossary/component), that may contain sub-elements.
+A Block is a top-level element, often a [component](/seed/glossary/components), that may contain sub-elements.
 
 For example, let's try to visualize this using something from the real world. Imagine that we have a 🏠 House as our top-level element.
 

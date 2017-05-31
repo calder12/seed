@@ -38,7 +38,7 @@ Note: Tools are specific to pre/post-processing languages like Sass or PostCSS, 
 * **Generic** – CSS resets and normalizing rules to create a foundation for your styles.
 * **Elements** – Style rules for bare HTML elements (like `h1` or `button`).
 * **Objects** – Style rules for elements responsible for layout or structuring.
-* **Components** – Style rules for UI [components](/seed/glossary/component).
+* **Components** – Style rules for UI [components](/seed/glossary/components).
 * **Trumps** – Helper or utility rules that tweak Objects or Components by adjusting and override existing rules.
 
 
