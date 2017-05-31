@@ -64,7 +64,7 @@ a {
 
 The super generic one isn't very specific, can be _easy_ overridden with other rules. However, it has an incredible amount of "Reach", since it updates every single `<a>` tag.
 
-On the other hand, the incredibly specific rule, only affects `<a>` tags in a very distint circumstance, so it's "Reach" and impact is minimal.
+On the other hand, the incredibly specific rule, only affects `<a>` tags in a very specific circumstance, so it's "Reach" and impact is minimal.
 
 
 
