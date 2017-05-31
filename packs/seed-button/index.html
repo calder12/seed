@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=4c1cef3da8c0dfaa18e63136b0b6949f">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=790994eb14f84362ad6e80081f11a353">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -84,6 +84,16 @@
       </a>
     </li>
     
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/glossary"
+        title="Glossary"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Glossary
+      </a>
+    </li>
+    
   </ul>
 </nav>
 
@@ -98,8 +108,12 @@
 <div class="o-row">
   <div class="o-col-3@md js-spy-sidebar">
     
+
+    
 <div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
-  <p class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1">
+  
+
+  <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
     Contents
   </p>
   <ul id="toc" class="nav c-sidebar-nav rx-sidebar-nav-width"></ul>
@@ -178,7 +192,7 @@
 
 <p>There are 3 button styles in Seed. Add <code class="highlighter-rouge">.c-button</code> to any selector to create a button!</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button">Regular</button>
 <button class="c-button c-button--primary">Primary</button>
 <button class="c-button c-button--link">Link</button>
@@ -191,7 +205,7 @@
 <p>Just a heads up regarding primary buttons - Try to have only 1 primary button per view.
 Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button c-button--primary">OMG</button>
 <button class="c-button c-button--primary">Too many</button>
 <button class="c-button c-button--primary">Primary buttons!</button>
@@ -203,7 +217,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <p>As long as you attach the <code class="highlighter-rouge">.c-button</code> class, the button style can be applied to any selector. Just a heads up, for accessbility purposes, be sure to add <code class="highlighter-rouge">role="button"</code> to non-buttons if you choose to “buttonize” them.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <a href="#" role="button" class="c-button">Link disguised as Button</a>
 </div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-button"</span><span class="nt">&gt;</span>Link disguised as Button<span class="nt">&lt;/a&gt;</span></code></pre></div></div></div>
 
@@ -215,7 +229,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <h3 id="large-buttons">Large buttons</h3>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button c-button--lg">Regular</button>
 <button class="c-button c-button--primary c-button--lg">Primary</button>
 <button class="c-button c-button--link c-button--lg">Link</button>
@@ -225,7 +239,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <h3 id="medium-buttons">Medium buttons</h3>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button c-button--md">Regular</button>
 <button class="c-button c-button--primary c-button--md">Primary</button>
 <button class="c-button c-button--link c-button--md">Link</button>
@@ -235,7 +249,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <h3 id="small-buttons">Small buttons</h3>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button c-button--sm">Regular</button>
 <button class="c-button c-button--primary c-button--sm">Primary</button>
 <button class="c-button c-button--link c-button--sm">Link</button>
@@ -249,7 +263,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <p>Below are state styles that can be applied to <code class="highlighter-rouge">.c-button</code> elements.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button is-success">Success</button>
 <button class="c-button is-error">Error</button>
 <button class="c-button is-warning">Warning</button>
@@ -259,7 +273,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <h3 id="disabled">Disabled</h3>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <button class="c-button" disabled="">Regular</button>
 <button class="c-button c-button--primary" disabled="">Primary</button>
 <button class="c-button c-button--link" disabled="">Link</button>
@@ -271,7 +285,7 @@ Remember.. When every button is primary, <strong>no button will be</strong>.</p>
 
 <h2 id="button-groups">Button groups</h2>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-control-group" role="group">
   <button class="c-button c-button--sm">Button</button>
   <button class="c-button c-button--sm">Button</button>
@@ -515,12 +529,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=2fafa0e72748fdc8ff58d5214aa69e39"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=563cd3bce22911ccc40f4b89c1ccccd5"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=a1517bc07d0f0841490f218b286b9ad9"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=a029f4f20589cf33d6f93495e669bcee"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=9a2ee7987f23a7b211b6685b52ddcf6f"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=9d6788092ce80318cb0f2f2e30393148"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=096f57d0a2095ccf54e394e9924dc78e"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=612bf2755a5c58333e6973ecf657712e"></script>
 
   </body>
 </html>

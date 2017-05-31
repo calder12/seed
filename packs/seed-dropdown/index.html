@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=6b54e802e070c90f1039c7a7eb003cbe">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=790994eb14f84362ad6e80081f11a353">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -84,6 +84,16 @@
       </a>
     </li>
     
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/glossary"
+        title="Glossary"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Glossary
+      </a>
+    </li>
+    
   </ul>
 </nav>
 
@@ -98,8 +108,12 @@
 <div class="o-row">
   <div class="o-col-3@md js-spy-sidebar">
     
+
+    
 <div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
-  <p class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1">
+  
+
+  <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
     Contents
   </p>
   <ul id="toc" class="nav c-sidebar-nav rx-sidebar-nav-width"></ul>
@@ -195,7 +209,7 @@
 
 <h2 id="example">Example</h2>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-dropdown dropdown">
   <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown button
@@ -223,7 +237,7 @@
 
 <h3 id="headers-and-dividers">Headers and Dividers</h3>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-dropdown dropdown">
   <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown button
@@ -265,7 +279,7 @@
 
 <p>For <code class="highlighter-rouge">&lt;select&gt;</code> dropdowns, check out <a href="/seed/packs/seed-input/#selects">seed-input</a>.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <select class="c-input">
   <option>Option 1</option>
   <option>Option 2</option>
@@ -356,7 +370,7 @@
 
 <p>The following dropdown menu drops up and is positioned to the right.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-dropdown c-dropdown--up c-dropdown--right dropdown">
   <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown button
@@ -386,7 +400,7 @@
 
 <p>See <code class="highlighter-rouge">seed-button</code>’s <a href="/seed/packs/seed-button/#sizes">size documentation</a> for more details on sizes.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-dropdown dropdown">
   <button class="c-button c-button--sm c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Small dropdown button
@@ -416,7 +430,7 @@
 
 <p>See <code class="highlighter-rouge">seed-button</code>’s <a href="/seed/packs/seed-button/#states">state documentation</a> for more details on states.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="c-dropdown dropdown">
   <button class="c-button is-success c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Success dropdown
@@ -444,7 +458,7 @@
 
 <p>The borders of the <code class="highlighter-rouge">seed-dropdown</code> toggles will automatically adjust when placed inside of a <a href="/seed/packs/seed-control-group"><code class="highlighter-rouge">seed-control-group</code></a>.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-control-group">
   <button class="c-button">
     Button
@@ -618,12 +632,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=38ec61887fd2e95988d759a5f1afa09c"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=563cd3bce22911ccc40f4b89c1ccccd5"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=1ec058b8f0ba3c02724b401e151c78df"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=a029f4f20589cf33d6f93495e669bcee"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=d3b726a7549e3a16b24b6f0b1189f3a6"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=7d84db633e640bb99d78959b5a079907"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=096f57d0a2095ccf54e394e9924dc78e"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=612bf2755a5c58333e6973ecf657712e"></script>
 
   </body>
 </html>

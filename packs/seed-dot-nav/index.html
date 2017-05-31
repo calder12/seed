@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=6b54e802e070c90f1039c7a7eb003cbe">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=790994eb14f84362ad6e80081f11a353">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -84,6 +84,16 @@
       </a>
     </li>
     
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/glossary"
+        title="Glossary"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Glossary
+      </a>
+    </li>
+    
   </ul>
 </nav>
 
@@ -98,8 +108,12 @@
 <div class="o-row">
   <div class="o-col-3@md js-spy-sidebar">
     
+
+    
 <div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
-  <p class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1">
+  
+
+  <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
     Contents
   </p>
   <ul id="toc" class="nav c-sidebar-nav rx-sidebar-nav-width"></ul>
@@ -172,7 +186,7 @@
 
 <h2 id="example">Example</h2>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <ul class="c-dot-nav">
   <li class="c-dot-nav__item is-active">
     <a href="#" class="c-dot-nav__link">Link</a>
@@ -205,15 +219,15 @@
 <p>These size modifier classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
 
 <table class="c-table u-mrg-b-8"> <thead> <tr> <th> Modifier </th> <th> Class </th> <th> Description </th> </tr> </thead> <tbody> <tr> <td>Left</td> <td><code>c-dot-nav--left</code></td> <td>Aligns the component to the left</td> </tr> <tr> <td>Center</td> <td><code>c-dot-nav--center</code></td> <td>Aligns the component in the center (horizontally)</td> </tr> <tr> <td>Right</td> <td><code>c-dot-nav--right</code></td> <td>Aligns the component to the right</td> </tr> </tbody> </table>
-<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--left"> <p><strong>Left</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--left"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--left"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--left"> <p><strong>Left</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--left"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--left"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
-<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--center"> <p><strong>Center</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--center"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--center"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--center"> <p><strong>Center</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--center"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--center"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
-<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--right"> <p><strong>Right</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--right"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--right"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--right"> <p><strong>Right</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--right"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--right"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
@@ -223,15 +237,15 @@
 <p>These size modifier classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
 
 <table class="c-table u-mrg-b-8"> <thead> <tr> <th> Modifier </th> <th> Class </th> <th> Description </th> </tr> </thead> <tbody> <tr> <td>Large</td> <td><code>c-dot-nav--dot-lg</code></td> <td>Changes the dot sizes to 16px</td> </tr> <tr> <td>Medium</td> <td><code>c-dot-nav--dot-md</code></td> <td>Changes the dot sizes to 10px (Default size)</td> </tr> <tr> <td>Small</td> <td><code>c-dot-nav--dot-sm</code></td> <td>Changes the dot sizes to 8px</td> </tr> </tbody> </table>
-<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-lg"> <p><strong>Large</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-lg"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-lg"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-lg"> <p><strong>Large</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-lg"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-lg"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
-<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-md"> <p><strong>Medium</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-md"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-md"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-md"> <p><strong>Medium</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-md"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-md"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
-<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-sm"> <p><strong>Small</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-sm"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-sm"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--c-dot-nav--dot-sm"> <p><strong>Small</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav c-dot-nav--dot-sm"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav c-dot-nav--dot-sm"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
@@ -244,7 +258,7 @@
 
 <p>A static <code class="highlighter-rouge">.c-dot-nav</code> component is used to indicate progress, typically used in wizard or step-based interfaces. The <code class="highlighter-rouge">.c-dot-nav--static</code> modifier class removes hover styles and resets the cursor to the standard pointer.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
 <p>
   Completed: 2/5
 </p>
@@ -293,13 +307,13 @@
 <p>Dot nav items can have individual states.</p>
 
 <table class="c-table u-mrg-b-8"> <thead> <tr> <th> Modifier </th> <th> Class </th> <th> Description </th> </tr> </thead> <tbody> <tr> <td>Active</td> <td><code>is-active</code></td> <td>Changes the default dot color</td> </tr> <tr> <td>Disabled</td> <td><code>is-disabled</code></td> <td>Mutes the dot and disables the cursor</td> </tr> </tbody> </table>
-<div class="s-hs-docs s-example-modifier s-example-modifier--is-active"> <p><strong>Active</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--is-active"> <p><strong>Active</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav"> <li class="c-dot-nav__item is-active"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-dot-nav__item is-active"</span><span class="nt">&gt;</span>
     ...
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre> </div></div></div> </div>
-<div class="s-hs-docs s-example-modifier s-example-modifier--is-disabled"> <p><strong>Disabled</strong></p> <div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav"> <li class="c-dot-nav__item is-disabled"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
+<div class="s-hs-docs s-example-modifier s-example-modifier--is-disabled"> <p><strong>Disabled</strong></p> <div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id=""> <ul class="c-dot-nav"> <li class="c-dot-nav__item is-disabled"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> <li class="c-dot-nav__item"> <a href="#" class="c-dot-nav__link"></a> </li> </ul> </div></div> <div class="language-html highlighter-rouge"><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dot-nav"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-dot-nav__item is-disabled"</span><span class="nt">&gt;</span>
     ...
   <span class="nt">&lt;/li&gt;</span>
@@ -398,12 +412,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=38ec61887fd2e95988d759a5f1afa09c"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=563cd3bce22911ccc40f4b89c1ccccd5"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=1ec058b8f0ba3c02724b401e151c78df"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=a029f4f20589cf33d6f93495e669bcee"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=d3b726a7549e3a16b24b6f0b1189f3a6"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=7d84db633e640bb99d78959b5a079907"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=096f57d0a2095ccf54e394e9924dc78e"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=612bf2755a5c58333e6973ecf657712e"></script>
 
   </body>
 </html>

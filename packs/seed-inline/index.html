@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=eae4730169254c32136af07ab29ced74">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=71d0063636134f31465204d1bfb00a6e">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -84,6 +84,16 @@
       </a>
     </li>
     
+    <li class="u-mrg-v-0">
+      <a
+        href="/seed/glossary"
+        title="Glossary"
+        class="c-nav__link c-link c-link--plain tx-600"
+      >
+        Glossary
+      </a>
+    </li>
+    
   </ul>
 </nav>
 
@@ -98,8 +108,12 @@
 <div class="o-row">
   <div class="o-col-3@md js-spy-sidebar">
     
+
+    
 <div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
-  <p class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1">
+  
+
+  <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
     Contents
   </p>
   <ul id="toc" class="nav c-sidebar-nav rx-sidebar-nav-width"></ul>
@@ -173,7 +187,7 @@
 
 <p>To inline items next to each other, wrap everything in a parent selector of <code class="highlighter-rouge">.o-inline</code>, and each child selector in <code class="highlighter-rouge">.o-inline__item</code>.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-inline">
   <div class="o-inline__item">
     <small>Filter: </small>
@@ -229,7 +243,7 @@
 
 <p>Let’s pretend the UI you would like is similar to what we have below. An icon on the left, textual content in the middle, and a button on the right.</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-inline">
   <div class="o-inline__item">
     That's *Mr.* Evil Dr. Porkchop to you. 
@@ -244,7 +258,7 @@
 
 <p>If there is a lot of text, the UI will no longer look like what we had before. That is because <code class="highlighter-rouge">.o-inline__item</code> doesn’t constrain it’s inner content for layout purposes. It only tries to align items next to each other (when possible).</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-inline">
   <div class="o-inline__item">
     Hamm teleports the Potato Heads, the aliens, and Slinky onto his ship. He also pushes a button reading, "Death by Monkeys," trapping our heroes with a flood of plastic red monkeys. As Mr. Potato Head reaches toward a button activating a destructive ray, the scene suddenly cuts to Andy's bedroom. The whole scene actually took place in Andy's imagination, as he plays with the toys and a cardboard spaceship
@@ -259,7 +273,7 @@
 
 <p>On the other hand, <code class="highlighter-rouge">.o-flexy</code> from the <a href="/seed/packs/seed-flexy">seed-flexy</a> object pack <strong>does</strong> respect layout!</p>
 
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-flexy o-flexy--top">
   <div class="o-flexy__block">
     Hamm teleports the Potato Heads, the aliens, and Slinky onto his ship. He also pushes a button reading, "Death by Monkeys," trapping our heroes with a flood of plastic red monkeys. As Mr. Potato Head reaches toward a button activating a destructive ray, the scene suddenly cuts to Andy's bedroom. The whole scene actually took place in Andy's imagination, as he plays with the toys and a cardboard spaceship
@@ -303,7 +317,7 @@
   </tbody>
 </table>
 
-<div class="c-card hs-code u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
+<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js=""><div class="u-pad-5 hs-code__example" data-example-id="">
 <div class="o-inline o-inline--sm">
   
     <div class="o-inline__item">
@@ -439,12 +453,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=feb9fa5e1c017ecac9bc6344905600d1"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=69bc9ffe49d416d8204576c5bc9cd032"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=3382a76cca555631c638ceed28843283"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=929f6d8e6ed809d59a5b0c8ae90e850d"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=0cb67d9237f834f06c40fedcaff9a2d0"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=67f5aef1bf83d99b715f00acae687a22"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=ee7b956bf4fd23de868dbcde3c72a2d1"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=70eb198e44e22588862b3dd2e11f76f5"></script>
 
   </body>
 </html>

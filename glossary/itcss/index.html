@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Width (Min) | Seed CSS Documentation</title>
+  <title>ITCSS | Seed CSS Documentation</title>
   
-  <meta name="description" content="Utility classes that provide a range of min width (%) sizes.">
+  <meta name="description" content="ITCSS is a CSS naming methodology created by Harry Roberts. It's an acronym that standrs for "Inverted Triangle CSS"">
   <meta name="google-site-verification" content="rbVmAorB3dDQgACd0o8-3OeAUYTOPHCgC4rjnBjuX9U" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=7960e9274d64982fe2d090ca196b486f">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=790994eb14f84362ad6e80081f11a353">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -112,6 +112,11 @@
     
 <div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
   
+<p class="u-mrg-t-4@md u-mrg-b-8">
+  <a href="/seed/glossary/" class="c-button">
+    Back to Glossary
+  </a>
+</p>
 
   <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
     Contents
@@ -124,36 +129,11 @@
     
 <header class="u-mrg-b-4 u-pad-b-1">
   
-    <div class="o-flexy o-flexy--gap-md">
-      
-        <div clas="o-flexy__item">
-          <p class="u-mrg-0 tx-sm">
-            <span class="u-op-3">Pack: </span>
-            <span class="u-op-5">seed-width-min</span>
-          </p>
-        </div>
-      
-      
-      <div class="o-flexy__item u-d-none u-d-block@sm">
-        <a href="https://travis-ci.org/helpscout/seed-width-min" target="_blank" class="tx-no-underline">
-          <img src="https://travis-ci.org/helpscout/seed-width-min.svg?branch=master">
-        </a>
-        <a href="https://www.npmjs.com/package/seed-width-min" target="_blank" class="tx-no-underline">
-          <img src="https://badge.fury.io/js/seed-width-min.svg">
-        </a>
-      </div>
-      
-    </div>
-  
 
   <h1 class="tx-lh-heading tx-h3 tx-h1@sm tx-300 u-mrg-t-2 u-mrg-b-2">
-    Width (Min)
+    ITCSS
   </h1>
 
-  
-    <div class="tx-700">
-      <p class="u-mrg-0"><a href="https://github.com/helpscout/seed-width-min" target="_blank" class="c-link--view-source tx-sm">View Source</a></p>
-    </div>
   
 
 </header>
@@ -162,140 +142,85 @@
     
 
 
-<div id="s-docs" class="s-docs s-hs-docs s-hs-docs--width-(min) s-hs-docs--utility">
+<div id="s-docs" class="s-docs s-hs-docs s-hs-docs--itcss s-hs-docs--">
   <div class="s-docs__top" id="hs-content-top"></div>
   
 
 
-<p>A series of utility classes that adjust the min-width (%) property of a selector, with support for responsive modifiers.</p>
 
-<h2 id="install">Install</h2>
 
-<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-width-min --save
-</code></pre></div></div>
+<p><a href="http://itcss.io/">ITCSS</a> is a CSS naming methodology created by <a href="https://twitter.com/csswizardry">Harry Roberts</a>.</p>
 
-<h3 id="dependencies">Dependencies</h3>
+<h2 id="acronym">Acronym</h2>
+
+<p>It’s an acronym that stands for:</p>
+
+<div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-400">
+  <strong class="t-tx-charcoal-600">I</strong>nverted
+  <strong class="t-tx-charcoal-600">T</strong>riangle
+  <strong class="t-tx-charcoal-600">CSS</strong>
+</div>
+
+<p>It’s a modern, and very awesome, CSS architecture approach designed for scability and maintainability. It is a philosophy centered around CSS specificity, which is achieved with (pretty strict) <strong>file organization</strong> rules.</p>
+
+<h2 id="the-triangle">The Triangle</h2>
+
+<p>As the name implies, your CSS code-based is to be organized in an upside-down triangle based on <strong>specificity</strong>. In other words, your super basic general styles rules be added first, and your incredibly, perhaps abnoxiously, specific rules and overrides should be added last.</p>
+
+<p>Behold, the <strong>Ultimate Triangle of Specificity</strong>! 🙌</p>
+
+<p><img src="/seed/images/glossary/itcss.svg" alt="ITCSS: Diagram" /></p>
+
+<p>Note: Harry doesn’t <em>actually</em> call it the “Ultimate Triangle of Specifity”… but we are. Why not? It’s a cool name.</p>
+
+<p>The organization of specificity is defined be a series of “layers”.</p>
+
+<h3 id="layers">Layers</h3>
+
+<p>Note: Tools are specific to pre/post-processing languages like Sass or PostCSS, as mixins and functions aren’t supported in native CSS.</p>
 
 <ul>
-  <li><a href="/seed/packs/seed-breakpoints">seed-breakpoints</a></li>
-  <li><a href="/seed/packs/seed-publish">seed-publish</a></li>
-  <li><a href="/seed/packs/seed-width">seed-width</a></li>
+  <li><strong>Settings</strong> – Variable configurations for things like colors, fonts, sizes, etc…</li>
+  <li><strong>Tools</strong> – Globally used mixins and functions.</li>
+  <li><strong>Generic</strong> – CSS resets and normalizing rules to create a foundation for your styles.</li>
+  <li><strong>Elements</strong> – Style rules for bare HTML elements (like <code class="highlighter-rouge">h1</code> or <code class="highlighter-rouge">button</code>).</li>
+  <li><strong>Objects</strong> – Style rules for elements responsible for layout or structuring.</li>
+  <li><strong>Components</strong> – Style rules for UI <a href="/seed/glossary/component">components</a>.</li>
+  <li><strong>Trumps</strong> – Helper or utility rules that tweak Objects or Components by adjusting and override existing rules.</li>
 </ul>
 
-<hr />
+<h3 id="reach">Reach</h3>
 
-<h2 id="usage">Usage</h2>
+<p>In addition to specificity, the Triangle also illustrates the amount of things your rules will impact, or “Reach”.</p>
 
-<p>All of the following classes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
+<p><img src="/seed/images/glossary/itcss-key-metrics.svg" alt="ITCSS: Key Metrics" /></p>
 
-<p>These classes can also be combined with the utility classes from <a href="/seed/packs/seed-width">seed-width</a>/<a href="/seed/packs/seed-width-fx">seed-width-fx</a> and <a href="/seed/packs/seed-width-max">seed-width-max</a>.</p>
+<p>In the example below, we have two CSS rules: a super generic one and an incredibly specific one.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Min Width (%)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-0</code></td>
-      <td>0%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-1</code></td>
-      <td>8.33333%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-2</code></td>
-      <td>16.66667%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-3</code></td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-4</code></td>
-      <td>33.33333%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-5</code></td>
-      <td>41.66667%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-6</code></td>
-      <td>50%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-7</code></td>
-      <td>58.33333%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-8</code></td>
-      <td>66.66667%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-9</code></td>
-      <td>75%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-10</code></td>
-      <td>83.33333%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-11</code></td>
-      <td>91.66667%</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.u-width-min-12</code></td>
-      <td>100%</td>
-    </tr>
-  </tbody>
-</table>
+<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>styles.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Super super generic
+</span><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">hotpink</span><span class="p">;</span>
+<span class="p">}</span>
 
-<h3 id="example">Example</h3>
-
-<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="u-width-min-3 t-bg-blue-200">
-  I'm blue and 25% wide (min).
-</div>
-<div class="u-width-min-6 t-bg-yellow-200">
-  I'm yellow and 50% wide (min).
-</div>
-<div class="u-width-min-9 t-bg-green-200">
-  I'm green and 75% wide (min).
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"u-width-min-3 t-bg-blue-200"</span><span class="nt">&gt;</span>
-  I'm blue and 25% wide (min).
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"u-width-min-6 t-bg-yellow-200"</span><span class="nt">&gt;</span>
-  I'm yellow and 50% wide (min).
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"u-width-min-9 t-bg-green-200"</span><span class="nt">&gt;</span>
-  I'm green and 75% wide (min).
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<hr />
-
-<h2 id="configurations">Configurations</h2>
-
-<p>Below are the default Sass configuration variables for seed-width-min. The variables can be found in the pack’s <code class="highlighter-rouge">_config.scss</code> file.</p>
-
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>seed-width-min/_config.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nv">$seed-width-min-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-width-namespace</span><span class="si">}</span><span class="o">-</span><span class="n">min</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-
+<span class="c1">// Incredibly specific
+</span><span class="nc">.s-purchase-page</span> <span class="nc">.c-modal</span> <span class="nt">a</span><span class="nc">.linky</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
 </div></div></div>
 
+<p>The super generic one isn’t very specific, can be <em>easy</em> overridden with other rules. However, it has an incredible amount of “Reach”, since it updates every single <code class="highlighter-rouge">&lt;a&gt;</code> tag.</p>
+
+<p>On the other hand, the incredibly specific rule, only affects <code class="highlighter-rouge">&lt;a&gt;</code> tags in a very distint circumstance, so it’s “Reach” and impact is minimal.</p>
+
 <hr />
 
-<h2 id="related">Related</h2>
+<h2 id="sources">Sources</h2>
 
 <ul>
-  <li><a href="/seed/packs/seed-grid">seed-grid</a></li>
-  <li><a href="/seed/packs/seed-width">seed-width</a></li>
-  <li><a href="/seed/packs/seed-width-fx">seed-width-fx</a></li>
-  <li><a href="/seed/packs/seed-width-max">seed-width-max</a></li>
+  <li><a href="http://csswizardry.net/talks/2014/11/itcss-dafed.pdf">CSS Wizardry</a></li>
 </ul>
+
 
 
 </div>
@@ -341,12 +266,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=a82c4d4c99de4c03eec2326387b31da7"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=563cd3bce22911ccc40f4b89c1ccccd5"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=75059e35da2183adbcaeb919dd92842a"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=a029f4f20589cf33d6f93495e669bcee"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=774063526f1f36b03106c0edbab4a032"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=51e9ba132a295b3ed50f803afcce81da"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=096f57d0a2095ccf54e394e9924dc78e"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=612bf2755a5c58333e6973ecf657712e"></script>
 
   </body>
 </html>

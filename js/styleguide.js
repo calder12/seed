@@ -13,10 +13,15 @@
 
   // Table of Contents
   if($toc.length) {
+    var $tocHeader = $('#toc-header');
     $toc.toc({
       content: 'body',
       headings: '#s-docs > h2, #s-docs > h3, #s-docs > h4',
     });
+    if ($toc.find('li').length) {
+      $tocHeader.show();
+    }
+
     // Scroll spy
     $body.scrollspy({
       target: '#table-of-contents',
