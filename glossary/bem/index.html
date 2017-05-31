@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Avatar | Seed CSS Documentation</title>
+  <title>BEM | Seed CSS Documentation</title>
   
-  <meta name="description" content="Component that stylizes images for use as avatars. Includes support for a variation of sizes and styles.">
+  <meta name="description" content="BEM is a CSS naming convention. It's an acronym that stands for Block, Element, Modifier.">
   <meta name="google-site-verification" content="rbVmAorB3dDQgACd0o8-3OeAUYTOPHCgC4rjnBjuX9U" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=49ff3c04c137e113fb75b32a7408a1fa">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed/css/main.css?v=0bb40d9e565d43f9c761bbfb7c686952">
   <link rel="icon" href="http://developer.helpscout.net/seed/favicon.ico" type="image/x-icon"/>
 
   <meta name="robots" content="index, follow" />
@@ -112,6 +112,11 @@
     
 <div id="table-of-contents" class="o-sticky u-mrg-b-10" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
   
+<p class="u-mrg-t-4@md u-mrg-b-8">
+  <a href="/seed/glossary/" class="c-button">
+    Back to Glossary
+  </a>
+</p>
 
   <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
     Contents
@@ -124,36 +129,11 @@
     
 <header class="u-mrg-b-4 u-pad-b-1">
   
-    <div class="o-flexy o-flexy--gap-md">
-      
-        <div clas="o-flexy__item">
-          <p class="u-mrg-0 tx-sm">
-            <span class="u-op-3">Pack: </span>
-            <span class="u-op-5">seed-avatar</span>
-          </p>
-        </div>
-      
-      
-      <div class="o-flexy__item u-d-none u-d-block@sm">
-        <a href="https://travis-ci.org/helpscout/seed-avatar" target="_blank" class="tx-no-underline">
-          <img src="https://travis-ci.org/helpscout/seed-avatar.svg?branch=master">
-        </a>
-        <a href="https://www.npmjs.com/package/seed-avatar" target="_blank" class="tx-no-underline">
-          <img src="https://badge.fury.io/js/seed-avatar.svg">
-        </a>
-      </div>
-      
-    </div>
-  
 
   <h1 class="tx-lh-heading tx-h3 tx-h1@sm tx-300 u-mrg-t-2 u-mrg-b-2">
-    Avatar
+    BEM
   </h1>
 
-  
-    <div class="tx-700">
-      <p class="u-mrg-0"><a href="https://github.com/helpscout/seed-avatar" target="_blank" class="c-link--view-source tx-sm">View Source</a></p>
-    </div>
   
 
 </header>
@@ -162,130 +142,181 @@
     
 
 
-<div id="s-docs" class="s-docs s-hs-docs s-hs-docs--avatar s-hs-docs--component">
+<div id="s-docs" class="s-docs s-hs-docs s-hs-docs--bem s-hs-docs--">
   <div class="s-docs__top" id="hs-content-top"></div>
   
 
 
-<p>A component that stylizes images for use as avatars. This component provides a handful of different avatar styles and sizes.</p>
 
-<h2 id="install">Install</h2>
 
-<div class="highlighter-rouge "><div class="highlight highlight--none"><pre><code>npm install seed-avatar --save
-</code></pre></div></div>
+<p><a href="http://getbem.com/introduction/">BEM</a> is a CSS naming convention designed to emphasis relationships amongst CSS style rules.</p>
 
-<h3 id="dependencies">Dependencies</h3>
+<p>It’s an acronym that stands for:</p>
 
-<ul>
-  <li><a href="/seed/packs/seed-breakpoints">seed-breakpoints</a></li>
-  <li><a href="/seed/packs/seed-publish">seed-publish</a></li>
-</ul>
-
-<hr />
-
-<h2 id="example">Example</h2>
-
-<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-avatar">
-  <img src="/seed/images/seed.png" class="c-avatar__image" />
+<div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-400">
+  <strong class="t-tx-charcoal-600">B</strong>lock
+  <strong class="t-tx-charcoal-600">E</strong>lement
+  <strong class="t-tx-charcoal-600">M</strong>odifier
 </div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
 
-<hr />
+<p>Block, Element, and Modifier form the pattern the BEM convention uses for naming CSS rules.</p>
 
-<h2 id="modifiers">Modifiers</h2>
+<h2 id="naming">Naming</h2>
 
-<h3 id="rounded">Rounded</h3>
+<h3 id="block">Block</h3>
 
-<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-avatar c-avatar--rounded">
-  <img src="/seed/images/seed.png" class="c-avatar__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar--rounded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
+<p>A Block is a top-level element, often a <a href="/seed/glossary/component">component</a>, that may contain sub-elements.</p>
 
-<hr />
+<p>For example, let’s try to visualize this using something from the real world. Imagine that we have a 🏠 House as our top-level element.</p>
 
-<h2 id="sizes">Sizes</h2>
+<p>If we were to write that House as HTML, it may look like this:</p>
 
-<p>All of the following sizes support <strong><a href="/seed/packs/seed-breakpoints/#responsive-modifiers">responsive modifiers</a></strong>.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Modifier class</th>
-      <th>Avatar size</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">.c-avatar--xs</code></td>
-      <td>28px</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.c-avatar--sm</code></td>
-      <td>32px</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.c-avatar--md</code></td>
-      <td>40px</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">.c-avatar--lg</code></td>
-      <td>50px</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="c-card hs-code u-mrg-t-4 u-mrg-b-7" data-js="html"><div class="u-pad-5 hs-code__example" data-example-id="">
-<div class="c-avatar c-avatar--xs">
-  <img src="/seed/images/seed.png" class="c-avatar__image" />
-</div>
-</div><div class="c-clipboard-copy-container js-code-snippet t-bdr-top"><div class="u-pad-5 hs-code__highlight highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar--xs"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/seed/images/seed.png"</span> <span class="na">class=</span><span class="s">"c-avatar__image"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div></div></div>
-
-<hr />
-
-<h2 id="configurations">Configurations</h2>
-
-<p>Below are the default Sass configuration variables for seed-avatar. The variables can be found in the pack’s <code class="highlighter-rouge">_config.scss</code> file.</p>
-
-<div class="language-scss highlighter-rouge"><div class="highlight-header"><pre>seed-avatar/_config.scss</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="c1">// Namespaces
-</span><span class="nv">$seed-avatar-namespace</span><span class="p">:</span> <span class="s2">"c-avatar"</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$seed-avatar-image-namespace</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$seed-avatar-namespace</span><span class="si">}</span><span class="n">__image</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-
-<span class="c1">// Borders
-</span><span class="nv">$seed-avatar-border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-
-<span class="c1">// Colors
-</span><span class="nv">$seed-avatar-background</span><span class="p">:</span> <span class="mh">#f1f3f5</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$seed-avatar-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">0</span> <span class="mh">#e3e8eb</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-
-<span class="c1">// Sizes
-// Default size
-</span><span class="nv">$seed-avatar-size</span><span class="p">:</span> <span class="m">50px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="c1">// Modifier sizes
-</span><span class="nv">$seed-avatar-modifier-sizes</span><span class="p">:</span> <span class="p">(</span>
-  <span class="n">lg</span><span class="o">:</span> <span class="nv">$seed-avatar-size</span><span class="o">,</span>
-  <span class="n">md</span><span class="o">:</span> <span class="m">40px</span><span class="o">,</span>
-  <span class="n">sm</span><span class="o">:</span> <span class="m">32px</span><span class="o">,</span>
-  <span class="n">xs</span><span class="o">:</span> <span class="m">28px</span>
-<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-
+<div class="language-html highlighter-rouge"><div class="highlight-header"><pre>home.html</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div></div></div>
 
+<p>The CSS for that house, may look like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>home.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.house</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>Houses have many rooms. But technically, it’s up to you <a href="https://www.youtube.com/watch?v=IueXtzdC6kA&amp;feature=youtu.be&amp;t=3m48s">how many rooms</a> your house my have. Rooms are like sub-elements of your House, which leds us to the “Element” part of B<strong>E</strong>M.</p>
+
+<h3 id="element">Element</h3>
+
+<p>Elements (sub-elements) are things that belong to a Block (main-element). A Block can have many Elements, but Elements can only have one Block.</p>
+
+<p>Just like how our imaginary House can have many rooms. For clarity, it’s important to signify that these rooms <strong>belong</strong> that our House. With BEM, this is done using the double underscore naming convention.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight-header"><pre>home.html</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>home.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.house</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>Awesome! We have a House with a bunch of rooms. But, not all rooms are the same! You may have a living room, a bathroom, a bedroom. Maybe multiple bedrooms. It’s really <a href="https://www.youtube.com/watch?v=IueXtzdC6kA&amp;feature=youtu.be&amp;t=3m48s">up to you how many bedrooms</a> your House has. It may even have an oven in it.</p>
+
+<p>To distinguish between our rooms, we describe the with words like “bed” or “bath”. With CSS and BEM, this is done with the “Modifier” part of BE<strong>M</strong>.</p>
+
+<h3 id="modifier">Modifier</h3>
+
+<p>Modifiers adjust the styling of an element and can be applied to either Blocks or Elements. The Modifier are signified by using a double hyphen and are attached to the Block or Element they are modifying.</p>
+
+<p>Let’s add some Modifiers to the rooms in our imaginary House:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight-header"><pre>home.html</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-bath"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-bed"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-living"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-office"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>home.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.house</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--bath</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--bed</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--living</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--office</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>Of course, Modifiers are limited to just Elements. They can be applied to Blocks as well! Like, what if we suddenly upgraded to a <em>super big</em> house! (Take that neighbors).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight-header"><pre>home.html</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house house--super-big"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-bath"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-bed"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-living"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"house__room house__room-office"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight-header"><pre>home.css</pre></div><div class="c-clipboard-copy-container js-code-snippet"><div class="highlighter-rouge__wrapper"><pre class="highlight"><code><span class="nc">.house</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house--super-big</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--bath</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--bed</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--living</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+<span class="nc">.house__room--office</span> <span class="p">{</span>
+  <span class="err">...</span>
+<span class="p">}</span>
+</code></pre>
+</div></div></div>
+
+<p>Now you know the basics of BEM! There’s quite a bit more that goes into this CSS naming convention. To learn more, check out their <a href="http://getbem.com/">official website</a>.</p>
+
 <hr />
 
-<h2 id="related">Related</h2>
+<h2 id="see-also">See also</h2>
 
 <ul>
-  <li><a href="/seed/packs/seed-thumbnail">seed-thumbnail</a></li>
+  <li><a href="/seed/glossary/components">Components</a></li>
+  <li><a href="/seed/glossary/itcss">ITCSS</a></li>
 </ul>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="http://getbem.com/">BEM</a></li>
+</ul>
+
 
 
 </div>
@@ -331,12 +362,12 @@ var SEEDDATA = {  packs: [        {      name: 'Base',      slug: 'seed-base',  
 
     <script src="http://developer.helpscout.net/seed/js/jquery.min.js"></script>
 <script src="http://developer.helpscout.net/seed/js/bootstrap.min.js"></script>
-<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=3d3df7180062e3281439c57f9e1d81a8"></script>
+<script src="http://developer.helpscout.net/seed/js/anchor.min.js?v=0c624cfcc86a18adcb56deb57732d568"></script>
 <script src="http://developer.helpscout.net/seed/js/jquery.toc.js"></script>
-<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=7fed82d88f63e01500f1089ab8ba3286"></script>
+<script src="http://developer.helpscout.net/seed/js/clipboard.min.js?v=cbdcad8c362b72cb904e045d1fbdd1e0"></script>
 <script src="http://developer.helpscout.net/seed/js/snippets.js"></script>
-<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=e3be2476a9a3fa76e9307fae0d842634"></script>
-<script src="http://developer.helpscout.net/seed/js/main.js?v=6d1c69721d643ed6f33fa09bf2c77fb1"></script>
+<script src="http://developer.helpscout.net/seed/js/styleguide.js?v=7001334bb4859fcb6b8e0c16cc51d805"></script>
+<script src="http://developer.helpscout.net/seed/js/main.js?v=7105c9fb9070b818cfbb1f74dceab0ff"></script>
 
   </body>
 </html>
