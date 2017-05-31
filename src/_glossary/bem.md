@@ -85,13 +85,13 @@ Let's add some Modifiers to the rooms in our imaginary House:
 
 ```home.html
 <div class="house">
-  <div class="house__room house__room-bath">
+  <div class="house__room house__room--bath">
   </div>
-  <div class="house__room house__room-bed">
+  <div class="house__room house__room--bed">
   </div>
-  <div class="house__room house__room-living">
+  <div class="house__room house__room--living">
   </div>
-  <div class="house__room house__room-office">
+  <div class="house__room house__room--office">
   </div>
 </div>
 ```
@@ -122,13 +122,13 @@ Of course, Modifiers are limited to just Elements. They can be applied to Blocks
 
 ```home.html
 <div class="house house--super-big">
-  <div class="house__room house__room-bath">
+  <div class="house__room house__room--bath">
   </div>
-  <div class="house__room house__room-bed">
+  <div class="house__room house__room--bed">
   </div>
-  <div class="house__room house__room-living">
+  <div class="house__room house__room--living">
   </div>
-  <div class="house__room house__room-office">
+  <div class="house__room house__room--office">
   </div>
 </div>
 ```
