@@ -1,6 +1,6 @@
 ---
 title: "Glossary"
-description: "A modular CSS framework that scales."
+description: "Glossary! We use a lot of jargon when describing the various bits of CSS code and approaches for Seed."
 layout: "docs-toc"
 ---
 
