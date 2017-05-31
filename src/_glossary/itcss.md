@@ -13,18 +13,18 @@ It's an acronym that stands for:
   <strong class="t-tx-charcoal-600">CSS</strong>
 </div>
 
-It's a modern, and very awesome, CSS approach designed for scability and maintainability. This architecture is achieved with mindful CSS code organization. This organization structure is based on CSS "specificity", and can be visualized as an upside-down triangle.
+It's a modern, and very awesome, CSS approach designed for scalability and maintainability. This architecture is achieved with mindful CSS code organization. This organization structure is based on CSS "specificity", and can be visualized as an upside-down triangle.
 
 
 ## The Triangle
 
-As the name implies, your CSS code-based is to be organized in an upside-down triangle based on **specificity**. In other words, your super basic general styles rules be added first, and your incredibly, perhaps abnoxiously, specific rules and overrides should be added last.
+As the name implies, your CSS code-based is to be organized in an upside-down triangle based on **specificity**. In other words, your super basic general styles rules be added first, and your incredibly, perhaps obnoxiously, specific rules and overrides should be added last.
 
 Behold, the **Ultimate Triangle of Specificity**! 🙌
 
 ![ITCSS: Diagram](/seed/images/glossary/itcss.svg)
 
-Note: Harry doesn't _actually_ call it the "Ultimate Triangle of Specifity"… but we are. Why not? It's a cool name.
+Note: Harry doesn't _actually_ call it the "Ultimate Triangle of Specificity"… but we are. Why not? It's a cool name.
 
 The organization of specificity is defined be a series of "layers".
 
