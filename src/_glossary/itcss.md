@@ -5,8 +5,6 @@ description: "ITCSS is a CSS architecture created by Harry Roberts. It's an acro
 
 [ITCSS](http://itcss.io/) is a CSS architecture created by [Harry Roberts](https://twitter.com/csswizardry).
 
-## Acronym
-
 It's an acronym that stands for:
 
 <div class="tx-h2 u-mrg-t-5 u-mrg-b-8 t-tx-charcoal-400">
@@ -15,7 +13,7 @@ It's an acronym that stands for:
   <strong class="t-tx-charcoal-600">CSS</strong>
 </div>
 
-It's a modern, and very awesome, CSS approach designed for scability and maintainability. This architecture is achieved with mindful CSS code organization. This organization structure is based on CSS "specificity", and can be visualized as an upside-dow triangle.
+It's a modern, and very awesome, CSS approach designed for scability and maintainability. This architecture is achieved with mindful CSS code organization. This organization structure is based on CSS "specificity", and can be visualized as an upside-down triangle.
 
 
 ## The Triangle
