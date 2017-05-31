@@ -59,6 +59,9 @@ collections:
   examples:
     output: true
     permalink: /guides/examples/:path/
+  glossary:
+    output: true
+    permalink: /glossary/:path/
   guides:
     output: true
     permalink: /guides/:path/
@@ -90,6 +93,12 @@ defaults:
   -
     scope:
       path: ""
+      type: "glossary"
+    values:
+      layout: "glossary"
+  -
+    scope:
+      path: ""
       type: "packs"
     values:
-      layout: "packs"
+      layout: "docs-toc"

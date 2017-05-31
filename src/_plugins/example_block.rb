@@ -54,9 +54,9 @@ module Jekyll
         language = @lang.to_s
 
         if(language == "html" or language == "")
-          output = "<div class=\"c-card hs-code u-mrg-b-7\" data-js=\""+@lang.to_s+"\"><div class=\"u-pad-5 hs-code__example\" data-example-id=\"#{@options[:id]}\">\n#{code}\n</div>"
+          output = "<div class=\"c-card hs-code u-mrg-t-4 u-mrg-b-7\" data-js=\""+@lang.to_s+"\"><div class=\"u-pad-5 hs-code__example\" data-example-id=\"#{@options[:id]}\">\n#{code}\n</div>"
         else
-          output = "<div class=\"c-card hs-code u-mrg-b-7\" data-js=\""+@lang.to_s+"\">"
+          output = "<div class=\"c-card hs-code u-mrg-t-4 u-mrg-b-7\" data-js=\""+@lang.to_s+"\">"
         end
 
         output

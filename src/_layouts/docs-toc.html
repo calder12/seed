@@ -1,0 +1,24 @@
+---
+layout: "docs"
+---
+
+{% contentfor breadcrumb %}
+{% include nav/breadcrumb-packs.html %}
+{% endcontentfor %}
+{% contentfor sidebar %}
+<div
+  id="table-of-contents"
+  class="o-sticky u-mrg-b-10"
+  data-spy="affix"
+  data-offset-top="100"
+  data-offset-bottom="200"
+>
+  {% contentblock before_sidebar_toc %}
+  <p id="toc-header" class="tx-xs tx-uppercase tx-600 t-tx-grey-600 u-mrg-v-1 is-hidden">
+    Contents
+  </p>
+  <ul id="toc" class="nav c-sidebar-nav rx-sidebar-nav-width"></ul>
+</div>
+{% endcontentfor %}
+
+{{ content }}

@@ -1,6 +1,6 @@
 ---
 title: "Seed CSS"
-description: "A modular CSS framework that scales."
+description: "A component-first CSS design system. Completely modular. Amazingly Awesome!"
 layout: "generic"
 ---
 
@@ -10,7 +10,7 @@ layout: "generic"
   </p>
   <div class="o-col-10@md o-col-offset-1@md">
     <p class="tx-h2 tx-h1@md tx-300 tx-lh-heading u-mrg-t-0">
-      A modular CSS<br>framework that scales.
+      A component-first<br>CSS design system.
     </p>
   </div>
   <p class="tx-center u-mrg-b-5">

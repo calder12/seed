@@ -1,6 +1,8 @@
 # Seed CSS [![Build Status](https://travis-ci.org/helpscout/seed.svg?branch=master)](https://travis-ci.org/helpscout/seed) [![Gitter](https://badges.gitter.im/join_chat.svg)](https://gitter.im/seed-css/seed)
 
-Documentation for Help Scout's Seed (a modular CSS framework that scales).
+Documentation for Help Scout's Seed.
+
+A component-first CSS design system.
 
 [http://seedcss.com](http://seedcss.com)
 
