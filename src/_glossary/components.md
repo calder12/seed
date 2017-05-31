@@ -1,5 +1,5 @@
 ---
-title: "Component"
+title: "Components"
 description: "A Component is a single element of UI that can be seen and interacted with."
 ---
 
@@ -14,3 +14,12 @@ A great example of a component would be a button.
 {% endexample %}
 
 This button (above) can be seen in the user interface. You can click on the button, and the button adjust it's own background and border colors in response to your action.
+
+
+
+---
+
+
+## See also
+
+* [BEM](/seed/glossary/bem)
