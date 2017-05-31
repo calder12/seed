@@ -1,6 +1,6 @@
 ---
 title: "ITCSS"
-description: "ITCSS is a CSS architecture created by Harry Roberts. It's an acronym that stands for \"Inverted Triangle CSS\"."
+description: "ITCSS is a CSS architecture created by Harry Roberts. It's an acronym that stands for Inverted Triangle CSS."
 ---
 
 [ITCSS](http://itcss.io/) is a CSS architecture created by [Harry Roberts](https://twitter.com/csswizardry).
