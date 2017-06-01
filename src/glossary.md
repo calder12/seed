@@ -1,12 +1,12 @@
 ---
 title: "Glossary"
-description: "Glossary! We use a lot of jargon when describing the various bits of CSS code and approaches for Seed."
+description: "Many of the terms we use are borrowed from existing CSS approaches, but there are some words that we made up just for Seed."
 layout: "docs-toc"
 ---
 
-Welcome to the Glossary! We use a lot of jargon when describing the various bits of CSS code and approaches for Seed.
+Welcome to the Seed Glossary! Many of the terms we use are borrowed from existing CSS approaches, but there are some words that we made up just for Seed.
 
-A lot of the terms are borrowed from existing approaches, but there are also some that we made up.
+This glossary defines all terms we use when describing the various bits of CSS code and approaches for Seed.
 
 ---
 
