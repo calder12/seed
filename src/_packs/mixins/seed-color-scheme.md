@@ -205,7 +205,7 @@ $color-scheme: (
 
 // Use your color scheme
 html {
-  backgrond: _color(app, background);
+  background: _color(app, background);
 }
 ```
 
